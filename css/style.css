@@ -2761,12 +2761,12 @@ button.shape {
   margin: 0 auto;
   padding: 45px 15px 25px;
   height: 100%;
-  font-size: 14px;
+  font-size: .9em;
   color: #444444;
 }
 
 .footer_container a {
-  color: #1277B5;
+  color: #666666;
 }
 
 @media all and (max-width: 1281px) {
@@ -2882,7 +2882,7 @@ button.shape {
           box-sizing: border-box;
   display: inline-block;
   float: left;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding-right: 70px;
   width: 33%;
 }
@@ -2905,7 +2905,7 @@ button.shape {
           box-sizing: border-box;
   display: inline-block;
   float: left;
-  color: #1277B5;
+  color: #333333;
   font-weight: 600;
   font-size: 17px;
   margin-bottom: 15px;

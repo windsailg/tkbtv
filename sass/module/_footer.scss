@@ -15,10 +15,10 @@
    margin:  0 auto;
    padding: 45px 15px 25px;
    height: 100%;
-   font-size: 14px;
+   font-size: .9em;
    color:#444444;
    a{
-      color: #1277B5;
+      color: #666666;
    }
    @include M1281() {
       width: 100%;
@@ -79,7 +79,7 @@
 
       .links_block{
          @include ibl;
-         letter-spacing: 3px;
+         letter-spacing: 1px;
          padding-right: 70px;
          width: 33%;
          @include M1281() {
@@ -91,7 +91,7 @@
          }
          .links_title{
             @include ibl;
-            color: #1277B5;
+            color: #333333;
             font-weight: 600;
             font-size: 17px;
             margin-bottom: 15px 
