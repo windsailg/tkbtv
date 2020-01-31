@@ -1,0 +1,254 @@
+@include resetCSS;
+
+
+$color_major:#1277B5;
+$color_gray:#777777;
+
+
+html{
+   font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體', '新細明體';
+   &::-webkit-scrollbar {
+      width: 13px;
+      background-color:rgba(255, 255, 255, 0.9);
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+   }
+   &::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin:8px 0 ;
+   }
+   &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgb(163, 163, 163);
+   }
+}
+body{
+   overflow-x: hidden;
+   overflow-y: scroll; 
+}
+
+a{
+   text-decoration: none;
+   color: #1277B5;
+   @include tst;
+   &:hover{
+      opacity: .7;
+   }
+   &.type2{
+      text-decoration: underline;
+      color: #1277B5;
+   }
+}
+input{
+   @include PlaceHolder-Style;
+}
+hr{
+   @include bl;
+   height: 1px;
+   width: 100%;
+   background-color: rgb(226, 226, 226);
+   border: 0px;
+   margin: 8px 0;
+}
+button{
+   @include selection-none;
+   font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體','FontAwesome', '新細明體';
+   background: $color_major;
+   border: 0px solid #fff;
+   cursor:pointer;
+   color:#fff;
+   outline:none;
+   @include tst;
+   border-radius: 5px;
+   padding: 12px 40px;
+   margin: 8px;
+   font-size: 16px;
+   &:hover{
+      opacity: .8;
+   }
+   &.type_gray{
+      background: #ddd;
+      color:#444;
+   }
+   &.shape{
+      border-radius: 0;
+   }
+}
+
+.area {
+   @include ibl;
+   width: 100%;
+   overflow: hidden;
+   &.slider_banner {
+      overflow: visible;
+   }
+   .container {
+      @include b;
+      overflow: hidden;
+      ;
+      margin: 0 auto;
+      width: 1300px;
+      padding: 40px 10px;
+      position: relative;
+      z-index: 0;
+
+      &.type_banner {
+         width: 100%;
+         padding: 0px 0px;
+      }
+
+      @include M1301() {
+         width: 100%;
+      }
+   }
+}
+.bread_crumb_block {
+   @include bl;
+   width: 100%;
+   line-height: 28px;
+   overflow: hidden;
+   max-height: 60px;
+
+   @include M1301() {
+      padding: 0 15px;
+   }
+
+   .bread_crumb {
+      @include bl;
+      width: 100%;
+
+      .bread_crumb_item {
+         @include ibl;
+         font-size: 14px;
+         margin: 0;
+         padding: 0 10px 0 0px;
+
+         .home {
+            @include ibl;
+            padding: 0px 10px 0 0;
+            font-size: 16px;
+            color: rgb(63, 63, 63);
+         }
+
+         .arrow {
+            @include ibl;
+            padding: 2px 12px 0 8px;
+            font-size: 12px;
+            color: $color_major;
+         }
+
+         &.bc_first {}
+
+         &.bc_last {
+            font-weight: 600;
+         }
+      }
+
+   }
+}
+.button{
+   @include selection-none;
+   font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體','FontAwesome', '新細明體';
+   background: $color_major;
+   border: 0px solid #fff;
+   cursor:pointer;
+   color:#fff;
+   outline:none;
+   @include tst;
+   border-radius: 5px;
+   padding: 12px 40px;
+   margin: 8px;
+   font-size: 16px;
+   &:hover{
+      opacity: .8;
+   }
+   &.type_gray{
+      background: #ddd;
+      color:#444;
+   }
+   &.shape{
+      border-radius: 0;
+   }
+}
+
+.nothing_block{
+   @include fxc;
+   width: 100%;
+   padding:30px 0px;
+
+   position: relative;
+   @include MCW(861px) {
+      padding:30px 15px;
+   }
+   .nothing{
+      letter-spacing: 3px;
+      color:#888;
+      font-size: 22px;
+      padding:80px 0px;
+      max-height: 260px;
+      width: 100%;
+      border: 1px solid #ccc;
+      @include fxc;
+   };
+}
+
+
+//lazy and position focuspoint style
+.focuspoint{
+   // @include flex-center;
+   // align-content: center;
+   .lazy{
+      @include bg-loading;
+      background-color: #fff;
+      background-image: url("images/fengso-loading.svg");
+      max-height: 100%;
+   }
+   .lazied{
+      max-height: unset;
+   }
+}
+
+.img_box{
+   img{
+      width: 100%;
+   }
+}
+
+
+.tdu{
+   text-decoration: underline;
+}
+
+.new_msg_active{
+   &:before{
+      content:'';
+      @include ibl;
+      position: absolute;
+      top: -4px; 
+      right: -4px;
+      border-radius: 50px;
+      border:2px solid #fff;;
+      padding: 4px;
+      background-color: $color_major;
+   }
+}
+
+.isopen{
+   transition: .3s all cubic-bezier(.03,.08,0,.99) ;
+   opacity: 0;
+   transform:scale(0.2);
+}
+
+.is_rotate{
+   opacity: 0;
+   transition: all .5s ease-in-out;
+   transform:rotate(180deg);
+}
+
+.is_right{
+   opacity: 0;
+   transition: all .2s cubic-bezier(.03,.08,0,.99) ;
+   transform:translateX(-120px);
+}
