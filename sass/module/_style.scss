@@ -148,6 +148,7 @@ button{
 
    }
 }
+
 .button{
    @include selection-none;
    font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體','FontAwesome', '新細明體';
@@ -231,7 +232,7 @@ button{
       border-radius: 50px;
       border:2px solid #fff;;
       padding: 4px;
-      background-color: $color_major;
+      background-color: #eb4a21;
    }
 }
 

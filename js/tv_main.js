@@ -69,5 +69,20 @@ $(document).ready(function(){
 
     });
 
+
+
+    //header
+    $('#HeaderSearchRWDTrigger').on('click',function(){
+        
+        if ($('#HeadSerachForm').hasClass('search__active')){
+            $('#HeadSerachForm').fadeOut(150);
+            $('#HeadSerachForm').removeClass('search__active');
+        }else{
+            $('#HeadSerachForm').fadeIn(150);
+            $('#HeadSerachForm').addClass('search__active');
+        }
+
+    });
+
 });
 
