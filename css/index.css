@@ -125,7 +125,7 @@
     right: 0;
     left: 0;
     margin: auto;
-    background-color: #ffffff80;
+    background-color: #ffffffa6;
     z-index: 0;
   }
 }
@@ -622,6 +622,7 @@
   #TVIndex .index__imagine__block .index__imagine__content {
     font-size: 1em;
     letter-spacing: 2px;
+    font-weight: bold;
   }
 }
 

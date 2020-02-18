@@ -68,7 +68,7 @@ $color_gray:#777777;
             content: '';
             position: absolute;
             @include aa;
-            background-color:#ffffff80;
+            background-color:#ffffffa6;
             z-index: 0;
          }
       }
@@ -383,9 +383,11 @@ $color_gray:#777777;
          font-size: 1.75em;
          letter-spacing: 4px;
          line-height: 1.5em;
+         
          @include MCW(861px) {
             font-size: 1em;
             letter-spacing: 2px;
+            font-weight: bold;
          }
       }
       &.type__no__02 {
