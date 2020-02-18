@@ -63,7 +63,7 @@ $color_gray:#777777;
       position: relative;
       overflow: hidden;
       @include MCW(861px) {
-         background-position: 5% 60%;
+         background-position: 15% 60%;
          &:after{
             @include fxc;
             content: '';

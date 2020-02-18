@@ -6,8 +6,12 @@ $color_gray:#777777;
 
 .page{
    margin: 80px 0 0 0;
+   @include MCW(781px) {
+      margin: 60px 0 0 0;
+   }
 }
 html{
+   overflow-x: hidden;
    font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體', '新細明體';
    &::-webkit-scrollbar {
       width: 13px;
@@ -29,6 +33,7 @@ html{
 body{
    overflow-x: hidden;
    overflow-y: scroll; 
+
 }
 
 a{

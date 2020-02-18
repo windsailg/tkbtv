@@ -96,7 +96,14 @@ table {
   margin: 80px 0 0 0;
 }
 
+@media all and (max-width: 781px) {
+  .page {
+    margin: 60px 0 0 0;
+  }
+}
+
 html {
+  overflow-x: hidden;
   font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體', '新細明體';
 }
 
