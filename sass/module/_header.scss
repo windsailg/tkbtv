@@ -213,7 +213,7 @@
 
    .header_list {
       @include fxfs;
-      @include M1301() {
+      @include MCW(921px) {
          display: none;
       }
       height: 80px;

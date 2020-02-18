@@ -761,7 +761,7 @@ button.shape {
   height: 80px;
 }
 
-@media all and (max-width: 1301px) {
+@media all and (max-width: 921px) {
   #Header .header_list {
     display: none;
   }
