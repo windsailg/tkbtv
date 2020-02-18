@@ -1,5 +1,5 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.area.no__04:after, #TVIndex .recommand__navigation__block .recommand__navigation__box__title, #TVIndex .recommand__navigation__block .recommand__navigation__box, #TVIndex .item__expand__block, #TVIndex .item__expand__block .item__expand__list__box, #TVIndex .item__expand__block .item__expand__title, #TVIndex .item__expand__block .item__expand__ele, #TVIndex .item__expand__block .item__expand__ele__title, #TVIndex .item__expand__block .item__expand__ele__item, #TVIndex .item__expand__block .item__expand__recommand__imagine, #TVIndex .index__imagine__block, #TVIndex .index__imagine__block .index__imagine__box, #TVIndex .index__imagine__block .index__imagine__title, #TVIndex .index__imagine__block .index__imagine__title__deco, #TVIndex .index__imagine__block.type__no__02 .index__imagine__featureball__block, #TVIndex .index__imagine__block.type__no__04 .type__content:before, .banner_slide_container .swiper-pagination-bullet::before, .banner_slide_container .swiper-pagination-bullet::after {
+.area.no__04:after, #TVIndex .recommand__navigation__block .recommand__navigation__box__title, #TVIndex .recommand__navigation__block .recommand__navigation__box, #TVIndex .item__expand__block, #TVIndex .item__expand__block .item__expand__list__box, #TVIndex .item__expand__block .item__expand__title, #TVIndex .item__expand__block .item__expand__ele, #TVIndex .item__expand__block .item__expand__ele__title, #TVIndex .item__expand__block .item__expand__ele__item, #TVIndex .item__expand__block .item__expand__recommand__imagine, #TVIndex .index__imagine__block, #TVIndex .index__imagine__block .index__imagine__box, #TVIndex .index__imagine__block .index__imagine__title, #TVIndex .index__imagine__block .index__imagine__title__deco, #TVIndex .index__imagine__block.type__no__02 .index__imagine__featureball__block, #TVIndex .index__imagine__block.type__no__04 .type__content:before {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,7 +76,6 @@
 
 @media all and (max-width: 861px) {
   .area.no__01 {
-    background-size: 400%;
     background-position: 65% center;
   }
 }
@@ -112,7 +111,7 @@
 
 @media all and (max-width: 861px) {
   .area.no__04 {
-    background-position: 15% 60%;
+    background-position: 20% 60%;
   }
   .area.no__04:after {
     -webkit-box-pack: center;
@@ -562,6 +561,7 @@
 @media all and (max-width: 861px) {
   #TVIndex .index__imagine__block .index__imagine__title {
     font-size: 2em;
+    letter-spacing: 2px;
   }
 }
 
@@ -621,6 +621,7 @@
 @media all and (max-width: 861px) {
   #TVIndex .index__imagine__block .index__imagine__content {
     font-size: 1em;
+    letter-spacing: 2px;
   }
 }
 
@@ -704,7 +705,7 @@
 #TVIndex .index__imagine__block.type__no__04 {
   -webkit-filter: drop-shadow(0px 0px 0px transparent);
   filter: drop-shadow(0px 0px 0px transparent);
-  color: #000000;
+  color: #414141;
 }
 
 #TVIndex .index__imagine__block.type__no__04 .type__content {
@@ -746,11 +747,11 @@
 }
 
 #TVIndex .index__imagine__block.type__no__04 .index__imagine__title {
-  -webkit-text-stroke-color: #474747;
+  -webkit-text-stroke-color: #414141;
 }
 
 #TVIndex .index__imagine__block.type__no__04 .index__imagine__title__deco:before, #TVIndex .index__imagine__block.type__no__04 .index__imagine__title__deco:after {
-  background-color: #474747;
+  background-color: #414141;
 }
 
 #TVIndex .img_box img {
@@ -789,51 +790,36 @@
 
 .banner_slide_container .swiper-pagination-bullet {
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   bottom: 30px;
   width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, 0);
-  opacity: 1;
+  background: rgba(255, 255, 255, 0.856);
   -webkit-transition: 0.2s all ease-out;
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
   -webkit-filter: drop-shadow(1px 1px 0px #555555);
   filter: drop-shadow(1px 1px 0px #555555);
-  color: #fff;
-  font-size: 17px;
-  margin: 0 18px !important;
+  border: 1px solid white;
+  margin: 0 8px !important;
+  border-radius: 3px;
+  outline: none;
+  margin: 0 6px;
+  width: 37px;
+  height: 8px;
+  opacity: .4;
+  bottom: 20px;
 }
 
-.banner_slide_container .swiper-pagination-bullet::before, .banner_slide_container .swiper-pagination-bullet::after {
-  border-radius: 3px;
-  content: '';
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 0;
-  margin-right: auto;
-  left: 0;
-  margin-left: auto;
-  -webkit-transition: 0.2s all ease-out;
-  -o-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-  margin: 0 5px;
-  bottom: -22px;
-  width: 34px;
-  height: 8px;
-  background-color: #ffffff;
-  border: 1px solid white;
-  position: absolute;
-  opacity: .3;
+@media all and (max-width: 861px) {
+  .banner_slide_container .swiper-pagination-bullet {
+    bottom: 15px;
+  }
 }
 
 .banner_slide_container .swiper-pagination-bullet-active {
-  background: #ffffff00;
-}
-
-.banner_slide_container .swiper-pagination-bullet-active::after {
-  background-color: #ffffffe1;
+  background: #fffffff1;
   opacity: 1;
 }
 
@@ -849,5 +835,5 @@
 
 .banner_slide_container .swiper-button-prev.swiper-button-disabled,
 .banner_slide_container .swiper-button-next.swiper-button-disabled {
-  opacity: 0;
+  opacity: 1;
 }
