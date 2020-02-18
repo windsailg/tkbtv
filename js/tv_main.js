@@ -1,9 +1,9 @@
 
 $(document).ready(function(){
-       
-
+    
     $('#SideBar').hide();
 
+    //lazy function
     $(".lazy").Lazy({
         scrollDirection: 'vertical',
         effect: 'fadeIn',
@@ -58,9 +58,6 @@ $(document).ready(function(){
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + '</span>';
-            },
         },
     //   navigation: {
     //     nextEl: '.swiper-button-next',
@@ -69,11 +66,8 @@ $(document).ready(function(){
 
     });
 
-
-
     //header
     $('#HeaderSearchRWDTrigger').on('click',function(){
-        
         if ($('#HeadSerachForm').hasClass('search__active')){
             $('#HeadSerachForm').fadeOut(150);
             $('#HeadSerachForm').removeClass('search__active');
@@ -81,8 +75,9 @@ $(document).ready(function(){
             $('#HeadSerachForm').fadeIn(150);
             $('#HeadSerachForm').addClass('search__active');
         }
-
     });
 
+
 });
+
 

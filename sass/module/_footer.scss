@@ -175,8 +175,6 @@
       }
    }
 
-
-
    .downloads__block{
       @include fxc;
       width: 100%;
@@ -205,9 +203,14 @@
       .downloads__app__link{
          max-width: 160px;
          padding: 2px 0;
-         .imagine{
+
+         embed,svg {
+               cursor: pointer;
+         }
+
+         &.imagine{
             @include hover;
-            cursor: pointer;
+            
          }
       }
       .downloads__qr{
