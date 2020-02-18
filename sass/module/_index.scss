@@ -432,6 +432,7 @@ $color_gray:#777777;
             @include MCW(861px) {
                display: flex;
                max-width: 320px;
+               margin: 20px 0 0;
             }
          }
          .index__imagine__title {
