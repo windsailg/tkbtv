@@ -65,7 +65,20 @@ $(document).ready(function(){
     //   },
 
     });
+    var RecommandCourseSwiper = new Swiper('.recommand__course__slider__box', {
+        allowTouchMove: true,
+        slidesPerView: 3,
+        effect: 'slide',
+        spaceBetween: 0,
+        loop: false,
+        autoHeight: false,
+        navigation: {
+            nextEl: '.rcmd__swiper__prev',
+            prevEl: '.rcmd__swiper__next',
+        },
 
+    });
+    
     //header
     $('#HeaderSearchRWDTrigger').on('click',function(){
         if ($('#HeadSerachForm').hasClass('search__active')){

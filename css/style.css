@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.header, .nothing_block, .nothing_block .nothing, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
+.header, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__item, .recommand__course__slider__block .recommand__course__title, .recommand__course__slider__block .recommand__course__sub, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .nothing_block, .nothing_block .nothing, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -262,48 +262,41 @@ button.shape {
   display: block;
   overflow: hidden;
   margin: 0 auto;
-  width: 1300px;
-  padding: 40px 10px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 30px 10px;
   position: relative;
   z-index: 0;
 }
 
-@media all and (max-width: 1301px) {
-  .area .container {
-    width: 100%;
-  }
-}
-
 .bread_crumb_block {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  float: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   line-height: 28px;
   overflow: hidden;
   max-height: 60px;
 }
 
-@media all and (max-width: 1301px) {
-  .bread_crumb_block {
-    padding: 0 15px;
-  }
-}
-
 .bread_crumb_block .bread_crumb {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  float: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
 }
 
+.bread_crumb_block .bread_crumb a {
+  color: #555555;
+}
+
 .bread_crumb_block .bread_crumb .bread_crumb_item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline-block;
-  float: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
   margin: 0;
   padding: 0 10px 0 0px;
@@ -320,17 +313,118 @@ button.shape {
 }
 
 .bread_crumb_block .bread_crumb .bread_crumb_item .arrow {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline-block;
-  float: left;
-  padding: 2px 12px 0 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 12px 0 8px;
   font-size: 12px;
-  color: #1277B5;
+  color: #555555;
 }
 
 .bread_crumb_block .bread_crumb .bread_crumb_item.bc_last {
   font-weight: 600;
+  color: #1277B5;
+}
+
+.title__block {
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  color: #1277B5;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.recommand__course__slider__block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 28px 0;
+}
+
+.recommand__course__slider__block .recommand__course__slider__box {
+  width: 100%;
+  max-width: calc(100% - 200px);
+  letter-spacing: 1px;
+}
+
+.recommand__course__slider__block .recommand__course__item {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  max-width: 270px;
+  -webkit-box-shadow: 0px 0px 10px #00000027;
+          box-shadow: 0px 0px 10px #00000027;
+  background-color: #ffffff;
+  padding: 8px 0 0;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+
+.recommand__course__slider__block .recommand__course__item:hover {
+  opacity: .9;
+}
+
+.recommand__course__slider__block .recommand__course__title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #0b4366;
+}
+
+.recommand__course__slider__block .recommand__course__sub {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: .9em;
+}
+
+.recommand__course__slider__block .recommand__course__info {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  font-size: .9em;
+}
+
+.recommand__course__slider__block .recommand__course__ele {
+  padding: 5px 8px;
+  color: #1277B5;
+}
+
+.recommand__course__slider__block .recommand__course__price {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 6px 10px;
+  width: 100%;
+  background-color: #1277B5;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 1.1em;
+  -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: #fafafa;
+  letter-spacing: 5px;
 }
 
 .button {
