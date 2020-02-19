@@ -104,6 +104,11 @@ button{
       z-index: 0;
       @include MCW(1441px) {
       }
+      &.type__recommand__course{
+          max-width: 100%;
+          background-color: #f7f7f7;
+          padding: 5px 0;
+      }
    }
 }
 
@@ -163,22 +168,28 @@ button{
 .recommand__course__slider__block{
    @include fxc;
    width: 100%;
+   margin:  0 auto;
    max-width: 1300px;
+   overflow: hidden;
    position: relative;
-   background-color: #f7f7f7;
    padding: 28px 0;
    .recommand__course__slider__box{
+
       width: 100%;
       max-width: calc(100% - 200px);
       letter-spacing: 1px;
+      overflow: hidden;
+      margin: 0 auto;
    }
    .recommand__course__item{
       @include fxfs;
       width: 100%;
+      box-sizing: border-box;
       max-width: 270px;
       box-shadow: 0px 0px 10px #00000027;
       background-color: #ffffff;
       padding: 8px 0 0;
+      margin: 0 10px;
       @include tst;
       &:hover{
          opacity: .9;
@@ -226,6 +237,16 @@ button{
       -webkit-text-stroke-width: .8px;
       -webkit-text-stroke-color:#fafafa;
       letter-spacing: 5px;
+   }
+   .rcmd__swiper__next,
+   .rcmd__swiper__prev {
+
+   }
+   .rcmd__swiper__next {
+
+   }
+   .rcmd__swiper__prev {
+      
    }
 }
 

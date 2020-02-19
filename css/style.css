@@ -269,6 +269,12 @@ button.shape {
   z-index: 0;
 }
 
+.area .container.type__recommand__course {
+  max-width: 100%;
+  background-color: #f7f7f7;
+  padding: 5px 0;
+}
+
 .bread_crumb_block {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -341,9 +347,10 @@ button.shape {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin: 0 auto;
   max-width: 1300px;
+  overflow: hidden;
   position: relative;
-  background-color: #f7f7f7;
   padding: 28px 0;
 }
 
@@ -351,6 +358,8 @@ button.shape {
   width: 100%;
   max-width: calc(100% - 200px);
   letter-spacing: 1px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .recommand__course__slider__block .recommand__course__item {
@@ -359,11 +368,14 @@ button.shape {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 270px;
   -webkit-box-shadow: 0px 0px 10px #00000027;
           box-shadow: 0px 0px 10px #00000027;
   background-color: #ffffff;
   padding: 8px 0 0;
+  margin: 0 10px;
   -webkit-transition: 0.2s all ease-out;
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;

@@ -11,9 +11,9 @@ $color_gray:#777777;
       overflow: visible;
    }
    &.no__01{
-      background-image: url('../img/block_bg_01.jpg');
+      background-image: url('../img/index/block_bg_01.jpg');
       background-size:cover;
-      background-position: center;
+      background-position: center top;
       background-repeat: no-repeat;
       // background-attachment: fixed;
       // min-height: 750px;
@@ -27,7 +27,7 @@ $color_gray:#777777;
          background-repeat: no-repeat;
          background-position: bottom;
          bottom: 0;
-         background-image: url('../img/block_bg_01_deco.png');
+         background-image: url('../img/index/block_bg_01_deco.png');
       }
       @include MCW(861px) {
          background-position: 65% center;
@@ -35,7 +35,7 @@ $color_gray:#777777;
    }
    &.no__02{
       background-color: #f5f5f5;
-      background-image: url('../img/block_bg_02.jpg');
+      background-image: url('../img/index/block_bg_02.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -52,7 +52,7 @@ $color_gray:#777777;
       background-color: #ffffff;
    }
    &.no__04 {
-      background-image: url('../img/block_bg_04.jpg');
+      background-image: url('../img/index/block_bg_04.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -83,9 +83,10 @@ $color_gray:#777777;
       &.type_banner {
          width: 100%;
          padding: 0px 0px;
+         max-width: 100%;
       }
       &.no__01{
-         padding: 90px 0 75px;
+         padding: 110px 0 100px;
          @include MCW(861px) {
             padding: 40px 0;
          }
@@ -161,7 +162,7 @@ $color_gray:#777777;
       background-color: #edf7fd;
       padding: 9px 12px;
       box-shadow: 0px 0px 20px #0000003b;
-      @include MCW(1681px){
+      @include MCW(1501px){
          display: none;
       }
       .recommand__navigation__box__title{
