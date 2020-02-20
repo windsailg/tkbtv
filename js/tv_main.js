@@ -9,7 +9,7 @@ $(document).ready(function(){
         effect: 'fadeIn',
         effectTime:300, //duration
         throttle:1000,//delay
-        //delay: 2000,
+        // delay: 20000,
         visibleOnly: true,
         onError: function(element) {
             console.log('lazy error loading' + element.data('src'));
@@ -59,26 +59,71 @@ $(document).ready(function(){
             el: '.swiper-pagination',
             clickable: true,
         },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-
     });
+
     var RecommandCourseSwiper = new Swiper('.recommand__course__slider__box', {
         allowTouchMove: true,
-        slidesPerView: 3,
+        // slidesPerView: 5,
         effect: 'slide',
-        spaceBetween: 0,
+        spaceBetween: 25,
+        // centeredSlides: true,
         loop: false,
         autoHeight: false,
         navigation: {
-            nextEl: '.rcmd__swiper__prev',
-            prevEl: '.rcmd__swiper__next',
+            nextEl: '.rcmd__swiper__next',
+            prevEl: '.rcmd__swiper__prev ',
         },
+        breakpoints: {
+            0: {//大於等於
+                slidesPerView: 1,
+                spaceBetween: 10,
+                centeredSlides: true,
+            },
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                initialSlide: 0,
+                centeredSlides: true,
+            },
+            861: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 30,
+                initialSlide: 1,
+            },
+            1280: {
+                centeredSlides: true,
+                slidesPerView: 4,
+                spaceBetween: 40,
+                initialSlide: 1,
+            }
 
+        }
     });
-    
+
+    var CourseTypeTabSwiper = new Swiper('.course__type__tab__block', {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        effect: 'slide',
+        spaceBetween: 25,
+        loop: false,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        autoplay: {
+            delay: 10000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+    });
+
+    $('.course__type__tab__box').on('click',function(){
+        $('.course__type__tab__box').removeClass('course__type__tab__box--active');
+        $(this).addClass('course__type__tab__box--active');
+    });
+
     //header
     $('#HeaderSearchRWDTrigger').on('click',function(){
         if ($('#HeadSerachForm').hasClass('search__active')){

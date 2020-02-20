@@ -146,16 +146,18 @@
       @include fxb;
       align-items: center;
       width: 100%;
-      max-width: 1400px;
+      // max-width: 1400px;
+      max-width: 1300px;
       margin: 0;
       height: 100%;
       position: relative;
-      @include MCW(1401px) {
+      // @include MCW(1401px) {
+      //    padding: 0 10px;
+      // }
+      @include MCW(1301px) {
          padding: 0 10px;
       }
-      @include MCW(781px) {
 
-      }
    }
 
    .header_container_box {
@@ -167,7 +169,6 @@
       &.left {
          justify-content: flex-start;
       }
-
       &.right {
          justify-content: flex-end;
       }
@@ -503,13 +504,6 @@
    }
 }
 
-.img_box {
-   @include ib;
-
-   img {
-      width: 100%;
-   }
-}
 
 #ITeachContainer {
    width: 100%;
