@@ -142,19 +142,19 @@
             <div class="course__type__tab__block">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide course__type__tab__box course__type__tab__box--active">
+                    <div data-tab-item="Content1" class="swiper-slide course__type__tab__box course__type__tab__box--active">
                         考試資格與考試時間
                     </div>
-                    <div class="swiper-slide course__type__tab__box">
+                    <div data-tab-item="Content2" class="swiper-slide course__type__tab__box">
                         錄取率及錄取分數
                     </div>
-                    <div class="swiper-slide course__type__tab__box">
+                    <div data-tab-item="Content3" class="swiper-slide course__type__tab__box">
                         薪水待遇
                     </div>
-                    <div class="swiper-slide course__type__tab__box">
+                    <div data-tab-item="Content4" class="swiper-slide course__type__tab__box">
                         考試科目
                     </div>
-                    <div class="swiper-slide course__type__tab__box">
+                    <div data-tab-item="Content5" class="swiper-slide course__type__tab__box">
                         推薦課程
                     </div>
                     
@@ -169,33 +169,77 @@
             
             <div class="course__type__main__block course__type__main__item">
 
-                <div class="course__type__main__title">
-                    <i class="fas fa-pencil-alt"></i>考試資格
+                <!-- tab 切換區塊 -->
+                <div id="Content1" class="course__type__main__tab__item course__type__main__tab__item--active">
+
+                
+                    <div class="course__type__main__title">
+                        <i class="fas fa-pencil-alt"></i>考試資格
+                    </div>
+
+                    <!-- 內容區塊 -->
+                    <div class="course__type__main__content">
+                        ►高普考、初等考 vs.特考怎麼分
+                        公務人員考試主要分為兩種：
+                        ❶ 每年例行舉辦的高普考、初等考，主要分發單位以中央機關及地方政府一級機關、學校為主；
+                        另外一種則是不定期舉辦的 ❷特種考試（簡稱特考）。
+
+
+                        高普初考和特考的差別：
+                        ①就考試時間而言，高普初固定一年一次、特考採不定時制（遇缺才補）；
+                        ②以資格而言，高普初考分五等，依照每個等級有不同限制。
+                        而特考是針對『特殊資格』人員（如：原住民、身心障礙）或機關『特殊需求』（如：司法人員、調查人員），因此要符合條件才能報考，特考及格之考生依據不同的考試種類有『留任三~六年』’方能申請轉調該分發任用單位之外的機關。
+
+                        ③以等級而言，初考原則上與地方特考五等相同，最大不同在於分發單位，初考主要分發單位為中央機關；地方特考主要分發單位為地方機關。
+
+
+
+                        普考主要分發單位為中央機關，於考試錄取後，再依照選填志願序，以成績高低進行分發，分發單位多以中央機關、學校為主。高普初考是政府主要遴選人才考試，考生可依照專長選擇考試，考試類科多元(包含一般行政、人事行政、社會行政等)，工作內容主要以基層行政相關事務為主。
+
+                        公職考試中最熱門的就屬普考，報名資格只需高中畢業，考試科目相較高考少，因此每年普考參加人數超越高考、初等。且普考錄取薪資即36,275，對於新鮮人來說，普考是非常不錯的選擇。
+                        （※實際金額已分發單位為主。）
+
+                    </div>
+
                 </div>
 
-                <!-- 內容區塊 -->
-                <div class="course__type__main__content">
-                    ►高普考、初等考 vs.特考怎麼分
-                    公務人員考試主要分為兩種：
-                    ❶ 每年例行舉辦的高普考、初等考，主要分發單位以中央機關及地方政府一級機關、學校為主；
-                    另外一種則是不定期舉辦的 ❷特種考試（簡稱特考）。
+                <div id="Content2" class="course__type__main__tab__item">
+                    <div class="course__type__main__title">
+                        <i class="fas fa-pencil-alt"></i>錄取率及錄取分數
+                    </div>
+                    <div class="course__type__main__content">
+                    
 
-
-                    高普初考和特考的差別：
-                    ①就考試時間而言，高普初固定一年一次、特考採不定時制（遇缺才補）；
-                    ②以資格而言，高普初考分五等，依照每個等級有不同限制。
-                    而特考是針對『特殊資格』人員（如：原住民、身心障礙）或機關『特殊需求』（如：司法人員、調查人員），因此要符合條件才能報考，特考及格之考生依據不同的考試種類有『留任三~六年』’方能申請轉調該分發任用單位之外的機關。
-
-                    ③以等級而言，初考原則上與地方特考五等相同，最大不同在於分發單位，初考主要分發單位為中央機關；地方特考主要分發單位為地方機關。
-
-
-
-                    普考主要分發單位為中央機關，於考試錄取後，再依照選填志願序，以成績高低進行分發，分發單位多以中央機關、學校為主。高普初考是政府主要遴選人才考試，考生可依照專長選擇考試，考試類科多元(包含一般行政、人事行政、社會行政等)，工作內容主要以基層行政相關事務為主。
-
-                    公職考試中最熱門的就屬普考，報名資格只需高中畢業，考試科目相較高考少，因此每年普考參加人數超越高考、初等。且普考錄取薪資即36,275，對於新鮮人來說，普考是非常不錯的選擇。
-                    （※實際金額已分發單位為主。）
-
+                    </div>
                 </div>
+                <div id="Content3" class="course__type__main__tab__item">
+                    <div class="course__type__main__title">
+                        <i class="fas fa-pencil-alt"></i>薪水待遇
+                    </div>
+                    <div class="course__type__main__content">
+
+
+                    </div>
+                </div>
+                <div id="Content4" class="course__type__main__tab__item">
+                    <div class="course__type__main__title">
+                        <i class="fas fa-pencil-alt"></i>考試科目
+                    </div>
+                    <div class="course__type__main__content">
+
+
+                    </div>
+                </div>
+                <div id="Content5" class="course__type__main__tab__item">
+                    <div class="course__type__main__title">
+                        <i class="fas fa-pencil-alt"></i>推廣課程
+                    </div>
+                    <div class="course__type__main__content">
+
+
+                    </div>
+                </div>
+
 
             </div>
 

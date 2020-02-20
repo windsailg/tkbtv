@@ -270,6 +270,7 @@ button{
    .rcmd__swiper__next,
    .rcmd__swiper__prev {
       background-size: 60px;
+      outline: none;;
       width: 60px;
       height: 54px;
       @include atb;
@@ -332,6 +333,13 @@ button{
       max-width: 100%;
       margin: 0 ;
    }
+   .course__type__main__tab__item{
+      width: 100%;
+      display: none;
+      &.course__type__main__tab__item--active {
+         display: block;
+      }
+   }
    .course__type__main__title{
       font-weight: 600;
       font-size: 1.2em;
@@ -393,9 +401,6 @@ button{
       width: 100%;
    }
 }
-
-
-
 
 
 

@@ -503,6 +503,7 @@ button.shape {
 .recommand__course__slider__block .rcmd__swiper__next,
 .recommand__course__slider__block .rcmd__swiper__prev {
   background-size: 60px;
+  outline: none;
   width: 60px;
   height: 54px;
   top: 0;
@@ -591,6 +592,15 @@ button.shape {
     max-width: 100%;
     margin: 0;
   }
+}
+
+.course__type__main__block .course__type__main__tab__item {
+  width: 100%;
+  display: none;
+}
+
+.course__type__main__block .course__type__main__tab__item.course__type__main__tab__item--active {
+  display: block;
 }
 
 .course__type__main__block .course__type__main__title {
