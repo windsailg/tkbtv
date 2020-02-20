@@ -132,6 +132,10 @@ $color_productDetail_minor:#ff8736;
             @include fxc;
             width: 100%;
             padding: 0px 0 15px;
+            display: none;
+            &.appear{
+               display: flex;
+            }
          }
 
          .info_tab_ietm {

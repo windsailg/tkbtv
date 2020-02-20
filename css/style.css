@@ -2042,6 +2042,14 @@ button.shape {
           justify-content: center;
   width: 100%;
   padding: 0px 0 15px;
+  display: none;
+}
+
+#ProductDetail .course__info__block .course_info_body .info_tab.appear {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #ProductDetail .course__info__block .course_info_body .info_tab_ietm {
