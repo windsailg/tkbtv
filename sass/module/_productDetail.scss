@@ -18,15 +18,30 @@ $color_productDetail_minor:#ff8736;
    }
    .container {
       &.type__product__video{
+         @include fxb;
+
          padding: 10px 50px 50px;
-         @include MCW(1301px) {
+         @include MCW(1251px) {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;;
             padding: 10px 0px 50px;
          }
+         @include MCW(1173px) {
+            padding: 10px 0px 0px;
+         }
       }
-
+      &.type__buyaction{
+         @include fxb;
+         padding: 15px 50px;
+         @include MCW(1251px) {
+            display: flex;
+            padding: 10px 0px 50px;
+         }
+         
+      }
+      &.type__main__tab{
+         background-color: #eeeeee;
+      }
    }
 }
 
@@ -56,6 +71,7 @@ $color_productDetail_minor:#ff8736;
       float: left;
       width: 720px;
       height: 415px;
+      margin: 0 8px;
       overflow: hidden;
       background-color: #1f1f1f;
       @include MCW(1171px) {
@@ -87,7 +103,7 @@ $color_productDetail_minor:#ff8736;
       width: 400px;
       height: 415px;
       background: #fff;
-      margin: 0 0 0 40px;
+      margin: 0 8px ;
       overflow: hidden;
       @include MCW(1171px) {
          width: 100%;
@@ -519,7 +535,50 @@ $color_productDetail_minor:#ff8736;
       font-size: 18px;
    }
 
+   .button__block{
+      @include fxb;
+      width:100%;
+      
+      @include MCW(1301px) {
+         // max-width: 1185px;
+      }
+      .button__box{
+         @include fxb;
+         width: 100%;
+         max-width: 418px;
+         @include MCW(861px) {
+            max-width: unset;
+         }
+      }
+      .button{
+         @include fxc;
 
+         width: 100%;
+         max-width: 190px;
+         font-weight: 600;
+         padding: 22px 10px;
+         letter-spacing: 2px;
+         -webkit-text-stroke: 0.2px #ffffff;
+         @include MCW(861px) {
+            max-width: unset;
+            padding: 16px 5px;
+         }
+         i{
+            padding:  0 8px 0 0;
+         }
+      }
+   }
+
+   .main__tab__block{
+      @include fxfs;
+      width: 100%;
+      .main__tab__item{
+         width: auto;
+         padding: 16px;
+         border: 4px solid ;
+         border-color: transparent transparent $color_productDetailAll_major transparent;
+      }
+   }
 }
 
 

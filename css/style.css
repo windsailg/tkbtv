@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.header, .area .container.type__course__tab, .area .container.type__course__main__content, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .nothing_block, .nothing_block .nothing, .lazy, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
+.header, .area .container.type__course__tab, .area .container.type__course__main__content, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .nothing_block, .nothing_block .nothing, .lazy, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, .area .container.type__product__video, .area .container.type__buyaction, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, #ProductDetail .button__block, #ProductDetail .button__block .button__box, #ProductDetail .button__block .button, #ProductDetail .main__tab__block, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -730,6 +730,18 @@ button.shape {
 .button.type_gray {
   background: #ddd;
   color: #444;
+}
+
+.button.type__blue {
+  background-color: #1277B5;
+}
+
+.button.type__orange {
+  background-color: #ff8736;
+}
+
+.button.type__red {
+  background-color: #ba3232;
 }
 
 .button.shape {
@@ -1891,24 +1903,52 @@ button.shape {
 }
 
 .area .container.type__product__video {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px 50px 50px;
 }
 
-@media all and (max-width: 1301px) {
+@media all and (max-width: 1251px) {
   .area .container.type__product__video {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     padding: 10px 0px 50px;
   }
+}
+
+@media all and (max-width: 1173px) {
+  .area .container.type__product__video {
+    padding: 10px 0px 0px;
+  }
+}
+
+.area .container.type__buyaction {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 50px;
+}
+
+@media all and (max-width: 1251px) {
+  .area .container.type__buyaction {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0px 50px;
+  }
+}
+
+.area .container.type__main__tab {
+  background-color: #eeeeee;
 }
 
 #ProductDetail .bread_crumb_block {
@@ -1939,6 +1979,7 @@ button.shape {
   float: left;
   width: 720px;
   height: 415px;
+  margin: 0 8px;
   overflow: hidden;
   background-color: #1f1f1f;
 }
@@ -1983,7 +2024,7 @@ button.shape {
   width: 400px;
   height: 415px;
   background: #fff;
-  margin: 0 0 0 40px;
+  margin: 0 8px;
   overflow: hidden;
 }
 
@@ -2544,6 +2585,68 @@ button.shape {
   height: 220px;
   color: #aaa;
   font-size: 18px;
+}
+
+#ProductDetail .button__block {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#ProductDetail .button__block .button__box {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 418px;
+}
+
+@media all and (max-width: 861px) {
+  #ProductDetail .button__block .button__box {
+    max-width: unset;
+  }
+}
+
+#ProductDetail .button__block .button {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 190px;
+  font-weight: 600;
+  padding: 22px 10px;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.2px #ffffff;
+}
+
+@media all and (max-width: 861px) {
+  #ProductDetail .button__block .button {
+    max-width: unset;
+    padding: 16px 5px;
+  }
+}
+
+#ProductDetail .button__block .button i {
+  padding: 0 8px 0 0;
+}
+
+#ProductDetail .main__tab__block {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+#ProductDetail .main__tab__block .main__tab__item {
+  width: auto;
+  padding: 16px;
+  border: 4px solid;
+  border-color: transparent transparent #259bd6 transparent;
 }
 
 .banner_slide_container .swiper-pagination {
