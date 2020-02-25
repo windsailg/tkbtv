@@ -119,13 +119,8 @@ $(document).ready(function(){
         },
     });
 
-    $('.course__type__tab__box').on('click',function(){
-        $('.course__type__tab__box').removeClass('course__type__tab__box--active');
-        $(this).addClass('course__type__tab__box--active');
-        var ActiveTarget = '#' + $(this).attr('data-tab-item');
-        $('.course__type__main__tab__item').hide();
-        $(ActiveTarget).fadeIn(300);
-    });
+
+
 
     //header
     $('#HeaderSearchRWDTrigger').on('click',function(){

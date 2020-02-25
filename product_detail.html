@@ -12,11 +12,14 @@
     <!-- Plugin -->
     <link rel="stylesheet" href="css/focuspoint.css">
     <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/DateTimePicker.css">
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+
     <!-- Golbal -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -111,6 +114,7 @@
 
                             </div>
 
+                            <!-- 全修排版 -->
                             <div class="price_block">
                                 <span class="title">課程售價</span>
                                 <div class="price_box">
@@ -127,11 +131,20 @@
 
                             </div>
 
-                            <!-- <ul class="icon_block"> 
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-line"></i></a></li>
-                                </ul> -->
+                            <!-- 單科排版 -->
+                            <!-- <div class="price_block">
+                                <span class="title">課程售價</span>
+                                <div class="price_box">
+
+                                    <div id="coursePrice" class="price">
+                                        <span>NT</span>34,000
+                                    </div>
+
+                                    <span class="detail">滿萬元現折千元(需滿兩科以上)</span>
+
+                                </div>
+
+                            </div> -->
 
                         </div>
 
@@ -262,11 +275,13 @@
         </div>
     </div>
 
-    <div class="area">
+    <div class="area type__buyaction">
         <div class="container type__buyaction">
             <div class="button__block">
                 <div class="button__box">
                     <div class="button shape type__orange"><i class="fas fa-comment-dots"></i>立即諮詢</div>
+                    <!-- <div class="button shape type__orange type__active"><i class="fas fa-star"></i>已加入追蹤</div> -->
+                    <div class="button shape type__orange "><i class="fas fa-star"></i>加入追蹤</div>
                 </div>
                 <div class="button__box">
                     <div class="button shape type__blue"><i class="fas fa-cart-plus"></i>加入購物車</div>
@@ -277,18 +292,574 @@
         </div>
     </div>
 
-
-    <div class="area">
+    <div class="area type__main__tab">
         <div class="container type__main__tab">
-            <ul class="main__tab__block">
-                <li class="main__tab__item"><i class="fas fa-book"></i>內含的科目清單</li>
-                <li class="main__tab__item"><i class="fas fa-info-circle"></i>商品說明</li>
-                <li class="main__tab__item"><i class="fas fa-comments"></i>問與答</li>
-                <li class="main__tab__item"><i class="fas fa-comment-alt"></i>課程諮詢</li>
-            </ul>
+
+            <div id="MainTab" class="main__tab__block">
+            <!-- <div id="MainTab" class="main__tab__block type__single"> -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main__tab__item tab__item--active"><i class="fas fa-book"></i>內含的科目清單</div>
+                    <div class="swiper-slide main__tab__item"><i class="fas fa-info-circle"></i>商品說明</div>
+                    <div class="swiper-slide main__tab__item"><i class="far fa-window-restore"></i>包含本課程的全修課程 </div>
+                    <div class="swiper-slide main__tab__item"><i class="fas fa-comments"></i>問與答</div>
+                    <div class="swiper-slide main__tab__item"><i class="fas fa-comment-alt"></i>課程諮詢</div>
+                </div>
+                <div class="swiper-button-next main__tab__next"></div>
+                <div class="swiper-button-prev main__tab__prev"></div>
+            </div>
+
+
         </div>
     </div>
-        
+
+    <div class="area">
+        <div class="container type__main">
+
+            <div class="main__content__block">
+
+                <div class="main__content__box main__content__box--active">
+
+                    <!-- 只在全修出現的課程選擇區塊 -->
+                    <div class="select__table__block">
+
+                        <div class="select__table__tip__box">
+                            <div class="select__table__tip__item type__blue">可選科目數：<span>5</span></div>
+                            <div class="select__table__tip__item type__red">已選科目數：<span>5</span></div>
+                        </div>
+
+                        <div class="select__table__box">
+                            <table class="product__select__table">
+                                <thead>
+                                    <tr>
+                                        <th>選擇</th>
+                                        <th>課程名稱</th>
+                                        <th>類型</th>
+
+                                        <th>時數</th>
+                                        <th>單價</th>
+                                        <th>開課日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+
+                                            <div class="check_box_typeform">
+                                                <label class="checker type_static">
+                                                    <input type="checkbox" name="remember" value="1" />
+                                                    <span class="checkmark"></span>
+                                                    <span class="text">1</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                        <td><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端</a></td>
+                                        <td>雲端</td>
+                                        <td>189.5 hrs</td>
+                                        <td>$1600</td>
+                                        <td class="type__fin">已上架</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <div class="check_box_typeform">
+                                                <label class="checker type_static">
+                                                    <input type="checkbox" name="remember" value="1" />
+                                                    <span class="checkmark"></span>
+                                                    <span class="text">2</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                        <td><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端</a></td>
+                                        <td>雲端</td>
+                                        <td>189.5 hrs</td>
+                                        <td>$1600</td>
+                                        <td class="type__fin">已上架</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <div class="check_box_typeform">
+                                                <label class="checker type_static">
+                                                    <input type="checkbox" name="remember" value="1" />
+                                                    <span class="checkmark"></span>
+                                                    <span class="text">3</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                        <td><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端工數-雲端 - 張衡 附贈課程:</a></td>
+                                        <td>雲端</td>
+                                        <td>189.5 hrs</td>
+                                        <td>$1600</td>
+                                        <td class="type__date">2021/12/31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <div class="check_box_typeform">
+                                                <label class="checker type_static">
+                                                    <input type="checkbox" name="remember" value="1" />
+                                                    <span class="checkmark"></span>
+                                                    <span class="text">4</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                        <td><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端</a></td>
+                                        <td>雲端</td>
+                                        <td>189.5 hrs</td>
+                                        <td>$1600</td>
+                                        <td class="type__coming">陸續上架</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <div class="check_box_typeform">
+                                                <label class="checker type_static">
+                                                    <input type="checkbox" name="remember" value="1" />
+                                                    <span class="checkmark"></span>
+                                                    <span class="text">5</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                        <td><a href="#"><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端</a></a></td>
+                                        <td>雲端</td>
+                                        <td>189.5 hrs</td>
+                                        <td>$1600</td>
+                                        <td class="type__fin">已上架</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="select__table__tip__box">
+                            <div class="select__table__tip__item ">
+                                <a href="#">
+                                    <i class="far fa-hand-point-right"></i>
+                                    當你發現有兩個以上的課程名稱與編號相同項目時，請選擇您個人較偏好之老師後再確定購買！
+                                </a>
+                            </div>
+                             <div class="select__table__tip__item ">
+                                 附註：(1)凡搭贈課程皆不附教材 (2)雲端課程於本網站直接觀看上課 ，學堂課程於
+                                 <a href="#">全省數位學堂</a>
+                                 實體點預約上課
+                                 
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="count__date__block">
+                        預定觀看完畢日期
+                        <input id="over_date" type="text" placeholder="" maxlength="50"
+                            class="texter dateBox" readonly="" data-field="date"
+                            data-format="yyyy-MM-dd" />
+                        <div class="button shape calbtn" onclick="cal()">計算</div>
+
+                        <div id="dateBox"></div>
+                        <div id="after_cal"></div>
+
+                        <!-- <div class="count__layout">
+
+                            <div class="count__layout__title">
+                                <i class="fas fa-exclamation-circle"></i>
+                                到<span>2019-04-26</span>為止，共有<span>178</span>天，約25週的時間。
+                            </div>
+
+                            <hr>
+
+                            <div class="count__layout__box">
+                                <span>103.7</span>小時的課程，每週平均約需觀看<span>4.1</span>小時。
+                                <div class="count__layout__item">
+                                    若您每週看<span>7</span>天，每天平均需觀看<span
+                                        class="watch__hour">0.6</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>6</span>天，每天平均需觀看<span
+                                        class="watch__hour">0.7</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>5</span>天，每天平均需觀看<span
+                                        class="watch__hour">0.8</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>4</span>天，每天平均需觀看<span
+                                        class="watch__hour">1.0</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>3</span>天，每天平均需觀看<span
+                                        class="watch__hour">1.4</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>2</span>天，每天平均需觀看<span
+                                        class="watch__hour">2.0</span>小時 </div>
+                                <div class="count__layout__item">
+                                    若您每週看<span>1</span>天，每天平均需觀看<span
+                                        class="watch__hour">4.1</span>小時 </div>
+                                <div> TKBGO祝您學習順利，金榜題名！ </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class="main__content__box">
+                    商品說明內容
+                </div>
+
+                <!-- 只在單科出現的全修課程 -->
+                <div class="main__content__box">
+
+                    <div class="course__relate__block">
+                        <div class="course__relate__box table__box">
+                            <table class="course__relate__table">
+                                <thead>
+                                    <tr>
+                                        <th>課程名稱</th>
+                                        <th>原價</th>
+                                        <th>特價</th>
+                                        <th>有效日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">工數-雲端 - 張衡 附贈課程:基礎工數-雲端</a></td>
+                                        <td>$1600</td>
+                                        <td>$1600</td>
+                                        <td>自購買日起557日</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">工數-雲端 - 程逸</a></td>
+                                        <td>$1600</td>
+                                        <td>$1600</td>
+                                        <td>自購買日起557日</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">流體力學-雲端 - 林禾</a></td>
+                                        <td>$1600</td>
+                                        <td>$1600</td>
+                                        <td>自購買日起557日</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">大一微積分輔導-雲端 - 程逸</a></td>
+                                        <td>$1600</td>
+                                        <td>$1600</td>
+                                        <td>自購買日起557日</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">多益解題班-雲端 - Jojo鄭</a></td>
+                                        <td>$1600</td>
+                                        <td>$1600</td>
+                                        <td>自購買日起557日</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main__content__box">
+
+                        <div class="qa__control__block">
+
+                            <div id="QAOC" class=" button open__qa">
+                                <i class="far fa-plus-square"></i>展開所有問答
+                            </div>
+
+                        </div>
+
+                        <div class="qa_block">
+
+                            <div class="box">
+                                <div class="no">Q1</div>
+
+                                <div class="qa_container">
+                                    <div class="content_box">
+                                        <div class="title">
+                                            考取司法特考後可以每年調薪嗎？
+                                        </div>
+                                        <div class="content">
+                                            甲等：晉本俸一級，並給與一個月俸給總額之一次獎金；乙等：晉本俸一級，並給與半個月俸給總額之一次獎金，簡言之，基本上只要表現別太差(丙等)，原則上每年固定調薪(升俸點)，表現優異則可升等(升職等)。
+                                            1.升「俸點」：當年考績乙等以上，俸點自動升一級。
+                                            2.升「職等」：考績連續二年甲等，或三年內考績二甲一乙，即可升等。
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="box">
+                                <div class="no">Q2</div>
+
+                                <div class="qa_container">
+                                    <div class="content_box">
+                                        <div class="title">
+                                            考取司法特考後可以每年調薪嗎？
+                                        </div>
+                                        <div class="content">
+                                            甲等：晉本俸一級，並給與一個月俸給總額之一次獎金；乙等：晉本俸一級，並給與半個月俸給總額之一次獎金，簡言之，基本上只要表現別太差(丙等)，原則上每年固定調薪(升俸點)，表現優異則可升等(升職等)。
+                                            1.升「俸點」：當年考績乙等以上，俸點自動升一級。
+                                            2.升「職等」：考績連續二年甲等，或三年內考績二甲一乙，即可升等。
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="box">
+                                <div class="no">Q22</div>
+
+                                <div class="qa_container">
+                                    <div class="content_box">
+                                        <div class="title">
+                                            考取司法特考後可以每年調薪嗎？
+                                        </div>
+                                        <div class="content">
+                                            甲等：晉本俸一級，並給與一個月俸給總額之一次獎金；乙等：晉本俸一級，並給與半個月俸給總額之一次獎金，簡言之，基本上只要表現別太差(丙等)，原則上每年固定調薪(升俸點)，表現優異則可升等(升職等)。
+                                            1.升「俸點」：當年考績乙等以上，俸點自動升一級。
+                                            2.升「職等」：考績連續二年甲等，或三年內考績二甲一乙，即可升等。
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>
+
+                <!-- 課程茲諮詢內容 -->
+                <div class="main__content__box">
+
+                    <div class="advisory__block">
+
+                        <div class="advisory__title__box">
+
+                            <div class="advisory__title">
+                                有關課程任何問題歡迎跟我們連絡<br>
+                                或撥0985-368-799由專人為您服務
+                            </div>
+
+                            <div class="advisory__tip">
+                                *為必填
+                            </div>
+
+                        </div>
+
+                        <form class="advisory__form">
+
+                            <hr>
+
+                            <div class="advisory__form__box">
+                                <div class="advisory__form__name">
+                                    真實姓名<span>*</span>
+                                </div>
+                                <input type="text" placeholder="" maxlength="6" class="texter">
+                            </div>
+
+                            <div class="advisory__form__box">
+                                <div class="advisory__form__name">
+                                    電子郵件<span>*</span>
+                                </div>
+                                <input type="text" placeholder="" maxlength="50" class="texter">
+                            </div>
+
+                            <div class="advisory__form__box">
+                                <div class="advisory__form__name">
+                                    行動電話<span>*</span>
+                                </div>
+                                <input type="text" placeholder="" maxlength="10" class="texter">
+                            </div>
+
+                            <div class="advisory__form__box">
+                                <div class="advisory__form__name">
+                                    諮詢內容<span>*</span>
+                                </div>
+                                <textarea type="text" placeholder="" maxlength="500" class="texter"></textarea>
+                            </div>
+
+                            <div class="advisory__form__box">
+                                <div class="advisory__form__name">
+                                    
+                                </div>
+                                <div class="button shape">送出</div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="area type__recommand__course">
+        <div class="container type__recommand__course">
+
+
+                <div class="recommand__course__block">
+
+                    <div class="recommand__course__major__title">
+                        推薦課程<span></span>
+                    </div>
+
+                    <a href="#" class="recommand__course__box">
+
+                        <div class="recommand__course__imagine">
+                            <img class="" src="img/tmp/rcmdc_01.jpg">
+                        </div>
+
+                        <div class="recommand__course__content__box">
+
+                            <div class="recommand__course__box__title recommand__course__box__ele">
+                                工數-雲端
+                            </div>
+                            
+                            <div class="recommand__course__info__box recommand__course__box__ele">
+                                <div class="recommand__course__price">
+                                    $50,000
+                                </div>
+                                <div class="recommand__course__tip">
+                                    <!-- 滿萬折千等提示 -->
+                                </div>
+                            </div>
+
+                            <div class="recommand__course__info__box type__beteeen recommand__course__box__ele">
+                                <div class="recommand__course__time">
+                                    課程時數：267.3小時
+                                </div>
+                                <div class="recommand__course__teacher">
+                                    師資：張翔
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="recommand__course__box">
+
+                        <div class="recommand__course__imagine">
+                            <img class="" src="img/tmp/rcmdc_02.jpg">
+                        </div>
+
+                        <div class="recommand__course__content__box">
+
+                            <div class="recommand__course__box__title recommand__course__box__ele">
+                                工數-雲端
+                            </div>
+
+                            <div class="recommand__course__info__box recommand__course__box__ele">
+                                <div class="recommand__course__price">
+                                    $50,000
+                                </div>
+                                <div class="recommand__course__tip">
+                                    <!-- 滿萬折千等提示 -->
+                                </div>
+                            </div>
+
+                            <div class="recommand__course__info__box type__beteeen recommand__course__box__ele">
+                                <div class="recommand__course__time">
+                                    課程時數：267.3小時
+                                </div>
+                                <div class="recommand__course__teacher">
+                                    師資：張翔
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="recommand__course__box">
+
+                        <div class="recommand__course__imagine">
+                            <img class="" src="img/tmp/rcmdc_03.jpg">
+                        </div>
+
+                        <div class="recommand__course__content__box">
+
+                            <div class="recommand__course__box__title recommand__course__box__ele">
+                                工數-雲端
+                            </div>
+
+                            <div class="recommand__course__info__box recommand__course__box__ele">
+                                <div class="recommand__course__price">
+                                    $50,000
+                                </div>
+                                <div class="recommand__course__tip">
+                                    <!-- 滿萬折千等提示 -->
+                                </div>
+                            </div>
+
+                            <div class="recommand__course__info__box type__beteeen recommand__course__box__ele">
+                                <div class="recommand__course__time">
+                                    課程時數：267.3小時
+                                </div>
+                                <div class="recommand__course__teacher">
+                                    師資：張翔
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="recommand__course__box">
+
+                        <div class="recommand__course__imagine">
+                            <img class="" src="img/tmp/rcmdc_04.jpg">
+                        </div>
+
+                        <div class="recommand__course__content__box">
+
+                            <div class="recommand__course__box__title recommand__course__box__ele">
+                                工數-雲端
+                            </div>
+
+                            <div class="recommand__course__info__box recommand__course__box__ele">
+                                <div class="recommand__course__price">
+                                    $50,000
+                                </div>
+                                <div class="recommand__course__tip">
+                                    <!-- 滿萬折千等提示 -->
+                                </div>
+                            </div>
+
+                            <div class="recommand__course__info__box type__beteeen recommand__course__box__ele">
+                                <div class="recommand__course__time">
+                                    課程時數：267.3小時
+                                </div>
+                                <div class="recommand__course__teacher">
+                                    師資：張翔
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+ 
+
+        </div>
+    </div>
+
 
 </div>
 
@@ -301,6 +872,8 @@
 
 <script src="js/jquery.lazy.min.js"></script>
 <script src="js/jquery.focuspoint.js"></script>
+<script src="js/DateTimePicker.js"></script>
+
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="http://www.youtube.com/player_api"></script>
@@ -312,6 +885,19 @@
     $('#Header').load('header.html');
     $('#Footer').load('footer.html');
 
+</script>
+
+<script>//課程全修單科樣式切換
+
+
+    function ProductDetailSingleStyleTrigger(){
+        $('#MainTab , .course__info__block').addClass('type__single');
+    }
+
+    function ProductDetailAllStyleTrigger(){
+        $('#MainTab , .course__info__block').removeClass('type__single');
+    }
+    
 </script>
 
 
@@ -327,7 +913,6 @@
 
         function DetailInit(){
             var elemQuan = $('.preview__item').length;
-            console.log(elemQuan);
             if(elemQuan == 0){
                 return;
             }else{
@@ -359,7 +944,143 @@
 
 </script>
 
+<script>//計算觀看日期燈箱function
 
+    var min_date = new Date();
+    min_date.setDate(min_date.getDate() + 7);
+    var max_date = new Date();
+    max_date.setDate(max_date.getDate() + parseInt("${subjectMasterMap.effective_clear}"));
+    //選時間
+    $("#dateBox").DateTimePicker({
+        minDate: formatDate(min_date),
+        maxDate: formatDate(max_date),
+        defaultDate:min_date,
+    });
+
+    function formatDate(date) {
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        if (day < 10) day="0" + day; if (month < 10) month="0" + month; return year + "-" + month + "-" + day; 
+    };
+
+    function cal(){
+        var od=$("#over_date").val();
+        if("" !=od){ 
+            var over_date=new Date (od.substring(0,4), od.substring(5,7), od.substring(8,10)); 
+            var d=new Date(); var today=new Date(d.getFullYear(), (d.getMonth()+1), d.getDate()); 
+            var all_hour="${subjectMasterMap.predictive_hour}" ;
+            var days=(over_date - today) / (1000 * 60 * 60 * 24);
+            var week=Math.round(days/7); 
+            var hour=(all_hour / week).toFixed(1); 
+            var html=" <div class='count__layout'> <div class='count__layout__title'> <i class='fas fa-exclamation-circle'></i> " +
+                    "到<span>"+od+"</span>為止，共有<span>"+days+"</span>天，約"+Math.round(days/7)+"週的時間。</div><hr><div class='count__layout__box'><span>"+all_hour+"</span>小時的課程，每週平均約需觀看<span>"+ hour+"</span>小時。<br>" ;
+            for(var i=7;i> 0;i--){
+                if((hour/i) <= 24 ){
+                    html +="<div class='count__layout__item'>若您每週看<span>" + i + "</span>天，每天平均需觀看<span class='watch__hour'>" +(hour/i).toFixed(1) + "</span>小時</div>" ;
+                }} 
+                html +="TKBGO祝您學習順利，金榜題名！" ;
+                $('#after_cal').html(html); 
+            }else{ 
+                alert("請選擇日期"); 
+            }
+        }
+
+</script>
+
+<script>//課程頁Main tab切換及對應區塊功能
+
+    var MainTabSwiper = new Swiper('#MainTab', {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        effect: 'slide',
+        spaceBetween: 25,
+        loop: false,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        breakpoints: {
+            0: { //当屏幕宽度大于等于1280
+                centeredSlides: true,
+            },
+            1280: { //当屏幕宽度大于等于1280
+                centeredSlides: false,
+            },
+        },
+        autoplay: false,
+        navigation: {
+            nextEl: '.main__tab__next',
+            prevEl: '.main__tab__prev',
+        },
+    });
+
+
+
+    
+
+    //Main Content Taber function
+    var TabCountNum = 0;
+    $('.main__tab__item').each(function () {
+        TabCountNum += 1;
+        let TabItemName = 'MainContent' + TabCountNum;
+        $(this).attr('data-tab-item', TabItemName);
+    });
+
+    var ContentCountNum = 0;
+    $('.main__content__box').each(function () {
+        ContentCountNum += 1;
+        let MainContentName = 'MainContent' + ContentCountNum;
+        $(this).attr('id', MainContentName);
+    });
+
+    $('#MainTab .main__tab__item').on('click',function(){
+        $('.main__tab__item').removeClass('tab__item--active');
+        $(this).addClass('tab__item--active');
+        let TargetContent = '#' + $(this).attr('data-tab-item');
+        $('.main__content__box').removeClass('main__content__box--active');
+        $(TargetContent).addClass('main__content__box--active');
+    })
+
+</script>
+
+<script>//問答展開function
+
+    //QA Block Function
+    $('.qa_block .qa_container').click(function () {
+        if ($(this).parents('.box').hasClass('active')) {
+            $(this).parents('.box').removeClass('active');
+        } else {
+            $(this).parents('.box').addClass('active');
+        }
+        var target = $(this).parents('.box');
+        CheckStatus(target);
+    })
+
+    $('#QAOC').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).html('<i class="far fa-plus-square"></i>展開所有問答');
+            $('.qa_block .box').removeClass('active');
+            $('.box .status').html('<i class="fas fa-angle-down"></i>');
+        } else if ($(this).not('.active')) {
+            $(this).addClass('active');
+            $(this).html('<i class="far fa-minus-square"></i>收合所有問答');
+            $('.qa_block .box').addClass('active');
+            $('.box .status').html('<i class="fas fa-angle-up"></i>');
+        };
+    });
+    
+    function CheckStatus(el) {
+        if ($(el).hasClass('active')) {
+            $(el).find('.status').html('<i class="fas fa-angle-up"></i>');
+        } else if ($(el).not('.active')) {
+            $(el).find('.status').html('<i class="fas fa-angle-down"></i>');
+        }
+    }
+
+</script>
 
 <script src="js/tv_main.js"></script>
 

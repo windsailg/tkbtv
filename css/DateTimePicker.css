@@ -1,0 +1,403 @@
+/* ----------------------------------------------------------------------------- 
+
+  jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
+  Version 0.1.25
+  Copyright (c)2015 Curious Solutions LLP and Neha Kadam
+  http://curioussolutions.github.io/DateTimePicker
+  https://github.com/CuriousSolutions/DateTimePicker
+
+ ----------------------------------------------------------------------------- */
+
+dtpicker-content{
+
+}
+.dtpicker-overlay
+{
+	z-index: 2000;
+	display:none;
+	min-width: 300px;
+
+	background: rgba(0, 0, 0, 0.2);
+	font-size: 12px;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dtpicker-mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.dt_player{
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.dtpicker-overlay * 
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dtpicker-bg
+{
+	width: 100%;
+	height: 100%;
+
+        font-family: '微軟正黑體';
+}
+
+.dtpicker-cont
+{
+	border: 1px solid #ECF0F1;
+}
+
+.dtpicker-mobile .dtpicker-cont{
+	position: relative;
+	top: 50%;
+
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	border: none;
+}
+
+.dtpicker-content
+{
+	margin: 0 auto;
+	padding: 1em 0;
+
+	max-width: 560px;
+
+	background: #fff;
+}
+
+.dtpicker-mobile .dtpicker-content
+{
+	width: 97%;
+}
+
+.dtpicker-subcontent
+{
+	position: relative;
+}
+
+.dtpicker-header
+{
+	margin: 0.2em 1em;
+}
+
+.dtpicker-header .dtpicker-title
+{
+	color: #555555;
+	text-align: center;
+	font-size: 1.4em;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    font-weight: 600;
+    margin:20px 0 0 0;
+}
+
+.dtpicker-header .dtpicker-close
+{
+	position: absolute;
+	top: -0.9em;
+	right: 0em;
+	
+	padding: 0.5em 0.5em 1em 1em;
+	font-weight: 100;
+	color: #f29001;
+	font-size: 3em;
+	
+	cursor: pointer;
+}
+
+.dtpicker-header .dtpicker-close:hover
+{
+	color: #f29001;
+}
+
+.dtpicker-header .dtpicker-value{
+	padding:  0.8em 0.2em 0.9em 0.2em;
+	color: #f29001;
+	text-align: center;
+	font-size: 3.2em;
+    text-shadow: 8px 8px 5px rgba(180,180,180,.23);
+    letter-spacing: 3px;
+    text-indent: 3px;
+    font-family:  'century gothic', Arial ,'微軟正黑體' ;
+    transition: .3s all;
+}
+.dtpicker-header .dtpicker-value span{
+	padding:  0.8em 0.2em 0.9em 0.2em;
+	color: #f29001;
+	text-align: center;
+	font-size: 0.4em;
+    
+}
+
+
+.dtpicker-components
+{
+	overflow: hidden;
+	margin: 0.5em 1em 2.5em ;
+	font-size: 1.3em;
+}
+
+.dtpicker-components *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.dtpicker-components .dtpicker-compOutline
+{
+	display: inline-block;
+	float: left;
+}
+
+.dtpicker-components .dtpicker-comp.year::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-6px 0px 0px -9px ;
+    content: "YEAR";
+    color: #f29001;
+}
+.dtpicker-components .dtpicker-comp.month::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-6px 0px 0px -15px ;
+    content: "MONTH";
+    color: #f29001;
+}
+
+.dtpicker-components .dtpicker-comp.day::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-6px 0px 0px -7px ;
+    content: "DAY";
+    color: #f29001;
+}
+
+
+.dtpicker-comp2
+{
+	width: 50%;
+}
+
+.dtpicker-comp3
+{
+	width: 33.3%;
+}
+
+.dtpicker-comp4
+{
+	width: 25%;
+}
+
+.dtpicker-comp5
+{
+	width: 20%;
+}
+
+.dtpicker-comp6
+{
+	width: 16.66%;
+}
+
+.dtpicker-comp7
+{
+	width: 14.285%;
+}
+
+.dtpicker-components .dtpicker-comp
+{
+	margin: 2%;
+	text-align: center;
+}
+
+.dtpicker-components .dtpicker-comp > *
+{
+	display: block;
+	height: 30px;
+	color: #2980B9;
+	text-align: center;
+	line-height: 30px;
+}
+
+.dtpicker-components .dtpicker-comp > *:hover
+{
+	color: #5c200f;
+}
+
+.dtpicker-components .dtpicker-compButtonEnable{
+	opacity: 1;
+}
+
+.dtpicker-components .dtpicker-compButtonDisable{
+	opacity: 0.5;
+}
+
+.dtpicker-components .dtpicker-compButton{
+	background: #FFFFFF;
+	font-size: 140%;
+	cursor: pointer;
+    width: 20%;
+    margin: 15px auto;
+    background-color: #d8cac2;
+    color: #ffffff;
+    float:right;
+}
+
+
+.dtpicker-components .dtpicker-compValue{
+    margin: 15px auto;
+    box-sizing: border-box;
+	border: 1px solid rgb(232, 215, 209);
+	width: 50%;
+    float: right;
+	background: #FFFFFF;
+color: #5c5c5c;
+	font-size: 100%;
+letter-spacing: 2px;
+    font-family:  'century gothic', Arial ,'微軟正黑體' ;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.dtpicker-overlay .dtpicker-compValue:focus
+{
+	outline: none;
+	background: #F2FCFF;
+}
+
+.dtpicker-buttonCont
+{
+	overflow: hidden;
+	margin: 02em 10em;
+}
+
+.dtpicker-buttonCont .dtpicker-button
+{
+	display: block;
+	padding: 0.4em 0;
+	width: 45%;
+	background: #f29001;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.dtpicker-buttonCont .dtpicker-button:hover{
+	color: #FFFFFF;
+}
+
+.dtpicker-singleButton .dtpicker-button{
+	margin: 0.2em auto;
+}
+
+.dtpicker-twoButtons .dtpicker-buttonSet{
+	float: right;
+    background-color: #937b61;
+}
+
+.dtpicker-twoButtons .dtpicker-buttonClear
+{
+	float: left;
+    background-color: #e2e2e2;
+    color: #5d5d5d;
+}
+
+@media only screen and (max-width:580px){
+.dtpicker-components .dtpicker-comp.year::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-26px 0px 0px -14px ;
+    content: "YEAR";
+    color: #f29001;
+}
+.dtpicker-components .dtpicker-comp.month::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-26px 0px 0px -23px ;
+    content: "MONTH";
+    color: #f29001;
+}
+
+.dtpicker-components .dtpicker-comp.day::before{
+    position: absolute;
+    font-size: 10px;
+    display:inline-block;
+    margin:-26px 0px 0px -14px ;
+    content: "DAY";
+    color: #f29001;
+}
+
+    
+    .dtpicker-components .dtpicker-compValue{
+    margin: 0px auto;
+    box-sizing: border-box;
+	border: 1px solid rgb(232, 215, 209);
+	width: 100%;
+	background: #FFFFFF;
+
+	font-size: 100%;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+    
+    .dtpicker-components .dtpicker-compButton{
+	background: #FFFFFF;
+	font-size: 140%;
+	cursor: pointer;
+    width: 100%;
+    margin: 0px auto;
+    background-color: #d8cac2;
+    color: #ffffff;
+    float:right;
+}
+
+.dtpicker-buttonCont .dtpicker-button{
+	display: block;
+margin: 0 0px;
+	padding: 0.4em 0;
+	width: 40%;
+
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+    .dtpicker-buttonCont .dtpicker-buttonClear{
+	color: #5d5d5d;
+}
+    .dtpicker-buttonCont{
+	overflow: hidden;
+	margin: 02em 2em;
+}
+}
+

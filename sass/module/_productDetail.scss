@@ -3,19 +3,30 @@ $color_minor:#6fc1f4;
 $color_deeper:#0b4366;
 $color_gray:#777777;
 
-
-
 $color_productDetailAll_major: #259bd6;
 $color_productDetailSingle_major: #4cba59;
 $color_productDetail_minor:#ff8736;
 
 
-
-
 .area {
+
    &.type__product__video {
       background-color: #2c303a;
    }
+
+   &.type__buyaction{
+      margin: 0 auto 40px;
+      box-shadow: 0px 10px 20px #00000018;
+   }
+
+   &.type__main__tab{
+      overflow: hidden;
+   }
+
+   &.type__recommand__course {
+      background-color: #f7f7f7;
+   }
+
    .container {
       &.type__product__video{
          @include fxb;
@@ -23,7 +34,7 @@ $color_productDetail_minor:#ff8736;
          padding: 10px 50px 50px;
          @include MCW(1251px) {
             display: flex;
-            flex-wrap: wrap;;
+            flex-wrap: wrap;
             padding: 10px 0px 50px;
          }
          @include MCW(1173px) {
@@ -41,14 +52,26 @@ $color_productDetail_minor:#ff8736;
       }
       &.type__main__tab{
          background-color: #eeeeee;
+         padding: 0 50px;
+         @include MCW(1251px) {
+            padding: 0 40px;
+         }
+      }
+      &.type__main{
+         padding: 50px;
+         @include MCW(1251px) {
+            padding: 30px 8px;
+         }
       }
    }
+
 }
+
 
 #ProductDetail{
 
    .bread_crumb_block {
-      padding: 15px 0 20px;
+      
       >.bread_crumb {
          >.bread_crumb_item {
             color: #ffffff;
@@ -63,6 +86,7 @@ $color_productDetail_minor:#ff8736;
             }
          }
       }
+
    }
 
    //左側課程影片區塊
@@ -77,6 +101,7 @@ $color_productDetail_minor:#ff8736;
       @include MCW(1171px) {
          width: 100%;
          height: 47vw;
+         margin: 0;
       }
 
       @include MCW(500px) {
@@ -110,7 +135,6 @@ $color_productDetail_minor:#ff8736;
          margin: 0 0 0 0px;
          height: unset;
       }
-
 
       //資訊標題
       .course__info__header {
@@ -159,7 +183,7 @@ $color_productDetail_minor:#ff8736;
             transition-duration: .1s;
             box-sizing: border-box;
             text-align: center;
-            font-size: 1.1em;
+            font-size: 1em;
             width: 49%;
             padding: 6px 20px;
             color: #999;
@@ -168,8 +192,6 @@ $color_productDetail_minor:#ff8736;
             font-weight: bold;
             cursor: pointer;
             user-select: none;
-            ;
-
             &:hover {
                opacity: .9;
                @include tst;
@@ -217,12 +239,12 @@ $color_productDetail_minor:#ff8736;
                   height: 10px;
                   border-style: solid;
                   border-width: 6px 6px 0 6px;
-                  border-color: $color_major transparent transparent transparent;
+                  border-color: $color_productDetailAll_major transparent transparent transparent;
                   background-color: unset;
                }
 
                &::after {
-                  background-color: $color_major;
+                  background-color: $color_productDetailAll_major;
                   width: 100%;
                   opacity: 1;
                   ;
@@ -265,9 +287,7 @@ $color_productDetail_minor:#ff8736;
          @include fxb;
          width: 100%;
          height: 100%;
-
          flex-direction: row;
-
          .info_list {
             @include ibl;
             align-items: flex-start;
@@ -445,9 +465,7 @@ $color_productDetail_minor:#ff8736;
             @include ibl;
             width: 100%;
             padding: 14px 6px 14px 4px;
-            ;
             user-select: none;
-
             .chapter_block {
                @include fxb;
                width: 100%;
@@ -475,7 +493,7 @@ $color_productDetail_minor:#ff8736;
                >.title {
                   @include nowrap;
                   max-width: calc(100% - 70px);
-                  font-size: 17px;
+                  font-size: .9em;
                   color: #000;
                }
 
@@ -524,8 +542,65 @@ $color_productDetail_minor:#ff8736;
          }
       }
 
+      &.type__single {
+         .course__info__header {
+            background: $color_productDetailSingle_major;
+         }
+         .info_tab_ietm {
+            &.active {
+               &::before {
+                  border-color: $color_productDetailSingle_major transparent transparent transparent;
+               }
+               &::after {
+                  background-color: $color_productDetailSingle_major;
+               }
+            }
+            >.quantity {
+               color: $color_productDetailSingle_major;
+            }
+         }
+         .info_item {
+            i {
+               color: $color_productDetailSingle_major;
+            }
+         }
+         .content_preview {
+            .preview_container {
+               @include ibl;
+               float: left;
+               padding: 5px 10px 30px;
+               width: 100%;
+               max-height: 270px;
+               ;
+               overflow-x: hidden;
+               overflow-y: scroll;
+               @include sbt;
+               position: relative;
+
+               @include MCW(780px) {
+                  max-height: 200px;
+                  ;
+               }
+
+            }
+
+            .preview_list {
+               @include ibl;
+               width: 100%;
+               position: relative;
+               overflow: hidden;
+            }
+
+            .preview__item {
+               .chapter_block {
+                  color: $color_productDetailAll_major;
+               }
+            }
+         }
+      }
 
    }
+
 
    .nothing_preview {
       @include fxc;
@@ -537,6 +612,7 @@ $color_productDetail_minor:#ff8736;
 
    .button__block{
       @include fxb;
+      align-items: flex-start;
       width:100%;
       
       @include MCW(1301px) {
@@ -559,70 +635,676 @@ $color_productDetail_minor:#ff8736;
          padding: 22px 10px;
          letter-spacing: 2px;
          -webkit-text-stroke: 0.2px #ffffff;
+         box-shadow: 5px 5px 8px #0000001f;;
+         transition: .1s ease-in-out;
          @include MCW(861px) {
             max-width: unset;
             padding: 16px 5px;
          }
+         &:active{
+            transform:translate(2px,2px);
+            box-shadow: 2px 2px 2px #0000001f;
+         }
+         &:hover{
+            opacity: .9;
+         }
          i{
             padding:  0 8px 0 0;
+         }
+         &.type__active{
+            background-color: #dbdbdb;
          }
       }
    }
 
+
+   //產品內容外誆區塊
    .main__tab__block{
       @include fxfs;
       width: 100%;
+      user-select: none;
+      &.type__single {
+         .main__tab__item{
+            &:after {
+               background-color: $color_productDetailSingle_major;
+            }
+         }
+      }
       .main__tab__item{
          width: auto;
-         padding: 16px;
-         border: 4px solid ;
-         border-color: transparent transparent $color_productDetailAll_major transparent;
+         padding: 22px 18px;
+
+         letter-spacing: 3px;
+         color: #888888;
+         transition: .2s ease-in-out;
+         position: relative;
+         cursor: pointer;
+         &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            @include arl;
+            height: 3px;
+            background-color: $color_productDetailAll_major;
+            bottom: 2px;
+            opacity: 0;
+            transition: .2s ease-in-out;
+         }
+         i {
+            padding: 0 8px 0 0;
+         }
+         &.tab__item--active{
+            color: #444444;
+            &:after{
+               opacity: 1;
+            }
+         }
+
       }
    }
+   
+   .main__content__block{
+      @include fxcw;
+      width: 100%;
+      .main__content__box {
+         @include ibl;
+         width: 100%;
+         padding: 10px 0;
+         display: none;
+         &.main__content__box--active {
+            display: inline-block;
+         }
+      }
+   }
+
+   .select__table__block{
+      @include fxfsw();
+      
+      .select__table__tip__box {
+         @include fxfsw();
+      }
+      .select__table__tip__item {
+         @include iblw();
+         line-height: 1.4em;
+         width: auto;
+         padding: 5px 20px 5px 0;
+         & a{
+            text-decoration: underline;
+         }
+         &.type__blue{
+            color:$color_productDetailAll_major;
+            font-weight: 600;
+         }
+         &.type__red {
+            color: #ba3232;
+            font-weight: 600;
+         }
+      }
+      .select__table__box{
+         @include ibw();
+         margin: 20px auto;
+         box-shadow: 0px 0px 20px #00000028;
+         @include MCW(1251px){
+            // justify-content: center;
+            overflow: scroll;
+         }
+      }
+      .product__select__table{
+         width: 100%;
+         @include MCW(1251px) {
+            width: 1300px;
+         }
+         .check_box_typeform{
+            @include fxcw();
+         }
+         th{
+            background-color: $color_productDetailAll_major;
+            color:#ffffff;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+         }
+         td{
+            background-color: #ffffff;
+            min-width: 35px;
+            line-height: 1.2em;
+            color:#555555;
+            @include nowrap;
+            &.type__fin {
+               color: $color_productDetailSingle_major;
+            }
+            &.type__coming {
+               color: $color_productDetail_minor;
+            }
+            &.type__date{
+               color:#e23f3f;
+            }
+            border: 1px solid #dbdbdb;
+            letter-spacing: 1px;
+            text-align: center;
+            &:first-child{
+               text-align: center;
+            }
+            &:nth-child(2) {
+               white-space: initial;
+               text-align: left;
+            }
+            &:nth-child(3) {
+               text-align: center;
+            }
+            &:nth-child(4) {
+               text-align: right;
+            }
+            &:nth-child(5) {
+               text-align: right;
+               color: #e23f3f;
+            }
+            &:last-child {
+               font-weight: 600;
+               text-align: center; 
+            }
+         }
+         th,td {
+            padding:12px;
+            @include MCW(1251px) {
+               padding:8px;
+               font-size: .9em;
+            }
+            &:first-child {
+               @include MCW(1251px) {
+                  position: sticky;
+                  left: 0px;
+                  z-index: 1;
+               }
+            }
+         }
+      }
+
+
+   }
+
+   .count__date__block {
+      @include fxcw();
+      align-items: center;
+      margin: 40px auto;
+
+      .texter {
+         margin: 10px;
+      }
+
+      #after_cal {
+         line-height: 1.4em;
+      }
+
+      .count__layout {
+         @include fxcw();
+         text-align: center;
+         ;
+         width: 94%;
+         margin: 10px auto;
+         color: #5d5d5d;
+         letter-spacing: 2px;
+         line-height: 30px;
+
+         .count__layout__title {
+            @include fxcw();
+         }
+
+         hr {
+            border: 0;
+            height: 1px;
+            width: 500px;
+            background: rgba(167, 167, 167, 0.67);
+         }
+
+         .count__layout__box {
+            list-style: none;
+            padding: 0 0 0 24px;
+            box-sizing: border-box;
+            width: 100%;
+         }
+
+         span {
+            color: $color_productDetailAll_major;
+         }
+
+         .watch__hour {
+            color: $color_productDetail_minor;
+         }
+      }
+
+   }
+
+   .course__relate__block {
+
+      .course__relate__box{
+         @include ibw();
+         margin: 20px auto;
+         box-shadow: 0px 0px 20px #00000028;
+
+         @include MCW(1251px) {
+            // justify-content: center;
+            overflow: scroll;
+         }
+      }
+      .table__box{
+
+      }
+      .course__relate__table{
+         th {
+            background-color: $color_productDetailSingle_major;
+            color: #ffffff;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+         }
+         td {
+            background-color: #ffffff;
+            min-width: 35px;
+            line-height: 1.2em;
+            color: #555555;
+            @include nowrap;
+            border: 1px solid #dbdbdb;
+            letter-spacing: 1px;
+            text-align: center;
+            &:nth-child(2){
+               color: #888888;
+            }
+            &:nth-child(3) {
+               color: #e23f3f;
+            }
+            &:nth-child(4) {
+               color: #444444;
+            }
+         }
+         th,td {
+            padding: 12px;
+            @include MCW(1251px) {
+               padding: 8px;
+               font-size: .9em;
+            }
+            &:first-child {
+               text-align: left;
+               padding: 12px 20px;
+               // @include MCW(1251px) {
+               //    padding: 12px;
+               //    position: sticky;
+               //    left: 0px;
+               //    z-index: 1;
+               // }
+            }
+         }
+      }
+
+   }
+
+   //j問與答區塊
+   .qa__control__block {
+      @include fxfs;
+
+      .button {
+         @include fxe;
+         padding: 15px 30px;
+         text-align: center;
+         background-color: $color_major;
+         color: #fff;
+         cursor: pointer;
+         margin: 5px 10px;
+         border-radius: 50px;
+         font-size: 1em;
+         font-weight: bold;
+         ;
+         transition: .1s all ease-in-out;
+         @include ds(5px, 5px, 5px, #ccc);
+
+         i {
+            padding: 0 6px 0 0;
+         }
+
+         &.active {
+            background-color: #e3e3e3;
+            color: #333;
+         }
+      }
+   }
+
+   .qa_block {
+      @include ibl;
+      margin: 20px auto;
+      padding: 10px;
+      position: relative;
+      .box {
+         @include fxb;
+         padding: 20px;
+         margin: 10px auto;
+         width: 100%;
+         align-items: flex-start;
+         position: relative;
+         background-color: #fff;
+         @include ds(6px, 6px, 9px, #ddd);
+         border-radius: 15px;
+         @include MCW(780px) {
+            width: 93%;
+         }
+         &:nth-child(even) {
+            // &::before{
+            //    content:'';
+            //    position: absolute;
+            //    width: 0;
+            //    height: 0;
+            //    left: -20px;
+            //    @include atb;
+            //    border-style: solid;
+            //    border-width: 18px 25px 18px 0px;
+            //    border-color: transparent  #fff transparent transparent ;
+            // }
+         }
+
+         &:nth-child(odd) {
+            // &::before{
+            //    content:'';
+            //    position: absolute;
+            //    width: 0;
+            //    height: 0;
+            //    right: -20px;
+            //    @include atb;
+            //    border-style: solid;
+            //    border-width: 18px 0px 18px 25px;
+            //    border-color: transparent  transparent transparent #fff; 
+            // }
+         }
+
+         &.active {
+            .content_box {
+               .content {
+                  max-height: 3000px;
+               }
+            }
+         }
+
+         .qa_container {
+            @include ibl;
+            width: calc(100% - 60px);
+
+            @include MCW(780px) {
+               width: 100%;
+            }
+         }
+
+         .no {
+            margin: 13px auto 10px;
+            font-size: 1.3em;
+            @include ibl;
+            min-width: 50px;
+            text-align: center;
+            color: $color_major;
+            font-weight: 600;
+            
+            height: 100%;
+            max-height: 80px;
+            -webkit-text-stroke: 1px $color_major;
+            @include MCW(780px) {
+               margin: 10px auto 5px;
+               width: 100%;
+            }
+         }
+
+         .content_box {
+            @include ibl;
+            width: calc(100% - 30px);
+            @include MCW(780px) {
+               width: 100%;
+            }
+
+            >.title {
+               margin: 15px auto 15px;
+               font-size: 1.1em;
+               max-height: 55px;
+               font-weight: bold;
+               line-height: 25px;
+               overflow: hidden;
+               width: 100%;
+               color: $color_major;
+               @include hover;
+               @include MCW(780px) {
+                  margin: 5px auto;
+                  text-align: center;
+               }
+            }
+
+            >.content {
+               width: 100%;
+               max-height: 0;
+               overflow: hidden;
+               font-size: .9em;
+               line-height: 24px;
+               ;
+            }
+         }
+
+         .status {
+            margin: 15px auto 5px;
+            color: $color_major;
+            font-size: 25px;
+            @include ibl;
+            width: 20px;
+            text-align: center;
+
+            @include MCW(780px) {
+               width: 100%;
+               margin: 5px auto;
+            }
+         }
+      }
+   }
+
+   //課程諮詢表單
+   .advisory__block{
+      @include fxcw(500px);
+      margin:  0 auto;
+
+      .advisory__title__box{
+         @include fxbw();
+         align-items: flex-end;
+         line-height: 24px;
+         letter-spacing: 2px;
+      }
+      .advisory__title{
+         @include iblw(300px);
+      }
+      .advisory__tip{
+         color: #df2020;
+         font-weight: 600;
+      }
+      .advisory__form{
+         @include fxfsw();
+      }
+      .advisory__form__box {
+         @include fxfsw();
+         margin: 10px 0;
+      }
+      .advisory__form__name{
+         width: 80px;
+         span{
+            color: #e23f3f;
+            font-weight: bold;
+         }
+      }
+      .texter{
+         width: 100%;
+         max-width: calc(100% - 80px);
+         min-width: 112px;
+         min-height: 40px;
+         max-height: 300px;
+      }
+      .button{
+         font-weight: 600;
+         margin: 0;
+      }
+
+   }
+
+
+   .recommand__course__block{
+
+      @include fxfsw();
+      margin: 40px auto;
+      padding: 0 8px;
+      .recommand__course__major__title{
+         @include fxfsw();
+         margin: 20px auto;
+         letter-spacing: 6px;
+         font-size: 1.3em;
+         span{
+            @include ibl;
+            width: 40px;
+            height: 1px;
+            margin: 0 0 0 10px;
+            background-color:$color_major;
+         }
+      }
+      .recommand__course__box{
+         @include fxfsw(50%);
+         padding: 10px 20px 10px 0 ;
+         @include MCW(1024px){
+            max-width: 100%;
+            align-items: flex-start;
+            padding: 0 0 0 0 ;
+            margin: 12px 0;
+            &:not(:last-child) {
+               // border: solid $color_major;
+               // border-width: 0 0 1px 0;
+               position: relative;
+               cursor: pointer;
+               &:after {
+                  content: '';
+                  position: absolute;
+                  // width: 100%;
+                  height: 1px;
+                  background-color: #dddddd;
+                  right: 0px;
+                  left: 0px;
+                  bottom: -4px;
+                  transition: .2s ease-in-out;
+               }
+            }
+         }
+
+      }
+      .recommand__course__imagine{
+         @include fxcw(80px);
+         height: 60px;
+         img{
+            width: 100%;
+         }
+      }
+      .recommand__course__content__box{
+         @include fxfsw();
+         max-width:calc(100% - 85px);;
+         font-size: .9em;
+         padding:  0 0 0 10px;
+      }
+      .recommand__course__box__title{
+         @include fxfsw();
+         font-weight: 600;
+         color: #333333;
+      }
+      .recommand__course__box__ele{
+         
+         color: #666666;
+         letter-spacing: 1px;
+         line-height: 22px;
+         @include MCW(1024px) {
+            margin: 0px 0 2px  0;
+         }
+      }
+      .recommand__course__info__box{
+         @include fxfsw();
+         &.type__beteeen{
+            justify-content: space-between;
+         }
+      }
+      .recommand__course__price{
+         @include fxfsw(60px);
+         padding:  0 10px 0 0;
+         color: $color_productDetail_minor;
+      }
+      .recommand__course__tip{
+         color:$color_major;
+         @include fxfsw();
+         width: calc(100% - 65px);
+      }
+
+
+
+
+   }
+
+
+}
+
+#dateBox{
+   user-select: none;
+   .dtpicker-value {
+      color: $color_major !important;
+
+      // color: $color_minor;
+      span {
+         color: $color_major !important;
+      }
+   }
+   .dtpicker-close {
+      color: $color_major !important;
+   }
+   .dtpicker-comp{
+      &.year::before,
+      &.month::before,
+      &.day::before
+      {
+         color: $color_major !important;
+      }
+      
+   }
+   .dtpicker-compButton{
+      background-color: #73b7e0;
+      &:hover{
+         color: #b6e3ff;
+      }
+   }
+   .dtpicker-button{
+      background-color: #277db4;
+      &.dtpicker-buttonClear{
+         background-color: #dddddd;
+      }
+   }
+   
 }
 
 
-.banner_slide_container{
-   .swiper-pagination{
-      z-index: 4;
+
+.main__tab__block {
+   .main__tab__prev{
+      background-image: url('../img/global/main__tab__prev.svg');
+      left: 0;
    }
-   .swiper-pagination-bullet {
-      position: relative;
-      box-sizing: border-box;
-      bottom: 30px;
-      width: 8px;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.856);
+   .main__tab__next {
+      background-image: url('../img/global/main__tab__next.svg');
+      right: 0;
+   }
+   .main__tab__prev,
+   .main__tab__next {
       @include tst;
-      @include ds(1px,1px,0px, rgb(85, 85, 85));
-      border: 1px solid rgb(255, 255, 255);
-      margin: 0 8px!important;
-      border-radius: 3px;
-      outline: none;;
-      margin: 0 6px;
-      width: 37px;
-      height: 8px;
-      opacity: .4;
-      bottom: 20px;
-      @include MCW(861px) {
-         bottom: 15px;
-      }
-   }
-   .swiper-pagination-bullet-active {
-      background: #fffffff1;
-      opacity: 1;
-   }
-   .swiper_overflower{
-      overflow:hidden;
-   }
-   .swiper-button-prev ,
-   .swiper-button-next {
-      background-size: 140%;
+      background-size: cover;
       outline:none;
+      @include atb;
+      width: 40px;
+      height: 60px;
+      box-shadow: 0px 0px 25px #0000005d;
+      &::after{
+         display: none;
+      }
    }
    .swiper-button-prev.swiper-button-disabled, 
    .swiper-button-next.swiper-button-disabled{
-      opacity: 1;
+      opacity: 0;
    }
 }
 
