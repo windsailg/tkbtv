@@ -1862,6 +1862,10 @@ table th, table td {
   color: #acacac;
 }
 
+#Header .search .search_input:focus {
+  background-color: transparent;
+}
+
 #Header .search .search_start {
   -webkit-box-pack: center;
   -webkit-justify-content: center;

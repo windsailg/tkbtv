@@ -483,6 +483,9 @@
          height: 100%;
          background: transparent;
          outline: none;
+         &:focus{
+            background-color: transparent;
+         }
       }
       .search_start {
          @include fxc;
