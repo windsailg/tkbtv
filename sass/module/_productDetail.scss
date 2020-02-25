@@ -51,6 +51,7 @@ $color_productDetail_minor:#ff8736;
          
       }
       &.type__main__tab{
+         position: relative;
          background-color: #eeeeee;
          padding: 0 50px;
          @include MCW(1251px) {
@@ -72,6 +73,9 @@ $color_productDetail_minor:#ff8736;
 
    .bread_crumb_block {
       
+      &.type_productDetail{
+         padding: 15px 0;
+      }
       >.bread_crumb {
          >.bread_crumb_item {
             color: #ffffff;
@@ -832,8 +836,10 @@ $color_productDetail_minor:#ff8736;
       }
 
       #after_cal {
+         @include fxcw(600px)
          line-height: 1.4em;
       }
+
 
       .count__layout {
          @include fxcw();

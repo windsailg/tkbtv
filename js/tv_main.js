@@ -1,7 +1,6 @@
 
+
 $(document).ready(function(){
-    
-    $('#SideBar').hide();
 
     //lazy function
     $(".lazy").Lazy({
@@ -120,8 +119,6 @@ $(document).ready(function(){
     });
 
 
-
-
     //header
     $('#HeaderSearchRWDTrigger').on('click',function(){
         if ($('#HeadSerachForm').hasClass('search__active')){
@@ -137,3 +134,6 @@ $(document).ready(function(){
 });
 
 
+
+$('#Header').load('header.html');
+$('#Footer').load('footer.html');

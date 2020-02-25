@@ -146,7 +146,6 @@ table{
    width: 100%;
    line-height: 28px;
    overflow: hidden;
-   padding: 15px 0;
    // max-height: 60px;
    @include M1301(){
       padding: 8px 0;
@@ -188,7 +187,7 @@ table{
 }
 
 .title__block{ 
-   font-size:1.7em;
+   font-size:1.3em;
    @include MCW(1921px) {
       font-size: calc(1.3em + 0.4vw);
    }
@@ -421,6 +420,139 @@ table{
 }
 
 
+.member__block {
+   @include fxcw();
+   align-items: flex-start;
+   @include MCW(800px) {
+      justify-content: center;
+   }
+
+   .member__box {
+      @include fxfs;
+      width: 100%;
+      padding: 10px 10px 40px;
+
+      &.type__helf {
+         max-width: 370px;
+
+      }
+   }
+
+   .member__box__container {
+      min-height: 235px;
+
+      @include MCW(770px) {
+         min-height: unset;
+      }
+   }
+
+   .member__title {
+      width: 100%;
+      font-size: 20px;
+      font-weight: bold;
+      color:$color_major;
+      margin: 0 0 0px 0;
+   }
+
+   .member__tip {
+      @include ib;
+      padding: 20px 0 15px 0;
+      font-size: 15px;
+      color: $color_major;
+
+      @include MCW(370px) {
+         width: 100%;
+      }
+   }
+
+   .input__box {
+      @include fxfs;
+      width: 100%;
+      padding: 0 20px 0 0;
+      margin: 12px 0;
+
+      &.type__helf {
+         max-width: 370px;
+      }
+
+      &.type__double__helf {
+         max-width: 185px;
+      }
+
+      @include MCW(990px) {
+         margin: 9px 0;
+      }
+
+      .tip {
+         color: $color_major;
+      }
+
+      .title {
+         @include fxfs;
+         width: 100%;
+         max-width: 70px;
+         text-align: left;
+         font-size: 14px;
+         user-select: none;
+
+         &.type_full {
+            max-width: unset;
+            color: #6f1b15;
+         }
+
+         &.type__empty {
+            color: transparent;
+         }
+      }
+
+      .texter {
+         max-width: 250px;
+         width: 100%;
+
+         &.type_full {
+            max-width: unset;
+         }
+      }
+
+   }
+
+   .select__box {
+      @include fxb;
+      width: 175px;
+
+      .title {
+         @include ibl;
+         width: 100%;
+         max-width: 30px;
+      }
+
+      .selecter {
+         @include ibl;
+         width: 100%;
+         max-width: 120px;
+         background-color: transparent;
+         border-color: #333;
+
+         border-width: 0 0 1px 0;
+         font-size: 15px;
+      }
+   }
+
+   .btn__box {
+      @include fxb;
+      width: 100%;
+      padding: 18px 0;
+   }
+
+   .radio_box {
+      min-width: unset;
+
+      label {
+         padding: 7px 0;
+      }
+   }
+
+}
 
 //文章區塊樣式
 .course__type__main__content {
