@@ -83,17 +83,20 @@ button{
       border-radius: 0;
    }
 }
+
 .table__box {
    table{
       width: 100%;
    }
 }
+
 table{
    th,td{
       vertical-align: middle;
       padding:10px;
    }
 }
+
 .header{
    @include fxc;
    height: 80px;
@@ -136,6 +139,7 @@ table{
 
    }
 }
+
 .page {
    margin: 80px 0 0 0;
    @include MCW(781px) {
@@ -143,6 +147,7 @@ table{
    }
 }
 
+//全站麵包屑樣式
 .bread_crumb_block {
    @include fxfs;
    width: 100%;
@@ -164,7 +169,10 @@ table{
          font-size: 14px;
          margin: 0;
          padding: 0 10px 0 0px;
-         
+         a{
+            width: 100%;
+            @include fxfsw(100%);
+         }
          .home {
             @include ibl;
             padding: 0px 8px 0 0;
@@ -190,6 +198,7 @@ table{
    }
 }
 
+//全站標題樣式
 .title__block{ 
    font-size:1.3em;
    @include MCW(1921px) {
@@ -205,6 +214,29 @@ table{
       margin: 10px 0;
    }
 }
+
+//全站描述樣式
+.description__block{
+   letter-spacing: 1px;
+   line-height: 24px;
+   margin: 20px 0;
+   .description__title{
+      color: $color_major;
+      font-weight: 600;
+      font-size: 1.2em;
+      @include MCW(861px) {
+         font-size: calc(1.3em + 0.4vw);
+         margin: 10px 0;
+      }
+   }
+   .description__content{
+
+   }
+}
+
+
+
+
 
 .recommand__course__slider__block{
    @include fxc;
@@ -427,242 +459,11 @@ table{
    }
 }
 
-.member__block {
-   @include fxcw();
-   align-items: flex-start;
-   margin: 20px 0 40px;
-   @include MCW(800px) {
-      justify-content: center;
-   }
-   .member__box {
-      @include fxv;
-      width: 100%;
-      max-width: 580px;
-      justify-content: space-between;
-      padding: 15px  25px;
-      margin: 10px;
-      min-height: 380px;
-      border:1px solid #0000002a;
-      background-color: #ffffff;
-      &.type__register {
-         padding: 5px 32px 30px;
-         max-width: 750px;
-         flex-direction: row;
-         flex-wrap: wrap;
-         border:0px;
-         box-shadow: 0px 0px 15px #00000023;
-         @include MCW(1221px) {
-            padding: 5px 15px 30px;
-         }
-         @include MCW(581px) {
-            margin: 0  ;
-         }
-      }
-      @include MCW(1221px) {
-         min-height: unset;
-      }
-   }
-
-   .member__head__box{
-      @include fxfsw();
-   }
-
-   .member__title {
-      width: 100%;
-      font-size: 20px;
-      font-weight: bold;
-      color: #222222;
-      margin: 20px 0 0px 0;
-      line-height: 1.3em;
-      letter-spacing: 2px;
-      .hightlight{
-         font-weight: 600;
-         color:$color_major;
-      }
-   }
-
-   .member__tip {
-      @include ib;
-      line-height: 24px;
-      padding: 20px 0 15px 0;
-      font-size: 15px;
-      color: #222222;
-
-      @include MCW(370px) {
-         width: 100%;
-      }
-   }
-
-   .member__input__box {
-      @include fxbw();
-      padding: 0 20px 0 0;
-      margin: 12px 0;
-      @include MCW(640px) {
-         margin: 9px 0;
-         padding: 0 0px 0 0;
-      }
-      &.type__helf {
-         max-width: 320px;
-      }
-      &.type__double__helf {
-         max-width: 185px;
-      }
-      &.type__flex__start {
-         justify-content: flex-start;
-      }
-      &.type__verification{
-         @include fxfsw();
-         .title{
-            @include fxfsw(120px);
-         }
-         .texter {
-            max-width: calc(100% - 95px);
-            width: 100%;
-            max-height: 36px;
-         }
-         .reg__img{
-            padding:  0 20px 0 0;
-            width: 80px;
-            height: 32px;
-            img{
-               width: 100%;
-            }
-         }
-      }
-      .tip {
-         color: $color_major;
-         font-weight: 600;
-      }
-      .title {
-         @include fxfs;
-         width: 100%;
-         // min-width: 95px;
-         max-width: 92px;
-         margin: 10px 0;
-         text-align: left;
-         font-size: 14px;
-         user-select: none;
-         padding:  0 10px 0 0 ;
-
-         &.type_full {
-            max-width: unset;
-         }
-         &.type__empty {
-            color: transparent;
-         }
-      }
-      .texter {
-         max-width: calc(100% - 92px);
-         width: 100%;
-         max-height: 36px;
-         &.type_full {
-            max-width: unset;
-            margin: 10px 0;
-         }
-         &.type__verification{
-            max-width: 100px;
-         }
-      }
-   }
-
-   .member__radio__box{
-      @include fxfsw();
-      .title{
-         max-width: 140px;
-         width: 100%;
-      }
-      .tip{
-         color: $color_major;
-      }
-   }
-
-   .member__forget__box {
-      @include fxbw();
-      padding: 0 20px 0 0;
-      margin: 5px 0;
-      @include MCW(990px) {
-         margin: 9px 0;
-      }
-      .title {
-         @include fxfs;
-         width: 100%;
-         max-width: 70px;
-         text-align: left;
-         font-size: 14px;
-         user-select: none;
-      }
-   }
-
-   .select__box {
-      @include fxbw();
-      width: 100%;
-      max-width: calc(100% - 80px);
-      @include MCW(521px) {
-         max-width: 100%;
-      }
-   }
-   .select__item{
-      @include fxcw();
-      width: 100%;
-      max-width: 50%;
-      padding: 6px 0;
-      @include MCW(901px){
-         justify-content: flex-start;
-         padding: 8px 15px;
-      }
-      @include MCW(501px) {
-         max-width: 100%;
-         padding: 0px 0;
-      }
-      .title {
-         @include ibl;
-         width: auto;
-         max-width: 120px;
-      }
-      .selecter {
-         @include ibl;
-         width: 100%;
-         max-width: calc(100% - 120px);
-         background-color: transparent;
-         border-color: #333;
-         text-align: center;
-         border-width: 0 0 1px 0;
-         font-size: 15px;
-
-      }
-   }
-
-   .btn__box {
-      @include fxfsw();
-      padding: 12px 0;
-   }
-
-   .radio_box {
-      min-width: unset;
-
-      label {
-         padding: 7px 0;
-      }
-   }
-
-   .button{
-      margin: 0;
-   }
-
-   .agree_box {
-      @include ibl;
-      margin: 16px 0;
-      width: 100%;
-      line-height: 24px;
-   }
-
-
-
-}
 
 
 
 //文章區塊樣式
+
 .course__type__main__content {
    @include ibl;
    width: 100%;
@@ -670,6 +471,9 @@ table{
    line-height: 24px;
 
 }
+
+
+//Global Cmponent------------------------------------
 
 .button{
    @include selection-none;
@@ -924,6 +728,7 @@ table{
 
 
 }
+
 .texter {
    @include ff;
    @include ib;
@@ -940,16 +745,15 @@ table{
    
 }
 
-.nothing_block{
+.nothing__box{
    @include fxc;
    width: 100%;
    padding:30px 0px;
-
    position: relative;
    @include MCW(861px) {
       padding:30px 15px;
    }
-   .nothing{
+   .nothing__item{
       letter-spacing: 3px;
       color:#888;
       font-size: 22px;
@@ -961,7 +765,8 @@ table{
    };
 }
 
-//lazy and position focuspoint style
+//lazy and position focuspoint style------------------------------------
+
 .focuspoint{
    // @include flex-center;
    // align-content: center;
@@ -1000,7 +805,12 @@ table{
    text-decoration: underline;
 }
 
-.new_msg_active{
+
+
+
+//activing components------------------------------------
+
+.new__msg__active {
    &:before{
       content:'';
       @include ibl;

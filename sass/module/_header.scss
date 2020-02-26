@@ -240,7 +240,7 @@
          }
          .header__list__item__dropdown__box {
             @include fxc;
-            @include bs(0px, 10px, 10px, #00000057);
+            @include bs(0px, 10px, 10px, #00000011);
             @include tst;
             @include hov_h(.15s);
             position: absolute;
