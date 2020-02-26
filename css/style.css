@@ -912,6 +912,12 @@ table th, table td {
 
 .member__block .member__input__box.type__verification .reg__img {
   padding: 0 20px 0 0;
+  width: 80px;
+  height: 32px;
+}
+
+.member__block .member__input__box.type__verification .reg__img img {
+  width: 100%;
 }
 
 .member__block .member__input__box .tip {
