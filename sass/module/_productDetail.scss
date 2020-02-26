@@ -836,7 +836,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       #after_cal {
-         @include fxcw(600px)
+         @include fxcw();
          line-height: 1.4em;
       }
 

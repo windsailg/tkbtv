@@ -3784,7 +3784,7 @@ table th, table td {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 600px;
+  max-width: 100%;
   line-height: 1.4em;
 }
 
