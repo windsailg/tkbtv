@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TKBTV - 課程分類</title>
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+    <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="css/focuspoint.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Golbal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/9188edaa95.js"></script>
+
+</head>
+    
+<body >
+   
+<div id="Header" class="header"></div>
+
+<div class="page">
+
+		<div class="area type__gray">
+
+		    <div class="container ">
+
+		        <div class="title_block">
+		            <div class="title">
+		                謝謝您 您已註冊成功
+		            </div>
+		            <div class="content">
+		                勾選下方個人化資訊需求，將可獲得TKB購課網的第一手考試資訊與優惠消息喔!
+		            </div>
+		        </div>
+
+		        <div class="content_block">
+		            <div class="title">
+		                <i class="fas fa-tasks"></i>職業狀態(必填)
+		            </div>
+		            <div class="content">
+
+		                <div class="radio_box">
+		                    <input id="inservice" type="radio" class="radio" name="radio1" checked />
+		                    <label class="label" for="inservice" onclick="">在學</label>
+		                </div>
+
+		                <div class="radio_box">
+		                    <input id="schooling" type="radio" class="radio" name="radio1" />
+		                    <label class="label" for="schooling" onclick="">在職</label>
+		                </div>
+
+		                <div class="select_box">
+
+		                    <select class="selecter" data-province="請選擇">
+		                        <option value="科技大學">科技大學</option>
+		                    </select>
+
+		                    <select class="selecter" data-province="私立">
+		                        <option value="私立">私立</option>
+		                        <option value="公立">公立</option>
+		                    </select>
+
+		                    <select class="selecter" data-province="國立雲林科技大學">
+		                        <option value="科技大學">科技大學</option>
+		                    </select>
+
+		                    <select class="selecter" data-province="理學院">
+		                        <option value="理學院">理學院</option>
+		                        <option value="商學院">商學院</option>
+		                    </select>
+
+		                    <select class="selecter" data-province="-請選擇-">
+		                        <option value="科技大學">科技大學</option>
+		                    </select>
+
+		                </div>
+
+
+		                <div class="text_box">
+
+		                    <div class="content_box">
+		                        <div class="name">年級</div>
+		                        <input type="text" class="texter" placeholder="輸入年級" maxlength="3" />
+		                    </div>
+
+		                    <div class="content_box">
+		                        <div class="name">畢業年度(西元)</div>
+		                        <input type="text" class="texter" placeholder="輸入畢業年度" maxlength="4" />
+		                    </div>
+
+
+		                </div>
+
+		            </div>
+		        </div>
+
+		        <div class="content_block">
+
+		            <div class="title">
+		                <i class="fas fa-tasks"></i>如何得知TKB購課網
+		            </div>
+
+		            <div class="content check_box">
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="5">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        活動EDM
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="6">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        Youtube
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="1" checked />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        現場門市
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="4" />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        FACEBOOK
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="5">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        活動EDM
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="6">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        Youtube
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="1" checked />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        現場門市
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="2">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        搜尋引擎
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="3">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        TKB企業相關網站
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="1" checked />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        現場門市
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="2">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        搜尋引擎
+		                    </span>
+		                </label>
+
+		            </div>
+
+		        </div>
+
+		        <div class="content_block">
+
+		            <div class="title">
+		                <i class="fas fa-tasks"></i>我想收到那些考試的相關資訊、課程優惠、最新消息等相關訊息
+		            </div>
+
+		            <div class="content check_box">
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="1" checked />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        現場門市
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="2">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        搜尋引擎
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="3">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        TKB企業相關網站
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="4" />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        FACEBOOK
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="5">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        活動EDM
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="6">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        Youtube
+		                    </span>
+		                </label>
+
+		            </div>
+
+		        </div>
+
+		        <div class="content_block">
+
+		            <div class="title">
+		                <i class="fas fa-tasks"></i>我想收到下列哪些考試類組的相關考試資訊、課程優惠、最新消息等相關訊息
+		            </div>
+
+		            <div class="content check_box">
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="5">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        活動EDM
+		                    </span>
+		                </label>
+
+
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="2">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        搜尋引擎
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="1" checked />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        現場門市
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="3">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        TKB企業相關網站
+		                    </span>
+		                </label>
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="4" />
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        FACEBOOK
+		                    </span>
+		                </label>
+
+
+		                <label class="checker type_box">
+		                    <input type="checkbox" value="6">
+		                    <span class="checkbg"></span>
+		                    <span class="checkmark"></span>
+		                    <span class="text">
+		                        Youtube
+		                    </span>
+		                </label>
+
+		            </div>
+
+		        </div>
+
+		        <div class="content_block">
+
+		            <div class="title">
+		                <i class="far fa-play-circle"></i>訂閱Youtube頻道及Facebook粉絲專頁將獲得最即時簡章分析資訊、名師考前猜題與公職國營等最新消息
+		            </div>
+
+		            <div class="content ">
+
+		                <a href="https://www.youtube.com/channel/UC5PnsCWCndEN7O7CsCDltgA?sub_confirmation=1" class=""
+		                    target="_blank">
+		                    <div class="link_block">
+		                        <div class="imagine youtube">
+		                            <i class="fab fa-youtube"></i>
+		                        </div>
+		                        <div class="name">
+		                            訂閱
+		                        </div>
+
+		                    </div>
+		                </a>
+
+		                <a href="https://zh-tw.facebook.com/tkbgo.com.tw/" class="" target="_blank">
+		                    <div class="link_block">
+		                        <div class="imagine facebook">
+		                            <i class="fab fa-facebook-square"></i>
+		                        </div>
+		                        <div class="name">
+		                            粉專
+		                        </div>
+
+		                    </div>
+		                </a>
+
+		                <div class="listCheck_box">
+
+		                    <span class="check_box_typeform">
+		                        <label class="checker type_static">
+		                            <input type="checkbox" name="remember" value="1" />
+		                            <span class="checkmark"></span>
+		                            <span class="text">本人願意提供表單資料給臺灣知識庫相關企業。</span>
+		                        </label>
+		                    </span>
+
+		                    <span class="agree_box">
+		                        若繼續，則表示您已閱讀且同意
+		                        <a class="FC uLink" href="${BASE_PATH}service/toWebQA.jsp?ts_pc_id=2964">會員權利說明</a>，並已瞭解
+		                        <a class="FC uLink" href="${BASE_PATH}service/toPrivacy.jsp">個資法相關規範</a>
+		                    </span>
+
+		                    <div class="btn_block">
+		                        <a href="javaScript:void();" id="register" class="type_button ">提交會員資料</a>
+		                    </div>
+
+		                </div>
+
+
+
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+
+
+</div>
+
+<footer id="Footer"></footer>
+
+
+<!-- Golbal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/lightcase.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/jquery.focuspoint.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+
+
+<script src="js/tv_main.js"></script>
+
+</body>
+
+</html>

@@ -75,6 +75,15 @@
 	width: 100%;
 }
 
+%fxrbasestar_width {
+	display: flex;
+	box-sizing: border-box;
+	flex-flow: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	width: 100%;
+}
+
 //Flex item center
 @mixin fxcw($width:100%) {
 	@extend %fxrbase_width;
@@ -94,6 +103,12 @@
 	max-width: $width;
 }
 
+@mixin fxew($width:100%) {
+	@extend %fxrbase_width;
+	justify-content: space-evenly;
+	max-width: $width;
+}
+
 @mixin fxfsw($width:100%) {
 	@extend %fxrbase_width;
 	justify-content: flex-start;
@@ -109,30 +124,46 @@
 
 //Flex item start
 @mixin fxcsw($width:100%) {
-	@extend %fxrbasecenter_width;
+	@extend %fxrbasestar_width;
 	justify-content: center;
 	max-width: $width;
 }
 
 @mixin fxbsw($width:100%) {
-	@extend %fxrbasecenter_width;
+	@extend %fxrbasestar_width;
 	justify-content: space-between;
 	max-width: $width;
 }
 
 @mixin fxasw($width:100%) {
-	@extend %fxrbasecenter_width;
+	@extend %fxrbasestar_width;
+	justify-content: space-around;
+	max-width: $width;
+}
+
+@mixin fxesw($width:100%) {
+	@extend %fxrbasestar_width;
+	justify-content: space-evenly;
+	max-width: $width;
+}
+
+@mixin fxasw($width:100%) {
+	@extend %fxrbasestar_width;
 	justify-content: space-around;
 	max-width: $width;
 }
 
 @mixin fxfssw($width:100%) {
-	@extend %fxrbasecenter_width;
+	@extend %fxrbasestar_width;
 	justify-content: flex-start;
 	max-width: $width;
 }
 
-
+@mixin fxfesw($width:100%) {
+	@extend %fxrbasestar_width;
+	justify-content: flex-end;
+	max-width: $width;
+}
 
 
 //Flex Direction Vertical 100%
@@ -262,7 +293,6 @@
 }
 
 
-
 @mixin b() {
 	box-sizing: border-box;
 	display: block;
@@ -279,9 +309,6 @@
 	display: block;
 	float: left;
 }
-
-
-
 
 //Margin Auto center all
 @mixin aa {
