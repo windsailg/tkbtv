@@ -8,6 +8,26 @@ $color_productDetailAll_major: #259bd6;
 $color_productDetailSingle_major: #4cba59;
 $color_productDetail_minor:#ff8736;
 
+//global member setting
+.select__box {
+   @include fxfs;
+   width: 100%;
+   padding: 5px 0;
+
+   .selecter {
+      font-size: 17px;
+      font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
+      margin: 8px 10px 8px 0;
+      box-sizing: border-box;
+      // padding: 10px;
+   }
+
+   option {
+      font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
+      font-size: 17px;
+   }
+}
+
 
 .member__block {
    @include fxcw();
@@ -30,8 +50,8 @@ $color_productDetail_minor:#ff8736;
       background-color: #ffffff;
 
       &.type__register {
-         flex-direction: row;
-         justify-content: flex-start;
+         // flex-direction: row;
+         // justify-content: flex-start;
          padding: 5px 32px 30px;
          max-width: 780px;
          flex-direction: row;
@@ -73,18 +93,7 @@ $color_productDetail_minor:#ff8736;
       padding: 0  0 0 10px;
    }
 
-   .member__input__title {
-      @include fxfsw(105px);
-      margin: 10px 0;
-      text-align: left;
-      font-size: 15px;
-      user-select: none;
-      padding: 0 10px 0 0;
-      &.type__full {
-         max-width: 140px;
-         padding: 0 10px 0 0;
-      }
-   }
+
 
    .member__tip {
       @include ib;
@@ -101,13 +110,16 @@ $color_productDetail_minor:#ff8736;
    .member__input__box {
       @include fxbw(350px);
       padding: 0 20px 0 0;
-      margin: 12px 0;
+      margin: 15px 0;
       @include MCW(781px) {
          max-width: 100%;
          margin: 9px 0;
          padding: 0 0px 0 0;
       }
-
+      &.type__between {
+         justify-content: space-between;
+         max-width: 100%;
+      }
       &.type__full {
          justify-content: flex-start;
          max-width: 100%;
@@ -117,10 +129,24 @@ $color_productDetail_minor:#ff8736;
       }
 
    }
-   
+
+   .member__input__title {
+      @include fxfsw(105px);
+      margin: 0px 0;
+      text-align: left;
+      font-size: 15px;
+      user-select: none;
+      padding: 0 10px 0 0;
+
+      &.type__full {
+         max-width: 140px;
+         padding: 0 10px 0 0;
+      }
+   }
+
    .member__radio__box {
       @include fxfsw();
-
+      margin: 15px 0;
       .title {
          max-width: 140px;
          width: 100%;
@@ -153,9 +179,13 @@ $color_productDetail_minor:#ff8736;
    //page setting
    .select__box {
       @include fxfsw();
-
+      &.type__full{
+         width: 100%;
+         max-width: 100%;
+      }
       .selecter{
-         max-width: 48%;
+         width: 100%;
+         max-width: 30%;
          border-width: 0 0 1px 0;
          background-color: transparent;
       }
@@ -187,7 +217,7 @@ $color_productDetail_minor:#ff8736;
       max-height: 36px;
       &.type_full {
          max-width: unset;
-         margin: 10px 0;
+         // margin: 10px 0;
       }
       &.type__verification {
          max-width: 100px;
@@ -209,6 +239,9 @@ $color_productDetail_minor:#ff8736;
       img {
          width: 100%;
       }
+   }
+   a{
+      text-decoration: underline;
    }
 }
 
@@ -234,25 +267,10 @@ $color_productDetail_minor:#ff8736;
    }
 
    .content {
+      @include fxfsw();
       padding: 8px 0;
       // font-size: 18px;
    }
 }
 
 //註冊完成選擇區塊box
-.select__box {
-   @include fxfs;
-   width: 100%;
-   padding: 5px 0;
-   .selecter {
-      font-size: 17px;
-      font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
-      margin: 5px 10px 5px 0;
-      // padding: 10px;
-   }
-
-   option {
-      font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
-      font-size: 17px;
-   }
-}

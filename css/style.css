@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.header, .area .container.type__course__tab, .area .container.type__course__main__content, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .checker, .radio_box, .nothing__box, .nothing__box .nothing__item, .lazy, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, .area .container.type__product__video, .area .container.type__buyaction, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, #ProductDetail .button__block, #ProductDetail .button__block .button__box, #ProductDetail .button__block .button, #ProductDetail .main__tab__block, #ProductDetail .qa__control__block, #ProductDetail .qa__control__block .button, #ProductDetail .qa_block .box, .member__block .member__forget__box .title, .content__block, .select__box, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
+.header, .area .container.type__course__tab, .area .container.type__course__main__content, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .checker, .radio_box, .nothing__box, .nothing__box .nothing__item, .lazy, .sidebar .container .sidebar_list_type .type_name_block, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, #ITeachContainer > .input_list > .input_block, #ITeachContainer > .btns, .gotop_gobottom, .area .container.type__product__video, .area .container.type__buyaction, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, #ProductDetail .button__block, #ProductDetail .button__block .button__box, #ProductDetail .button__block .button, #ProductDetail .main__tab__block, #ProductDetail .qa__control__block, #ProductDetail .qa__control__block .button, #ProductDetail .qa_block .box, .select__box, .member__block .member__forget__box .title, .content__block, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,7 +21,7 @@
           align-items: center;
 }
 
-.bread_crumb_block .bread_crumb .bread_crumb_item a, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__title, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box {
+.bread_crumb_block .bread_crumb .bread_crumb_item a, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box, .content__block .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -927,7 +927,7 @@ table th, table td {
 }
 
 .checker.type_box input:checked ~ .checkbg {
-  background-color: #259bd6;
+  background-color: #1277B5;
   -webkit-transition: 0.2s all ease-out;
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
@@ -987,7 +987,7 @@ table th, table td {
   top: 1px;
   width: 10px;
   height: 14px;
-  padding: 2px 0;
+  padding: 3px 0;
   border: 0 solid transparent;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -4043,6 +4043,28 @@ table th, table td {
   opacity: 0;
 }
 
+.select__box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.select__box .selecter {
+  font-size: 17px;
+  font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
+  margin: 8px 10px 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.select__box option {
+  font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
+  font-size: 17px;
+}
+
 .member__block {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -4084,18 +4106,13 @@ table th, table td {
 }
 
 .member__block .member__box.type__register {
+  padding: 5px 32px 30px;
+  max-width: 780px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 5px 32px 30px;
-  max-width: 780px;
-  flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -4154,27 +4171,6 @@ table th, table td {
   padding: 0  0 0 10px;
 }
 
-.member__block .member__input__title {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  max-width: 105px;
-  margin: 10px 0;
-  text-align: left;
-  font-size: 15px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  padding: 0 10px 0 0;
-}
-
-.member__block .member__input__title.type__full {
-  max-width: 140px;
-  padding: 0 10px 0 0;
-}
-
 .member__block .member__tip {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4199,7 +4195,7 @@ table th, table td {
           justify-content: space-between;
   max-width: 350px;
   padding: 0 20px 0 0;
-  margin: 12px 0;
+  margin: 15px 0;
 }
 
 @media all and (max-width: 781px) {
@@ -4208,6 +4204,14 @@ table th, table td {
     margin: 9px 0;
     padding: 0 0px 0 0;
   }
+}
+
+.member__block .member__input__box.type__between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
 }
 
 .member__block .member__input__box.type__full {
@@ -4226,12 +4230,34 @@ table th, table td {
   max-width: 100%;
 }
 
+.member__block .member__input__title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 105px;
+  margin: 0px 0;
+  text-align: left;
+  font-size: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0 10px 0 0;
+}
+
+.member__block .member__input__title.type__full {
+  max-width: 140px;
+  padding: 0 10px 0 0;
+}
+
 .member__block .member__radio__box {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   max-width: 100%;
+  margin: 15px 0;
 }
 
 .member__block .member__radio__box .title {
@@ -4282,8 +4308,14 @@ table th, table td {
   max-width: 100%;
 }
 
+.member__block .select__box.type__full {
+  width: 100%;
+  max-width: 100%;
+}
+
 .member__block .select__box .selecter {
-  max-width: 48%;
+  width: 100%;
+  max-width: 30%;
   border-width: 0 0 1px 0;
   background-color: transparent;
 }
@@ -4323,7 +4355,6 @@ table th, table td {
 
 .member__block .texter.type_full {
   max-width: unset;
-  margin: 10px 0;
 }
 
 .member__block .texter.type__verification {
@@ -4348,6 +4379,10 @@ table th, table td {
 
 .member__block .reg__img img {
   width: 100%;
+}
+
+.member__block a {
+  text-decoration: underline;
 }
 
 .content__block {
@@ -4379,27 +4414,12 @@ table th, table td {
 }
 
 .content__block .content {
-  padding: 8px 0;
-}
-
-.select__box {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 100%;
-  padding: 5px 0;
-}
-
-.select__box .selecter {
-  font-size: 17px;
-  font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
-  margin: 5px 10px 5px 0;
-}
-
-.select__box option {
-  font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
-  font-size: 17px;
+  max-width: 100%;
+  padding: 8px 0;
 }
 
 .footer_container {
