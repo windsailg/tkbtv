@@ -21,7 +21,7 @@
           align-items: center;
 }
 
-.member__block, .member__block .member__head__box, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .select__item, .member__block .btn__box, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip {
+.member__block, .member__block .member__head__box, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__box.type__verification .title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .select__item, .member__block .btn__box, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -785,7 +785,7 @@ table th, table td {
 
 .member__block .member__box.type__register {
   padding: 5px 32px 30px;
-  max-width: 700px;
+  max-width: 750px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -802,6 +802,12 @@ table th, table td {
 @media all and (max-width: 1221px) {
   .member__block .member__box.type__register {
     padding: 5px 15px 30px;
+  }
+}
+
+@media all and (max-width: 581px) {
+  .member__block .member__box.type__register {
+    margin: 0;
   }
 }
 
@@ -890,10 +896,22 @@ table th, table td {
   max-width: 100%;
 }
 
+.member__block .member__input__box.type__verification .title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 120px;
+}
+
 .member__block .member__input__box.type__verification .texter {
   max-width: calc(100% - 95px);
   width: 100%;
   max-height: 36px;
+}
+
+.member__block .member__input__box.type__verification .reg__img {
+  padding: 0 20px 0 0;
 }
 
 .member__block .member__input__box .tip {
@@ -907,8 +925,7 @@ table th, table td {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  min-width: 95px;
-  max-width: 95px;
+  max-width: 92px;
   margin: 10px 0;
   text-align: left;
   font-size: 14px;
@@ -928,7 +945,7 @@ table th, table td {
 }
 
 .member__block .member__input__box .texter {
-  max-width: calc(100% - 95px);
+  max-width: calc(100% - 92px);
   width: 100%;
   max-height: 36px;
 }
@@ -940,26 +957,6 @@ table th, table td {
 
 .member__block .member__input__box .texter.type__verification {
   max-width: 100px;
-}
-
-.member__block .member__input__box .texter::-webkit-input-placeholder {
-  font-size: 1em;
-}
-
-.member__block .member__input__box .texter::-moz-placeholder {
-  font-size: 1em;
-}
-
-.member__block .member__input__box .texter:-ms-input-placeholder {
-  font-size: 1em;
-}
-
-.member__block .member__input__box .texter::-ms-input-placeholder {
-  font-size: 1em;
-}
-
-.member__block .member__input__box .texter::placeholder {
-  font-size: 1em;
 }
 
 .member__block .member__radio__box {
@@ -1034,7 +1031,7 @@ table th, table td {
   max-width: 100%;
   width: 100%;
   max-width: 50%;
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
 @media all and (max-width: 901px) {
@@ -1493,6 +1490,26 @@ table th, table td {
 
 .texter:focus {
   outline-color: #1277B5;
+}
+
+.texter::-webkit-input-placeholder {
+  font-size: .8em;
+}
+
+.texter::-moz-placeholder {
+  font-size: .8em;
+}
+
+.texter:-ms-input-placeholder {
+  font-size: .8em;
+}
+
+.texter::-ms-input-placeholder {
+  font-size: .8em;
+}
+
+.texter::placeholder {
+  font-size: .8em;
 }
 
 .nothing_block {

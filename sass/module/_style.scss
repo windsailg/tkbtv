@@ -446,14 +446,16 @@ table{
       background-color: #ffffff;
       &.type__register {
          padding: 5px 32px 30px;
-         max-width: 700px;
+         max-width: 750px;
          flex-direction: row;
          flex-wrap: wrap;
          border:0px;
-         
          box-shadow: 0px 0px 15px #00000023;
          @include MCW(1221px) {
             padding: 5px 15px 30px;
+         }
+         @include MCW(581px) {
+            margin: 0  ;
          }
       }
       @include MCW(1221px) {
@@ -510,10 +512,16 @@ table{
       }
       &.type__verification{
          @include fxfsw();
+         .title{
+            @include fxfsw(120px);
+         }
          .texter {
             max-width: calc(100% - 95px);
             width: 100%;
             max-height: 36px;
+         }
+         .reg__img{
+            padding:  0 20px 0 0;
          }
       }
       .tip {
@@ -523,8 +531,8 @@ table{
       .title {
          @include fxfs;
          width: 100%;
-         min-width: 95px;
-         max-width: 95px;
+         // min-width: 95px;
+         max-width: 92px;
          margin: 10px 0;
          text-align: left;
          font-size: 14px;
@@ -539,7 +547,7 @@ table{
          }
       }
       .texter {
-         max-width: calc(100% - 95px);
+         max-width: calc(100% - 92px);
          width: 100%;
          max-height: 36px;
          &.type_full {
@@ -548,9 +556,6 @@ table{
          }
          &.type__verification{
             max-width: 100px;
-         }
-         &::placeholder{
-            font-size: 1em;
          }
       }
    }
@@ -595,7 +600,7 @@ table{
       @include fxcw();
       width: 100%;
       max-width: 50%;
-      padding: 8px 0;
+      padding: 6px 0;
       @include MCW(901px){
          justify-content: flex-start;
          padding: 8px 15px;
@@ -646,7 +651,11 @@ table{
       line-height: 24px;
    }
 
+
+
 }
+
+
 
 //文章區塊樣式
 .course__type__main__content {
@@ -920,6 +929,10 @@ table{
       // transition: .2s all ease-in;
       outline-color: $color_major;
    }
+   &::placeholder {
+      font-size: .8em;
+   }
+   
 }
 
 .nothing_block{
