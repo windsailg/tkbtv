@@ -858,7 +858,7 @@ table th, table td {
   width: auto;
   position: relative;
   z-index: 1;
-  font-size: 17px;
+  font-size: .9em;
   line-height: 24px;
 }
 
@@ -924,6 +924,13 @@ table th, table td {
   margin: 7px 18px 7px 0;
   background-color: #ddd;
   border-radius: 3px;
+}
+
+@media all and (max-width: 500px) {
+  .checker.type_box {
+    margin: 3px 18px 3px 0;
+    padding: 3px 13px;
+  }
 }
 
 .checker.type_box input:checked ~ .checkbg {
@@ -4196,6 +4203,10 @@ table th, table td {
   max-width: 350px;
   padding: 0 20px 0 0;
   margin: 15px 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media all and (max-width: 781px) {
@@ -4212,6 +4223,25 @@ table th, table td {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 100%;
+}
+
+.member__block .member__input__box.type__free {
+  float: left;
+  width: auto;
+  max-width: unset;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.member__block .member__input__box.type__free .member__input__title {
+  width: auto;
+  max-width: unset;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
 }
 
 .member__block .member__input__box.type__full {
@@ -4400,12 +4430,20 @@ table th, table td {
           box-sizing: border-box;
   display: inline-block;
   float: left;
+  line-height: 26px;
   width: 100%;
-  font-size: 19px;
+  font-size: 1.2em;
   letter-spacing: 1px;
   font-weight: bold;
   color: #666;
   padding: 0 0 5px 0;
+}
+
+@media all and (max-width: 891px) {
+  .content__block .title {
+    font-size: 1.1em;
+    letter-spacing: 0px;
+  }
 }
 
 .content__block .title i {

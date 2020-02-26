@@ -111,6 +111,7 @@ $color_productDetail_minor:#ff8736;
       @include fxbw(350px);
       padding: 0 20px 0 0;
       margin: 15px 0;
+      justify-content: flex-start;
       @include MCW(781px) {
          max-width: 100%;
          margin: 9px 0;
@@ -119,6 +120,17 @@ $color_productDetail_minor:#ff8736;
       &.type__between {
          justify-content: space-between;
          max-width: 100%;
+      }
+      &.type__free {
+         float: left;
+         width: auto;
+         max-width: unset;
+         flex-wrap: nowrap;
+         .member__input__title{
+            width: auto;  
+            max-width: unset;
+            @include nowrap;
+         }
       }
       &.type__full {
          justify-content: flex-start;
@@ -132,6 +144,7 @@ $color_productDetail_minor:#ff8736;
 
    .member__input__title {
       @include fxfsw(105px);
+      // @include nowrap;
       margin: 0px 0;
       text-align: left;
       font-size: 15px;
@@ -253,13 +266,17 @@ $color_productDetail_minor:#ff8736;
 
    .title {
       @include ibl;
+      line-height: 26px;
       width: 100%;
-      font-size: 19px;
+      font-size: 1.2em;
       letter-spacing: 1px;
       font-weight: bold;
       color: #666;
       padding: 0 0 5px 0;
-
+      @include MCW(891px) {
+         font-size: 1.1em;
+         letter-spacing: 0px;
+      }
       i {
          color: $color_major;
          padding: 0 10px 0 0;
