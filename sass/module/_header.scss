@@ -592,8 +592,12 @@ $color_productDetail_minor:#ff8736;
    transition: .3s all ease-in-out;
    transition-delay: .1s;
    &.tv__recommand__course__area--isopen{
-      bottom: -143px;
+      bottom: -125px;
+      @include MCW(861px) {
+         bottom: -115px;
+      }
    }
+
    
 }
 .tv__recommand__course__block {
@@ -628,8 +632,12 @@ $color_productDetail_minor:#ff8736;
       max-width: calc(100% - 150px);
       letter-spacing: 1px;
       overflow: hidden;
-      margin: 15px auto;
+      padding: 10px 0;
       position: relative;
+      @include MCW(861px) {
+         max-width: calc(100% - 100px);
+         overflow: visible;
+      }
       // @include MCW(481px) {
          
       // }
@@ -639,7 +647,7 @@ $color_productDetail_minor:#ff8736;
       @include fxbw(400px);
       box-shadow: 0px 0px 15px #29292927;
       background-color: #ffffff;
-      padding: 8px 0 0;
+      padding:0;
       // margin: 0 12px;
       @include tst;
       user-select: none;
@@ -653,11 +661,11 @@ $color_productDetail_minor:#ff8736;
          content: '';
          @include fxcw(0px);
          position: absolute;
-         right: 40px;
-         bottom: -13px;
-         width: 10px;
-         height: 10px;
-         border: 15px solid #0b4366;
+         right: 38px;
+         bottom: -22px;
+         width: 0px;
+         height: 0px;
+         border: 18px solid #0b4366;
          // border-width: 10px 0 0 0;
          border-color: #0b4366 transparent transparent transparent;
          transform: rotate(-45deg);
@@ -677,40 +685,45 @@ $color_productDetail_minor:#ff8736;
    .tv__recommand__course__imagine{
       @include fxcw(130px);
       background-color: #ffffff;;
-      padding: 5px;
+      @include MCW(861px){
+         display: none;
+      }
    }
    .tv__recommand__course__content__box{
       @include fxfsw(calc(100% - 135px));
+      @include MCW(861px) {
+         max-width: 100%;
+         padding: 5px;
+      }
    }
 
    .tv__recommand__course__ele {
       @include fxfsw();
-      padding: 5px 8px 5px 0;
       color: $color_deeper;
    }
 
    .tv__recommand__course__title {
-      @include multi-nowrap(1);
+      @include iblw();;
+      @include nowrap;
       color: $color_major;
-      height: 24px;
-      line-height: 21px;
+      height: 23px;
+      line-height: 19px;
       font-size: 1em;
       font-weight: bold;
    }
 
    .tv__recommand__course__sub ,
    .tv__recommand__course__type {
-      @include fxfsw();
-      @include multi-nowrap(1);
+      @include iblw();
       @include nowrap;
       width: 100%;
-      padding: 5px 0;
+      padding: 3px 0;
       font-size: .9em;
    }
 
    .tv__recommand__course__price {
       @include fxfsw();
-      padding: 6px 0;
+      padding: 2px 0;
       color: #c93419;
       font-weight: 600;
       font-size: 1em;

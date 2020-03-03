@@ -21,8 +21,7 @@
           align-items: center;
 }
 
-.bread_crumb_block .bread_crumb .bread_crumb_item a, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__sub,
-.tv__recommand__course__block .tv__recommand__course__type, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box, .content__block .content, #Cart .cartflow__imagine__block {
+.bread_crumb_block .bread_crumb .bread_crumb_item a, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box, .content__block .content, #Cart .cartflow__imagine__block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,7 +64,8 @@
           align-items: flex-start;
 }
 
-.sidebar__block .header__recommand__navigation__block .recommand__navigation__item, #ProductDetail .select__table__block .select__table__tip__item, #ProductDetail .select__table__block .select__table__box, #ProductDetail .course__relate__block .course__relate__box, #ProductDetail .advisory__block .advisory__title {
+.sidebar__block .header__recommand__navigation__block .recommand__navigation__item, .tv__recommand__course__block .tv__recommand__course__title, .tv__recommand__course__block .tv__recommand__course__sub,
+.tv__recommand__course__block .tv__recommand__course__type, #ProductDetail .select__table__block .select__table__tip__item, #ProductDetail .select__table__block .select__table__box, #ProductDetail .course__relate__block .course__relate__box, #ProductDetail .advisory__block .advisory__title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -2133,7 +2133,13 @@ table th, table td {
 }
 
 .tv__recommand__course__area.tv__recommand__course__area--isopen {
-  bottom: -143px;
+  bottom: -125px;
+}
+
+@media all and (max-width: 861px) {
+  .tv__recommand__course__area.tv__recommand__course__area--isopen {
+    bottom: -115px;
+  }
 }
 
 .tv__recommand__course__block {
@@ -2191,8 +2197,15 @@ table th, table td {
   max-width: calc(100% - 150px);
   letter-spacing: 1px;
   overflow: hidden;
-  margin: 15px auto;
+  padding: 10px 0;
   position: relative;
+}
+
+@media all and (max-width: 861px) {
+  .tv__recommand__course__block .tv__recommand__course__slider__block {
+    max-width: calc(100% - 100px);
+    overflow: visible;
+  }
 }
 
 .tv__recommand__course__block .tv__recommand__course__box {
@@ -2204,7 +2217,7 @@ table th, table td {
   -webkit-box-shadow: 0px 0px 15px #29292927;
           box-shadow: 0px 0px 15px #29292927;
   background-color: #ffffff;
-  padding: 8px 0 0;
+  padding: 0;
   -webkit-transition: 0.2s all ease-out;
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
@@ -2227,11 +2240,11 @@ table th, table td {
           justify-content: center;
   max-width: 0px;
   position: absolute;
-  right: 40px;
-  bottom: -13px;
-  width: 10px;
-  height: 10px;
-  border: 15px solid #0b4366;
+  right: 38px;
+  bottom: -22px;
+  width: 0px;
+  height: 0px;
+  border: 18px solid #0b4366;
   border-color: #0b4366 transparent transparent transparent;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -2261,7 +2274,12 @@ table th, table td {
           justify-content: center;
   max-width: 130px;
   background-color: #ffffff;
-  padding: 5px;
+}
+
+@media all and (max-width: 861px) {
+  .tv__recommand__course__block .tv__recommand__course__imagine {
+    display: none;
+  }
 }
 
 .tv__recommand__course__block .tv__recommand__course__content__box {
@@ -2272,52 +2290,48 @@ table th, table td {
   max-width: calc(100% - 135px);
 }
 
+@media all and (max-width: 861px) {
+  .tv__recommand__course__block .tv__recommand__course__content__box {
+    max-width: 100%;
+    padding: 5px;
+  }
+}
+
 .tv__recommand__course__block .tv__recommand__course__ele {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   max-width: 100%;
-  padding: 5px 8px 5px 0;
   color: #0b4366;
 }
 
 .tv__recommand__course__block .tv__recommand__course__title {
-  -webkit-line-clamp: 1;
-  /* 設定欲顯示的行數，超出則顯示省略符號(...)。 */
-  -webkit-box-orient: vertical;
-  /* 設定 box 的子元素，是由上往下垂直排列。 */
-  display: -webkit-box;
-  /* 設定 display 為 -webkit-box 元素。 */
+  max-width: 100%;
+  float: left;
+  white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
   color: #1277B5;
-  height: 24px;
-  line-height: 21px;
+  height: 23px;
+  line-height: 19px;
   font-size: 1em;
   font-weight: bold;
 }
 
 .tv__recommand__course__block .tv__recommand__course__sub,
 .tv__recommand__course__block .tv__recommand__course__type {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   max-width: 100%;
-  -webkit-line-clamp: 1;
-  /* 設定欲顯示的行數，超出則顯示省略符號(...)。 */
-  -webkit-box-orient: vertical;
-  /* 設定 box 的子元素，是由上往下垂直排列。 */
-  display: -webkit-box;
-  /* 設定 display 為 -webkit-box 元素。 */
-  overflow: hidden;
+  float: left;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   max-height: 40px;
   width: 100%;
-  padding: 5px 0;
+  padding: 3px 0;
   font-size: .9em;
 }
 
@@ -2327,7 +2341,7 @@ table th, table td {
       -ms-flex-pack: start;
           justify-content: flex-start;
   max-width: 100%;
-  padding: 6px 0;
+  padding: 2px 0;
   color: #c93419;
   font-weight: 600;
   font-size: 1em;
