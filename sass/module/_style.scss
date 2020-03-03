@@ -11,6 +11,7 @@ $color_productDetailSingle_major: #4cba59;
 $color_productDetail_minor:#ff8736;
 //因應header 產生上端下推
 
+
 html{
    overflow-x: hidden;
    font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體', '新細明體';
@@ -269,6 +270,7 @@ table{
       padding: 8px 0 0;
       // margin: 0 12px;
       @include tst;
+      user-select: none;;
       &:hover{
          opacity: .85;
       }
@@ -347,6 +349,7 @@ table{
       background-image: url('../img/global/type_prev.svg');
    }
 }
+
 
 .course__type__tab__block{
    @include fxfs;
@@ -838,9 +841,9 @@ table{
    transform:rotate(180deg);
 }
 
-.is_right{
-   opacity: 0;
-   transition: all .2s cubic-bezier(.03,.08,0,.99) ;
-   transform:translateX(-120px);
-}
+// .is__right{
+//    opacity: 0;
+//    transition: all .2s cubic-bezier(.03,.08,0,.99) ;
+//    transform:translateX(-120px);
+// }
 

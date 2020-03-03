@@ -76,6 +76,7 @@ $color_productDetail_minor:#ff8736;
       &.type_productDetail{
          padding: 15px 0;
       }
+      
       >.bread_crumb {
          >.bread_crumb_item {
             color: #ffffff;
@@ -605,7 +606,6 @@ $color_productDetail_minor:#ff8736;
 
    }
 
-
    .nothing_preview {
       @include fxc;
       width: 100%;
@@ -660,7 +660,6 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
-
 
    //產品內容外誆區塊
    .main__tab__block{

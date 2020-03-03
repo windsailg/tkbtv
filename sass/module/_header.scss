@@ -1,132 +1,182 @@
 // *{   outline: #FF7757;outline-width: 1px;outline-style:solid;}
 
-.sidebar {
+$color_major:#1277B5;
+$color_minor:#6fc1f4;
+$color_deeper:#0b4366;
+$color_gray:#777777;
+
+
+$color_productDetailAll_major: #259bd6;
+$color_productDetailSingle_major: #4cba59;
+$color_productDetail_minor:#ff8736;
+
+
+.sidebar__block {
    @include b;
    width: 100%;
    height: 100%;
    position: fixed;
    z-index: 101;
-   top: 0;
+   top: 80px;
+   bottom: 0px;
    display: none;
+   // opacity: 0;
+   @include MCW(781px) {
+      top: 60px;
+   }
+   &.sidebar__block--isopen{
+      display: block;
+   }
 
-   .container {
+   .sidebar__container {
       @include b;
       position: relative;
       background: #fff;
-      height: 100%;
-      left: 0;
-      width: 300px;
+      height: calc(100% - 70px);
+      left: 0px;
+      width: 100%;
+      max-width: 420px;
       font-size: 17px;
+      overflow-x:hidden;
+      overflow-y:scroll;
       z-index: 100;
       color: rgb(83, 83, 83);
-      @include selection_none;
-
-      .locate_name {
-         @include b;
-         padding: 15px 25px;
-         font-weight: 600;
+      transform: translateX(-120px);
+      &.sidebar__container--isopen {
+         display: block;
+         opacity: 0;;
+         transition: all .2s cubic-bezier(.03, .08, 0, .99);
       }
+      background-color: #f1f1f1;
+      padding: 10px 0;
+   }
 
-      .sidebar_list_type {
-         .type_name_block {
-            @include fxb;
-            padding: 15px 25px;
+   .header__list__mobile__block{
+      @include fxcw();
+      font-size: .9em;
+      background-color: #ffffff;
+      margin: 0 0 10px 0;
+      .header__list__mobile__box{
 
-            @include hvc {
-               background: rgb(236, 236, 236);
-               opacity: .9;
-            }
+         @include fxfsw();
+         height: 110px;
 
-            ;
+         padding: 10px 30px;
+         
+         @include MCW() {
 
-            >.name {
-               font-weight: 600;
-            }
-
-            >.icon {
-               font-size: 14px;
-            }
          }
 
-         .type_list_block {
-            @include b;
-            padding: 20px 25px 20px 45px;
-            overflow: hidden;
-            display: none;
-
-            >.list_name {
-               @include b;
-               font-weight: 600;
-               padding: 15px 0;
-            }
-
-            >.course_list {
-               >.course_list_item {
-                  a {
-                     @include b;
-                     padding: 13px 0;
-                     width: 100%;
-                     height: 100%;
-                  }
-               }
-            }
-         }
       }
-
-      >.btn_close {
-         @include b;
-         width: 30px;
-         height: 30px;
-         position: absolute;
-         ;
-         top: 10px;
-         right: 15px;
-         //background: #FF7757;
-         cursor: pointer;
-         display: none;
-
-         @include MCW(861px) {
-            display: block
-         }
-
-         &:hover {
-            .c_deco {
-               background-color: #ffa51d;
-            }
-         }
-
-         .c_deco {
-            @include b;
-            @include aa;
-            @include tst;
-            position: absolute;
-            background: rgb(116, 116, 116);
-            transform: rotate(45deg);
-
-            &.cd1 {
-               height: 1px;
-               width: 80%;
-            }
-
-            &.cd2 {
-               width: 1px;
-               height: 80%;
-            }
-         }
-
+      .header__list__mobile__item{
+         @include fxfsw(50%);
+         padding: 3px 10px;
+         color: #666666;
       }
    }
 
-   >.mask {
+
+   .header__recommand__navigation__block {
+      @include ibl;
+      z-index: 5;
+      position: relative;
+      width: 100%;
+      margin: 0 0 10px 0;
+      background-color: #ffffff;
+      left: 0;
+      // box-shadow: 0px 0px 20px #0000003b;
+
+      @include MCW(1501px) {
+         // display: none;
+      }
+
+
+
+      .recommand__navigation__box {
+         @include fxbw();
+         width: 100%;
+         padding: 10px 30px ;
+         background-color: #f3f3f3;
+         // height: 0px;;
+         display: none;;
+         overflow: hidden;
+      }
+      .recommand__navigation__box__title {
+         @include fxbw();
+         color: $color_major;
+         background-color: #ffffff;
+         float: left;
+         width: 100%;
+         font-weight: 600;
+         padding: 10px 30px;
+         font-size: .9em;
+         i {
+            padding: 0 6px 0 0;
+         }
+      }
+      .recommand__navigation__box__title__name {
+
+      }
+      .recommand__navigation__box__title__icon{
+
+      }
+
+      .recommand__navigation__item {
+         @include iblw(49%);
+         color: #555555;
+         font-size: .9em;
+         padding: 4px 0;
+         transition: .3s all;
+         cursor: pointer;
+
+         &:hover {
+            color: #777777;
+
+            .item__expand__block {
+               visibility: visible;
+               opacity: 1;
+            }
+         }
+      }
+
+
+   }
+
+   .header__list__footer__block{
+      @include fxcw();
+      margin: 10px 0;
+      padding: 10px 0;
+      background-color: #ffffff;
+      .header__list__footer__box{
+         @include fxcw(80px);
+         padding:0 7px;
+         font-size: 1.4em;;
+         &.type__yt{
+            color: #FD0102;
+         }
+         &.type__fb{
+            color: #1172AC;
+         }
+      }
+
+   }
+   .sidebar__mask {
       @include b;
       @include aa;
       cursor: pointer;
       position: fixed;
       width: 100vw;
-      height: 100vh;
+      // height: 100vh;
+      top: 80px;
+      @include MCW(781px){
+         top: 60px;
+      }
       background: rgba(0, 0, 0, 0.705);
    }
+
 }
+
+
 
 #Header {
    @include fxc;
@@ -141,6 +191,7 @@
    @include MCW(781px) {
       height: 60px;
    }
+
 
    .header_container {
       @include fxb;
@@ -179,24 +230,53 @@
       @include hover;
       margin: 0px 20px 0 0px;
       display: none;
+      -webkit-tap-highlight-color: transparent;
+      @include MCW(1651px){
+         display: flex;
+      }
+      &.sidebar__menu--isopen{
+         .sidebar_btn{
+            .sidebar_btn_element{
+               height: 4px;
 
+               border-radius: 2px;
+               &:first-child{
+                  transform: rotate(-40deg);;
+                  top: -1px;
+               }
+               &:nth-child(2) {
+                  display: none;;
+               }
+               &:last-child {
+                  transform: rotate(40deg);
+                  bottom: -1px;
+                  
+               }
+            }
+         }
+      }
       .sidebar_btn {
          @include fxv;
          margin: 0;
-         width: 16px;
+         width: 20px;
          height: 25px;
          cursor: pointer;
-
+         
          .sidebar_btn_element {
             @include ib;
+            @include tst;
+            
             width: 100%;
-            height: 1px;
+            height: 2px;
             background-color: rgb(107, 107, 107);
             margin: 5px 0 0;
             float: left;
+            position: relative;
          }
       }
    }
+
+
 
    .fengso_logo {
       @include ibl;
@@ -468,7 +548,7 @@
       }
       @include MCW(781px) {
          width: 100%;
-         max-width: 400px;
+         max-width: 300px;
          position: absolute;
          @include arl;
          top: 80px;
@@ -499,130 +579,156 @@
    }
 }
 
-.header_marginer {
-   margin: 0 0 80px 0;
-
-   @include MCW(781px) {
-      margin: 0 0 60px 0;
-   }
+.tv__recommand__course__slider__area{
+   @include fxcw();
+   position: fixed;
+   @include arl;
+   z-index: 101;
+   bottom: 0px;
+   background-color:#F5F5F5;
 }
+.tv__recommand__course__slider__block {
+   @include fxcw(1300px);
+   padding: 2px 0;
+   position: relative;
+   @include MCW(481px) {
+      padding: 0;
+   }
 
+   .tv__recommand__course__controller{
+      @include fxfew();
+      height: 30px;
+      position: absolute;
+      top: -30px;
+      max-width: 1300px;
+   }
+   .tv__recommand__course__controller__item{
+      @include fxcw(160px);
+      background-color: #F5F5F5;
+      border:#777777 solid;
+      border-width: 1px 1px 0 1px;
+      letter-spacing: 3px;
+      font-size: .9em;
+      color:$color_major;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 30px;
+      cursor: pointer;
+   }
+   .tv__recommand__course__slider__box {
+      @include fxcw();
+      max-width: calc(100% - 150px);
+      letter-spacing: 1px;
+      overflow: hidden;
+      margin: 15px auto;
+      position: relative;
+      // @include MCW(481px) {
+         
+      // }
+   }
 
-#ITeachContainer {
-   width: 100%;
-
-   .title {
-      @include ib;
-      color: rgb(63, 63, 63);
+   .tv__recommand__course__item {
+      @include ibl;
       width: 100%;
-      padding: 10px 0;
+      box-sizing: border-box;
+      max-width: 400px;
+      box-shadow: 0px 0px 15px #29292927;
+      background-color: #ffffff;
+      padding: 8px 0 0;
+      // margin: 0 12px;
+      @include tst;
+      user-select: none;
+      ;
+
+      &:hover {
+         opacity: .85;
+      }
+   }
+
+   .tv_recommand__course__title {
+      @include ibl;
+      @include multi-nowrap(1);
+      height: 30px;
+      line-height: 21px;
+      width: 100%;
+      padding: 9px 16px 5px;
+      font-size: 1.1em;
       font-weight: bold;
-      font-size: calc(20px + 0.3vw);
-      color: #333;
+      color: $color_deeper;
    }
 
-   >.input_list {
+   .tv_recommand__course__sub {
+      @include ibl;
+      @include nowrap;
       width: 100%;
-      margin: 15px auto 10px;
+      padding: 5px 16px;
+      font-size: .9em;
+   }
 
-      @include MCW(801px) {
-         margin: 5px auto 3px;
+   .tv_recommand__course__info {
+      @include fxfs;
+      flex-wrap: nowrap;
+      @include nowrap;
+      padding: 0px 16px;
+      width: 100%;
+      font-size: .9em;
+   }
+
+   .tv_recommand__course__ele {
+      padding: 5px 8px 5px 0;
+      color: $color_major;
+
+      .course__type {}
+
+      .course__teacher {}
+   }
+
+   .tv_recommand__course__price {
+      @include fxfe;
+      box-sizing: border-box;
+      padding: 6px 10px;
+      margin: 5px 0 0;
+      width: 100%;
+      background-color: $color_major;
+      color: #fafafa;
+      font-weight: 600;
+      ;
+      font-size: 1.1em;
+      -webkit-text-stroke-width: .8px;
+      -webkit-text-stroke-color: #fafafa;
+      letter-spacing: 5px;
+   }
+
+   .rcmd__swiper__next,
+   .rcmd__swiper__prev {
+      background-size: 60px;
+      outline: none;
+      ;
+      width: 60px;
+      height: 54px;
+      @include atb;
+
+      &:before,
+      &:after {
+         display: none;
       }
 
-      >.input_block {
-         @include fxc;
-         position: relative;
-         padding: 0 10px 10px 0;
-         width: 100%;
-         overflow: auto;
-
-         @include col2(96%, 681px) {
-            padding: 0 2px;
-         }
-
-         @include MCW(801px) {
-            padding: 0 10px 5px 0;
-         }
-
-         .title {
-            @include ib;
-            width: 100%;
-            padding: 5px 0 0;
-            font-weight: unset;
-            font-size: 16px;
-            text-align: left;
-         }
-
-         .input {
-            @include PlaceHolder-Style(rgb(145, 145, 145), .9);
-            @include tst;
-            @include ib;
-            text-decoration: none;
-            width: 100%;
-            max-width: 100%;
-            margin: 15px auto 10px;
-            padding: 8px 15px;
-            border-width: 1px;
-            border-style: solid;
-            border-color: rgb(184, 184, 184);
-            outline: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-
-            @include MCW(801px) {
-               margin: 8px auto;
-            }
-
-            &:focus {
-               border-color: #FF7757;
-               box-shadow: 0px 0px 10px rgba(255, 149, 11, 0.466);
-            }
-         }
+      @include MCW(481px) {
+         background-size: 100%;
+         width: 30px;
+         height: 27px;
       }
    }
 
-   >.tips_block {
-      color: rgb(126, 126, 126);
-      font-size: 17px;
-      line-height: 24px;
-
-      @include MCW(801px) {
-         font-size: 15px;
-         line-height: 20px;
-      }
-
-      >.title {
-         @include ib;
-         width: 100%;
-         padding: 10px 0;
-      }
-
-      >.tips_list {
-         width: 100%;
-
-         >.tip {
-            padding: 4px 0;
-
-            @include MCW(801px) {
-               padding: 3px 0;
-            }
-         }
-      }
+   .rcmd__swiper__next {
+      background-image: url('../img/global/type_next.svg');
    }
 
-   >.btns {
-      @include fxc;
-      padding: 20px 0 10px;
-
-      @include MCW(801px) {
-         padding: 10px 0 5px;
-      }
+   .rcmd__swiper__prev {
+      background-image: url('../img/global/type_prev.svg');
    }
 }
 
-.i_want_teach {
-   display: none;
-}
 
 .gotop_gobottom {
    @include fxc;

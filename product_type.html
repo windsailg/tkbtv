@@ -20,7 +20,6 @@
     <!-- Golbal -->
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/9188edaa95.js"></script>
 
 </head>
     
@@ -39,13 +38,13 @@
                     <li class="bread_crumb_item bc_first">
                         <a href="#" target="_blank">
                             <span class="home">
-                                <i class="fas fa-home"></i></span>
+                                <i class="fa fa-home"></i>
                             首頁
                         </a>
                     </li>
                     <li class="bread_crumb_item bc_last">
                         <span class="arrow">
-                            <i class="fas fa-angle-right"></i>
+                            <i class="fa fa-chevron-right"></i>
                         </span>
                         影音專區
                     </li>
@@ -247,7 +246,7 @@
                 <div class="course__type__event__box">
 
                     <div class="course__type__event__title">
-                        <i class="far fa-comments"></i>許願活動
+                        <i class="fa fa-comment-o"></i>許願活動
                     </div>
                     <a href="#" class="course__type__event__imagine img_box">
                         <img class="lazy" data-src="img/tmp/tmp__01.jpg">
@@ -258,7 +257,7 @@
                 <div class="course__type__event__box">
 
                     <div class="course__type__event__title">
-                        <i class="fas fa-video"></i>相關影音
+                        <i class="fa fa-video-camera"></i>相關影音
                     </div>
                     <a href="#" class="course__type__event__imagine img_box">
                         <img class="lazy" data-src="img/tmp/tmp__02.jpg">
@@ -269,7 +268,7 @@
                 <div class="course__type__event__box">
 
                     <div class="course__type__event__title">
-                        <i class="fab fa-hotjar"></i>熱門課程
+                        <i class="fa fa-fire"></i>熱門課程
                     </div>
                     <a href="#" class="course__type__event__imagine img_box">
                         <img class="lazy" data-src="img/tmp/tmp__03.jpg">
@@ -302,6 +301,23 @@
 
 <script>
 
+    var CourseTypeTabSwiper = new Swiper('.course__type__tab__block', {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        effect: 'slide',
+        spaceBetween: 25,
+        loop: false,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        autoplay: {
+            delay: 10000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+    });
 
 
     //Main Content Taber function

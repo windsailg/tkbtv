@@ -100,40 +100,13 @@ $(document).ready(function(){
         }
     });
 
-    var CourseTypeTabSwiper = new Swiper('.course__type__tab__block', {
-        allowTouchMove: true,
-        slidesPerView: 'auto',
-        effect: 'slide',
-        spaceBetween: 25,
-        loop: false,
-        autoHeight: false,
-        lazy: {
-            loadPrevNext: true,
-            loadPrevNextAmount: 1,
-        },
-        autoplay: {
-            delay: 10000,
-            stopOnLastSlide: false,
-            disableOnInteraction: false,
-        },
-    });
 
-
-    //header
-    $('#HeaderSearchRWDTrigger').on('click',function(){
-        if ($('#HeadSerachForm').hasClass('search__active')){
-            $('#HeadSerachForm').fadeOut(150);
-            $('#HeadSerachForm').removeClass('search__active');
-        }else{
-            $('#HeadSerachForm').fadeIn(150);
-            $('#HeadSerachForm').addClass('search__active');
-        }
-    });
 
 
 });
 
 
 
-$('#Header').load('header.html');
-$('#Footer').load('footer.html');
+    $('#Header').load('header.html');
+    $('#Footer').load('footer.html');
+

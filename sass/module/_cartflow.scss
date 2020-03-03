@@ -1,0 +1,254 @@
+$color_major:#1277B5;
+$color_minor:#6fc1f4;
+$color_deeper:#0b4366;
+$color_gray:#777777;
+
+$color_productDetailAll_major: #259bd6;
+$color_productDetailSingle_major: #4cba59;
+$color_productDetail_minor:#ff8736;
+
+
+.area{
+
+   .container{
+      &.type_cart{
+         overflow: visible;;
+      }
+   }
+}
+
+#Cart{
+   font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體','FontAwesome', '新細明體';
+
+   .cartflow__imagine__block {
+      @include fxcw();
+      .dp__mob {
+         display: none;
+      }
+      @include MCW(800px){
+         .dp__tab {
+            display: none;
+         }
+         .dp__mob {
+            display: inline-block;
+         }
+      }
+
+   }
+
+   .table__title__block {
+      @include ibl;
+      margin:20px 0 5px;;
+      .table__title{
+         @include ibl;
+         width: 100%;
+         font-size: 20px;
+         color:#444;
+         letter-spacing: 2px;
+         font-weight: bold;
+         margin: 15px 0; 
+         i{
+            color:#444;
+            margin:  0 6px 0 0;
+         }
+      }
+   }
+
+   .table__box{
+      @include ibl;
+      width: 100%;
+      table{
+         border-collapse: collapse;
+         background-color:#fff;
+         box-shadow: 0px 0px 16px #ccc; 
+      }
+      tr{
+         @include tst;
+      }
+      th{
+         color:#fff;;
+         letter-spacing: 3px;
+         font-size:15px;
+         position: relative;
+         z-index: 1;
+         vertical-align: middle;
+         text-align: center;
+      }
+      td{
+         vertical-align: middle;
+         text-align: center;
+         border: 1px solid #DDD;
+         .course__name{
+            transition: .1s ease-in-out;
+            text-decoration: underline;
+            &:hover{
+               opacity: .6;
+            }
+         }
+         &:nth-child(2){
+            font-size: 16px;
+            .hasDis{
+               color:#42b913;
+            }
+
+         }
+         &:nth-child(3){
+            font-size: 15px;
+         }
+      }
+      .icon{
+         @include ib;
+         border-radius: 3px;
+         padding: 5px 7px;
+         @include hover;
+            border: 1px solid #777;
+            color: #777;;
+            font-size: 16px;
+         &.type_blue{
+            border: 1px solid $color_productDetailAll_major;
+            color: $color_productDetailAll_major;
+            ;
+         }
+         &.type_gray{
+            padding: 5px 8px;
+         }
+      }
+      .type_all{
+         th{
+            background-color:$color_productDetailAll_major;
+            border: 1px solid $color_productDetailAll_major;
+         }
+      }
+      .type_single{
+         th{
+            background-color:$color_productDetailSingle_major;
+            border: 1px solid $color_productDetailSingle_major;
+         }
+      }
+   }
+   .saleCode_block{
+      @include fxfe;
+      float: left;
+      width:100%;
+      margin: 50px 0 10px;
+      .name{
+         padding: 10px 20px;
+         background-color: transparent;
+         font-size: 16px;
+         color:#666;
+         font-weight: bold;
+      }
+      .inputer{
+         width: 100%;
+         max-width: 228px;
+         padding: 5px 8px;
+         @include MCW(450px) {
+            max-width: unset;
+         }
+      }
+   }
+   .count_block{
+      @include fxfe;
+      width:100%;
+      .element{
+         @include fxfe;
+         width: 100%;
+         text-align: right;
+         padding: 5px 0;
+         font-size: 16px;
+         letter-spacing: 1px;
+      }
+      .name{
+         @include ibl;
+         width: 100%;
+         max-width: 150px;
+      }
+      .num{
+         @include ibl;
+         width: 100%;
+         max-width: 150px;
+      }
+      .total{
+         border: solid #777;
+         border-width: 1px 0 0 0;
+         padding: 10px 0;
+         font-size: 19px;
+         font-weight: bold;
+         .name{
+            letter-spacing: 2px;
+         }
+         .num{
+            color:$color_productDetail_minor;
+            letter-spacing: 1px;
+         }
+      }
+   }
+   .btn_block{
+      @include fxfe;
+      float: left;
+      width: 100%;
+      margin: 40px 0 ;
+      text-align: center;
+      a{
+         width: 100%;
+         font-size: 16px;
+         margin: 10px ;
+         box-sizing: border-box;
+        
+      }
+      .buymorer{
+         max-width: 160px;
+
+      }
+      .submiter{
+         
+         max-width: 290px;
+         font-weight: bold;
+      }
+   }
+   .nothing_block{
+      @include fxc;
+      @include tst;
+      flex-wrap: wrap;
+      width: 100%;
+      // padding: 8px;
+      transition-delay: .2s;
+      margin: 15px auto;
+      position: relative;
+      > .title{
+         @include fxc;
+         overflow: hidden;
+         border:1px solid #ccc;
+         @include ibl;
+         width:100%;
+         text-align: center;
+         font-size:22px;
+         color:#aaa;;
+         padding: 65px 0;
+         margin: 15px auto;
+      }
+   }
+   
+   .course__list__block {
+      display: none;
+         background-color: #ffffff;
+         color: #ffffff;
+      .course__list__content {
+
+      }
+   }
+
+   
+}
+
+
+
+.listCheck_box{
+   @include ibl;
+   margin: 20px 0 0;
+   letter-spacing: 1px;
+   font-size: 17px;
+}
+
+
+
