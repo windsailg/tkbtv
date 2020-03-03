@@ -151,82 +151,37 @@
 
 	</div>
 
+	<div id="TVRecommandCourse" class="tv__recommand__course__area">
 
-
-
-
-	<div class="tv__recommand__course__slider__area">
-
-		<div class="tv__recommand__course__slider__block">
+		<div class="tv__recommand__course__block">
 
 			<div class="tv__recommand__course__controller">
-				<div class="tv__recommand__course__controller__item">
+				<div id="TVRecommandCourseControllerTab" class="tv__recommand__course__controller__item">
 					推薦課程<i class="fa fa-chevron-down" aria-hidden="true"></i>
 				</div>
 			</div>
 
-			<div id="TVRecommadnCourseSlider" class="tv__recommand__course__slider__box">
+			<div id="TVRecommadnCourseSlider" class="tv__recommand__course__slider__block">
 				<div class="swiper-wrapper">
 
-					<a href="#" class="recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
+					<a href="#" class="tv__recommand__course__box swiper-slide">
+
+						<div class="tv__recommand__course__imagine img_box">
+							<img src="img/tmp/course_image01.jpg">
 						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
+
+						<div class="tv__recommand__course__content__box">
+
+							<div class="tv__recommand__course__title tv__recommand__course__ele">研究所-機械所</div>
+							<div class="tv__recommand__course__sub tv__recommand__course__ele">文化行政Ａ組</div>
+							<div class="tv__recommand__course__type tv__recommand__course__ele">全修(一年) - 雲端</div>
+							<div class="tv__recommand__course__price tv__recommand__course__ele">$71,000</div>
+
+						</div>
+
 					</a>
 
-					<a href="#" class="tv_recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
-						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
-					</a>
-						
-					<a href="#" class="tv_recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
-						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
-					</a>
 
-					<a href="#" class="tv_recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所研究所-機械所研究所-機械所研究所-機械所研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
-						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
-					</a>
-
-					<a href="#" class="tv_recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
-						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
-					</a>
-
-					<a href="#" class="tv_recommand__course__item swiper-slide">
-						<div class="tv_recommand__course__title">研究所-機械所</div>
-						<div class="tv_recommand__course__sub">全修(一年) - 雲端</div>
-						<div class="tv_recommand__course__info">
-							<div class="tv_recommand__course__ele course__type">全修</div>
-							<div class="tv_recommand__course__ele course__teacher">師資群</div>
-						</div>
-						<div class="tv_recommand__course__price">$71,000</div>
-					</a>
 
 				</div>
 			</div>
@@ -237,8 +192,6 @@
 		</div>
 
 	</div>
-	 
-
 
 	<div id="Header" class="header">
 	
@@ -340,10 +293,10 @@
 	<div class="header_marginer"></div>
 
 
-	<script>
+<script>
 
 
-		var TVRecommandCourseSwiper = new Swiper('#TVRecommadnCourseSlider', {
+	var TVRecommandCourseSwiper = new Swiper('#TVRecommadnCourseSlider', {
 			allowTouchMove: true,
 			// slidesPerView: 5,
 			effect: 'slide',
@@ -432,7 +385,6 @@
 
 	$('.recommand__navigation__box__title').on('click', function () {
 		let target = $(this).next('.recommand__navigation__box');
-
 		$(this).css({
 			'pointer-events': 'none'
 		});
@@ -452,7 +404,15 @@
 		}
 	});
 
-	</script>
+
+
+	$('#TVRecommandCourseControllerTab').on('click',function(){
+		$('#TVRecommandCourse').toggleClass('tv__recommand__course__area--isopen');
+	})
+
+
+</script>
+
 
 
 </body>

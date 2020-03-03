@@ -100,9 +100,7 @@ $(document).ready(function(){
         }
     });
 
-
-
-
+    
 });
 
 
