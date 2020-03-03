@@ -5202,6 +5202,7 @@ table th, table td {
 
 #Footer .downloads__block .downloads__app__link embed, #Footer .downloads__block .downloads__app__link svg {
   cursor: pointer;
+  pointer-events: none;
 }
 
 #Footer .downloads__block .downloads__app__link.imagine {
