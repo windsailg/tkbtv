@@ -1,5 +1,7 @@
 @include resetCSS;
 
+
+
 $color_major:#1277B5;
 $color_minor:#6fc1f4;
 $color_deeper:#0b4366;
@@ -10,6 +12,9 @@ $color_productDetailAll_major: #259bd6;
 $color_productDetailSingle_major: #4cba59;
 $color_productDetail_minor:#ff8736;
 //因應header 產生上端下推
+
+// * {   outline: #ff8736;   outline-width: 1px;   outline-style: solid;}
+
 
 
 html{

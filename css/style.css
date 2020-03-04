@@ -4721,12 +4721,12 @@ table th, table td {
   opacity: .6;
 }
 
-#Cart .table__box td:nth-child(2) {
-  font-size: 16px;
+#Cart .table__box td .hasDis {
+  color: #42b913;
 }
 
-#Cart .table__box td:nth-child(2) .hasDis {
-  color: #42b913;
+#Cart .table__box td:nth-child(2) {
+  font-size: 16px;
 }
 
 #Cart .table__box td:nth-child(3) {
@@ -4940,7 +4940,6 @@ table th, table td {
 .course__list__block {
   display: none;
   background-color: #ffffff;
-  color: #ffffff;
 }
 
 .discount__list__block {
