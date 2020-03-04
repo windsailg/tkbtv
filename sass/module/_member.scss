@@ -15,7 +15,7 @@ $color_productDetail_minor:#ff8736;
    padding: 5px 0;
 
    .selecter {
-      font-size: 17px;
+      font-size: 1em;
       font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
       margin: 8px 10px 8px 0;
       box-sizing: border-box;
@@ -268,13 +268,13 @@ $color_productDetail_minor:#ff8736;
       @include ibl;
       line-height: 26px;
       width: 100%;
-      font-size: 1.2em;
+      font-size: 1.1em;
       letter-spacing: 1px;
       font-weight: bold;
       color: #666;
       padding: 0 0 5px 0;
       @include MCW(891px) {
-         font-size: 1.1em;
+         font-size: 1em;
          letter-spacing: 0px;
       }
       i {

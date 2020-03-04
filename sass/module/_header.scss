@@ -517,8 +517,8 @@ $color_productDetail_minor:#ff8736;
          @include MCW(781px) {
             display: block;
          }
-         @include MCW(781px) {
-            display: block;
+         @include MCW(481px) {
+            margin: 0px 0px 0 0;
          }
       }
    }
@@ -587,15 +587,15 @@ $color_productDetail_minor:#ff8736;
    position: fixed;
    @include arl;
    z-index: 101;
-   bottom: 0px;
    background-color:#F5F5F5;
    transition: .3s all ease-in-out;
    transition-delay: .1s;
+   bottom: -125px;
+   @include MCW(861px) {
+      bottom: -115px;
+   }
    &.tv__recommand__course__area--isopen{
-      bottom: -125px;
-      @include MCW(861px) {
-         bottom: -115px;
-      }
+      bottom: 0px;
    }
 
    

@@ -22,6 +22,8 @@ $color_productDetail_minor:#ff8736;
 
    .cartflow__imagine__block {
       @include fxcw();
+      float: left;
+      margin:  20px auto;
       .dp__mob {
          display: none;
       }
@@ -126,6 +128,12 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
+
+   .total__block{
+      @include iblw();
+      margin: 50px 0 10px;
+
+   }
    .saleCode_block{
       @include fxfe;
       float: left;
@@ -147,6 +155,7 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
+
    .count_block{
       @include fxfe;
       width:100%;
@@ -155,7 +164,7 @@ $color_productDetail_minor:#ff8736;
          width: 100%;
          text-align: right;
          padding: 5px 0;
-         font-size: 16px;
+         font-size: 1em,;
          letter-spacing: 1px;
       }
       .name{
@@ -172,7 +181,7 @@ $color_productDetail_minor:#ff8736;
          border: solid #777;
          border-width: 1px 0 0 0;
          padding: 10px 0;
-         font-size: 19px;
+         font-size: 1em;
          font-weight: bold;
          .name{
             letter-spacing: 2px;
@@ -189,12 +198,14 @@ $color_productDetail_minor:#ff8736;
       width: 100%;
       margin: 40px 0 ;
       text-align: center;
+      &.type__center{
+         justify-content: center;
+      }
       a{
-         width: 100%;
          font-size: 16px;
          margin: 10px ;
          box-sizing: border-box;
-        
+
       }
       .buymorer{
          max-width: 160px;
@@ -228,20 +239,54 @@ $color_productDetail_minor:#ff8736;
          margin: 15px auto;
       }
    }
-   
-   .course__list__block {
-      display: none;
-         background-color: #ffffff;
-         color: #ffffff;
-      .course__list__content {
 
-      }
-   }
+
+
+
 
    
 }
 
+//lightbox_blocks
+.course__list__block {
+   display: none;
+   background-color: #ffffff;
+   color: #ffffff;
+   .course__list__content {
+      
+   }
+}
 
+.discount__list__block {
+   @include fxfsw(900px);
+   display: none;
+   .discount__list__item {
+      @include fxcw(340px);
+      margin: 18px auto;
+      
+      cursor: pointer;
+      box-shadow: 0px 0px 20px #00000028;;
+      @include MCW(600px){
+         padding: 0 18px;
+      }
+      &:hover{
+         opacity: .9;
+      }
+   }
+}
+
+#lightcase-content {
+   .course__list__block {
+      display: block;
+   }
+   .discount__list__block {
+      display: block;
+      .title__block {
+         font-size: 1.3em;
+         text-align: center;
+      }
+   }
+}
 
 .listCheck_box{
    @include ibl;

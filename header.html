@@ -151,7 +151,7 @@
 
 	</div>
 
-	<div id="TVRecommandCourse" class="tv__recommand__course__area">
+	<div id="TVRecommandCourse" class="tv__recommand__course__area tv__recommand__course__area--isopen">
 
 		<div class="tv__recommand__course__block">
 
@@ -455,6 +455,11 @@
 			// centeredSlides: true,
 			loop: false,
 			autoHeight: false,
+				on: {
+					touchStart: function(event){
+						$('#TVRecommandCourse').addClass('recommand__course__area--clicked');
+					},
+			},
 			navigation: {
 				nextEl: '.rcmd__swiper__next',
 				prevEl: '.rcmd__swiper__prev ',
@@ -556,11 +561,24 @@
 	});
 
 
-
 	$('#TVRecommandCourseControllerTab').on('click',function(){
 		$('#TVRecommandCourse').toggleClass('tv__recommand__course__area--isopen');
+		
 	})
 
+
+	//優化計時收合功能
+	setTimeout(RecommandCourseTabTimer, 3500);
+	$('#TVRecommandCourse').on('click',function(){
+		$(this).addClass('recommand__course__area--clicked');
+	})
+	function RecommandCourseTabTimer(){
+		if($('#TVRecommandCourse').hasClass('recommand__course__area--clicked')){
+			return;
+		}else{
+			$('#TVRecommandCourse').removeClass('tv__recommand__course__area--isopen');
+		}
+	}
 
 </script>
 

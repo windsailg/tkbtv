@@ -49,7 +49,7 @@
             			<span class="arrow">
             				<i class="fas fa-angle-right"></i>
             			</span>
-            			會員登入
+            			購物車
             		</li>
 
             	</ul>
@@ -78,12 +78,14 @@
 					<table class="cart_table type_all">
 						<thead>
 							<tr>
-								<th width="60%" class="">課程名稱</th>
-								<th width="20%" class="">挑選科目與搭贈</th>
+								<th width="63%" class="">課程名稱</th>
+								<th width="10%" class="">科目與搭贈</th>
+								<th width="10%" class="">優惠券</th>
 								<th width="10%" class="">價格</th>
-								<th width="10%" class="">操作</th>
+								<th width="7%" class="">操作</th>
 							</tr>
 						</thead>
+
 						<tbody>
 							<tr>
 								<td>
@@ -95,6 +97,12 @@
 									<a href="#ContentList" class="icon type_blue colorboxAjax" data-rel="lightcase">
 										<i class="fa fa-bars"></i>
 									</a>
+								</td>
+								<td>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
 								</td>
 								<td>
 									$ 49,000
@@ -118,6 +126,12 @@
 									</a>
 								</td>
 								<td>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
+								</td>
+								<td>
 									$ 49,000
 								</td>
 								<td>
@@ -139,6 +153,12 @@
 									</a>
 								</td>
 								<td>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
+								</td>
+								<td>
 									$ 49,000
 								</td>
 								<td>
@@ -158,6 +178,12 @@
 									<a href="#ContentList" class="icon type_blue colorboxAjax" data-rel="lightcase">
 										<i class="fa fa-bars"></i>
 									</a>
+								</td>
+								<td>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
 								</td>
 								<td>
 									$ 49,000
@@ -186,10 +212,10 @@
 					<table class="cart_table type_single">
 						<thead>
 							<tr>
-								<th width="60%" class="">課程名稱</th>
-								<th width="20%" class="">滿萬折千</th>
+								<th width="73%" class="">課程名稱</th>
+								<th width="10%" class="">優惠券</th>
 								<th width="10%" class="">價格</th>
-								<th width="10%" class="">操作</th>
+								<th width="7%" class="">操作</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -198,10 +224,12 @@
 									<a class="course__name" href="#">
 										研究所-通訊所(四科)-雲端
 									</a>
+								</td>
 								<td>
-									<span class="noDis">
-										--
-									</span>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
 								</td>
 								<td>
 									$ 49,00
@@ -220,9 +248,10 @@
 									</a>
 								</td>
 								<td>
-									<span class="noDis">
-										--
-									</span>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
 								</td>
 								<td>
 									$ 49,00
@@ -241,9 +270,10 @@
 									</a>
 								</td>
 								<td>
-									<span class="hasDis">
-										- $ 4000
-									</span>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars"></i>
+									</a>
+									<!-- <span class="hasDis"> -- </span> -->
 								</td>
 								<td>
 									$ 49,000
@@ -262,9 +292,10 @@
 									</a>
 								</td>
 								<td>
-									<span class="hasDis">
-										- $ 4000
-									</span>
+									<a href="#DiscountList" class="icon colorboxAjax" data-rel="lightcase">
+										<i class="fa fa-bars" ></i>
+									</a>
+									<span class="hasDis"> -$3,000 </span>
 								</td>
 								<td>
 									$ 49,000
@@ -280,69 +311,88 @@
 
 				</div>
 
-				<s:form action="%{BASE_PATH}orders/toCartAntiFraud.jsp" method="post" name="baseForm" id="baseForm" theme="simple"
+				<!-- <s:form action="%{BASE_PATH}orders/toCartAntiFraud.jsp" method="post" name="baseForm" id="baseForm" theme="simple"
 					class="saleCode_block ">
 					<span class="name">輸入優惠碼</span>
 					<input class="inputer" name="coupon" type="text" id="coupon" placeholder="請在此輸入優惠碼" maxlength="16"
 						title="請在此輸入優惠碼" data-anatomic="B">
-				</s:form>
+				</s:form> -->
 
-				<div class="count_block">
+				<div class="total__block">
 
-					<div class="element miniCount">
-						<span class="name">小計</span>
-						<span id="total_price" class="num">$ 14,000</span>
-						<!-- <span id="total_price" class="num">$ ${myFunc:moneyComma(total)}</span> -->
-					</div>
+					<div class="count_block">
 
-					<div class="element disCount">
-						<span class="name">滿萬折千</span>
-						<span id="discount_price" class="num">-$ 12,000</span>
-						<!-- <span id="discount_price" class="num">-$ ${myFunc:moneyComma(s_dis)}</span> -->
-					</div>
+						<div class="element miniCount">
+							<span class="name">小計</span>
+							<span id="total_price" class="num">$ 14,000</span>
+							<!-- <span id="total_price" class="num">$ ${myFunc:moneyComma(total)}</span> -->
+						</div>
 
-					<div class="element disCountCode">
-						<span class="name">優惠碼</span>
-						<span id="discount_coupon_price" class="num">-$ 48,000</span>
-						<!-- <span id="discount_price" class="num">-$ ${myFunc:moneyComma(coupon_price)}</span> -->
-					</div>
+						<div class="element disCount">
+							<span class="name">優惠券</span>
+							<span id="discount_price" class="num">-$ 2,000</span>
+							<!-- <span id="discount_price" class="num">-$ ${myFunc:moneyComma(s_dis)}</span> -->
+						</div>
 
-					<div class="element total">
-						<span class="name">總計金額</span>
-						<span id="last_price" class="num">$ 88,000</span>
-						<!-- <span id="discount_price" class="num">${myFunc:moneyComma(total-s_dis-coupon_price)}</span> -->
-					</div>
-
-				</div>
-
-				<div class="btn_block">
-					<a href="${BASE_PATH}" class="buymorer button style_gray">繼續購物</a>
-					<a href="toCartAntiFraud.jsp?&shopcar_type=pd" id="checkout" class="submiter button ">前往結帳</a>
-				</div>
-
-				<div class="area type_btb">
-					<div class="container type_cart">
-						<div class="nothing_block">
-							<div class="title">
-								購物車內無任何商品
-							</div>
-
-							<a href="${BASE_PATH}" class="buymorer button ">繼續購物</a>
-
+						<div class="element total">
+							<span class="name">總計金額</span>
+							<span id="last_price" class="num">$ 88,000</span>
+							<!-- <span id="discount_price" class="num">${myFunc:moneyComma(total-s_dis-coupon_price)}</span> -->
 						</div>
 
 					</div>
+
+					<div class="btn_block">
+						<a href="${BASE_PATH}" class="buymorer button style_gray">繼續購物</a>
+						<a href="toCartAntiFraud.jsp?&shopcar_type=pd" id="checkout" class="submiter button ">前往結帳</a>
+					</div>
+
+					<div class="area type_btb">
+						<div class="container type_cart">
+							<div class="nothing_block">
+								<div class="title">
+									購物車內無任何商品
+								</div>
+
+								<a href="${BASE_PATH}" class="buymorer button ">繼續購物</a>
+
+							</div>
+
+						</div>
+					</div>
+
 				</div>
 
 			</div>
 
 
-					<div id="ContentList" class="course__list__block">
-						<p class="course__list__content">
-							This is Course List
-						</p>
-					</div>
+			<div id="ContentList" class="course__list__block">
+				<p class="course__list__content">
+					This is Course List
+				</p>
+			</div>
 
+			<div id="DiscountList" class="discount__list__block">
+
+				<div class="title__block">
+					選擇適用於該課程的優惠券
+				</div>
+
+				<a href="#" class="discount__list__item img_box">
+					<img class="discount__list__imagine"  src="img/cartflow/coupon_01.jpg">
+				</a>
+				<a href="#" class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_02.jpg">
+				</a>
+				<a href="#" class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_03.jpg">
+				</a>
+				<a href="#" class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_04.jpg">
+				</a>
+			</div>
+
+					
 		</div>
 
 
@@ -371,11 +421,28 @@
 <script>
 
 	$(document).ready(function (){
+		
 
-		$('a[data-rel^=lightcase]').lightcase();
+
+		
+
 
 	});
-		
+
+	//燈箱目標初始化
+	$('a[data-rel^=lightcase]').lightcase({
+		onFinish:{
+			autoClose: function(){
+				//點選折價券後關閉燈箱
+				$('.discount__list__item').on('click',function(){
+					//More coupon function
+					lightcase.close();
+				})
+			}
+		}
+	});
+
+
 </script>
 
 <script src="js/tv_main.js"></script>

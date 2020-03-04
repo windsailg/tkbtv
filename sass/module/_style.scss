@@ -218,10 +218,12 @@ table{
 
 //全站描述樣式
 .description__block{
+   @include iblw();
    letter-spacing: 1px;
-   line-height: 24px;
+   line-height: 25px;
    margin: 20px 0;
    .description__title{
+      margin: 10px 0;
       color: $color_major;
       font-weight: 600;
       font-size: 1.2em;
@@ -229,12 +231,17 @@ table{
          font-size: calc(1.3em + 0.4vw);
          margin: 10px 0;
       }
+      i{
+         padding:  0 10px 0 0;
+      }
    }
    .description__content{
 
    }
+   b{
+      color: $color_major;
+   }
 }
-
 
 
 
@@ -490,7 +497,7 @@ table{
    border-radius: 5px;
    padding: 15px 40px;
    margin: 8px;
-   font-size: 16px;
+   font-size: .9em;
    &:hover{
       opacity: .8;
    }
