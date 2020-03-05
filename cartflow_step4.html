@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>${PROJECT_NAME}-確認訂單</title>
+	<link rel="icon" href="img/favicon.png">
+
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="css/focuspoint.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/lightcase.css">
+    <!-- Golbal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+<div id="Header" class="header"></div>
+
+
+
+	<div id="Cart" class="page">
+
+	    <div class="area type__gray ">
+
+	    	<div class="container ">
+
+            <div class="block bread_crumb_block">
+            	<ul class="bread_crumb">
+
+            		<li class="bread_crumb_item bc_first">
+            			<a href="#" target="_blank">
+            				<span class="home">
+            					<i class="fas fa-home"></i></span>
+            				首頁
+            			</a>
+            		</li>
+
+            		<li class="bread_crumb_item bc_last">
+            			<span class="arrow">
+            				<i class="fas fa-angle-right"></i>
+            			</span>
+            			購物車
+            		</li>
+
+            	</ul>
+            </div>
+
+            <h2 class="title__block">
+            	確認訂單
+            </h2>
+
+				<div class="cartflow__imagine__block">
+
+					<div class="cartflow__imagine img_box">
+						<img class="dp__tab" src="img/cartflow/steps-4.png" alt="購物流程4">
+						<img class="dp__mob" src="img/cartflow/steps_mob-4.png" alt="購物流程4">
+					</div>
+				</div>
+
+				<div class="description__block">
+					<div class="description__title">
+						<i class="fa fa-bookmark"></i>已完成訂購，請選擇付款方式。
+					</div>
+					<div class="description__content">
+						親愛的客戶！ 感謝您訂購 TKBTV課程，您可以選擇＂匯款＂或是＂信用卡付款＂其中一個方式完成繳費，若需要再查看本訂單詳細狀態，
+						可至帳戶的「<a href="#">購物清單</a>」查閱紀錄。當訂單狀態為＂付款完成＂時，若您是購買雲端課程即可至「<a href="#">TKBTV</a>」
+						觀看課程；若您是購買數位學堂請至「<a href="#">數位學堂</a>」網站預約上課，若有其他訂單問題，請至「<a href="#">聯絡我們</a>」詢問，或撥打客服專線。
+					</div>
+				</div>
+
+				<div class="description__block">
+					<div class="description__title">
+						<i class="fa fa-bookmark"></i>繳費資訊
+					</div>
+				</div>
+
+				<div class="cart__checkout__block">
+
+					<div class="cart__checkout__box">
+						<div class="cart__checkout__title">
+							戶　　名
+						</div>
+						<div class="cart__checkout__content">
+							台灣知識庫股份有限公司
+						</div>
+					</div>
+
+					<div class="cart__checkout__box">
+						<div class="cart__checkout__title">
+							轉帳銀行
+						</div>
+						<div class="cart__checkout__content">
+							808(玉山銀行)
+						</div>
+					</div>
+
+					<div class="cart__checkout__box">
+						<div class="cart__checkout__title">
+							轉帳帳號
+						</div>
+						<div class="cart__checkout__content">
+							95337174201239(請使用ATM繳費功能，亦可至玉山銀行臨櫃繳款，謝謝!)
+						</div>
+					</div>
+
+					<div class="cart__checkout__box">
+						<div class="cart__checkout__title">
+							轉帳金額
+						</div>
+						<div class="cart__checkout__content">
+							94,000元
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart__checkout__block">
+
+					<div class="cart__checkout__box">
+						<div class="cart__checkout__title">
+							線上刷卡
+						</div>
+						<div class="cart__checkout__content">
+							欲分期數：
+
+            			<div class="radio_box">
+            				<input id="PayAll" type="radio" class="radio" name="payment__radio" checked />
+            				<label class="label" for="PayAll" onclick="">一次付清</label>
+							</div>
+
+							<div class="radio_box">
+								<input id="Paythree" type="radio" class="radio" name="payment__radio" checked />
+								<label class="label" for="Paythree" onclick="">三期零利率(須滿三萬元)</label>
+							</div>
+
+            			<div class="radio_box">
+            				<input id="Payline" type="radio" class="radio" name="payment__radio" checked />
+            				<label class="label" for="Payline" onclick="">Line Pay</label>
+            			</div>
+
+
+							<div class="button shape">信用卡付款</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<div id="PrintThis">
+
+					<div class="description__block">
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>訂單資訊
+						</div>
+					</div>
+
+					<div class="cart__checkout__block">
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								訂單編號
+							</div>
+							<div class="cart__checkout__content">
+								TS2003050017
+							</div>
+						</div>
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								付款狀態
+							</div>
+							<div class="cart__checkout__content">
+								新訂單
+								<div class="cart__checkout__detail">訂單歷史紀錄</div>
+							</div>
+						</div>
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								付款方式
+							</div>
+						</div>
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								商品名稱
+							</div>
+							<div class="cart__checkout__content">
+								<a href="#" class="cart__checkout__link">全修-研究所-生化所(三科)-雲端</a>
+								<a href="#ContentList" class="cart__checkout__lightcase" data-rel="lightcase">查看所選科目</a>
+
+								<a href="#" class="cart__checkout__link">單科-研究所-生化所(三科)-雲端</a>
+								<a href="#ContentList" class="cart__checkout__lightcase" data-rel="lightcase">查看所選科目與搭贈</a>
+
+								<a href="#" class="cart__checkout__link">單科-研究所-生化所(三科)-雲端</a>
+								<a href="#ContentList" class="cart__checkout__lightcase" data-rel="lightcase">查看所選科目與搭贈</a>
+
+								<a href="#" class="cart__checkout__link">單科-研究所-生化所(三科)-雲端</a>
+								<a href="#ContentList" class="cart__checkout__lightcase" data-rel="lightcase">查看所選科目與搭贈</a>
+
+								<a href="#" class="cart__checkout__link">單科-研究所-生化所(三科)-雲端</a>
+								<a href="#ContentList" class="cart__checkout__lightcase" data-rel="lightcase">查看所選科目與搭贈</a>
+
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="description__block">
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>發票資訊
+						</div>
+					</div>
+
+					<div class="cart__checkout__block">
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								姓名
+							</div>
+							<div class="cart__checkout__content">
+								林O哲
+							</div>
+						</div>
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								地址
+							</div>
+							<div class="cart__checkout__content">
+								桃園縣楊梅鎮0120
+							</div>
+						</div>
+
+						<div class="cart__checkout__box">
+							<div class="cart__checkout__title">
+								發票資訊
+							</div>
+							<div class="cart__checkout__content">
+								個人(兩聯式)
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="description__block">
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>相關注意事項說明
+						</div>
+						<div class="description__content">
+							<span class="member__tip">※</span>提醒您：因產品價格及優惠方案眾多，詳細資訊以官方公佈資料為主，TKBTV仍保有決定是否接受訂單及出貨與否之權利。
+						</div>
+					</div>
+
+				</div>
+
+				<div class="btn__block type__center">
+					<div id="PrintStartBTN" class="button shape ">列印訂單明細</div>
+				</div>
+
+
+			</div>
+
+
+			<div id="ContentList" class="course__list__block">
+				<div class="course__list__content table__box">
+
+					<table>
+						<thead>
+							<tr>
+								<th width="55%">所選課程</th>
+								<th width="15%">課型</th>
+								<th width="20%">師資</th>
+								<th width="10%">時數</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>有機化學總複習-雲端</td>
+								<td>雲端課程</td>
+								<td>張北城</td>
+								<td>149.3</td>
+							</tr>
+							<tr>
+								<td>有機化學總複習-雲端</td>
+								<td>雲端課程</td>
+								<td>張北城</td>
+								<td>149.3</td>
+							</tr>
+							<tr>
+								<td>有機化學總複習-雲端</td>
+								<td>雲端課程</td>
+								<td>張北城</td>
+								<td>149.3</td>
+							</tr>
+							<tr>
+								<td>有機化學總複習-雲端</td>
+								<td>雲端課程</td>
+								<td>張北城</td>
+								<td>149.3</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+
+			<div id="DiscountList" class="discount__list__block">
+
+				<div class="title__block">
+					選擇適用於該課程的優惠券
+				</div>
+
+				<div class="discount__list__item img_box">
+					<img class="discount__list__imagine"  src="img/cartflow/coupon_04.jpg">
+				</div>
+
+				<div class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_03.jpg">
+				</div>
+
+				<div class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_02.jpg">
+				</div>
+				
+				<div class="discount__list__item img_box">
+					<img class="discount__list__imagine" src="img/cartflow/coupon_01.jpg">
+				</div>
+
+			</div>
+
+					
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+<footer id="Footer"></footer>
+<!-- Golbal -->
+<script src="js/jquery.min.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/jquery.focuspoint.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+<script src="js/lightcase.js"></script>
+
+<script>
+
+	$('#PrintStartBTN').click(function(){
+
+		//去除超連結設置
+		// $('a').each(function(index) {
+		// $(this).replaceWith($(this).html());
+		// });
+
+		//指定要列印的區塊
+		var PrintTarget = $("#PrintThis").html();
+		var bodyHtml = document.body.innerHTML;
+		document.body.innerHTML = PrintTarget;
+		window.print();
+		document.body.innerHTML = bodyHtml;
+		window.location.reload(); //列印輸出後更新頁面
+	});
+
+	//燈箱目標初始化
+	$('a[data-rel^=lightcase]').lightcase();
+
+
+</script>
+
+<script src="js/tv_main.js"></script>
+</body>
+
+</html>

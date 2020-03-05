@@ -7,7 +7,6 @@ $color_productDetailAll_major: #259bd6;
 $color_productDetailSingle_major: #4cba59;
 $color_productDetail_minor:#ff8736;
 
-
 .area{
 
    .container{
@@ -144,11 +143,9 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
-
    .total__block{
       @include iblw();
       margin: 50px 0 10px;
-
    }
    .saleCode_block{
       @include fxfe;
@@ -171,7 +168,6 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
-
    .count_block{
       @include fxfe;
       width:100%;
@@ -257,30 +253,36 @@ $color_productDetail_minor:#ff8736;
    }
 
    .step__check__block{
-      @include fxcw();
-      &.type__simple{
-         
-      }
-      .step__check__box{
-         @include fxcw(200px);
-         background-color: $color_major;
-         border-radius: 50px;
-         padding: 10px;
-         max-width: 300px;
-         width: 100%;
-         margin: 20px auto;
-         color: #fff;
-         border: 2px solid #fff;
-         box-shadow: 1px 1px 3px 2px rgba(61%, 61%, 61%, 0.5);
-         text-align: center;
-         box-sizing: border-box;
-         width: 100%;
-         cursor: pointer;
-         font-size: 1.2em;
-      }
+      @include fxfsw();
+      &.type__blue{
+         .step__check__box {
+            @include fxcw(300px);
+            background-color: $color_major;
+            border-radius: 50px;
+            padding: 10px;
+            width: 100%;
+            margin: 20px auto;
+            color: #fff;
+            border: 2px solid #fff;
+            box-shadow: 1px 1px 3px 2px rgba(61%, 61%, 61%, 0.5);
+            text-align: center;
+            box-sizing: border-box;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1.2em;
+         }
+         .step__check__box{
 
+         }
+      }
+      .text{
+         font-size: 1.1em;
+      }
+      a{
+         text-decoration: underline;
+         font-weight: 600;
+      }
    }
-
 
    //確認會員資料
    .cart__member__block {
@@ -292,9 +294,9 @@ $color_productDetail_minor:#ff8736;
       .member__box {
          @include fxv;
          width: 100%;
-         max-width: 580px;
+         max-width: 620px;
          justify-content: space-between;
-         padding: 15px 25px;
+         // padding: 15px 25px;
          // margin: 10px;
          min-height: 380px;
 
@@ -338,7 +340,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       .member__input__box {
-         @include fxbw(350px);
+         @include fxbw(500px);
          padding: 0 20px 0 0;
          margin: 12px 0;
          justify-content: flex-start;
@@ -379,7 +381,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       .member__input__title {
-         @include fxfsw(105px);
+         @include fxfsw(170px);
          // @include nowrap;
          margin: 0px 0;
          text-align: left;
@@ -388,7 +390,7 @@ $color_productDetail_minor:#ff8736;
          padding: 0 10px 0 0;
 
          &.type__full {
-            max-width: 140px;
+            max-width: 170px;
             padding: 0 10px 0 0;
          }
       }
@@ -465,7 +467,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       .texter {
-         max-width: calc(100% - 110px);
+         // max-width: calc(100% - 170px);
          width: 100%;
          max-height: 36px;
          &:disabled{
@@ -506,7 +508,46 @@ $color_productDetail_minor:#ff8736;
       }
    }
 
+   .cart__checkout__block {
+      @include fxfsw();
+      border: 1px solid #cccccc;
+      padding: 20px;
+      margin: 10px 0 20px;
+      .cart__checkout__box{
+         @include fxfsw();
+         padding:  10px 0;
+      }
+      .cart__checkout__title {
+         @include fxfsw(200px);
+         font-weight: 600;
+         padding: 5px 0;
+         @include MCW(681px){
+            max-width: 100%;
+         }
 
+      }
+      .cart__checkout__content {
+         @include fxfsw(calc(100% - 220px));
+         ;
+         line-height: 22px;
+         @include MCW(681px) {
+            max-width: 100%;
+         }
+      }
+      .cart__checkout__link{
+         // color: #444444;
+         @include fxfsw();
+         font-weight: 600;
+         text-decoration: underline;
+         margin: 5px 0 0 0;
+      }
+      .cart__checkout__lightcase{
+         color: #444444;
+         text-decoration: underline;
+         @include fxfsw();
+         padding: 5px 0 ;
+      }
+   }
 
 }
 
@@ -514,8 +555,8 @@ $color_productDetail_minor:#ff8736;
 .course__list__block {
    display: none;
    background-color: #ffffff;
-   .course__list__content {
-      
+   th {
+      text-align: center;
    }
 }
 
@@ -538,7 +579,6 @@ $color_productDetail_minor:#ff8736;
    }
 }
 
-
 #lightcase-content {
    .title__block{
       width: 100%;
@@ -553,6 +593,7 @@ $color_productDetail_minor:#ff8736;
          width: 100%;
          table{
             width: 650px;
+
          }
       }
    }
@@ -579,5 +620,44 @@ $color_productDetail_minor:#ff8736;
    font-size: 17px;
 }
 
+
+@media print {
+
+   .cart__checkout__block {
+      display: inline-block;
+      width:100%;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin: 0px 0 20px;
+      .cart__checkout__box {
+         width: 100%;
+         padding: 5px 0;
+         @include MCW(681px) {
+            max-width: 100%;
+         }
+      }
+      .cart__checkout__title {
+         width: 150px;
+         font-weight: 600;
+         padding: 5px 0;
+         @include MCW(681px) {
+            max-width: 100%;
+         }
+      }
+      .cart__checkout__content {
+         line-height: 22px;
+         width: calc(100% - 160px);
+         // a {
+         //    display: block;
+         // }
+         @include MCW(681px) {
+            max-width: 100%;
+         }
+
+      }
+
+   }
+
+}
 
 
