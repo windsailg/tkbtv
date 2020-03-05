@@ -208,7 +208,7 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
-   .btn_block{
+   .btn__block{
       @include fxfe;
       float: left;
       width: 100%;
@@ -258,6 +258,9 @@ $color_productDetail_minor:#ff8736;
 
    .step__check__block{
       @include fxcw();
+      &.type__simple{
+         
+      }
       .step__check__box{
          @include fxcw(200px);
          background-color: $color_major;
