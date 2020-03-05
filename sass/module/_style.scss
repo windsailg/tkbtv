@@ -91,6 +91,13 @@ button{
 }
 
 .table__box {
+   font-size: 1.1em;
+   th{
+      background-color: #eeeeee;
+   }
+   td{
+      border: solid #eeeeee 1px;
+   }
    table{
       width: 100%;
    }
@@ -245,6 +252,7 @@ table{
    }
    b{
       color: $color_major;
+      font-weight: bold;
    }
 }
 
@@ -576,6 +584,7 @@ table{
       margin: 0 6px 0 0;
       border-width: 1px;
       border-color: rgb(187, 187, 187);
+      // background-color: #ffffff;
       ;
       border-style: solid;
 

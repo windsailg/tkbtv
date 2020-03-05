@@ -162,11 +162,14 @@ $color_gray:#777777;
       background-color: #edf7fd;
       padding: 9px 12px;
       box-shadow: 0px 0px 20px #0000003b;
+      // overflow-x: scroll;
+      // overflow-y: scroll;
       @include MCW(1501px){
          display: none;
       }
       .recommand__navigation__box__title{
          @include fxfs;
+         pointer-events: none;
          color: $color_major;
          width: 100%;
          font-weight: 600;
@@ -210,6 +213,7 @@ $color_gray:#777777;
       height: 100%;
       width:750px;
       position: absolute;
+      z-index: 100;
       top: 0;
       left: 300px;
       padding: 20px ;
