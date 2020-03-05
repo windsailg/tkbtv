@@ -5545,6 +5545,9 @@ table th, table td {
     line-height: 22px;
     width: calc(100% - 160px);
   }
+  .cart__checkout__block .cart__checkout__lightcase {
+    display: none;
+  }
 }
 
 .footer_container {
