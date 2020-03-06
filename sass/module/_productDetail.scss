@@ -1321,23 +1321,10 @@ $color_productDetail_minor:#ff8736;
 //外連頁面樣式
 
 #good_descrip {
-   .intrbox {
-      padding: 20px 40px 40px 40px;
-      background-color: #eee;
-      border-radius: 10px 10px 0 0;
-   }
-
+   line-height: 26px;
    .goodpic {
       width: 100%;
    }
-
-   .intrbox h1 {
-      text-align: center;
-      color: #0572e5;
-      font-size: 22px;
-      letter-spacing: 2px;
-   }
-
    h2 {
       color: #0572e5;
       font-size: 22px;
@@ -1359,12 +1346,23 @@ $color_productDetail_minor:#ff8736;
    }
 
    .intrbox {
+      padding: 20px 40px 40px 40px;
+      background-color: #eee;
+      border-radius: 10px 10px 0 0;
+      h1 {
+         text-align: center;
+         color: #0572e5;
+         font-size: 22px;
+         margin: 10px;
+         letter-spacing: 2px;
+      }
       p {
          text-align: center;
-         font-family: '微軟正黑體';
       }
 
       &:after {
+         @include arl;
+
          content: "";
          width: 0;
          height: 0;
@@ -1374,8 +1372,6 @@ $color_productDetail_minor:#ff8736;
          line-height: 0px;
          display: block;
          position: absolute;
-         margin-top: 40px;
-         margin-left: 310px;
       }
    }
 }

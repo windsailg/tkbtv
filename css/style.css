@@ -4705,21 +4705,12 @@ table th, table td {
   opacity: 0;
 }
 
-#good_descrip .intrbox {
-  padding: 20px 40px 40px 40px;
-  background-color: #eee;
-  border-radius: 10px 10px 0 0;
+#good_descrip {
+  line-height: 26px;
 }
 
 #good_descrip .goodpic {
   width: 100%;
-}
-
-#good_descrip .intrbox h1 {
-  text-align: center;
-  color: #0572e5;
-  font-size: 22px;
-  letter-spacing: 2px;
 }
 
 #good_descrip h2 {
@@ -4742,12 +4733,29 @@ table th, table td {
   margin-right: 8px;
 }
 
+#good_descrip .intrbox {
+  padding: 20px 40px 40px 40px;
+  background-color: #eee;
+  border-radius: 10px 10px 0 0;
+}
+
+#good_descrip .intrbox h1 {
+  text-align: center;
+  color: #0572e5;
+  font-size: 22px;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
 #good_descrip .intrbox p {
   text-align: center;
-  font-family: '微軟正黑體';
 }
 
 #good_descrip .intrbox:after {
+  right: 0;
+  margin-right: auto;
+  left: 0;
+  margin-left: auto;
   content: "";
   width: 0;
   height: 0;
@@ -4757,8 +4765,6 @@ table th, table td {
   line-height: 0px;
   display: block;
   position: absolute;
-  margin-top: 40px;
-  margin-left: 310px;
 }
 
 .select__box {
