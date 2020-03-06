@@ -385,7 +385,10 @@ table{
    @include fxfs;
    width: 100%;
    margin:  0 auto;
-
+   overflow: hidden;
+   @include MCW(1301px) {
+      margin: 0 10px;
+   }
    .course__type__tab__box{
       @include fxc;
       border: transparent 3px solid;
@@ -503,17 +506,34 @@ table{
 
 
 //搜尋結果
-.search__result__main__item {
-   @include fxfs;
-   padding: 20px;
-   background-color: #ffffff;
-   box-shadow: 0px 0px 25px #00000023;
+.filter__block{
+   @include fxfsw();
+   padding:  15px 8px 10px;
+   .filter__box{
+      @include fxcw(100px);
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      margin: 5px;
+      color: #575757;
+      @include hover;
+      &.filter__box--ischoose{
+         background-color: $color_major;
+         color: #ffffff;
+      }
+   }
 }
+
 .search__result__main__block {
    width: 100%;
    max-width: 1000px;
    margin: 0 40px 0 0;
-
+   &.search__result__main__item {
+      @include fxfs;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 25px #00000023;
+   }
    @include MCW(1301px) {
       max-width: 100%;
       margin: 0;
@@ -537,18 +557,27 @@ table{
       padding: 15px 0;
       width: 100%;
       border-color: transparent transparent #d3d3d3 transparent;
-
+      &.type__all{
+         // color: $color_productDetailAll_major;
+      }
+      &.type__single{
+         // color: $color_productDetailAll_major;
+      }
       i {
          padding: 0 12px 0 0;
       }
    }
 
 }
+
 .search__result__tab__block {
    @include fxfs;
    width: 100%;
    margin: 0 auto;
-
+   overflow: hidden;
+   @include MCW(1301px) {
+      margin: 0 10px;
+   }
    .search__result__tab__box {
       @include fxc;
       border: transparent 3px solid;
@@ -575,10 +604,9 @@ table{
 .search__result__main__content {
    @include ibl;
    width: 100%;
-   padding: 20px 0;
+   padding: 10px 0 40px;
    line-height: 24px;
 }
-
 .search__result__box{
    @include fxbw(450px);
    float: left;
@@ -589,6 +617,7 @@ table{
    box-shadow: 0px 0px 10px #0000003a;
    transition: .1s ease-in-out;
    font-size: .9em;
+   position: relative;
    @include MCW(1301px){
       max-width: 47%;
    }
@@ -601,7 +630,7 @@ table{
       transform: translate(-2px , -2px);
    }
    .search__result__imagine{
-      @include fxcw(160px);
+      @include fxcw(158px);
       height: 120px;
       @include MCW(501px) {
          display: none;
@@ -609,7 +638,7 @@ table{
    }
    .search__result__content__box{
       @include fxfsw();
-      padding: 8px 8px 8px 10px;
+      padding: 8px 15px 8px 10px;
       max-width: calc(100% - 160px);
       @include MCW(501px) {
          max-width: 100%;
@@ -621,24 +650,32 @@ table{
       font-weight: 600;
       color: $color_major;
    }
+   .search__result__content__article{
+      @include iblw();
+      @include multi-nowrap(4);
+      padding: 4px 0 0 0;
+      height: 78px;
+      line-height: 19px;
+      
+   }
    .search__result__content__classification{
       @include iblw();
       @include multi-nowrap(2);
       height: 50px;
+
    }
-   .search__result__content__container {
+   .search__result__content__container{
       @include fxbw();
       flex-wrap: nowrap;
       margin:  6px 0 0 0 ;
       max-height:28px;
    }
-   .search__result__content__type {
+   .search__result__content__type{
       @include nowrap;
       width: 100%;
       max-width:90px;
    }
-
-   .search__result__content__price {
+   .search__result__content__price{
       @include fxfew();
       @include nowrap;;
       flex-wrap: nowrap;
@@ -647,19 +684,45 @@ table{
          text-decoration: line-through;
          font-size: .9em;
       }
-
       .latest__price {
          color: #cf1818;
          font-weight: 600;
       }
-
+   }
+   .search__result__content__teacher{
+      @include fxfew();
+      @include nowrap;
+      flex-wrap: nowrap;
    }
    &.type__course{
-
+      &:after{
+         content: '';
+         right: 0px;
+         position: absolute;
+         width: 6px;
+         height: 100%;
+      }
+      &.type__all{
+         .search__result__content__title{
+            // color: $color_productDetailAll_major;
+         }
+         &:after {
+            background-color: $color_productDetailAll_major;
+         }
+      }
+      &.type__single{
+         .search__result__content__title {
+            // color: $color_productDetailSingle_major;
+         }
+         &:after{
+            background-color: $color_productDetailSingle_major;
+         }
+         
+      }
    }
 
-}
 
+}
 .search__result__nothing__box{
    @include fxcw();
    display: none;
@@ -672,6 +735,7 @@ table{
       display: flex;
    }
 }
+
 .pager__block{
    @include fxc;
    width: 100%;
@@ -713,7 +777,6 @@ table{
       }
    }
 }
-
 
 
 

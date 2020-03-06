@@ -507,22 +507,44 @@
 
 
 <script>
+    
+    var BannerSwiper = new Swiper('#BannerSwiperBlock', {
+        allowTouchMove: true,
+        slidesPerView: 1,
+        effect: 'fade',
+        spaceBetween: 0,
+        loop: true,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        autoplay: {
+            delay: 10000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 
-        AOS.init({
-            // Global settings:
-            disable: false, 
-            useClassNames: false, 
-            disableMutationObserver: false, 
-            debounceDelay: 50, 
-            throttleDelay: 100, 
-            offset: 200, 
-            delay: 0, 
-            duration: 1100,
-            easing: 'ease-out-cubic',
-            once: true,
-            mirror: true,
-            anchorPlacement: 'top-bottom',
-        });
+    AOS.init({
+        // Global settings:
+        disable: false, 
+        useClassNames: false, 
+        disableMutationObserver: false, 
+        debounceDelay: 50, 
+        throttleDelay: 100, 
+        offset: 200, 
+        delay: 0, 
+        duration: 1100,
+        easing: 'ease-out-cubic',
+        once: true,
+        mirror: true,
+        anchorPlacement: 'top-bottom',
+    });
 
 </script>
 

@@ -301,6 +301,44 @@
 
 <script>
 
+    var RecommandCourseSwiper = new Swiper('.recommand__course__slider__box', {
+        allowTouchMove: true,
+        // slidesPerView: 5,
+        effect: 'slide',
+        spaceBetween: 25,
+        // centeredSlides: true,
+        loop: false,
+        autoHeight: false,
+        navigation: {
+            nextEl: '.rcmd__swiper__next',
+            prevEl: '.rcmd__swiper__prev ',
+        },
+        breakpoints: {
+            0: {//大於等於
+                slidesPerView: 1,
+                spaceBetween: 10,
+                centeredSlides: true,
+            },
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                initialSlide: 0,
+                centeredSlides: true,
+            },
+            861: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 30,
+                initialSlide: 1,
+            },
+            1280: {
+                centeredSlides: true,
+                slidesPerView: 4,
+                spaceBetween: 40,
+                initialSlide: 1,
+            }
+        }
+    });
     var CourseTypeTabSwiper = new Swiper('.course__type__tab__block', {
         allowTouchMove: true,
         slidesPerView: 'auto',

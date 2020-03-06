@@ -329,7 +329,7 @@ $color_productDetail_minor:#ff8736;
 
    .header_list {
       @include fxfs;
-      @include MCW(921px) {
+      @include MCW(1021px) {
          display: none;
       }
       height: 80px;
