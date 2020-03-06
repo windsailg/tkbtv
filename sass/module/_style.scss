@@ -587,13 +587,11 @@ table{
       color: #777777;
       letter-spacing: 1px;
       cursor: pointer;
-
       &.search__result__tab__box--active {
          border-color: transparent transparent $color_major transparent;
          color: $color_major;
          font-weight: bold;
       }
-
       @include MCW(861px) {
          padding: 10px 5px;
          font-size: .9em;

@@ -4705,6 +4705,62 @@ table th, table td {
   opacity: 0;
 }
 
+#good_descrip .intrbox {
+  padding: 20px 40px 40px 40px;
+  background-color: #eee;
+  border-radius: 10px 10px 0 0;
+}
+
+#good_descrip .goodpic {
+  width: 100%;
+}
+
+#good_descrip .intrbox h1 {
+  text-align: center;
+  color: #0572e5;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+#good_descrip h2 {
+  color: #0572e5;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+
+#good_descrip h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#good_descrip h2 .fa {
+  color: #0572e5;
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+#good_descrip .intrbox p {
+  text-align: center;
+  font-family: '微軟正黑體';
+}
+
+#good_descrip .intrbox:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 10px 0 10px;
+  border-color: #eee transparent transparent transparent;
+  line-height: 0px;
+  display: block;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 310px;
+}
+
 .select__box {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
