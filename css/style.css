@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.header, .area .container.type__course__tab, .area .container.type__course__main__content, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .checker, .radio_box, .nothing__box, .nothing__box .nothing__item, .lazy, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, .gotop_gobottom, .area .container.type__product__video, .area .container.type__buyaction, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, #ProductDetail .button__block, #ProductDetail .button__block .button__box, #ProductDetail .button__block .button, #ProductDetail .main__tab__block, #ProductDetail .qa__control__block, #ProductDetail .qa__control__block .button, #ProductDetail .qa_block .box, .select__box, .member__block .member__forget__box .title, .content__block, #Cart .saleCode_block, #Cart .count_block, #Cart .count_block .element, #Cart .btn__block, #Cart .nothing_block, #Cart .nothing_block > .title, #Cart .cart__member__block .member__forget__box .title, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
+.header, .area .container.type__course__tab, .area .container.type__course__main__content, .area .container.type__search__result__main__content, .area .container.type__search__result, .bread_crumb_block, .bread_crumb_block .bread_crumb, .bread_crumb_block .bread_crumb .bread_crumb_item, .bread_crumb_block .bread_crumb .bread_crumb_item .arrow, .recommand__course__slider__block, .recommand__course__slider__block .recommand__course__info, .recommand__course__slider__block .recommand__course__price, .course__type__tab__block, .course__type__tab__block .course__type__tab__box, .course__type__main__item, .course__type__recommand__event__block, .course__type__recommand__event__block .course__type__event__box, .search__result__main__item, .search__result__tab__block, .search__result__tab__block .search__result__tab__box, .pager__block, .checker, .radio_box, .nothing__box, .nothing__box .nothing__item, .lazy, #Header, #Header .header_container, #Header .header_container_box, #Header .sidebar_menu, #Header .header_list, #Header .header_list .header_list_item, #Header .header_list .header_list_item .header__list__item__dropdown__box, #Header .header_list .header_list_item .header__list__item__dropdown__box .header__list__item__dropdown__item, #Header .cart, #Header .search_trigger, #Header .search, #Header .search .search_start, .gotop_gobottom, .area .container.type__product__video, .area .container.type__buyaction, #ProductDetail .course_content_block, #ProductDetail .img_box, #ProductDetail .video_box, #ProductDetail .course__info__block .course_info_body .info_tab, #ProductDetail .course__info__block .course_info_body .info_tab_ietm, #ProductDetail .course__info__block .course_info_body .info_content, #ProductDetail .course__info__block .content_information, #ProductDetail .course__info__block .content_information .pay_info_box, #ProductDetail .course__info__block .content_information .costway_block, #ProductDetail .course__info__block .content_information .price_box, #ProductDetail .course__info__block .content_preview, #ProductDetail .course__info__block .content_preview .preview__item .chapter_block, #ProductDetail .course__info__block .content_preview .preview__item .title_block, #ProductDetail .nothing_preview, #ProductDetail .button__block, #ProductDetail .button__block .button__box, #ProductDetail .button__block .button, #ProductDetail .main__tab__block, #ProductDetail .qa__control__block, #ProductDetail .qa__control__block .button, #ProductDetail .qa_block .box, .select__box, .member__block .member__forget__box .title, .content__block, #Cart .saleCode_block, #Cart .count_block, #Cart .count_block .element, #Cart .btn__block, #Cart .nothing_block, #Cart .nothing_block > .title, #Cart .cart__member__block .member__forget__box .title, .footer_container, #Footer .company__info__block, #Footer .company__info__block .info_logo_box, #Footer .company__info__block .info_box li, #Footer .company__info__block .info_box .info_content_item, #Footer .last__block, #Footer .links__block, #Footer .downloads__block, #Footer .downloads__block .downloads__item, #Footer .bottom_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,7 +21,7 @@
           align-items: center;
 }
 
-.bread_crumb_block .bread_crumb .bread_crumb_item a, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box, .content__block .content, #Cart .cartflow__imagine__block, #Cart .step__check__block, #Cart .step__check__block.type__blue .step__check__box, #Cart .cart__member__block .member__head__box, #Cart .cart__member__block .member__title, #Cart .cart__member__block .member__title__sub, #Cart .cart__member__block .member__input__box, #Cart .cart__member__block .member__input__box.type__verification, #Cart .cart__member__block .member__input__title, #Cart .cart__member__block .member__radio__box, #Cart .cart__member__block .member__forget__box, #Cart .cart__member__block .select__box, #Cart .cart__member__block .btn__box, #Cart .cart__checkout__block, #Cart .cart__checkout__block .cart__checkout__box, #Cart .cart__checkout__block .cart__checkout__title, #Cart .cart__checkout__block .cart__checkout__content, #Cart .cart__checkout__block .cart__checkout__link, #Cart .cart__checkout__block .cart__checkout__lightcase, .discount__list__block, .discount__list__block .discount__list__item {
+.bread_crumb_block .bread_crumb .bread_crumb_item a, .search__result__box, .search__result__box .search__result__imagine, .search__result__box .search__result__content__box, .search__result__box .search__result__content__container, .search__result__box .search__result__content__price, .search__result__nothing__box, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .btn__box, .content__block .content, #Cart .cartflow__imagine__block, #Cart .step__check__block, #Cart .step__check__block.type__blue .step__check__box, #Cart .cart__member__block .member__head__box, #Cart .cart__member__block .member__title, #Cart .cart__member__block .member__title__sub, #Cart .cart__member__block .member__input__box, #Cart .cart__member__block .member__input__box.type__verification, #Cart .cart__member__block .member__input__title, #Cart .cart__member__block .member__radio__box, #Cart .cart__member__block .member__forget__box, #Cart .cart__member__block .select__box, #Cart .cart__member__block .btn__box, #Cart .cart__checkout__block, #Cart .cart__checkout__block .cart__checkout__box, #Cart .cart__checkout__block .cart__checkout__title, #Cart .cart__checkout__block .cart__checkout__content, #Cart .cart__checkout__block .cart__checkout__link, #Cart .cart__checkout__block .cart__checkout__lightcase, .discount__list__block, .discount__list__block .discount__list__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@
           align-items: flex-start;
 }
 
-.description__block, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__item, .tv__recommand__course__block .tv__recommand__course__title, .tv__recommand__course__block .tv__recommand__course__sub,
+.description__block, .search__result__box .search__result__content__classification, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__item, .tv__recommand__course__block .tv__recommand__course__title, .tv__recommand__course__block .tv__recommand__course__sub,
 .tv__recommand__course__block .tv__recommand__course__type, #ProductDetail .select__table__block .select__table__tip__item, #ProductDetail .select__table__block .select__table__box, #ProductDetail .course__relate__block .course__relate__box, #ProductDetail .advisory__block .advisory__title, #Cart .total__block, #Cart .cart__member__block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -337,6 +337,26 @@ table th, table td {
   padding: 24px 0;
 }
 
+.area .container.type__search__result__main__content {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 0;
+}
+
+.area .container.type__search__result {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
 .page {
   margin: 80px 0 0 0;
 }
@@ -400,6 +420,10 @@ table th, table td {
   float: left;
   padding: 0px 8px 0 0;
   font-size: 16px;
+}
+
+.bread_crumb_block .bread_crumb .bread_crumb_item .home i {
+  padding: 0 8px 0 0;
 }
 
 .bread_crumb_block .bread_crumb .bread_crumb_item .arrow {
@@ -807,6 +831,329 @@ table th, table td {
   width: 100%;
   padding: 20px 0;
   line-height: 24px;
+}
+
+.search__result__main__item {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 25px #00000023;
+          box-shadow: 0px 0px 25px #00000023;
+}
+
+.search__result__main__block {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 40px 0 0;
+}
+
+@media all and (max-width: 1301px) {
+  .search__result__main__block {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.search__result__main__block .search__result__main__tab__item {
+  width: 100%;
+  display: none;
+}
+
+.search__result__main__block .search__result__main__tab__item.search__result__main__tab__item--active {
+  display: block;
+}
+
+.search__result__main__block .search__result__main__title {
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #1277B5;
+  border: solid 1px;
+  padding: 15px 0;
+  width: 100%;
+  border-color: transparent transparent #d3d3d3 transparent;
+}
+
+.search__result__main__block .search__result__main__title i {
+  padding: 0 12px 0 0;
+}
+
+.search__result__tab__block {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search__result__tab__block .search__result__tab__box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: transparent 3px solid;
+  width: auto;
+  padding: 20px;
+  font-size: 1em;
+  color: #777777;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.search__result__tab__block .search__result__tab__box.search__result__tab__box--active {
+  border-color: transparent transparent #1277B5 transparent;
+  color: #1277B5;
+  font-weight: bold;
+}
+
+@media all and (max-width: 861px) {
+  .search__result__tab__block .search__result__tab__box {
+    padding: 10px 5px;
+    font-size: .9em;
+  }
+}
+
+.search__result__main__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  line-height: 24px;
+}
+
+.search__result__box {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 450px;
+  float: left;
+  margin: 10px 10px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #444444;
+  -webkit-box-shadow: 0px 0px 10px #0000003a;
+          box-shadow: 0px 0px 10px #0000003a;
+  -webkit-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  font-size: .9em;
+}
+
+@media all and (max-width: 1301px) {
+  .search__result__box {
+    max-width: 47%;
+  }
+}
+
+@media all and (max-width: 981px) {
+  .search__result__box {
+    max-width: 800px;
+    margin: 10px 0;
+  }
+}
+
+.search__result__box:hover {
+  opacity: .9;
+  -webkit-transform: translate(-2px, -2px);
+      -ms-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+}
+
+.search__result__box .search__result__imagine {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 160px;
+  height: 120px;
+}
+
+@media all and (max-width: 501px) {
+  .search__result__box .search__result__imagine {
+    display: none;
+  }
+}
+
+.search__result__box .search__result__content__box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 100%;
+  padding: 8px 8px 8px 10px;
+  max-width: calc(100% - 160px);
+}
+
+@media all and (max-width: 501px) {
+  .search__result__box .search__result__content__box {
+    max-width: 100%;
+  }
+}
+
+.search__result__box .search__result__content__title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #1277B5;
+}
+
+.search__result__box .search__result__content__classification {
+  max-width: 100%;
+  float: left;
+  -webkit-line-clamp: 2;
+  /* 設定欲顯示的行數，超出則顯示省略符號(...)。 */
+  -webkit-box-orient: vertical;
+  /* 設定 box 的子元素，是由上往下垂直排列。 */
+  display: -webkit-box;
+  /* 設定 display 為 -webkit-box 元素。 */
+  overflow: hidden;
+  height: 50px;
+}
+
+.search__result__box .search__result__content__container {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin: 6px 0 0 0;
+  max-height: 28px;
+}
+
+.search__result__box .search__result__content__type {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  width: 100%;
+  max-width: 90px;
+}
+
+.search__result__box .search__result__content__price {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.search__result__box .search__result__content__price .original__price {
+  padding: 0 10px 0 0;
+  text-decoration: line-through;
+  font-size: .9em;
+}
+
+.search__result__box .search__result__content__price .latest__price {
+  color: #cf1818;
+  font-weight: 600;
+}
+
+.search__result__nothing__box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  display: none;
+  color: #999999;
+  font-size: 1.3em;
+  padding: 30px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.search__result__nothing__box.search__result__nothing__box--isshow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pager__block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+@media all and (max-width: 580px) {
+  .pager__block {
+    padding: 0px 0 40px;
+  }
+}
+
+.pager__block .pager__box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: auto;
+  margin: 20px auto;
+  padding: 0 50px 0;
+}
+
+@media all and (max-width: 580px) {
+  .pager__block .pager__box {
+    padding: 0 15px 0;
+  }
+}
+
+.pager__block .pager__box .pager__number {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  padding: 12px 15px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+}
+
+.pager__block .pager__box .pager__number:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+.pager__block .pager__box .pager__number.pager__number--active {
+  background-color: #1277B5;
+  color: #fff;
+}
+
+.pager__block .pager__box .pager__number i {
+  color: #666666;
 }
 
 .button {

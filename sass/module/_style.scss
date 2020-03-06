@@ -146,9 +146,18 @@ table{
       &.type__course__main__content{
          @include fxc;
          align-items: flex-start;
-
          padding: 24px 0;
       }
+      &.type__search__result__main__content {
+         @include fxc;
+         align-items: flex-start;
+         padding: 24px 0;
+      }
+      &.type__search__result{
+         @include fxc;
+         padding: 0;
+      }
+
 
    }
 }
@@ -191,6 +200,9 @@ table{
             padding: 0px 8px 0 0;
             font-size: 16px;
             // color: rgb(63, 63, 63);
+            i{
+               padding: 0 8px 0 0;
+            }
          }
 
          .arrow {
@@ -255,8 +267,6 @@ table{
       font-weight: bold;
    }
 }
-
-
 
 
 .recommand__course__slider__block{
@@ -370,7 +380,7 @@ table{
    }
 }
 
-
+//課程分類
 .course__type__tab__block{
    @include fxfs;
    width: 100%;
@@ -482,11 +492,7 @@ table{
    }
 }
 
-
-
-
 //文章區塊樣式
-
 .course__type__main__content {
    @include ibl;
    width: 100%;
@@ -494,6 +500,221 @@ table{
    line-height: 24px;
 
 }
+
+
+//搜尋結果
+.search__result__main__item {
+   @include fxfs;
+   padding: 20px;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 25px #00000023;
+}
+.search__result__main__block {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 40px 0 0;
+
+   @include MCW(1301px) {
+      max-width: 100%;
+      margin: 0;
+   }
+
+   .search__result__main__tab__item {
+      width: 100%;
+      display: none;
+
+      &.search__result__main__tab__item--active {
+         display: block;
+      }
+   }
+
+   .search__result__main__title {
+      font-weight: 600;
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      color: $color_major;
+      border: solid 1px;
+      padding: 15px 0;
+      width: 100%;
+      border-color: transparent transparent #d3d3d3 transparent;
+
+      i {
+         padding: 0 12px 0 0;
+      }
+   }
+
+}
+.search__result__tab__block {
+   @include fxfs;
+   width: 100%;
+   margin: 0 auto;
+
+   .search__result__tab__box {
+      @include fxc;
+      border: transparent 3px solid;
+      width: auto;
+      padding: 20px;
+      font-size: 1em;
+      color: #777777;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &.search__result__tab__box--active {
+         border-color: transparent transparent $color_major transparent;
+         color: $color_major;
+         font-weight: bold;
+      }
+
+      @include MCW(861px) {
+         padding: 10px 5px;
+         font-size: .9em;
+      }
+   }
+
+}
+.search__result__main__content {
+   @include ibl;
+   width: 100%;
+   padding: 20px 0;
+   line-height: 24px;
+}
+
+.search__result__box{
+   @include fxbw(450px);
+   float: left;
+   margin: 10px 10px;
+   // border: 1px solid #cccccc;
+   align-items: flex-start;
+   color: #444444;
+   box-shadow: 0px 0px 10px #0000003a;
+   transition: .1s ease-in-out;
+   font-size: .9em;
+   @include MCW(1301px){
+      max-width: 47%;
+   }
+   @include MCW(981px) {
+      max-width: 800px;
+      margin: 10px 0;
+   }
+   &:hover{
+      opacity: .9;
+      transform: translate(-2px , -2px);
+   }
+   .search__result__imagine{
+      @include fxcw(160px);
+      height: 120px;
+      @include MCW(501px) {
+         display: none;
+      }
+   }
+   .search__result__content__box{
+      @include fxfsw();
+      padding: 8px 8px 8px 10px;
+      max-width: calc(100% - 160px);
+      @include MCW(501px) {
+         max-width: 100%;
+      }
+   }
+   .search__result__content__title{
+      @include nowrap;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: $color_major;
+   }
+   .search__result__content__classification{
+      @include iblw();
+      @include multi-nowrap(2);
+      height: 50px;
+   }
+   .search__result__content__container {
+      @include fxbw();
+      flex-wrap: nowrap;
+      margin:  6px 0 0 0 ;
+      max-height:28px;
+   }
+   .search__result__content__type {
+      @include nowrap;
+      width: 100%;
+      max-width:90px;
+   }
+
+   .search__result__content__price {
+      @include fxfew();
+      @include nowrap;;
+      flex-wrap: nowrap;
+      .original__price {
+         padding:  0 10px 0 0;
+         text-decoration: line-through;
+         font-size: .9em;
+      }
+
+      .latest__price {
+         color: #cf1818;
+         font-weight: 600;
+      }
+
+   }
+   &.type__course{
+
+   }
+
+}
+
+.search__result__nothing__box{
+   @include fxcw();
+   display: none;
+   color: #999999;
+   font-size: 1.3em;
+   padding: 30px;
+   margin: 20px 0;
+   letter-spacing: 2px;
+   &.search__result__nothing__box--isshow {
+      display: flex;
+   }
+}
+.pager__block{
+   @include fxc;
+   width: 100%;
+   padding: 20px 0 40px;
+
+   @include MCW(580px) {
+      padding: 0px 0 40px;
+   }
+
+   .pager__box{
+      // @include flex-center;
+      // justify-content: space-between;
+      @include ib;
+      width: auto;
+      margin: 20px auto;
+      ;
+      padding: 0 50px 0;
+
+      @include MCW(580px) {
+         padding: 0 15px 0;
+      }
+
+      .pager__number {
+         @include ibl;
+         padding: 12px 15px;
+         margin: 5px;
+         text-align: center;
+         cursor: pointer;
+         background-color: #e0e0e0;
+         @include hover;
+
+         &.pager__number--active {
+            background-color: $color_major;
+            color: #fff;
+         }
+         i{
+            color: #666666;
+         }
+      }
+   }
+}
+
+
 
 
 //Global Cmponent------------------------------------
