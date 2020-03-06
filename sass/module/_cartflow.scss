@@ -251,7 +251,7 @@ $color_productDetail_minor:#ff8736;
          margin: 15px auto;
       }
    }
-
+   
    .step__check__block{
       @include fxfsw();
       &.type__blue{
@@ -537,6 +537,7 @@ $color_productDetail_minor:#ff8736;
       .cart__checkout__detail {
          
       }
+
       .cart__checkout__link{
          // color: #444444;
          @include fxfsw();
@@ -544,6 +545,7 @@ $color_productDetail_minor:#ff8736;
          text-decoration: underline;
          margin: 5px 0 0 0;
       }
+
       .cart__checkout__lightcase{
          color: #444444;
          text-decoration: underline;
@@ -555,10 +557,10 @@ $color_productDetail_minor:#ff8736;
 }
 
 //lightbox_blocks
-.course__list__block {
+.course__list__block{
    display: none;
    background-color: #ffffff;
-   th {
+   th{
       text-align: center;
    }
 }

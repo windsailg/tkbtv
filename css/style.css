@@ -986,7 +986,7 @@ table th, table td {
           justify-content: space-between;
   max-width: 450px;
   float: left;
-  margin: 10px 10px;
+  margin: 15px 10px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
