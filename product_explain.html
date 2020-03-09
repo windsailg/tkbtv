@@ -1,0 +1,158 @@
+
+<link rel="stylesheet" href="${BASE_PATH}css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <div class="intrbox">
+        <h1>什麼是雲端函授?</h1>
+        <p>提供同學或在職人士更多元自主的學習模式，貼近數位生活的時代讓學習雲端化，只要登入TKBTV雲端學習平台，不限時間、地點，隨時都可上課學習，不論是學生、家庭主婦、上班族等，皆可靈活運用時間，學習效果更加乘。</p>
+    </div>
+    <img class="goodpic" src="${BASE_PATH}front/imgs/whatistkbtv.jpg">
+    <div class="clearfix">
+        <div style="width:450px;float:left">
+            <h2><i class="fa fa-mixcloud" aria-hidden="true"></i>雲端函授課程內容</h2>
+            <p>⦿雲端函授指定教材講義
+                <br/>⦿雲端函授使用「電腦」「平板」「手機」觀看課程，不提供DVD光碟。
+                <br/>⦿雲端函授有時數限制，依照課程類別會贈送相對應的複習時數，時數僅在撥放狀態才會進行扣除。</p>
+            <h2><i class="fa fa-truck" aria-hidden="true"></i>雲端函授教材寄送</h2>
+
+            <p>付款後3-5個工作天宅配到府，不提供超商取貨、存局候領、郵政信箱這三種收件方式，可於訂購時備註方便收件時間或到指定學堂領取。
+                <br>
+                <br>線上訂購雲端函授課程若需海外配送服務請於付款前與專員聯繫，諮詢專線:0980-104600#116。</p>
+        </div>
+        <div style="width:250px;float:right;margin-top:30px;">
+            <h3>官網活動</h3>
+            <s:iterator value="ad_list" var="list" status="s_list">
+                <a href="${link}"><img src="${UPLOAD_PATH}${picname}" alt="" width="250px"></a>
+            </s:iterator>
+            <s:if test="tvSubjectConfig.comment_id != 0">
+            <h3>學員心得</h3>
+            <a href="https://www.tkbgo.com.tw/review/toReview.jsp?comment_id=${tvSubjectConfig.comment_id}">
+                <img src="https://www.tkbtv.com.tw/upload/edm_photo/20170319094925.jpg" alt="" width="250px">
+            </a>
+            </s:if>
+        </div>
+    </div>
+
+    <h2><i class="fa fa-commenting-o" aria-hidden="true"></i>雲端函授Line@諮詢服務</h2>
+    <p>1.提供一對一課程諮詢服務：對於商品不理解的地方都可以一對一詢問。
+        <br>2.線上訂購特殊需求：海外訂購、更換師資、更換課程等，皆可使用LINE@詢問。
+        <br>3.最新考情資訊與優惠活動分享</p>
+    <div style="text-align:center;margin-top:30px;" class="clearfix">
+        <a href="https://line.me/R/ti/p/%40uog5903w"><img height="36" border="0" alt="加入好友" src="${BASE_PATH}front/imgs/add_line_a.png"></a>
+        <br/>
+        <img style="width:35%;margin-top:10px;" src="${BASE_PATH}front/imgs/line_a.jpg">
+    </div>
+    <h2><i class="fa fa-cloud" aria-hidden="true"></i>雲端優勢</h2>
+    <table border="2" style="line-height:30px; text-align:center; width:100%">
+        <tbody>
+            <tr>
+                <th style="background-color:#e6f5fe;"></th>
+                <th style="width:40%;font-size:16px;background-color:#e6f5fe;">雲端函授</th>
+                <th style="width:25%;font-size:16px;background-color:#e6f5fe;">數位學堂</th>
+                <th style="width:25%;font-size:16px;background-color:#e6f5fe;">面授課程</th>
+            </tr>
+            <tr style="background-color:#eee;">
+                <td>對象</td>
+                <td colspan="2">所有考生</td>
+                <td>全職考生佳</td>
+            </tr>
+            <tr>
+                <td>時間</td>
+                <td>自由安排</td>
+                <td>學堂開放時間</td>
+                <td>老師開課時間</td>
+            </tr>
+            <tr style="background-color:#eee;">
+                <td>地點</td>
+                <td>有網路連線即可。
+                    <br>免出門、免風吹、免日曬、免雨淋、躲霧霾。
+                    <br/>(住家、咖啡廳、國外等)</td>
+                <td colspan="2">全省TKB數位學堂教室</td>
+            </tr>
+            <tr>
+                <td>交通</td>
+                <td>依學習地點而定
+                    <br>教材宅配到府</td>
+                <td colspan="2">鄰近的學堂地點
+                    <br>教材現場領取</td>
+            </tr>
+            <tr style="background-color:#eee;">
+                <td>環境</td>
+                <td>自由打造專屬讀書環境</td>
+                <td>固定學習教室</td>
+                <td>下課時間詢問老師</td>
+            </tr>
+            <tr>
+                <td>服務</td>
+                <td>課表功能自由安排進度
+                    <br>標籤功能隨時記錄重點</td>
+                <td>將問題給服務人員轉交</td>
+                <td>休息時間詢問助教</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2><i class="fa fa-television" aria-hidden="true"></i>雲端函授設備需求</h2>
+    <table border="2" style="line-height:30px; text-align:center; width:100%">
+        <tbody>
+            <tr>
+                <td style="width:40%;">電腦硬體需求</td>
+                <td style="text-align:left; width:60%;">1.最低配備：CPU Pentium 4以上
+                    <br/>2.記憶體：1GB RAM
+                    <br/>3.網路設備：有線網路、無線WiFi、行動網路
+                    <br/>4.其他週邊需求：耳機或喇叭</td>
+            </tr>
+            <tr style="background-color:#eee;">
+                <td style="width:40%">執行環境</td>
+                <td style="text-align:left; width:60%">1.網頁：不限瀏覽器(IE限IE8以上)，需可運行Flash最新版本(<a href="https://get.adobe.com/flashplayer/?loc=tw" target="_blank">Adobe下載頁</a>)
+                    <br/>2.APP：<a href="https://drive.google.com/file/d/0B25--XzsbpBAdU9iSmFzaVJsT2loTGhzM1ZQd2NuaElMcy1j/view" target="_blank">Android</a> 2.3以上;<a href="https://appsto.re/tw/2shmC.i" target="_blank">IOS</a>需使用之援Flash瀏覽器觀看
+                    <br/>3.<a href="https://www.tkbtv.com.tw/tv/toAirIndex.action?f_subject_no=V1307BE0000001&subject_no=V1307BE0000001&version_no=1547&sort=0" target="_blank">TV雲端桌面播放器</a>最新版本</td>
+            </tr>
+            <tr>
+                <td style="width:40%">連線需求</td>
+                <td style="text-align:left; width:60%">1.實測網路頻寬約 2M以上(<a href="http://searchzone.so-net.net.tw/speedtest/speed01/speed01.do" target="_blank">So-net測速</a>)
+                    <br/>2.公眾WIFI與行動網路觀看雲端函授品質需視訊號而定，建議使用有線網路或自家WiFi觀看課程。</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物流程</h2>
+    <img src="${BASE_PATH}front/imgs/buyandpay.jpg" alt="購物流程" width="100%">
+    <br/>
+    <h2><i class="fa fa-credit-card-alt" aria-hidden="true"></i>付款方式</h2>
+    <table border="1" style="line-height:30px; text-align:center; width:100%">
+        <tbody>
+            <tr>
+                <td style="width:30%">信用卡</td>
+                <td style="text-align:left;width:70%">一次付清、分三期零利率
+                    <br/>分三期合作銀行：玉山、台新</td>
+            </tr>
+            <tr>
+                <td style="width:30%">ATM轉帳</td>
+                <td style="text-align:left; width:70%">1. 當繳費金額超過3萬元請務必選擇「繳費」,因「非約定轉帳」每日限額3萬元。
+                    <br/>2. 此帳號不接受多次匯款,請勿分次匯款</td>
+            </tr>
+            <tr>
+                <td style="width:30%">臨櫃繳款</td>
+                <td style="text-align:left;width:70%">除玉山銀行外其他皆可。
+                    <br/>分行代碼:0532(城中分行)</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><i class="fa fa-exclamation-circle" aria-hidden="true"></i>TKB購課網/雲端函授聲明</h2>
+    <p>本公司於網站上販售的雲端函授商品與相關課程教材屬於授權著作財產商品，請勿重製影音商品與教材，違者需承擔相關法律責任。
+        <br>本公司保有異動課程、價格之權利，若有任何疑慮歡迎加入LINE好友與我們聯繫。</p>
+    <br>
+    <h2><i class="fa fa-comments-o" aria-hidden="true"></i>訂購Ｑ＆Ａ</h2>
+    <p>Q1: 雲端函授有時數限制嗎? 
+        <br>A1: 雲端函授課程時數計算方式僅在播放狀態下才會扣除時數，雲端函授各科時數如課表所示。 </p>
+    <p>Q2: 課程顯示陸續上架是什麼意思? 
+        <br>A2: 每年度老師皆會對課程內容進行評估課程內容是否符合當年度考試,陸續上架表示該課程當年度有更新,會依照老師的每週上課進度陸續上架課程影片,教材也會跟著老師的發放紀錄陸續寄送。</p>
+    <p>Q3: 課程顯示A組B組是什麼意思? 
+        <br>A3: A組與B組課程差異基本上為師資、課程時數為主，依照不同的課程有不同的差異。</p>
+    <s:if test="subjectMasterMap.NO_LIMIT_TIME != 1">
+    <p>Q4: 購買課程是否有詢問課程內容問題之服務?
+        <br>A4: 因數位雲端課程均屬錄影課程，故目前購買課程均無提供詢問問題之服務。
+        <br>例: A課程時數為20小時,期限內將20小時觀看完後,另贈20~100%的課程時數提供觀看。（贈送時數依實際課程分類為主）</p>
+    </s:if>
+    <br>
+    <br>

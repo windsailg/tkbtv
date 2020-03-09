@@ -5984,6 +5984,10 @@ table th, table td {
   opacity: .9;
 }
 
+#lightcase-content .lightcase-inlineWrap {
+  margin: 0 auto;
+}
+
 #lightcase-content .title__block {
   width: 100%;
 }
@@ -6037,6 +6041,9 @@ table th, table td {
 }
 
 @media print {
+  html, body {
+    padding: 20px;
+  }
   .cart__checkout__block {
     display: inline-block;
     width: 100%;
@@ -6044,20 +6051,21 @@ table th, table td {
     padding: 10px;
     margin: 0px 0 20px;
   }
-  .cart__checkout__block .cart__checkout__box {
+  .cart__checkout__box {
     width: 100%;
+    line-height: 24px;
     padding: 5px 0;
   }
-  .cart__checkout__block .cart__checkout__title {
+  .cart__checkout__title {
     width: 150px;
     font-weight: 600;
     padding: 5px 0;
   }
-  .cart__checkout__block .cart__checkout__content {
+  .cart__checkout__content {
     line-height: 22px;
     width: calc(100% - 160px);
   }
-  .cart__checkout__block .cart__checkout__lightcase {
+  .cart__checkout__lightcase {
     display: none;
   }
 }
