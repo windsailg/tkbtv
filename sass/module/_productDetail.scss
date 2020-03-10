@@ -172,6 +172,7 @@ $color_productDetail_minor:#ff8736;
 
          @include MCW(780px) {
             padding: 10px 10px;
+            height: unset;
          }
          .info_tab {
             @include fxc;
@@ -422,6 +423,16 @@ $color_productDetail_minor:#ff8736;
                -webkit-text-stroke:.7px #DD2118;
             }
 
+            .real_price__single {
+               font-size: 1.5em;
+               text-decoration: none;
+               color: #DD2118;
+               letter-spacing: 2px;
+               -webkit-text-stroke: .7px #DD2118;
+            }
+            .detail{
+               font-size: .9em;
+            }
          }
       }
 

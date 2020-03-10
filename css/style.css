@@ -3203,6 +3203,7 @@ table th, table td {
 @media all and (max-width: 780px) {
   #ProductDetail .course__info__block .course_info_body {
     padding: 10px 10px;
+    height: unset;
   }
 }
 
@@ -3531,6 +3532,18 @@ table th, table td {
   color: #DD2118;
   letter-spacing: 2px;
   -webkit-text-stroke: .7px #DD2118;
+}
+
+#ProductDetail .course__info__block .content_information .price_box .real_price__single {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #DD2118;
+  letter-spacing: 2px;
+  -webkit-text-stroke: .7px #DD2118;
+}
+
+#ProductDetail .course__info__block .content_information .price_box .detail {
+  font-size: .9em;
 }
 
 #ProductDetail .course__info__block .content_preview {
