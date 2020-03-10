@@ -255,6 +255,10 @@ table{
          font-size: calc(1.3em + 0.4vw);
          margin: 10px 0;
       }
+      &.type__gray{
+         color: #444444;
+         font-size: 1.1em;
+      }
       i{
          padding:  0 10px 0 0;
       }
@@ -266,6 +270,7 @@ table{
       color: $color_major;
       font-weight: bold;
    }
+
 }
 
 
@@ -733,6 +738,11 @@ table{
       display: flex;
    }
 }
+
+
+
+
+
 
 .pager__block{
    @include fxc;

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TKBTV - 課程分類</title>
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+    <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="css/focuspoint.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Golbal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+    
+<body >
+   
+<div id="Header" class="header"></div>
+
+<div class="page">
+
+    <div class="area ">
+
+        <div class="container ">
+
+            <div class="block bread_crumb_block">
+                <ul class="bread_crumb">
+                    <li class="bread_crumb_item bc_first">
+                        <a href="#" target="_blank">
+                            <span class="home">
+                                <i class="fa fa-home"></i>
+                            首頁
+                        </a>
+                    </li>
+                    <li class="bread_crumb_item bc_last">
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                        會員專區
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="title__block">
+                會員專區
+            </h2>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="area">
+        <div class="container type__course__tab">
+
+            <div class="member__tab__block">
+                <div class="swiper-wrapper">
+                    <div data-tab-item="Content1" class="swiper-slide member__tab__box member__tab__box--active">
+                        會員資料修改
+                    </div>
+                    <div data-tab-item="Content2" class="swiper-slide member__tab__box">
+                        會員密碼修改
+                    </div>
+                    <div data-tab-item="Content3" class="swiper-slide member__tab__box">
+                        我的訂單
+                    </div>
+                    <div data-tab-item="Content4" class="swiper-slide member__tab__box">
+                        我的信箱
+                    </div>
+                    <div data-tab-item="Content5" class="swiper-slide member__tab__box">
+                        我的追蹤
+                    </div>
+                    <div data-tab-item="Content6" class="swiper-slide member__tab__box">
+                        序號專區
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="area type__gray">
+        <div class="container type__member__main__content">
+            
+            <div class="member__main__block member__main__item">
+
+                <!-- tab 切換區塊 -->
+                <form id="Content1" class="member__main__tab__item member__main__tab__item--active">
+
+                    <div class="member__main__title type__all">
+                        <i class="fa fa-cog" aria-hidden="true"></i>會員資料修改
+                    </div>
+
+                    <div class="description__block ">
+                        <div class="description__title type__gray">
+                            親愛的 《TKBTV 雲端學習 》 會員你好！
+                        </div>
+                        <div class="description__content">
+                            以下個人資料請務必詳實填寫，避免在寄送相關商品與客服聯絡時發生阻礙，這將影響您的會員權益
+                            ！我們保證您的個資在未經許可下不會外流出去！部分資料在您填寫後就無法修改（如電子郵件、真實姓名、身分證字號）若需要修改請與我們聯絡。
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="tip__block">
+                        <span class="member__tip">※</span>字號為必填
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                電子郵件<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20"
+                                placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                真實姓名<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                身分證字號<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                手機號碼<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box type__full">
+
+                            <span class="member__input__title ">
+                                通訊地址<span class="member__tip">※</span>
+                            </span>
+
+                            <div class="select__box">
+                                <select class="selecter" data-province="選擇縣市">
+                                    <option value="選擇縣市">選擇縣市</option>
+                                    <option value="科技大學">桃園</option>
+                                    <option value="科技大學">新竹</option>
+                                </select>
+
+                                <select class="selecter" data-province="選擇鄉鎮">
+                                    <option value="選擇鄉鎮">選擇鄉鎮</option>
+                                    <option value="湖口鄉">湖口鄉</option>
+                                    <option value="峨眉鄉">峨眉鄉</option>
+                                </select>
+                            </div>
+
+                            <input type="text" class="texter" spellcheck="false" maxlength="50"
+                                placeholder="輸入詳細地址" />
+                        </div>
+
+                        <div class="member__radio__box type__full">
+
+                            <span class="member__input__title type__full">
+                                就業狀態<span class="member__tip">※</span>
+                            </span>
+
+                            <div class="radio_box">
+                                <input id="OnJob" type="radio" class="radio" name="radio1" checked />
+                                <label class="label" for="OnJob" onclick="">在職</label>
+                            </div>
+
+                            <div class="radio_box">
+                                <input id="OnSchool" type="radio" class="radio" name="radio1" />
+                                <label class="label" for="OnSchool" onclick="">在校</label>
+                            </div>
+
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                別名 (暱稱)
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
+                        </div>
+
+                        <div class="btn__box">
+                            <a class="button shape">確認修改</a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </form>
+
+                <form id="Content2" class="member__main__tab__item member__main__tab__item--active">
+
+                    <div class="member__main__title type__all">
+                        <i class="fa fa-cog" aria-hidden="true"></i>會員密碼修改
+                    </div>
+
+                    <div class="description__block ">
+                        <div class="description__title type__gray">
+                           密碼長度必須為4碼以上 12碼以下
+                        </div>
+                    </div>
+
+                    <div class="tip__block">
+                        <span class="member__tip">※</span>字號為必填
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                電子郵件<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                真實姓名<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                身分證字號<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                手機號碼<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                        </div>
+
+                        <div class="member__input__box type__full">
+
+                            <span class="member__input__title ">
+                                通訊地址<span class="member__tip">※</span>
+                            </span>
+
+                            <div class="select__box">
+                                <select class="selecter" data-province="選擇縣市">
+                                    <option value="選擇縣市">選擇縣市</option>
+                                    <option value="科技大學">桃園</option>
+                                    <option value="科技大學">新竹</option>
+                                </select>
+
+                                <select class="selecter" data-province="選擇鄉鎮">
+                                    <option value="選擇鄉鎮">選擇鄉鎮</option>
+                                    <option value="湖口鄉">湖口鄉</option>
+                                    <option value="峨眉鄉">峨眉鄉</option>
+                                </select>
+                            </div>
+
+                            <input type="text" class="texter" spellcheck="false" maxlength="50" placeholder="輸入詳細地址" />
+                        </div>
+
+                        <div class="member__radio__box type__full">
+
+                            <span class="member__input__title type__full">
+                                就業狀態<span class="member__tip">※</span>
+                            </span>
+
+                            <div class="radio_box">
+                                <input id="OnJob" type="radio" class="radio" name="radio1" checked />
+                                <label class="label" for="OnJob" onclick="">在職</label>
+                            </div>
+
+                            <div class="radio_box">
+                                <input id="OnSchool" type="radio" class="radio" name="radio1" />
+                                <label class="label" for="OnSchool" onclick="">在校</label>
+                            </div>
+
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                別名 (暱稱)
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
+                        </div>
+
+                        <div class="btn__box">
+                            <a class="button shape">確認修改</a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </form>
+
+                <div id="Content3" class="member__main__tab__item">
+
+                    <div class="member__main__title">
+                        <i class="fa fa-list" aria-hidden="true"></i>我的訂單
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="Content4" class="member__main__tab__item">
+
+                    <div class="member__main__title">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>我的信箱
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="Content5" class="member__main__tab__item">
+
+                    <div class="member__main__title">
+                        <i class="fa fa-star" aria-hidden="true"></i>我的追蹤
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="Content6" class="member__main__tab__item">
+
+                    <div class="member__main__title">
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>序號專區
+                    </div>
+
+                    <div class="member__main__content">
+
+
+
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<footer id="Footer"></footer>
+
+
+<!-- Golbal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/lightcase.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/jquery.focuspoint.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+
+
+<script>//搜尋結果functions
+
+    ResultJudge();
+    //判斷有無搜尋結果
+    function  ResultJudge(){
+        $('.member__main__content').each(function(){
+            let ResultBoxes = $(this).children('.member__box').length;
+            if(ResultBoxes == 0 ){
+                $(this).children('.member__nothing__box').addClass('member__nothing__box--isshow');
+            }
+        });
+    }
+
+
+    
+    
+</script>
+
+<script src="js/tv_main.js"></script>
+
+<script>//該頁界面
+
+    var CourseTypeTabSwiper = new Swiper('.member__tab__block', {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        effect: 'slide',
+        spaceBetween: 25,
+        loop: false,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        autoplay: {
+            delay: 10000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+    });
+
+
+    //Main Content Taber function
+    $('.member__tab__box').on('click',function(){
+        $('.member__tab__box').removeClass('member__tab__box--active');
+        $(this).addClass('member__tab__box--active');
+        let ActiveTarget = '#' + $(this).attr('data-tab-item');
+        $('.member__main__tab__item').hide();
+        $(ActiveTarget).fadeIn(300);
+        runlazy(600);
+    });
+
+
+</script>
+
+
+
+</body>
+
+</html>
