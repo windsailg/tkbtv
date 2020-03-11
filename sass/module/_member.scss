@@ -517,7 +517,7 @@ $color_productDetail_minor:#ff8736;
 
       .selecter {
          width: 100%;
-         max-width: 40%;
+         // max-width: 40%;
          border-width: 0 0 1px 0;
          background-color: transparent;
       }
@@ -847,6 +847,20 @@ $color_productDetail_minor:#ff8736;
       padding: 8px 0;
       @include MCW(861px){
       }
+      .mailcase__title {
+         &::after{
+            content: NEW;
+            padding: 5px ;
+            color:#ffffff;
+            background-color: $color_major;
+            
+         }
+      }
+      &.mailcase__box--isread{
+         
+      }
+
+
    }
 
    .mailcase__head{
@@ -941,6 +955,15 @@ $color_productDetail_minor:#ff8736;
       border-width: 0 0 1px 0;;
       background-color: transparent;
       outline: 0px solid transparent;
+   }
+}
+
+.control__block{
+   @include fxfew();
+   .control__ele{
+      padding:  8px;
+      @include hover;
+      color: $color_major;
    }
 }
 
