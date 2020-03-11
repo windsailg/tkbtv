@@ -5284,6 +5284,7 @@ table th, table td {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 @media all and (max-width: 1301px) {
@@ -5550,6 +5551,45 @@ table th, table td {
 
 .member__main__content .texter.type__verification {
   max-width: 100px;
+}
+
+.member__tab__block .member__tab__prev {
+  background-image: url("../img/global/member__tab__prev.svg");
+  left: 0;
+}
+
+.member__tab__block .member__tab__next {
+  background-image: url("../img/global/member__tab__next.svg");
+  right: 0;
+}
+
+.member__tab__block .member__tab__prev,
+.member__tab__block .member__tab__next {
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+  width: 25px;
+  height: 60px;
+  -webkit-box-shadow: 0px 0px 20px #00000031;
+          box-shadow: 0px 0px 20px #00000031;
+}
+
+.member__tab__block .member__tab__prev::after,
+.member__tab__block .member__tab__next::after {
+  display: none;
+}
+
+.member__tab__block .swiper-button-prev.swiper-button-disabled,
+.member__tab__block .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
 }
 
 .member__box {

@@ -85,6 +85,8 @@
                         序號專區
                     </div>
                 </div>
+                <div class="swiper-button-next member__tab__next"></div>
+                <div class="swiper-button-prev member__tab__prev"></div>
             </div>
            
         </div>
@@ -617,7 +619,7 @@
 
 <script>//該頁界面
 
-    var CourseTypeTabSwiper = new Swiper('.member__tab__block', {
+    var MemberTabSwiper = new Swiper('.member__tab__block', {
         allowTouchMove: true,
         slidesPerView: 'auto',
         effect: 'slide',
@@ -633,6 +635,11 @@
             stopOnLastSlide: false,
             disableOnInteraction: false,
         },
+        navigation: {
+            nextEl: '.member__tab__next',
+            prevEl: '.member__tab__prev',
+        },
+
     });
 
 
