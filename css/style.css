@@ -5605,8 +5605,6 @@ table th, table td {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #444444;
-  -webkit-box-shadow: 0px 0px 10px #0000003a;
-          box-shadow: 0px 0px 10px #0000003a;
   -webkit-transition: .1s ease-in-out;
   -o-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
