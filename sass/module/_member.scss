@@ -92,7 +92,7 @@ $color_productDetail_minor:#ff8736;
       padding: 0  0 0 10px;
    }
 
-   .member__tip {
+   .member__tip{
       @include ib;
       line-height: 24px;
       padding: 3px ;
@@ -189,13 +189,16 @@ $color_productDetail_minor:#ff8736;
    //page setting
    .select__box {
       @include fxfsw();
+      .select__ele{
+         @include fxcw(100px);
+      }
       &.type__full{
          width: 100%;
          max-width: 100%;
       }
       .selecter{
          width: 100%;
-         max-width: 30%;
+         // max-width: 30%;
          border-width: 0 0 1px 0;
          background-color: transparent;
       }
@@ -287,7 +290,6 @@ $color_productDetail_minor:#ff8736;
 }
 
  
-
 .area {
    .container {
       &.type__member__main__content {
@@ -313,6 +315,9 @@ $color_productDetail_minor:#ff8736;
       padding: 30px 40px;
       background-color: #ffffff;
       box-shadow: 0px 0px 25px #00000023;
+      @include MCW(1301px) {
+         padding: 20px 10px;
+      }
    }
 
    @include MCW(1301px) {
@@ -408,25 +413,6 @@ $color_productDetail_minor:#ff8736;
       letter-spacing: 2px;
    }
 
-   .member__title__sub {
-      @include fxfsw(150px);
-      font-size: 1em;
-      padding: 10px 0;
-   }
-
-   .member__tip {
-      @include ib;
-      line-height: 24px;
-      padding: 3px;
-      font-size: 15px;
-      color: $color_major;
-      font-weight: 600;
-
-      @include MCW(370px) {
-         width: 100%;
-      }
-   }
-
    .member__input__box {
       @include fxbw(350px);
       padding: 0 20px 0 0;
@@ -469,7 +455,7 @@ $color_productDetail_minor:#ff8736;
    }
 
    .member__input__title {
-      @include fxfsw(105px);
+      @include fxfsw(115px);
       // @include nowrap;
       margin: 0px 0;
       text-align: left;
@@ -480,6 +466,10 @@ $color_productDetail_minor:#ff8736;
       &.type__full {
          max-width: 140px;
          padding: 0 10px 0 0;
+      }
+      .member__tip{
+         color: $color_major;
+         padding: 0 0 0 8px;
       }
    }
 
@@ -516,10 +506,10 @@ $color_productDetail_minor:#ff8736;
       }
    }
 
+
    //page setting
    .select__box {
       @include fxfsw(300px);
-      
       &.type__full {
          width: 100%;
          max-width: 100%;
@@ -592,8 +582,6 @@ $color_productDetail_minor:#ff8736;
       max-width: 800px;
       margin: 10px 0;
    }
-
-
 
    .member__imagine {
       @include fxcw(158px);
@@ -705,7 +693,6 @@ $color_productDetail_minor:#ff8736;
       }
    }
 
-
 }
 
 .member__nothing__box {
@@ -719,5 +706,205 @@ $color_productDetail_minor:#ff8736;
 
    &.search__result__nothing__box--isshow {
       display: flex;
+   }
+}
+
+//會員專區組件
+.order__block{
+   @include fxcw();
+   border:1px solid #bbbbbb;
+   padding: 20px;
+   margin: 10px 0 ;
+   @include MCW(861px) {
+      border:1px solid transparent;
+      padding: 0px;
+   }
+
+   .order__box{
+      @include fxew();
+      padding: 8px 0;
+      
+      @include MCW(861px) {
+         margin: 10px 0;
+      }
+   }
+
+   .order__ele__box{
+      @include fxcw(120px);
+
+      @include MCW(861px){
+         @include fxcw();
+         padding:5px;
+         position: relative;
+         cursor: pointer;
+         &:first-child{
+            padding: 10px;
+            font-weight: 600;
+            &:after{
+               content: '';
+               @include arl;
+               position: absolute;
+               width: 80%;
+               height: 1px;
+               background-color: #bbbbbb;
+               opacity: 1;
+               bottom: 2px;
+            }
+         }
+
+      }
+
+   }
+
+   .order__ele{
+      @include fxcw();
+      @include MCW(861px) {
+         @include fxbw(50%);
+      }
+      &.order__ele__title {
+         @include fxcw(50%);
+         display: none;
+         @include MCW(861px) {
+            display: flex;
+         }
+      }
+
+      &.order__ele__number{
+         cursor: pointer;
+         text-decoration: underline;
+      }
+      &.order__ele__date {
+
+      }
+      &.order__ele__price{
+         color:#c20c2b;
+      }
+   }
+   .order__title {
+         @include MCW(861px) {
+            display: none;
+         }
+   }
+   .order__content{
+      @include MCW(861px) {
+         border: #696969 1px solid;
+         padding: 10px;
+      }
+   }
+}
+
+.mailcase__block {
+   @include fxcw();
+   border: 1px solid #bbbbbb;
+   padding: 20px;
+   margin: 10px 0;
+
+   @include MCW(861px) {
+      border: 1px solid transparent;
+      padding: 0px;
+   }
+
+   .malecase__box {
+      @include fxew();
+      padding: 8px 0;
+
+      @include MCW(861px){
+         margin: 10px 0;
+      }
+   }
+
+   .order__ele__box {
+      @include fxcw(120px);
+
+      @include MCW(861px) {
+         @include fxcw();
+         padding: 5px;
+         position: relative;
+         cursor: pointer;
+
+         &:first-child {
+            padding: 10px;
+            font-weight: 600;
+
+            &:after {
+               content: '';
+               @include arl;
+               position: absolute;
+               width: 80%;
+               height: 1px;
+               background-color: #bbbbbb;
+               opacity: 1;
+               bottom: 2px;
+            }
+         }
+
+      }
+
+   }
+
+   .order__ele {
+      @include fxcw();
+
+      @include MCW(861px) {
+         @include fxbw(50%);
+      }
+
+      &.order__ele__title {
+         @include fxcw(50%);
+         display: none;
+
+         @include MCW(861px) {
+            display: flex;
+         }
+      }
+
+      &.order__ele__number {
+         cursor: pointer;
+         text-decoration: underline;
+      }
+
+      &.order__ele__date {}
+
+      &.order__ele__price {
+         color: #c20c2b;
+      }
+   }
+
+   .malecase__title {
+      @include MCW(861px) {
+         display: none;
+      }
+   }
+
+   .malecase__content {
+      @include MCW(861px) {
+         border: #696969 1px solid;
+         padding: 10px;
+      }
+   }
+}
+
+.search__block{
+   @include fxfsw();
+   margin:  10px 0;
+   .member__input__title{
+      @include fxfsw(100px);
+   }
+   .select__box{
+      @include fxfsw(calc(100% - 100px))
+   }
+   .selecter{
+      border-width: 0 0 1px 0;;
+      background-color: transparent;
+      outline: 0px solid transparent;
+   }
+}
+
+.tip__block{
+   @include fxfsw();
+
+   .tip__tiper{
+      padding: 0 7px 0 0;;
+      color: $color_major;
    }
 }
