@@ -21,7 +21,7 @@
           align-items: center;
 }
 
-.bread_crumb_block .bread_crumb .bread_crumb_item a, .filter__block, .filter__block .filter__box, .search__result__box, .search__result__box .search__result__imagine, .search__result__box .search__result__content__box, .search__result__box .search__result__content__container, .search__result__box .search__result__content__price, .search__result__box .search__result__content__teacher, .search__result__nothing__box, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .select__box .select__ele, .member__block .btn__box, .content__block .content, .member__main__content .member__head__box, .member__main__content .member__title, .member__main__content .member__input__box, .member__main__content .member__input__box.type__verification, .member__main__content .member__input__title, .member__main__content .member__radio__box, .member__main__content .member__forget__box, .member__main__content .select__box, .member__main__content .btn__box, .member__box, .member__box .member__imagine, .member__box .member__content__box, .member__box .member__content__container, .member__box .member__content__price, .member__box .search__result__content__teacher, .member__nothing__box, .order__block, .order__block .order__box, .order__block .order__ele__box, .order__block .order__ele, .order__block .order__ele.order__ele__title, .mailcase__block, .mailcase__block .malecase__box, .mailcase__block .order__ele__box, .mailcase__block .order__ele, .mailcase__block .order__ele.order__ele__title, .search__block, .search__block .member__input__title, .search__block .select__box, .tip__block, #Cart .cartflow__imagine__block, #Cart .step__check__block, #Cart .step__check__block.type__blue .step__check__box, #Cart .cart__member__block .member__head__box, #Cart .cart__member__block .member__title, #Cart .cart__member__block .member__title__sub, #Cart .cart__member__block .member__input__box, #Cart .cart__member__block .member__input__box.type__verification, #Cart .cart__member__block .member__input__title, #Cart .cart__member__block .member__radio__box, #Cart .cart__member__block .member__forget__box, #Cart .cart__member__block .select__box, #Cart .cart__member__block .btn__box, #Cart .cart__checkout__block, #Cart .cart__checkout__block .cart__checkout__box, #Cart .cart__checkout__block .cart__checkout__title, #Cart .cart__checkout__block .cart__checkout__content, #Cart .cart__checkout__block .cart__checkout__link, #Cart .cart__checkout__block .cart__checkout__lightcase, .discount__list__block, .discount__list__block .discount__list__item {
+.bread_crumb_block .bread_crumb .bread_crumb_item a, .filter__block, .filter__block .filter__box, .search__result__box, .search__result__box .search__result__imagine, .search__result__box .search__result__content__box, .search__result__box .search__result__content__container, .search__result__box .search__result__content__price, .search__result__box .search__result__content__teacher, .search__result__nothing__box, .sidebar__block .header__list__mobile__block, .sidebar__block .header__list__mobile__block .header__list__mobile__box, .sidebar__block .header__list__mobile__block .header__list__mobile__item, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__box__title, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__title, .sidebar__block .header__list__footer__block, .sidebar__block .header__list__footer__block .header__list__footer__box, .tv__recommand__course__area, .tv__recommand__course__block, .tv__recommand__course__block .tv__recommand__course__controller, .tv__recommand__course__block .tv__recommand__course__controller__item, .tv__recommand__course__block .tv__recommand__course__slider__block, .tv__recommand__course__block .tv__recommand__course__box, .tv__recommand__course__block .tv__recommand__course__box::before, .tv__recommand__course__block .tv__recommand__course__box::after, .tv__recommand__course__block .tv__recommand__course__imagine, .tv__recommand__course__block .tv__recommand__course__content__box, .tv__recommand__course__block .tv__recommand__course__ele, .tv__recommand__course__block .tv__recommand__course__price, #ProductDetail .main__content__block, #ProductDetail .select__table__block, #ProductDetail .select__table__block .select__table__tip__box, #ProductDetail .select__table__block .product__select__table .check_box_typeform, #ProductDetail .count__date__block, #ProductDetail .count__date__block #after_cal, #ProductDetail .count__date__block .count__layout, #ProductDetail .count__date__block .count__layout .count__layout__title, #ProductDetail .advisory__block, #ProductDetail .advisory__block .advisory__title__box, #ProductDetail .advisory__block .advisory__form, #ProductDetail .advisory__block .advisory__form__box, #ProductDetail .recommand__course__block, #ProductDetail .recommand__course__block .recommand__course__major__title, #ProductDetail .recommand__course__block .recommand__course__box, #ProductDetail .recommand__course__block .recommand__course__imagine, #ProductDetail .recommand__course__block .recommand__course__content__box, #ProductDetail .recommand__course__block .recommand__course__box__title, #ProductDetail .recommand__course__block .recommand__course__info__box, #ProductDetail .recommand__course__block .recommand__course__price, #ProductDetail .recommand__course__block .recommand__course__tip, .member__block, .member__block .member__head__box, .member__block .member__title, .member__block .member__title__sub, .member__block .member__input__box, .member__block .member__input__box.type__verification, .member__block .member__input__title, .member__block .member__radio__box, .member__block .member__forget__box, .member__block .select__box, .member__block .select__box .select__ele, .member__block .btn__box, .content__block .content, .member__main__content .member__head__box, .member__main__content .member__title, .member__main__content .member__input__box, .member__main__content .member__input__box.type__verification, .member__main__content .member__input__title, .member__main__content .member__radio__box, .member__main__content .member__forget__box, .member__main__content .select__box, .member__main__content .btn__box, .member__box, .member__box .member__imagine, .member__box .member__content__box, .member__box .member__content__container, .member__box .member__content__price, .member__box .search__result__content__teacher, .member__nothing__box, .order__block, .order__block .order__box, .order__block .order__ele__box, .order__block .order__ele, .order__block .order__ele.order__ele__title, .mailcase__block, .mailcase__block .mailcase__box, .mailcase__block .mailcase__head, .mailcase__block .mailcase__title__box, .mailcase__block .collapse__box, .mailcase__block .mailcase__info__box, .mailcase__block .mailcase__body, .search__block, .search__block .member__input__title, .search__block .select__box, .tip__block, #Cart .cartflow__imagine__block, #Cart .step__check__block, #Cart .step__check__block.type__blue .step__check__box, #Cart .cart__member__block .member__head__box, #Cart .cart__member__block .member__title, #Cart .cart__member__block .member__title__sub, #Cart .cart__member__block .member__input__box, #Cart .cart__member__block .member__input__box.type__verification, #Cart .cart__member__block .member__input__title, #Cart .cart__member__block .member__radio__box, #Cart .cart__member__block .member__forget__box, #Cart .cart__member__block .select__box, #Cart .cart__member__block .btn__box, #Cart .cart__checkout__block, #Cart .cart__checkout__block .cart__checkout__box, #Cart .cart__checkout__block .cart__checkout__title, #Cart .cart__checkout__block .cart__checkout__content, #Cart .cart__checkout__block .cart__checkout__link, #Cart .cart__checkout__block .cart__checkout__lightcase, .discount__list__block, .discount__list__block .discount__list__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,7 +65,7 @@
 }
 
 .description__block, .search__result__box .search__result__content__article, .search__result__box .search__result__content__classification, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box, .sidebar__block .header__recommand__navigation__block .recommand__navigation__item__list__box__item, .tv__recommand__course__block .tv__recommand__course__title, .tv__recommand__course__block .tv__recommand__course__sub,
-.tv__recommand__course__block .tv__recommand__course__type, #ProductDetail .select__table__block .select__table__tip__item, #ProductDetail .select__table__block .select__table__box, #ProductDetail .course__relate__block .course__relate__box, #ProductDetail .advisory__block .advisory__title, .member__box .member__content__article, .member__box .member__content__classification, #Cart .total__block, #Cart .cart__member__block {
+.tv__recommand__course__block .tv__recommand__course__type, #ProductDetail .select__table__block .select__table__tip__item, #ProductDetail .select__table__block .select__table__box, #ProductDetail .course__relate__block .course__relate__box, #ProductDetail .advisory__block .advisory__title, .member__box .member__content__article, .member__box .member__content__classification, .mailcase__block .mailcase__title, #Cart .total__block, #Cart .cart__member__block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -5934,7 +5934,7 @@ table th, table td {
           justify-content: center;
   max-width: 100%;
   border: 1px solid #bbbbbb;
-  padding: 20px;
+  padding: 20px 35px;
   margin: 10px 0;
 }
 
@@ -5945,115 +5945,167 @@ table th, table td {
   }
 }
 
-.mailcase__block .malecase__box {
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.mailcase__block .mailcase__box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-width: 100%;
   padding: 8px 0;
 }
 
-@media all and (max-width: 861px) {
-  .mailcase__block .malecase__box {
-    margin: 10px 0;
-  }
-}
-
-.mailcase__block .order__ele__box {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 120px;
-}
-
-@media all and (max-width: 861px) {
-  .mailcase__block .order__ele__box {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 100%;
-    padding: 5px;
-    position: relative;
-    cursor: pointer;
-  }
-  .mailcase__block .order__ele__box:first-child {
-    padding: 10px;
-    font-weight: 600;
-  }
-  .mailcase__block .order__ele__box:first-child:after {
-    content: '';
-    right: 0;
-    margin-right: auto;
-    left: 0;
-    margin-left: auto;
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    background-color: #bbbbbb;
-    opacity: 1;
-    bottom: 2px;
-  }
-}
-
-.mailcase__block .order__ele {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.mailcase__block .mailcase__head {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-@media all and (max-width: 861px) {
-  .mailcase__block .order__ele {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 50%;
-  }
+.mailcase__block .mailcase__title__box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 600px;
 }
 
-.mailcase__block .order__ele.order__ele__title {
+.mailcase__block .collapse__box {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 50%;
+  max-width: 25px;
+  height: 25px;
+  position: relative;
+  border: 1px solid #999999;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+}
+
+.mailcase__block .collapse__box:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+.mailcase__block .collapse__box.collapse__box--isopen .ele__b {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mailcase__block .collapse__box .collapse__ele {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 2px;
+  background-color: #999999;
+  width: 60%;
+  -webkit-transition: .1s all ease-in-out;
+  -o-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+}
+
+.mailcase__block .collapse__box .ele__b {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mailcase__block .mailcase__title {
+  max-width: calc(100% - 40px);
+  float: left;
+  color: #1277B5;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  padding: 0 0 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+}
+
+.mailcase__block .mailcase__title:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+.mailcase__block .mailcase__info__box {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: calc(100% - 600px);
+}
+
+@media all and (max-width: 861px) {
+  .mailcase__block .mailcase__info__box {
+    max-width: 100%;
+  }
+}
+
+.mailcase__block .mailcase__date {
+  padding: 0 10px 0 0;
+}
+
+.mailcase__block .mailcase__delet {
+  border: 1px solid #999999;
+  padding: 2px 8px;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+}
+
+.mailcase__block .mailcase__delet:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+.mailcase__block .mailcase__body {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 100%;
+  padding: 0 0 0 11.5px;
+}
+
+.mailcase__block .mailcase__container {
+  width: 100%;
+  border: solid #999999;
+  border-width: 0 0 0 1px;
+  margin: 15px 0 5px;
+  padding: 0 0 0 15px;
   display: none;
 }
 
-@media all and (max-width: 861px) {
-  .mailcase__block .order__ele.order__ele__title {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.mailcase__block .mailcase__container.mailcase__container--isshow {
+  display: inline-block;
 }
 
-.mailcase__block .order__ele.order__ele__number {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.mailcase__block .order__ele.order__ele__price {
-  color: #c20c2b;
-}
-
-@media all and (max-width: 861px) {
-  .mailcase__block .malecase__title {
-    display: none;
-  }
-}
-
-@media all and (max-width: 861px) {
-  .mailcase__block .malecase__content {
-    border: #696969 1px solid;
-    padding: 10px;
-  }
+.mailcase__block .mailcase__container img {
+  max-width: 600px;
+  width: 100%;
+  margin: 10px 0 0;
 }
 
 .search__block {
