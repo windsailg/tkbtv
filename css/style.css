@@ -5961,14 +5961,14 @@ table th, table td {
   max-width: 35px;
   float: left;
   content: 'NEW';
-  font-size: .5em;
+  font-size: .7em;
   padding: 0 3px;
   color: #ffffff;
   background-color: #1277B5;
   margin: 0 3px;
 }
 
-.mailcase__block .mailcase__box .mailcase__title.mailcase__box--isread::before {
+.mailcase__block .mailcase__box.mailcase__box--isread mailcase__title::before {
   display: none;
 }
 

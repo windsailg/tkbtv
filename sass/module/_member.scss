@@ -845,26 +845,27 @@ $color_productDetail_minor:#ff8736;
    .mailcase__box {
       @include fxfsw();
       padding: 8px 0;   
-      // @include MCW(861px){
-      // }
       .mailcase__title {
          &::before {
             @include fxcw(35px);
             float: left;
             content: 'NEW';
-            font-size: .5em;
+            font-size: .7em;
             padding: 0 3px;
             color: #ffffff;
             background-color: $color_major;
             margin:  0 3px ;
          }
-         &.mailcase__box--isread {
+
+      }
+
+      &.mailcase__box--isread {
+         mailcase__title{
             &::before {
                display: none;
             }
          }
       }
-
    }
 
    .mailcase__head{
