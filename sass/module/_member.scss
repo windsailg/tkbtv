@@ -844,22 +844,26 @@ $color_productDetail_minor:#ff8736;
 
    .mailcase__box {
       @include fxfsw();
-      padding: 8px 0;
-      @include MCW(861px){
-      }
+      padding: 8px 0;   
+      // @include MCW(861px){
+      // }
       .mailcase__title {
-         &::after{
-            content: NEW;
-            padding: 5px ;
-            color:#ffffff;
+         &::before {
+            @include fxcw(35px);
+            float: left;
+            content: 'NEW';
+            font-size: .5em;
+            padding: 0 3px;
+            color: #ffffff;
             background-color: $color_major;
-            
+            margin:  0 3px ;
+         }
+         &.mailcase__box--isread {
+            &::before {
+               display: none;
+            }
          }
       }
-      &.mailcase__box--isread{
-         
-      }
-
 
    }
 
@@ -870,7 +874,7 @@ $color_productDetail_minor:#ff8736;
 
    .mailcase__title__box{
       @include fxfsw(600px);
-      
+      align-items: center;
    }
    .collapse__box {
       @include fxcw(25px);
@@ -878,7 +882,6 @@ $color_productDetail_minor:#ff8736;
       position: relative;
       border: 1px solid #999999;
       @include hover;
-      
       &.collapse__box--isopen{
          .ele__b {
             transform: rotate(180deg);
@@ -898,10 +901,12 @@ $color_productDetail_minor:#ff8736;
    }
    .mailcase__title{
       @include iblw(calc(100% - 40px));
+
+      float: left;
       color: $color_major;
       @include hover;
       padding:  0 0 0 8px;
-      @include nowrap
+      @include nowrap;
    }
    .mailcase__info__box{
       @include fxfew(calc(100% - 600px));
@@ -943,23 +948,28 @@ $color_productDetail_minor:#ff8736;
 }
 
 .search__block{
-   @include fxfsw();
+   @include fxfsw(300px);
    margin:  10px 0;
    .member__input__title{
       @include fxfsw(100px);
    }
    .select__box{
-      @include fxfsw(calc(100% - 100px))
+      @include fxfsw(100px);
+
    }
    .selecter{
       border-width: 0 0 1px 0;;
       background-color: transparent;
       outline: 0px solid transparent;
    }
+
 }
 
 .control__block{
-   @include fxfew();
+   @include fxfew(300px);
+   @include MCW(600px){
+      justify-content: flex-start;
+   }
    .control__ele{
       padding:  8px;
       @include hover;
@@ -967,6 +977,10 @@ $color_productDetail_minor:#ff8736;
    }
 }
 
+.control__pannel__block{
+   @include fxbw();
+   margin: 10px 0;
+}
 .tip__block{
    @include fxfsw();
 
