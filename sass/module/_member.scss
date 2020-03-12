@@ -190,7 +190,7 @@ $color_productDetail_minor:#ff8736;
    .select__box {
       @include fxfsw();
       .select__ele{
-         @include fxcw(120px);
+         @include fxcw(140px);
       }
       &.type__full{
          width: 100%;
@@ -860,7 +860,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       &.mailcase__box--isread {
-         mailcase__title{
+         .mailcase__title{
             &::before {
                display: none;
             }
@@ -878,27 +878,7 @@ $color_productDetail_minor:#ff8736;
       align-items: center;
    }
    .collapse__box {
-      @include fxcw(25px);
-      height: 25px;
-      position: relative;
-      border: 1px solid #999999;
-      @include hover;
-      &.collapse__box--isopen{
-         .ele__b {
-            transform: rotate(180deg);
-         }
-      }
-      .collapse__ele{
-         position: absolute;
-         @include aa;
-         height: 2px;
-         background-color: #999999;
-         width: 60%;
-         transition: .1s all ease-in-out;
-      }
-      .ele__b{
-         transform: rotate(90deg);
-      }
+
    }
    .mailcase__title{
       @include iblw(calc(100% - 40px));
@@ -948,6 +928,83 @@ $color_productDetail_minor:#ff8736;
 
 }
 
+.mycourse__block {
+   margin: 15px 0 ;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 20px #00000023;
+   .mycourse__box{
+      color: #666666;
+      @include fxbw();
+      padding: 10px 18px 10px 18px;
+      &.step__third{
+         background-color: #eeeeee;
+         border: solid #dddddd;
+         border-width: 1px 0 1px 0;
+         &+.step__second {
+            padding: 10px 14px 10px 45px;
+            &+.step__first {
+               padding: 10px 14px 10px 70px;
+            }
+         }
+
+      }
+
+      &.type__all__title {
+         @include fxcw();
+         color: #ffffff;
+         background-color: $color_productDetailAll_major;
+      }
+   }
+   .mycourse__title__box{
+      @include fxfsw(600px);
+      @include hover;
+   }
+   .mycourse__info__box{
+      @include fxfew(300px);
+      @include MCW(600px){
+         max-width: 100%;
+      }
+   }
+   .mycourse__info__ele{
+      border: 1px solid #999999;
+      color: #999999;
+      font-size: 1.1em;
+      padding: 2px 7px;
+      margin: 0 4px;
+      i{
+         font-size: 1.2em;
+      }
+   }
+   .mycourse__count {
+      @include fxcw(100px);
+      @include nowrap;
+      border:transparent;
+      color: $color_productDetailSingle_major;
+      &.percent {
+         text-decoration: underline;
+      }
+      &.count {
+         
+      }
+   }
+   .mycourse__title{
+      padding: 0 0 0 15px;
+   }
+   .mycourse__title__text{
+      font-size:1.2em;
+      letter-spacing: 2px;
+      i{
+         padding:  0 6px 0 0;
+      }
+   }
+   .collapse__box {
+      border: 1px solid $color_productDetailAll_major;
+      .collapse__ele {
+         background-color: $color_productDetailAll_major;
+      }
+   }
+}
+
 .search__block{
    @include fxfsw(300px);
    margin:  10px 0;
@@ -982,6 +1039,8 @@ $color_productDetail_minor:#ff8736;
    @include fxbw();
    margin: 10px 0;
 }
+
+
 .tip__block{
    @include fxfsw();
 
@@ -989,6 +1048,36 @@ $color_productDetail_minor:#ff8736;
       padding: 0 7px 0 0;;
       color: $color_major;
    }
+}
+
+
+.collapse__box {
+   @include fxcw(25px);
+   height: 25px;
+   position: relative;
+   border: 1px solid #999999;
+   @include hover;
+
+   &.collapse__box--isopen {
+      .ele__b {
+         transform: rotate(180deg);
+      }
+   }
+
+   .collapse__ele {
+      position: absolute;
+      @include aa;
+      height: 2px;
+      background-color: #999999;
+      width: 60%;
+      transition: .1s all ease-in-out;
+   }
+
+   .ele__b {
+      transform: rotate(90deg);
+   }
+
+
 }
 
 

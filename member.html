@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TKBTV - 課程分類</title>
+    <title>TKBTV - 會員專區</title>
 	<!-- <link rel="icon" href="img/favicon.png"> -->
     <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
 
@@ -79,9 +79,12 @@
                         我的信箱
                     </div>
                     <div data-tab-item="Content5" class="swiper-slide member__tab__box">
-                        我的追蹤
+                        我的課程
                     </div>
                     <div data-tab-item="Content6" class="swiper-slide member__tab__box">
+                        我的追蹤
+                    </div>
+                    <div data-tab-item="Content7" class="swiper-slide member__tab__box">
                         序號專區
                     </div>
                 </div>
@@ -213,7 +216,7 @@
 
                 </form>
 
-                <form id="Content2" class="member__main__tab__item member__main__tab__item--active">
+                <form id="Content2" class="member__main__tab__item">
 
                     <div class="member__main__title type__all">
                         <i class="fa fa-key" aria-hidden="true"></i>會員密碼修改
@@ -419,9 +422,6 @@
                         <i class="fa fa-envelope" aria-hidden="true"></i>我的信箱
                     </div>
 
-       
-
-
                     <div class="control__pannel__block">
 
                         <div class="search__block">
@@ -456,9 +456,6 @@
 
                     </div>
 
-
-
-
                     <div class="member__main__content">
 
                         <div class="mailcase__block">
@@ -467,7 +464,7 @@
 
                                 <div class="mailcase__head">
 
-                                    <div class="mailcase__title__box">
+                                    <div class="mailcase__title__box ">
 
                                         <div class="collapse__box ">
                                             <span class="collapse__ele ele__a"></span>
@@ -524,7 +521,7 @@
                                 
                             </div>
 
-                            <div class="mailcase__box">
+                            <div class="mailcase__box mailcase__box--isread">
 
                                 <div class="mailcase__head">
 
@@ -692,12 +689,84 @@
                 <div id="Content5" class="member__main__tab__item">
 
                     <div class="member__main__title">
-                        <i class="fa fa-star" aria-hidden="true"></i>我的追蹤
+                        <i class="fa fa-book" ></i>我的課程
                     </div>
 
                     <div class="member__main__content">
 
+                        <div class="mycourse__block">
 
+                            <div class="mycourse__box type__all__title">
+                                <div class="mycourse__title__text">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>我的全修課程
+                                </div>
+                            </div>
+
+                            <div class="mycourse__box step__third">
+
+
+                                <div class="mycourse__title__box">
+                                    <div class="collapse__box">
+                                        <span class="collapse__ele ele__a"></span>
+                                        <span class="collapse__ele ele__b"></span>
+                                    </div>
+                                    <div class="mycourse__title">
+                                        工數-雲端 - 程逸
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mycourse__box step__second">
+
+                                <div class="mycourse__title__box">
+                                    <div class="collapse__box">
+                                        <span class="collapse__ele ele__a"></span>
+                                        <span class="collapse__ele ele__b"></span>
+                                    </div>
+                                    <div class="mycourse__title">
+                                        工數-雲端 - 程逸
+                                    </div>
+                                </div>
+
+                                <div class="mycourse__info__box">
+                                    <a href="#"
+                                        class="mycourse__info__ele mycourse__date">
+                                        <i class="fa fa-calendar"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="mycourse__info__ele mycourse__time">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="mycourse__info__ele mycourse__count percent">
+                                        10%
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="mycourse__box step__first">
+
+                                <div class="mycourse__title__box">
+                                    <a href="#" class="mycourse__title">
+                                        工數-雲端 - 程逸
+                                    </a>
+                                </div>
+
+                                <div class="mycourse__info__box">
+
+                                    <a href="#" class="mycourse__info__ele mycourse__play">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="mycourse__info__ele mycourse__count count">
+                                        10%
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
 
 
                     </div>
@@ -707,18 +776,52 @@
                 <div id="Content6" class="member__main__tab__item">
 
                     <div class="member__main__title">
-                        <i class="fa fa-bookmark" aria-hidden="true"></i>序號專區
+                        <i class="fa fa-star" aria-hidden="true"></i>我的追蹤
                     </div>
 
                     <div class="member__main__content">
 
+                
 
+                        <div class="mycourse__info__box">
+
+                            <a href="#" class="mycourse__info__ele mycourse__play">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="mycourse__info__ele mycourse__count count">
+                                10%
+                            </a>
+                        </div>
 
 
                     </div>
 
                 </div>
-                
+
+                <div id="Content7" class="member__main__tab__item">
+
+                    <div class="member__main__title">
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>序號專區
+                    </div>
+
+                    <div class="member__main__content">
+
+                        <div class="description__block ">
+                            <div class="description__content">
+                                輸入課程序號以開通課程
+                            </div>
+                        </div>
+
+                        <input type="text" class="texter" spellcheck="false" maxlength="50"
+                            placeholder=""/>
+
+                        <div class="btn__box">
+                            <a class="button shape">確認輸入</a>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
 
@@ -781,11 +884,20 @@
         runlazy(600);
     });
 
+
+    //mymail function
     $('.mailcase__title__box').on('click',function(){
         $(this).find('.collapse__box').toggleClass('collapse__box--isopen');
         console.log('isopen');
         $(this).parent('.mailcase__head').next('.mailcase__body').children('.mailcase__container').toggleClass('mailcase__container--isshow');
     })
+
+
+    //
+    $('.mycourse__title__box').on('click',function(){
+        $(this).children('.collapse__box').toggleClass('collapse__box--isopen ');
+    })
+    
 
 
 </script>
