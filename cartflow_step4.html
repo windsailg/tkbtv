@@ -159,6 +159,9 @@
 
 				<div id="PrintThis">
 
+					<div class="buy__prove__block img_box">
+						<img src="img/cartflow/buy_prove_tv.png"">
+					</div>
 					<div class="description__block">
 						<div class="description__title">
 							<i class="fa fa-bookmark"></i>訂單資訊
@@ -381,8 +384,10 @@
 		var PrintTarget = $("#PrintThis").html();
 		var bodyHtml = document.body.innerHTML;
 		document.body.innerHTML = PrintTarget;
+		$('body').addClass('printer');
 		window.print();
 		document.body.innerHTML = bodyHtml;
+		$('body').removeClass('printer');
 		window.location.reload(); //列印輸出後更新頁面
 	});
 
