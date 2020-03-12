@@ -6104,21 +6104,7 @@ table th, table td {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 100%;
-  padding: 10px 18px 10px 18px;
-}
-
-.mycourse__block .mycourse__box.step__third {
-  background-color: #eeeeee;
-  border: solid #dddddd;
-  border-width: 1px 0 1px 0;
-}
-
-.mycourse__block .mycourse__box.step__third + .step__second {
-  padding: 10px 14px 10px 45px;
-}
-
-.mycourse__block .mycourse__box.step__third + .step__second + .step__first {
-  padding: 10px 14px 10px 70px;
+  padding: 7px 18px 7px 18px;
 }
 
 .mycourse__block .mycourse__box.type__all__title {
@@ -6127,8 +6113,71 @@ table th, table td {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 100%;
+  padding: 12px 18px;
   color: #ffffff;
   background-color: #259bd6;
+}
+
+.mycourse__block .step__third {
+  background-color: #f1f1f1;
+  border: solid #eeeeee;
+  border-width: 1px 0 1px 0;
+}
+
+.mycourse__block .step__third .mycourse__title__box {
+  max-width: 100%;
+}
+
+.mycourse__block .step__third + .step__second {
+  padding: 7px 14px 7px 52px;
+  border: solid #dddddd;
+  border-width: 1px 0 0 0;
+  display: none;
+}
+
+.mycourse__block .step__third + .step__second.step__second--isopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mycourse__block .step__third + .step__second + .step__first {
+  padding: 7px 14px 7px 77px;
+  display: none;
+}
+
+.mycourse__block .step__third + .step__second + .step__first.step__first--isopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mycourse__block .step__second {
+  padding: 7px 14px 7px 52px;
+  border: solid #dddddd;
+  border-width: 1px 0 0 0;
+  display: none;
+}
+
+.mycourse__block .step__second.step__second--isopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mycourse__block .step__second + .step__first {
+  padding: 7px 14px 7px 77px;
+  display: none;
+}
+
+.mycourse__block .step__second + .step__first.step__first--isopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mycourse__block .mycourse__title__box {
@@ -6141,6 +6190,7 @@ table th, table td {
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
   cursor: pointer;
+  padding: 5px 0;
 }
 
 .mycourse__block .mycourse__title__box:hover {
@@ -6158,7 +6208,7 @@ table th, table td {
   max-width: 300px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 981px) {
   .mycourse__block .mycourse__info__box {
     max-width: 100%;
   }
@@ -6168,12 +6218,12 @@ table th, table td {
   border: 1px solid #999999;
   color: #999999;
   font-size: 1.1em;
-  padding: 2px 7px;
-  margin: 0 4px;
+  padding: 3px 7px;
+  margin: 0 5px;
 }
 
 .mycourse__block .mycourse__info__ele i {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .mycourse__block .mycourse__count {

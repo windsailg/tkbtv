@@ -66,11 +66,13 @@
 
             <div class="search__result__tab__block">
                 <div class="swiper-wrapper">
-                    <div data-tab-item="Content1"
-                        class="swiper-slide search__result__tab__box search__result__tab__box--active">
-                        課程
+                    <div data-tab-item="Content1" class="swiper-slide search__result__tab__box search__result__tab__box--active">
+                        全修課程
                     </div>
-                    <div data-tab-item="Content2" class="swiper-slide search__result__tab__box">
+                    <div data-tab-item="Content2" class="swiper-slide search__result__tab__box ">
+                        單科課程
+                    </div>
+                    <div data-tab-item="Content3" class="swiper-slide search__result__tab__box">
                         相關文章
                     </div>
                 </div>
@@ -85,13 +87,13 @@
             <div class="search__result__main__block search__result__main__item">
 
                 <!-- tab 切換區塊 -->
-                <form id="Content1" class="search__result__main__tab__item search__result__main__tab__item--active">
-
+                <div id="Content1" class="search__result__main__tab__item search__result__main__tab__item--active">
+<!-- 
                     <div class="filter__block">
                         <div class="filter__box filter__box--ischoose"><i class="fas fa-pencil-alt"></i>雲端課程</div>
                         <div class="filter__box"><i class="fas fa-pencil-alt"></i>混合課程</div>
                         <div class="filter__box"><i class="fas fa-pencil-alt"></i>數位學堂</div>
-                    </div>
+                    </div> -->
 
                     <div class="search__result__main__title type__all">
                         <i class="fas fa-pencil-alt"></i>全修課程
@@ -218,6 +220,21 @@
                         </div>
                         
                     </div>
+
+
+                    <div class="pager__block">
+                        <ul class="pager__box">
+                            <li class="pager__number "><i class="fa fa-chevron-left"></i></li>
+                            <li class="pager__number  pager__number--active">1</li>
+                            <li class="pager__number ">2</li>
+                            <li class="pager__number ">3</li>
+                            <li class="pager__number "><i class="fa fa-chevron-right"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="Content2" class="search__result__main__tab__item">
 
                     <div class="search__result__main__title type__single">
                         <i class="fas fa-pencil-alt"></i>單科課程
@@ -353,16 +370,17 @@
                         </ul>
                     </div>
 
-                </form>
+                </div>
 
-                <form id="Content2" class="search__result__main__tab__item">
+                <div id="Content3" class="search__result__main__tab__item">
 
+                
                     <div class="search__result__main__title">
                         <i class="fas fa-pencil-alt"></i>相關文章
                     </div>
 
                     <div class="search__result__main__content">
-                    
+
 
 
                         <a href="#" class="search__result__box ">
@@ -373,7 +391,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -395,7 +414,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -417,7 +437,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -439,7 +460,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -461,7 +483,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -483,7 +506,8 @@
 
                             <div class="search__result__content__box">
 
-                                <div class="search__result__content__title" title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
+                                <div class="search__result__content__title"
+                                    title="台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端">
                                     台電新進雇員機械運轉維護/修護及電銲/起重技術全修(一年)-雲端
                                 </div>
 
@@ -497,7 +521,7 @@
 
                         </a>
 
-                        
+
                         <div class="search__result__nothing__box">
                             無任何結果
                         </div>
@@ -515,7 +539,8 @@
                         </ul>
                     </div>
 
-                </form>
+                </div>
+
 
             </div>
 
