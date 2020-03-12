@@ -1128,6 +1128,10 @@ table{
 
 //activing components------------------------------------
 
+.wrapper{
+   @include fxfsw();
+}
+
 .new__msg__active {
    &:before{
       content:'';
