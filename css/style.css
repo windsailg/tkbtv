@@ -5086,7 +5086,7 @@ table th, table td {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 140px;
+  max-width: 160px;
 }
 
 .member__block .select__box.type__full {

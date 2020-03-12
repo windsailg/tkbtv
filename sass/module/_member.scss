@@ -190,7 +190,7 @@ $color_productDetail_minor:#ff8736;
    .select__box {
       @include fxfsw();
       .select__ele{
-         @include fxcw(140px);
+         @include fxcw(160px);
       }
       &.type__full{
          width: 100%;
