@@ -747,7 +747,7 @@
                                                 <i class="fa fa-clock-o" ></i>
                                             </a>
 
-                                            <a href="#CoursePercentBlock"
+                                            <a href="#CourseViewedBlock"
                                                 class="mycourse__info__ele mycourse__count percent"
                                                 data-rel="lightcase">
                                                 10%
@@ -836,14 +836,14 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-                                            <a href="#" class="mycourse__info__ele mycourse__date">
+                                            <a href="#CourseTimeBlock" class="mycourse__info__ele mycourse__date">
                                                 <i class="fa fa-calendar" ></i>
                                             </a>
-                                            <a href="#" class="mycourse__info__ele mycourse__time">
+                                            <a href="#CourseDateBlock" class="mycourse__info__ele mycourse__time">
                                                 <i class="fa fa-clock-o" ></i>
                                             </a>
-                                            <a href="#" class="mycourse__info__ele mycourse__count percent">
-                                                10%
+                                            <a href="CourseViewedBlock" class="mycourse__info__ele mycourse__count percent">
+                                                40%
                                             </a>
                                         </div>
 
@@ -1039,13 +1039,14 @@
                                     <div class="mycourse__info__box">
                                         <a href="#CourseTimeBlock" class="mycourse__info__ele mycourse__date"
                                             data-rel="lightcase">
-                                            <i class="fa fa-calendar" ></i>
+                                            <i class="fa fa-calendar"></i>
                                         </a>
                                         <a href="#CourseDateBlock" class="mycourse__info__ele mycourse__time"
                                             data-rel="lightcase">
-                                            <i class="fa fa-clock-o" ></i>
+                                            <i class="fa fa-clock-o"></i>
                                         </a>
-                                        <a href="#CoursePercentBlock"
+
+                                        <a href="#CourseViewedBlock"
                                             class="mycourse__info__ele mycourse__count percent"
                                             data-rel="lightcase">
                                             10%
@@ -1552,7 +1553,7 @@
                 <div class="description__block ">
                     <div class="description__content">
                         以下是「機率-雲端 - 時越老師」 課程時數詳情，若需要加購時數最多可加購 10小時。加購時數最多不可超過課程總時數的
-                        30%，一次至少需購買十小時。 1
+                        30%，一次至少需購買十小時。
                     </div>
                 </div>
 
@@ -1562,15 +1563,15 @@
 				        <tbody>
 				            <tr>
 				                <th>剩餘時數： </th>
-				                <td>189 小時 30 分鐘</td>
+				                <td class="type__red">189 小時 30 分鐘</td>
 				            </tr>
 				            <tr>
                                 <th>贈與時數：</th>
-                                <td>37 小時 54 分鐘</td>
+                                <td class="type__red">37 小時 54 分鐘</td>
 				            </tr>
 				            <tr>
                                 <th>已加購時數：</th>
-                                <td>0 小時 0 分鐘</td>
+                                <td class="type__red">0 小時 0 分鐘</td>
 				            </tr>
 				        </tbody>
 				    </table>
@@ -1580,22 +1581,144 @@
                 <div class="buy__time__block">
                     <div class="buy__time__title">加購時數</div>
                     
-                    <div class="">
-                        <div class="buy__time__box type__plus">
+                    <div class="number__choose__box">
+
+                        <div class="number__choose__ele type__minus">
+                            <span class="plus__item"></span>
+                        </div>
+
+                        <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
+
+                        <div class="number__choose__ele type__plus">
                             <span class="plus__item item__a"></span>
                             <span class="plus__item item__b"></span>
                         </div>
-                        <input class="texter" placeholder="" value="30" spellcheck="false">
-                        <div class="buy__time__box type__minus">
-                            <span class="plus__item"></span>
-                        </div>
+
                     </div>
+
+                    <div class="buy__time__price">
+                        $ 600
+                    </div>
+
+                    <div class="btn__box">
+                        <a class="button shape type__dark">加購物車</a>
+                        <a class="button shape">立即購買</a>
+                    </div>
+
 
                 </div>
 
 			</div>
 
+			<div id="CourseDateBlock" class="course__time__detail__block">
 
+			    <div class="title__block">
+			        課程時數詳情
+			    </div>
+
+			    <div class="description__block ">
+			        <div class="description__content">
+                        以下是「基礎工數-雲端 - 歐大亮老師」 課程時數詳情，若需要展延課程期限最多可加購一年但僅限一次加購機會。
+			        </div>
+			    </div>
+
+			    <div class="course__list__content table__box">
+
+			        <table>
+			            <tbody>
+			                <tr>
+			                    <th>可否展延：  </th>
+			                    <td class="type__red">N</td>
+			                </tr>
+			                <tr>
+			                    <th>課程到期日</th>
+			                    <td class="type__red">2020/09/28</td>
+			                </tr>
+			                <tr>
+			                    <th>已展延期限</th>
+			                    <td class="type__red">0天</td>
+                            </tr>
+			                <tr>
+			                    <th>提案到期日</th>
+			                    <td class="type__red">2020/09/28</td>
+			                </tr>
+			            </tbody>
+			        </table>
+
+			    </div>
+
+			    <div class="buy__time__block">
+                    <div class="buy__time__title">展延期限</div>
+                    
+
+            			<div class="select__box">
+            			    <div class="select__ele">
+            			        <select class="selecter" data-province="選擇鄉鎮">
+            			            <option value="選擇鄉鎮">+31天 / $1000 / 延至2020/04/12</option>
+            			            <option value="湖口鄉">+62天 / $2000 / 延至2020/04/12</option>
+            			            <option value="峨眉鄉">+93天 / $300 / 延至2020/04/12</option>
+            			        </select>
+            			    </div>
+            			</div>
+
+			        <div class="btn__box">
+			            <a class="button shape type__dark">加購物車</a>
+			            <a class="button shape">立即購買</a>
+			        </div>
+
+
+			    </div>
+
+            </div>
+            
+			<div id="CourseViewedBlock" class="course__time__detail__block">
+
+			    <div class="title__block">
+			        課程觀看紀錄
+			    </div>
+
+			    <div class="description__block ">
+			        <div class="description__content">
+                        以下為您觀看「基礎工數-雲端 - 歐大亮老師」 課程的紀錄。
+			        </div>
+			    </div>
+
+			    <div class="course__list__content table__box">
+
+			        <table>
+			            <tbody>
+			                <tr>
+			                    <th>日期 </th>
+			                    <th>觀看時間 </th>
+			                </tr>
+			                <tr>
+			                    <td>2019-09-27</td>
+			                    <td >0 小時 40 分鐘</td>
+			                </tr>
+			            </tbody>
+			        </table>
+
+			    </div>
+
+			    <div class="course__list__content table__box">
+
+			        <table>
+			            <tbody>
+			                <tr>
+			                    <th>影片觀看進度 </th>
+			                    <th>課程影片總時數 </th>
+			                </tr>
+			                <tr>
+			                    <td>2 小時 3 分鐘</td>
+			                    <td >18 小時 30 分鐘</td>
+			                </tr>
+			            </tbody>
+			        </table>
+
+			    </div>
+
+            </div>
+            
         </div>
     </div>
 

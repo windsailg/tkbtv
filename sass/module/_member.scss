@@ -1240,27 +1240,82 @@ $color_productDetail_minor:#ff8736;
       background-color: #ffffff;
       // color: #ffffff;
    }
-   
+   .course__list__content{
+      margin: 15px 0;
+   }
 }
+
 .buy__time__block{
+   @include fxfsw();
+   .btn__box{
+      @include fxfsw(380px);
+      .button {
+         
+         text-align: center;
+         @include MCW(500px) {
+            max-width: 25vw;
+            padding: 15px 20px;
+            width: 100%;
+            font-size: .9em
+         }
+      }
+
+   }
+   .select__box{
+      @include fxfsw(250px);
+      .select__ele{
+         
+      }
+      .selecter{
+         margin: 8px;
+         height: 30px;
+         border:1px solid #bbbbbb;
+         font-size: 1.1em;
+         @include MCW(500px) {
+            font-size: .9em
+         }
+      }
+   }
    .buy__time__title{
+      @include fxfsw();
       font-weight: 600;
       font-size: 1.3em;
-      @include fxfsw();
+      
       margin: 15px 0 10px;
       color: $color_major;
+   }
+   .buy__time__price{
+      @include fxfsw(80px);
+      font-size: 1.2em;
+      color: #cf1818;
+
    }
    .texter{
 
    }
-   .buy__time__box{
-      width: 20px;
-      height: 20px;
+
+   .button{
+      font-size: 1.1em;
+   }
+}
+
+
+.number__choose__box {
+   margin: 8px;
+   @include fxbw(180px);
+   .number__choose__texter {
+      max-width: calc(100% - 78px);
+      width: 100%;
+      border: 1px solid #bbbbbb;
+   }
+   .number__choose__ele {
+      width: 27px;
+      height: 27px;
       padding: 5px;
       position: relative;
-      border: 1px solid #cccccc;
+      border: 1px solid #bbbbbb;
       @include hover;
-      &.type__plus{
+      &.type__plus {
          .plus__item {
             @include ib;
             width: 60%;
@@ -1269,14 +1324,15 @@ $color_productDetail_minor:#ff8736;
             position: absolute;
             background-color: $color_major;
          }
-         .item__a{
-            
-         }
-         .item__b{
+
+         .item__a {}
+
+         .item__b {
             transform: rotate(90deg);
          }
       }
-      &.type__minus{
+
+      &.type__minus {
          .plus__item {
             @include ib;
             width: 60%;
@@ -1287,4 +1343,5 @@ $color_productDetail_minor:#ff8736;
          }
       }
    }
+
 }

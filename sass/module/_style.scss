@@ -97,6 +97,9 @@ button{
    }
    td{
       border: solid #eeeeee 1px;
+      &.type__red{
+         color:#ba3232;
+      }
    }
    table{
       width: 100%;
@@ -812,6 +815,9 @@ table{
    }
    &.type__blue{
       background-color: #1277B5;
+   }
+   &.type__fadeblue {
+      background-color: rgb(45, 149, 214);
    }
    &.type__orange{
       background-color:$color_productDetail_minor;
