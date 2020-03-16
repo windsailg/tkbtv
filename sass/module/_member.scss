@@ -1254,22 +1254,37 @@ $color_productDetail_minor:#ff8736;
 
    }
    .buy__time__box{
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      position: relative;
+      border: 1px solid #cccccc;
+      @include hover;
       &.type__plus{
          .plus__item {
+            @include ib;
             width: 60%;
             height: 2px;
             @include aa;
-            
+            position: absolute;
+            background-color: $color_major;
          }
          .item__a{
-
+            
          }
          .item__b{
-
+            transform: rotate(90deg);
          }
       }
       &.type__minus{
-
+         .plus__item {
+            @include ib;
+            width: 60%;
+            height: 2px;
+            @include aa;
+            position: absolute;
+            background-color: $color_major;
+         }
       }
    }
 }

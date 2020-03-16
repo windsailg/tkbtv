@@ -432,7 +432,9 @@ $color_productDetail_minor:#ff8736;
       //page setting
       .select__box {
          @include fxfsw();
-
+         .select__ele {
+            @include fxcw(160px);
+         }
          &.type__full {
             width: 100%;
             max-width: 100%;
@@ -440,7 +442,7 @@ $color_productDetail_minor:#ff8736;
 
          .selecter {
             width: 100%;
-            max-width: 30%;
+
             border-width: 0 0 1px 0;
             background-color: transparent;
          }
