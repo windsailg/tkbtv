@@ -208,7 +208,7 @@ $color_productDetail_minor:#ff8736;
       @include fxfe;
       float: left;
       width: 100%;
-      margin: 40px 0 ;
+      margin: 20px 0 ;
       text-align: center;
       &.type__center{
          justify-content: center;
@@ -290,7 +290,7 @@ $color_productDetail_minor:#ff8736;
    //確認會員資料
    .cart__member__block {
       @include iblw();
-      margin: 20px 0 40px;
+      margin: 15px 0;
       @include MCW(800px) {
          justify-content: center;
       }
@@ -466,7 +466,8 @@ $color_productDetail_minor:#ff8736;
       }
 
       .button {
-         margin: 0;
+         // margin: 0;
+         
       }
 
       .texter {
@@ -507,7 +508,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       a {
-         text-decoration: underline;
+         // text-decoration: underline;
       }
    }
 

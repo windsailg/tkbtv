@@ -289,8 +289,10 @@
 
 				</div>
 
-            <div class="cart__member__block">
+            <form class="cart__member__block">
+
             	<div class="member__box">
+
 						<div class="description__block">
 
 							<div class="description__title">
@@ -316,188 +318,189 @@
             				密碼<span class="member__tip">※</span>
             			</span>
             			<input type="password" class="texter" spellcheck="false" maxlength="30" placeholder="" />
-            		</div>
-						<div class="btn__block type__start">
-							<div  class=" button ">登入</div>
-						</div>
-
-
-
-						<div class="description__block">
-
-							<div class="description__title">
-								<i class="fa fa-bookmark" ></i>聯絡人資料
-							</div>
-
-							<div class="description__content">
-								<span class="member__tip">※</span>字號為必填
-							</div>
-
-						</div>
-
-            		<div class="member__input__box">
-            			<span class="member__input__title">
-            				真實姓名<span class="member__tip">※</span>
-            			</span>
-            			<input type="text" class="texter" spellcheck="false" maxlength="20" disabled />
-            		</div>
-
-            		<div class="member__input__box ">
-            			<span class="member__input__title">
-            				電子郵件<span class="member__tip">※</span>
-            			</span>
-            			<input type="email" class="texter" spellcheck="false" maxlength="60" placeholder="" disabled />
-            		</div>
-
-            		<div class="member__input__box">
-            			<span class="member__input__title">
-            				聯絡電話<span class="member__tip">※</span>
-            			</span>
-            			<input type="text" class="texter" spellcheck="false" maxlength="30"
-            				placeholder="" />
-            		</div>
-
-            		<div class="member__input__box ">
-            			<span class="member__input__title">
-            				行動電話<span class="member__tip">※</span>
-            			</span>
-            			<input type="text" class="texter" spellcheck="false" maxlength="30" placeholder="" />
-            		</div>
-
-            		<div class="member__input__box type__full">
-
-            			<span class="member__input__title ">
-								寄送地址<span class="member__tip">※</span>
-							</span>
-
-							<label class="checker type_static">
-								<input type="checkbox" name="remember" value="1" />
-								<span class="checkmark"></span>
-								<span class="text">同訂購人資料</span>
-							</label>
-
-            			<div class="select__box">
-								<div class="select__ele">
-									<select class="selecter" data-province="選擇縣市">
-										<option value="選擇縣市">選擇縣市</option>
-										<option value="科技大學">桃園</option>
-										<option value="科技大學">新竹</option>
-									</select>
-								</div>
-
-
-								<div class="select__ele">
-									<select class="selecter" data-province="選擇鄉鎮">
-										<option value="選擇鄉鎮">選擇鄉鎮</option>
-										<option value="湖口鄉">湖口鄉</option>
-										<option value="峨眉鄉">峨眉鄉</option>
-									</select>
-								</div>
-
-            			</div>
-
-            			<input type="text" class="texter type_full" spellcheck="false" maxlength="50"
-            				placeholder="詳細地址 作寄送發票用途" />
-            		</div>
-
-						<div class="description__block">
-							<div class="description__title">
-								<i class="fa fa-bookmark"></i>寄送方式
-							</div>
-						</div>
-
-            		<div class="member__radio__box type__full">
-
-            			<span class="member__input__title type__full">
-            				是否寄送至數位學堂<span class="member__tip">※</span>
-            			</span>
-
-            			<div class="radio_box">
-            				<input id="send_yes" type="radio" class="radio" name="send__radio" checked />
-            				<label class="label" for="send_yes" onclick="">否</label>
-            			</div>
-
-            			<div class="radio_box">
-            				<input id="send_no" type="radio" class="radio" name="send__radio" />
-            				<label class="label" for="send_no" onclick="">是</label>
-            			</div>
-
-            		</div>
-
-						<div class="description__block">
-
-							<div class="description__title">
-								<i class="fa fa-bookmark"></i>發票資料
-							</div>
-
-							<div class="description__content">
-								* 若發票類型選擇(公司用)，則公司名稱欄位為必填，請填入公司全名。<br>
-								* 您所填寫的發票資料設定僅適用本次交易<br>
-								* 依統一發票使用辦法規定：個人發票一經開立，不得任意更改或改開公司戶發票。
-							</div>
-
-						</div>
-
-            		<div class="member__radio__box type__full">
-
-            			<span class="member__input__title type__full">
-								發票類型<span class="member__tip">※</span>
-            			</span>
-
-            			<div class="radio_box">
-            				<input id="invoice__personal" type="radio" class="radio" name="invoice__radio" checked />
-            				<label class="label" for="invoice__personal" onclick="">個人用</label>
-            			</div>
-
-            			<div class="radio_box">
-            				<input id="invoice__company" type="radio" class="radio" name="invoice__radio" />
-            				<label class="label" for="invoice__company" onclick="">公司用</label>
-            			</div>
-
-            		</div>
-
-            		<div class="member__input__box">
-            			<span class="member__input__title">
-            				姓名或公司名稱<span class="member__tip">※</span>
-            			</span>
-            			<input type="text" class="texter " spellcheck="false" maxlength="10" placeholder="作為 發票抬頭 用途" />
 						</div>
 						
-            		<div class="member__input__box">
-            			<span class="member__input__title">
-            				統一編號<span class="member__tip">※</span>
-            			</span>
-            			<input type="text" class="texter " spellcheck="false" maxlength="10" placeholder="" />
-            		</div>
+						<div class="btn__block type__start">
+							<div class=" button shape">登入</div>
+						</div>
 
-            	</div>
-				</div>
+					</div>
+
+				</form>
+
+				<form class="cart__member__block">
+
+					<div class="description__block">
+
+						<div class="description__title">
+							<i class="fa fa-bookmark" ></i>聯絡人資料
+						</div>
+
+						<div class="description__content">
+							<span class="member__tip">※</span>字號為必填
+						</div>
+
+					</div>
+
+					<div class="member__input__box">
+						<span class="member__input__title">
+							真實姓名<span class="member__tip">※</span>
+						</span>
+						<input type="text" class="texter" spellcheck="false" maxlength="20" disabled />
+					</div>
+
+					<div class="member__input__box ">
+						<span class="member__input__title">
+							電子郵件<span class="member__tip">※</span>
+						</span>
+						<input type="email" class="texter" spellcheck="false" maxlength="60" placeholder="" disabled />
+					</div>
+
+					<div class="member__input__box">
+						<span class="member__input__title">
+							聯絡電話<span class="member__tip">※</span>
+						</span>
+						<input type="text" class="texter" spellcheck="false" maxlength="30"
+							placeholder="" />
+					</div>
+
+					<div class="member__input__box ">
+						<span class="member__input__title">
+							行動電話<span class="member__tip">※</span>
+						</span>
+						<input type="text" class="texter" spellcheck="false" maxlength="30" placeholder="" />
+					</div>
+
+					<div class="member__input__box">
+
+						<span class="member__input__title ">
+							寄送地址<span class="member__tip">※</span>
+						</span>
+
+						<label class="checker type_static">
+							<input type="checkbox" name="remember" value="1" />
+							<span class="checkmark"></span>
+							<span class="text">同訂購人資料</span>
+						</label>
+
+						<div class="select__box">
+							<div class="select__ele">
+								<select class="selecter" data-province="選擇縣市">
+									<option value="選擇縣市">選擇縣市</option>
+									<option value="科技大學">桃園</option>
+									<option value="科技大學">新竹</option>
+								</select>
+							</div>
+
+
+							<div class="select__ele">
+								<select class="selecter" data-province="選擇鄉鎮">
+									<option value="選擇鄉鎮">選擇鄉鎮</option>
+									<option value="湖口鄉">湖口鄉</option>
+									<option value="峨眉鄉">峨眉鄉</option>
+								</select>
+							</div>
+
+						</div>
+
+						<input type="text" class="texter type_full" spellcheck="false" maxlength="50"
+							placeholder="詳細地址 作寄送發票用途" />
+					</div>
+
+					<div class="description__block">
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>寄送方式
+						</div>
+					</div>
+
+					<div class="member__radio__box type__full">
+
+						<span class="member__input__title type__full">
+							是否寄送至數位學堂<span class="member__tip">※</span>
+						</span>
+
+						<div class="radio_box">
+							<input id="send_yes" type="radio" class="radio" name="send__radio" checked />
+							<label class="label" for="send_yes" onclick="">否</label>
+						</div>
+
+						<div class="radio_box">
+							<input id="send_no" type="radio" class="radio" name="send__radio" />
+							<label class="label" for="send_no" onclick="">是</label>
+						</div>
+
+					</div>
+
+					<div class="description__block">
+
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>發票資料
+						</div>
+
+						<div class="description__content">
+							* 若發票類型選擇(公司用)，則公司名稱欄位為必填，請填入公司全名。<br>
+							* 您所填寫的發票資料設定僅適用本次交易<br>
+							* 依統一發票使用辦法規定：個人發票一經開立，不得任意更改或改開公司戶發票。
+						</div>
+
+					</div>
+
+					<div class="member__radio__box type__full">
+
+						<span class="member__input__title type__full">
+							發票類型<span class="member__tip">※</span>
+						</span>
+
+						<div class="radio_box">
+							<input id="invoice__personal" type="radio" class="radio" name="invoice__radio" checked />
+							<label class="label" for="invoice__personal" onclick="">個人用</label>
+						</div>
+
+						<div class="radio_box">
+							<input id="invoice__company" type="radio" class="radio" name="invoice__radio" />
+							<label class="label" for="invoice__company" onclick="">公司用</label>
+						</div>
+
+					</div>
+
+					<div class="member__input__box">
+						<span class="member__input__title">
+							姓名或公司名稱<span class="member__tip">※</span>
+						</span>
+						<input type="text" class="texter " spellcheck="false" maxlength="10" placeholder="作為 發票抬頭 用途" />
+					</div>
+					
+					<div class="member__input__box">
+						<span class="member__input__title">
+							統一編號<span class="member__tip">※</span>
+						</span>
+						<input type="text" class="texter " spellcheck="false" maxlength="10" placeholder="" />
+					</div>
+					
+					<div class="step__check__block">
+						<label class="checker type_static">
+							<input type="checkbox" name="remember" value="1" />
+							<span class="checkmark"></span>
+							<span class="text">我同意TKBGO網站<a href="#">【會員權益說明】</a>之條款,<a href="#">【雲端課程FAQ】</a></span>
+						</label>
+					</div>
+
+					<div class="description__block">
+						<div class="description__title">
+							<i class="fa fa-bookmark"></i>相關注意事項說明
+						</div>
+						<div class="description__content">
+							<span class="member__tip">※</span>提醒您：因產品價格及優惠方案眾多，詳細資訊以官方公佈資料為主，TKBTV仍保有決定是否接受訂單及出貨與否之權利。
+						</div>
+					</div>
+
+					<div class="btn__block type__start">
+						<a href="#" class=" button type_gray shape">上一步</a>
+						<a href="#" class="button shape ">前往結帳</a>
+					</div>
+
+				</form>
 				
-
-				<div class="step__check__block">
-					<label class="checker type_static">
-						<input type="checkbox" name="remember" value="1" />
-						<span class="checkmark"></span>
-						<span class="text">我同意TKBGO網站<a href="#">【會員權益說明】</a>之條款,<a href="#">【雲端課程FAQ】</a></span>
-					</label>
-				</div>
-
-				<div class="description__block">
-					<div class="description__title">
-						<i class="fa fa-bookmark"></i>相關注意事項說明
-					</div>
-					<div class="description__content">
-						<span class="member__tip">※</span>提醒您：因產品價格及優惠方案眾多，詳細資訊以官方公佈資料為主，TKBTV仍保有決定是否接受訂單及出貨與否之權利。
-					</div>
-				</div>
-
-				<div class="btn__block type__center">
-					<a href="#" class=" button type_gray">上一步</a>
-					<a href="#" class="button ">前往結帳</a>
-				</div>
-
-
-
 			</div>
 
 

@@ -1283,6 +1283,7 @@ table th, table td {
   padding: 15px 40px;
   margin: 8px;
   font-size: .9em;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -5081,7 +5082,7 @@ table th, table td {
           justify-content: flex-end;
   float: left;
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -5196,7 +5197,7 @@ table th, table td {
 #Cart .cart__member__block {
   max-width: 100%;
   float: left;
-  margin: 20px 0 40px;
+  margin: 15px 0;
 }
 
 @media all and (max-width: 800px) {
@@ -5462,10 +5463,6 @@ table th, table td {
   padding: 7px 0;
 }
 
-#Cart .cart__member__block .button {
-  margin: 0;
-}
-
 #Cart .cart__member__block .texter {
   width: 100%;
   max-height: 36px;
@@ -5502,10 +5499,6 @@ table th, table td {
 
 #Cart .cart__member__block .reg__img img {
   width: 100%;
-}
-
-#Cart .cart__member__block a {
-  text-decoration: underline;
 }
 
 #Cart .cart__checkout__block {
