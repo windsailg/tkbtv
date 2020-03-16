@@ -213,6 +213,9 @@ $color_productDetail_minor:#ff8736;
       &.type__center{
          justify-content: center;
       }
+      &.type__start {
+         justify-content: flex-start;
+      }
       a{
          font-size: 16px;
          margin: 10px ;
