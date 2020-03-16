@@ -324,8 +324,6 @@ $color_productDetail_minor:#ff8736;
          font-size: .8em;
          padding: 0 0 0 10px;
       }
-
-
       .member__tip {
          @include ib;
          line-height: 24px;
@@ -569,6 +567,12 @@ $color_productDetail_minor:#ff8736;
    @include fxfsw();
    width: 800px;
    display: none;
+   .title__block {
+      width: 100%;
+      @include MCW(640px) {
+         color: #ffffff;
+      }
+   }
    .discount__list__item {
       @include fxcw(320px);
       margin: 18px auto;
@@ -587,12 +591,6 @@ $color_productDetail_minor:#ff8736;
 #lightcase-content {
    .lightcase-inlineWrap{
       margin: 0 auto;
-   }
-   .title__block{
-      width: 100%;
-      @include MCW(640px){
-         color: #ffffff;
-      }
    }
    .course__list__block {
       display: block;
@@ -638,6 +636,7 @@ $color_productDetail_minor:#ff8736;
 .buy__prove__block{
    @include fxcw();
    display: none;;
+
 }
 @media print {
 
