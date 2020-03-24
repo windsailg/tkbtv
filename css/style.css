@@ -7058,6 +7058,7 @@ table th, table td {
   border-color: transparent transparent #1277B5 transparent;
   color: #1277B5;
   font-weight: bold;
+  pointer-events: none;
 }
 
 @media all and (max-width: 861px) {
@@ -7832,11 +7833,10 @@ table th, table td {
 .page .mycourse__block {
   max-width: 100%;
   float: left;
-  margin: 15px 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 20px #00000023;
           box-shadow: 0px 0px 20px #00000023;
-  margin: 30px auto 20px;
+  margin: 20px auto 10px;
 }
 
 .page .mycourse__block .mycourse__box {
@@ -7865,8 +7865,9 @@ table th, table td {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 100%;
-  padding: 12px 18px;
+  padding: 8px;
   color: #ffffff;
+  font-size: 1em;
   background-color: #259bd6;
 }
 
@@ -7878,13 +7879,18 @@ table th, table td {
   display: flex;
 }
 
+.page .mycourse__block .mycourse__box.type__all__title + .step__second::before,
+.page .mycourse__block .mycourse__box.type__all__title + .step__first::before {
+  display: none;
+}
+
 .page .mycourse__block .mycourse__box.type__single__title {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 100%;
-  padding: 12px 18px;
+  padding: 8px;
   color: #ffffff;
   background-color: #4cba59;
 }
@@ -8103,8 +8109,9 @@ table th, table td {
 }
 
 .page .mycourse__block .mycourse__title__text {
-  font-size: 1.2em;
-  letter-spacing: 2px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .page .mycourse__block .mycourse__title__text i {
@@ -8309,7 +8316,8 @@ table th, table td {
 
 .page .member__coupon__value__block .member__coupon__value__title i {
   padding: 0 10px 0 0;
-  font-size: 1.5em;
+  font-size: 1em;
+  color: #999999;
 }
 
 .page .member__coupon__value__block .member__coupon__value__content {
@@ -8467,6 +8475,8 @@ table th, table td {
           align-items: center;
   margin: 20px 0 10px;
   color: #444444;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .page .back__block i {
