@@ -6989,7 +6989,7 @@ table th, table td {
 }
 
 .page .member__main__block .member__main__tab__item.type__full {
-  padding: 0px;
+  padding: 30px 0;
 }
 
 @media all and (max-width: 781px) {
@@ -7074,7 +7074,7 @@ table th, table td {
   display: inline-block;
   float: left;
   width: 100%;
-  padding: 10px 0 40px;
+  padding: 20px 0 30px;
   line-height: 24px;
 }
 
@@ -8410,6 +8410,18 @@ table th, table td {
   color: #cccccc;
 }
 
+.page .member__coupon__value__block .member__coupon__box.type__demo {
+  cursor: default;
+}
+
+.page .member__coupon__value__block .member__coupon__box.type__demo:hover {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-box-shadow: 4px 4px 12px #00000017;
+          box-shadow: 4px 4px 12px #00000017;
+}
+
 .page .member__coupon__value__block .member__coupon__imagine {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -8459,7 +8471,7 @@ table th, table td {
   text-decoration: underline;
   position: absolute;
   right: 5px;
-  bottom: 5px;
+  bottom: 8px;
   color: #1277B5;
 }
 

@@ -337,7 +337,7 @@ $color_productDetail_minor:#ff8736;
          }
 
          &.type__full{
-            padding: 0px;
+            padding: 30px 0;
          }
          @include MCW(781px) {
             padding: 10px 7px;
@@ -413,7 +413,7 @@ $color_productDetail_minor:#ff8736;
    .member__main__content {
       @include ibl;
       width: 100%;
-      padding: 10px 0 40px;
+      padding: 20px 0 30px;
       line-height: 24px;
 
       .member__head__box {
@@ -1322,7 +1322,6 @@ $color_productDetail_minor:#ff8736;
          position: relative;
          transition: .1s ;
          cursor: pointer;
-
          @include MCW(1170px){
             max-width: 48%;
             margin: 10px 10px 10px 0px;
@@ -1378,6 +1377,13 @@ $color_productDetail_minor:#ff8736;
                }
             }
          }
+         &.type__demo{
+            cursor: default;
+            &:hover {
+               transform: translate(0px, 0px);
+               box-shadow: 4px 4px 12px #00000017;
+            }
+         }
       }
 
       .member__coupon__imagine{
@@ -1412,7 +1418,7 @@ $color_productDetail_minor:#ff8736;
          text-decoration: underline;
          position: absolute;
          right: 5px;
-         bottom: 5px;
+         bottom: 8px;
          color:$color_major;
       }
 
