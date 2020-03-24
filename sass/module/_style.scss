@@ -284,7 +284,6 @@ table{
 
 }
 
-
 .recommand__course__slider__block{
    @include fxc;
    width: 100%;
@@ -750,8 +749,6 @@ table{
    }
 }
 
-
-
 //文章專區
 .articles__nav__trigger{
    @include fxcw();
@@ -795,8 +792,6 @@ table{
 
    }
 }
-
-
 
 .articles__nav__block{
    margin: 0 40px 0 0 ;
@@ -1047,7 +1042,6 @@ table{
 
 }
 
-
 .recommend__pager__block {
    @include fxcw();
    @include MCW(580px) {
@@ -1165,7 +1159,6 @@ table{
    }
 }
 
-
 .article__list__block{
    @include fxfsw();
    .article__list__box{
@@ -1236,7 +1229,6 @@ table{
       max-height: 93px;
    }
 }
-
 
 .pager__block{
    @include fxc;

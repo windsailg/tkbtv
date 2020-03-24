@@ -15,6 +15,7 @@ $color_productDetail_minor:#ff8736;
    padding: 5px 0;
 
    .selecter {
+      height: 36px;
       font-size: 1em;
       font-family: 'Century Gothic', 'Arial', 'Source Sans Pro', 'Muli', '微軟正黑體', 'FontAwesome', '新細明體';
       margin: 8px 10px 8px 0;
@@ -314,7 +315,7 @@ $color_productDetail_minor:#ff8736;
 
       &.member__main__item {
          @include fxfs;
-         padding: 30px 40px;
+         
          background-color: #ffffff;
          box-shadow: 0px 0px 25px #00000023;
          @include MCW(1301px) {
@@ -330,9 +331,22 @@ $color_productDetail_minor:#ff8736;
       .member__main__tab__item {
          width: 100%;
          display: none;
-
+         padding: 30px 40px;
          &.member__main__tab__item--active {
             display: block;
+         }
+
+         &.type__full{
+            padding: 0px;
+         }
+         @include MCW(781px) {
+            padding: 10px 7px;
+         }
+      }
+      .tab__item__container{
+         padding: 10px 40px;
+         @include MCW(781px) {
+            padding: 4px 6px;
          }
       }
 
@@ -530,7 +544,7 @@ $color_productDetail_minor:#ff8736;
       }
 
       .btn__box {
-         @include fxfsw();
+         @include fxfsw(320px);
          padding: 12px 0;
       }
 
@@ -599,6 +613,8 @@ $color_productDetail_minor:#ff8736;
          opacity: 0;
       }
    }
+
+
 
    .member__box {
       @include fxbw(450px);
@@ -746,6 +762,7 @@ $color_productDetail_minor:#ff8736;
          display: flex;
       }
    }
+
 
    //會員專區組件
    .order__block{
@@ -981,7 +998,10 @@ $color_productDetail_minor:#ff8736;
                }
                .title__step__first{
                   border: solid #dddddd;
-                  border-width: 1px 0 0 0;
+                  border-width:  0;
+                  @include MCW(1021px){
+                     border-width: 1px 0 0 0;
+                  }
                }
             }
          }
@@ -1186,6 +1206,225 @@ $color_productDetail_minor:#ff8736;
       display: none;
    }
 
+
+   //會員專區組件
+   .member__tab__block__sub {
+      @include fxfs;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+      overflow: hidden;
+      position: relative;
+      background-color: #f3f3f3;
+
+      @include MCW(1301px) {}
+
+      .member__tab__sub__box {
+         @include fxc;
+         border: transparent 3px solid;
+         width: auto;
+         padding: 12px 8px;
+         font-size: 1em;
+         color: #777777;
+         letter-spacing: 1px;
+         cursor: pointer;
+
+         &.member__tab__sub__box--active {
+            border-color: transparent transparent $color_major transparent;
+            color: $color_major;
+            font-weight: bold;
+         }
+
+         @include MCW(861px) {
+            padding: 10px 5px;
+            font-size: .9em;
+         }
+      }
+
+      //swiper__controller
+      .member__tab__sub__prev {
+         background-image: url('../img/global/member__tab__prev.svg');
+         left: 0;
+      }
+
+      .member__tab__sub__next {
+         background-image: url('../img/global/member__tab__next.svg');
+
+         right: 0;
+      }
+
+      .member__tab__sub__prev,
+      .member__tab__sub__next {
+         // background-size: 100%;
+         @include tst;
+         background-size: 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         outline: none;
+         @include atb;
+         width: 25px;
+         height: 60px;
+         box-shadow: 0px 0px 20px #00000031;
+
+         &::after {
+            display: none;
+         }
+      }
+
+      .swiper-button-prev.swiper-button-disabled,
+      .swiper-button-next.swiper-button-disabled {
+         opacity: 0;
+      }
+   }
+
+   .member__main__tab__sub__item {
+      display: none;
+      padding: 30px 0;
+
+      &.member__main__tab__sub__item--active {
+         display: flex;
+      }
+   }
+
+   .member__coupon__value__block {
+      @include fxfsw();
+      padding: 15px 0;
+      .member__coupon__value__box{
+        @include fxfsw();
+        margin: 8px 0;
+      }
+
+      .member__coupon__value__title{
+         @include fxfsw();
+         font-size: 1em;
+         font-weight: 600;
+         color: #666666;
+         i{
+            padding:  0 10px 0 0;
+            font-size: 1.5em;
+         }
+      }
+
+      .member__coupon__value__content{
+         @include fxfsw();
+         margin: 8px 0;
+      }
+
+      .member__coupon__box{
+         @include fxbw(31%);
+         border: 1px solid #cccccc;
+         margin: 10px 25px 10px 0px;
+         box-shadow: 4px 4px 12px #00000017;
+         position: relative;
+         transition: .1s ;
+         cursor: pointer;
+
+         @include MCW(1170px){
+            max-width: 48%;
+            margin: 10px 10px 10px 0px;
+         }
+         @include MCW(781px) {
+            max-width: 500px;
+            margin:5px  0 ;
+         }
+         &:hover{
+            transform: translate(1px,1px);
+            box-shadow: 2px 2px 5px #00000017;
+            opacity: 1;
+         }
+         &.value__1000{
+            .member__coupon__imagine{
+               background-color: #1277B5;
+            }
+         }
+         &.value__2000 {
+            .member__coupon__imagine {
+               background-color: #ffa934;
+            }
+         }
+         &.value__3000 {
+            .member__coupon__imagine {
+               background-color: #4cba59;
+            }
+         }
+         &.value__4000 {
+            .member__coupon__imagine {
+               background-color: #d1364e;
+            }
+         }
+         &.value__nan{
+            .member__coupon__imagine {
+               background-color: #cccccc;
+            }
+            .member__coupon__nan__value{
+               color:#ffffff;
+               transform: skew(-12deg);
+               font-size: 1.2em;
+               -webkit-text-stroke: 1px #ffffff;
+            }
+            .member__coupon__rule {
+               color: #cccccc;
+            }
+            .member__coupon__item {
+               color: #cccccc;
+               &.member__coupon__value {
+                  .value {
+                     color: #cccccc;
+                  }
+               }
+            }
+         }
+      }
+
+      .member__coupon__imagine{
+         @include fxcw(100px);
+         height: 100px;
+         background-color: #666666;
+         img{
+            max-width: 55px;
+         }
+      }
+
+      .member__coupon__content {
+         @include fxfsw(calc(100% - 110px));
+         height: 100%;
+      }
+
+      .member__coupon__item{
+         @include iblw();
+         padding: 3px 0;
+         @include nowrap;
+         color: #555555;
+         &.member__coupon__value{
+            .value{
+               color:#cc1a1a;
+               padding: 0 0 0 10px;
+            }
+         }
+      }
+
+      .member__coupon__rule{
+         @include fxfew(75px);
+         text-decoration: underline;
+         position: absolute;
+         right: 5px;
+         bottom: 5px;
+         color:$color_major;
+      }
+
+   }
+
+
+   .back__block{
+      @include fxfsw();
+      align-items: center;
+      margin: 20px 0 10px;
+      color:#444444;
+      i{
+         padding:  0 8px 0 0;
+      }
+   }
+
 }
 
 
@@ -1268,7 +1507,8 @@ $color_productDetail_minor:#ff8736;
       }
       .selecter{
          margin: 8px;
-         height: 30px;
+         height: 36px;
+
          border:1px solid #bbbbbb;
          font-size: 1.1em;
          @include MCW(500px) {

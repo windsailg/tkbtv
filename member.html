@@ -85,7 +85,10 @@
                         我的追蹤
                     </div>
                     <div data-tab-item="Content7" class="swiper-slide member__tab__box">
-                        序號專區
+                        優惠專區
+                    </div>
+                    <div data-tab-item="Content8" class="swiper-slide member__tab__box">
+                        開通課程
                     </div>
                 </div>
                 <div class="swiper-button-next member__tab__next"></div>
@@ -203,6 +206,20 @@
 
                         <div class="member__input__box">
                             <span class="member__input__title">
+                                畢業年度<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="輸入學校科系或班級名稱" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
+                                學校或班級<span class="member__tip">※</span>
+                            </span>
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="西元年" />
+                        </div>
+
+                        <div class="member__input__box">
+                            <span class="member__input__title">
                                 別名 (暱稱)
                             </span>
                             <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
@@ -241,21 +258,21 @@
                             <span class="member__input__title">
                                 輸入舊密碼<span class="member__tip">※</span>
                             </span>
-                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
                         </div>
 
                         <div class="member__input__box">
                             <span class="member__input__title">
                                 輸入新密碼<span class="member__tip">※</span>
                             </span>
-                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
                         </div>
 
                         <div class="member__input__box">
                             <span class="member__input__title">
                                 確認新密碼<span class="member__tip">※</span>
                             </span>
-                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                            <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="" />
                         </div>
 
                         <div class="btn__box">
@@ -1037,6 +1054,7 @@
                                     </div>
 
                                     <div class="mycourse__info__box">
+
                                         <a href="#CourseTimeBlock" class="mycourse__info__ele mycourse__date"
                                             data-rel="lightcase">
                                             <i class="fa fa-calendar"></i>
@@ -1069,6 +1087,10 @@
 
                                         <div class="mycourse__info__box">
 
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                               <i class="fa fa-download" ></i>
+                                            </a>
+
                                             <a href="#" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1088,7 +1110,9 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                                <i class="fa fa-download"></i>
+                                            </a>
                                             <a href="#" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1108,7 +1132,9 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                                <i class="fa fa-download"></i>
+                                            </a>
                                             <a href="#playNowBlock" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1161,7 +1187,9 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                                <i class="fa fa-download"></i>
+                                            </a>
                                             <a href="#" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1181,7 +1209,9 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                                <i class="fa fa-download"></i>
+                                            </a>
                                             <a href="#" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1201,7 +1231,9 @@
                                         </div>
 
                                         <div class="mycourse__info__box">
-
+                                            <a href="#" class="mycourse__info__ele mycourse__download">
+                                                <i class="fa fa-download"></i>
+                                            </a>
                                             <a href="#" class="mycourse__info__ele mycourse__play">
                                                 <i class="fa fa-play-circle-o" ></i>
                                             </a>
@@ -1223,7 +1255,6 @@
 
 
                 </div>
-
 
                 <div id="Content6" class="member__main__tab__item">
 
@@ -1259,10 +1290,7 @@
 
                                     <div class="mycourse__info__box">
 
-                                        <div href="#CoursePercentBlock"
-                                                class="mycourse__info__ele mycourse__count price"
-                                                data-rel="lightcase">
-                                                NT$ 20,000
+                                        <div href="#CoursePercentBlock" class="mycourse__info__ele mycourse__count price" data-rel="lightcase">NT$ 20,000
                                         </div>
                                         <a href="#" class="mycourse__info__ele mycourse__cart">
                                             <i class="fa fa-cart-plus"></i>
@@ -1424,7 +1452,6 @@
                                 </div>
                             </div>
 
-
                             <!-- 第一層 容器 -->
                             <div class="mycourse__container step__first">
 
@@ -1438,13 +1465,14 @@
 
                                     <div class="mycourse__info__box">
 
-                                        <div href="#CoursePercentBlock"
-                                            class="mycourse__info__ele mycourse__count price" data-rel="lightcase">
+                                        <div href="#CoursePercentBlock" class="mycourse__info__ele mycourse__count price" data-rel="lightcase">
                                             NT$ 20,000
                                         </div>
+
                                         <a href="#" class="mycourse__info__ele mycourse__cart">
                                             <i class="fa fa-cart-plus"></i>
                                         </a>
+
                                         <a href="#" class="mycourse__info__ele mycourse__delet">
                                             <i class="fa fa-trash-o"></i>
                                         </a>
@@ -1515,10 +1543,657 @@
 
                 </div>
 
-                <div id="Content7" class="member__main__tab__item">
+                <div id="Content7" class="member__main__tab__item type__full">
+
+                    <div class="tab__item__container">
+
+                        <div class="member__main__title">
+                            <i class="fa fa-bookmark"></i>優惠專區
+                        </div>
+
+                        <div class="member__main__content">
+
+                            <div class="description__block ">
+                                <div class="description__content">
+                                    輸入課程序號以開通課程
+                                </div>
+                            </div>
+
+                            <input type="text" class="texter" spellcheck="false" maxlength="50" placeholder="" />
+
+                            <div class="btn__box">
+                                <a class="button shape">確認輸入</a>
+                            </div>
+
+                        </div>
+
+                        <div class="description__block ">
+                            <div class="description__content">
+                                我的優惠券
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="member__tab__block__sub">
+                        <div class="swiper-wrapper">
+                            <div data-tab-item="ContentSub1" class="swiper-slide member__tab__sub__box member__tab__sub__box--active">
+                                可使用
+                            </div>
+                            <div data-tab-item="ContentSub2" class="swiper-slide member__tab__sub__box">
+                                已使用
+                            </div>
+                            <div data-tab-item="ContentSub3" class="swiper-slide member__tab__sub__box">
+                                已失效
+                            </div>
+                        </div>
+                        <div class="swiper-button-next member__tab__sub__next"></div>
+                        <div class="swiper-button-prev member__tab__sub__prev"></div>
+                    </div>
+
+                    <div id="ContentSub1" class="member__main__tab__sub__item tab__item__container member__main__tab__sub__item--active">
+                        
+                        <div class="member__coupon__value__block">
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money" ></i>面額 1000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__1000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__1000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__1000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 2000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__2000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__2000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 2000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__3000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 2000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__4000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__4000">
+
+                                        <div class="member__coupon__imagine">
+                                            <img src="img/cartflow/coupon_imagine.png">
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="ContentSub2" class="member__main__tab__sub__item tab__item__container">
+
+                        <div class="member__coupon__value__block">
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 1000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 2000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已使用</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="ContentSub3" class="member__main__tab__sub__item tab__item__container">
+
+                        <div class="member__coupon__value__block">
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 1000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="member__coupon__value__box">
+
+                                <div class="member__coupon__value__title">
+                                    <i class="fa fa-money"></i>面額 2000
+                                </div>
+
+                                <div class="member__coupon__value__content">
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$2000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab__item__container">
+
+                        <div class="member__main__title">
+                            <i class="fa fa-bookmark"></i>使用規則
+                        </div>
+
+                        <a href="#" class="back__block">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>返回
+                        </a>
+
+                        <div class="member__coupon__value__block">
+                            <div class="member__coupon__value__box">
+                                <div class="member__coupon__value__content">
+                                    <a href="#" class="member__coupon__box value__nan">
+
+                                        <div class="member__coupon__imagine">
+                                            <span class="member__coupon__nan__value">已過期</span>
+                                        </div>
+
+                                        <div class="member__coupon__content">
+                                            <div class="member__coupon__item member__coupon__title">銀行講座優惠</div>
+                                            <div class="member__coupon__item member__coupon__value">
+                                                折抵<span class="value">$1000</span>
+                                            </div>
+                                            <div class="member__coupon__item member__coupon__rule">使用規則</div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="description__block ">
+                            <div class="description__title type__gray">
+                                有效日期
+                            </div>
+                            <div class="description__content">
+                                2020.01.01 16:40 - 2020.04.02 16:40
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="description__block ">
+                            <div class="description__title type__gray">
+                                使用規則
+                            </div>
+                            <div class="description__content">
+                                本運費抵用券僅適用於指家店家運費折抵。(本券每一帳號／每一人限使用一次，若有任何使用上的問題請洽詢客服，我們將竭誠為您服務)
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="description__block ">
+
+                            <div class="description__title type__gray">
+                                適用課程
+                            </div>
+
+                            <div class="member__coupon__value__content">
+
+                                <div class="mycourse__block">
+
+                                    <div class="mycourse__box type__all__title">
+                                        <div class="mycourse__title__text">
+                                            <i class="fa fa-list-alt"></i>全修
+                                        </div>
+                                    </div>
+
+                                    <div class="mycourse__container step__first">
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    微積分變數變換.
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    數學基礎.P3.
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    工數-雲端 - 程逸
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="mycourse__block">
+
+                                    <div class="mycourse__box type__single__title">
+                                        <div class="mycourse__title__text">
+                                            <i class="fa fa-list-alt"></i>單科
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="mycourse__container step__first">
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    微積分變數變換.
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    數學基礎.P3.
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mycourse__box title__step__first">
+
+                                            <div class="mycourse__title__box">
+                                                <a href="#" class="mycourse__title">
+                                                    工數-雲端 - 程逸
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="Content8" class="member__main__tab__item">
 
                     <div class="member__main__title">
-                        <i class="fa fa-bookmark" ></i>序號專區
+                        <i class="fa fa-keyboard-o" ></i>序號專區
                     </div>
 
                     <div class="member__main__content">
@@ -1541,7 +2216,6 @@
                 </div>
 
             </div>
-
 
 
 			<div id="CourseTimeBlock" class="course__time__detail__block">
@@ -1773,17 +2447,52 @@
 
     });
 
+    var MemberTabSubSwiper = new Swiper('.member__tab__block__sub', {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        effect: 'slide',
+        spaceBetween: 25,
+        loop: false,
+        autoHeight: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1,
+        },
+        autoplay: {
+            delay: 10000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.member__tab__sub__next',
+            prevEl: '.member__tab__sub__prev',
+        },
+    });
 
     //Main Content Taber function
     $('.member__tab__box').on('click',function(){
         $('.member__tab__box').removeClass('member__tab__box--active');
         $(this).addClass('member__tab__box--active');
+
         let ActiveTarget = '#' + $(this).attr('data-tab-item');
         $('.member__main__tab__item').hide();
         $(ActiveTarget).fadeIn(300);
         runlazy(600);
+
+        MemberTabSubSwiper.update();
     });
 
+    $('.member__tab__sub__box').on('click',function(){
+        $('.member__tab__sub__box').removeClass('member__tab__sub__box--active');
+        $(this).addClass('member__tab__sub__box--active');
+
+        let ActiveTarget = '#' + $(this).attr('data-tab-item');
+        $('.member__main__tab__sub__item').hide();
+        $(ActiveTarget).fadeIn(300);
+        runlazy(600);
+
+        MemberTabSubSwiper.update();
+    });
 
     //mymail function
     $('.mailcase__title__box').on('click',function(){
@@ -1822,13 +2531,15 @@
 
 	//燈箱目標初始化
 	$('a[data-rel^=lightcase]').lightcase({
+        // Will be called right before the content will be displayed
+        onBeforeShow : {
+            quux: function() {
+                
+            }
+        },
         onFinish:{
             autoClose: function(){
-                //點選物件後關閉燈箱
-                // $('.discount__list__item').on('click',function(){
-                //     //More coupon function
-                //     lightcase.close();
-                // })
+                alert('載入燈箱完成');
             }
         }
 	});
