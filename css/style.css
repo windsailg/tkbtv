@@ -6999,12 +6999,12 @@ table th, table td {
 }
 
 .page .member__main__block .tab__item__container {
-  padding: 10px 40px;
+  padding: 0px 40px;
 }
 
 @media all and (max-width: 781px) {
   .page .member__main__block .tab__item__container {
-    padding: 4px 6px;
+    padding: 0px 6px;
   }
 }
 
@@ -8312,6 +8312,7 @@ table th, table td {
   font-size: 1em;
   font-weight: 600;
   color: #666666;
+  margin: 18px 0 0;
 }
 
 .page .member__coupon__value__block .member__coupon__value__title i {

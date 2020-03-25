@@ -344,9 +344,9 @@ $color_productDetail_minor:#ff8736;
          }
       }
       .tab__item__container{
-         padding: 10px 40px;
+         padding: 0px 40px;
          @include MCW(781px) {
-            padding: 4px 6px;
+            padding: 0px 6px;
          }
       }
 
@@ -1302,6 +1302,7 @@ $color_productDetail_minor:#ff8736;
          font-size: 1em;
          font-weight: 600;
          color: #666666;
+         margin: 18px 0 0;
          i{
             padding:  0 10px 0 0;
             font-size: 1em;
