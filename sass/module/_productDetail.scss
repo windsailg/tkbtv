@@ -300,7 +300,7 @@ $color_productDetail_minor:#ff8736;
             width: 100%;
             padding: 5px 0 10px 12px;
             margin: 0px;
-            min-height: 125px;
+            min-height: 135px;
          }
 
          .info_item {
@@ -382,13 +382,8 @@ $color_productDetail_minor:#ff8736;
             @include ibl;
             padding: 12px 10px;
             width: 364px;
-
             @include MCW(780px) {
                width: 100%;
-            }
-
-            >.title {
-               color: #888;
             }
          }
 
@@ -403,7 +398,6 @@ $color_productDetail_minor:#ff8736;
                font-weight: bold;
                text-decoration: line-through;
                color: #666;
-               
                span {
                   letter-spacing: 1px;
                   @include ibl;
@@ -413,6 +407,11 @@ $color_productDetail_minor:#ff8736;
                   position: relative;
                   top: -2px;
                }
+            }
+
+            .price__title {
+               color: #777777;
+               font-size: 1em;
             }
 
             .real_price {
@@ -430,10 +429,14 @@ $color_productDetail_minor:#ff8736;
                letter-spacing: 2px;
                -webkit-text-stroke: .7px #DD2118;
             }
-            .detail{
-               font-size: .9em;
-            }
+
          }
+
+         .detail {
+            font-size: .9em;
+            @include fxcw();
+         }
+
       }
 
       //試看 
@@ -650,9 +653,10 @@ $color_productDetail_minor:#ff8736;
          width: 100%;
          max-width: 190px;
          font-weight: 600;
+         font-size: 1.1em;
          padding: 22px 10px;
          letter-spacing: 2px;
-         -webkit-text-stroke: 0.2px #ffffff;
+         // -webkit-text-stroke: 0.2px #ffffff;
          box-shadow: 5px 5px 8px #0000001f;;
          transition: .1s ease-in-out;
          @include MCW(861px) {

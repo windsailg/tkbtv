@@ -111,8 +111,8 @@
                                     <span>557日</span></li>
                                 <li class="info_item"><i class="fa fa-commenting-o"  ></i>上課方式
                                     <span>雲端函授</span></li>
-                                <li class="info_item"><i class="fa fa-file-text-o"  ></i>可選科目
-                                    <span>93科</span></li>
+                                <!-- <li class="info_item"><i class="fa fa-file-text-o"  ></i>可選科目
+                                    <span>93科</span></li> -->
                                 <li class="info_item type__full"><i class="fa fa-clock-o"></i>課程時數
                                     <span>自購入起 373 日</span></li>
                             </ul>
@@ -141,7 +141,7 @@
 
                             <!-- 全修排版 -->
                             <!-- <div class="price_block">
-                                <span class="title">課程售價</span>
+                                <span class="price__title">課程售價</span>
                                 <div class="price_box">
 
                                     <div id="coursePrice" class="price">
@@ -159,16 +159,17 @@
                             <!-- 單科排版 -->
                             
                             <div class="price_block">
-                                <span class="title">課程售價</span>
-                                <div class="price_box">
+                                
 
+                                <div class="price_box">
+                                    <span class="price__title">課程售價</span>
                                     <div id="coursePrice" class="price real_price__single">
                                         <span>NT</span>34,000
-                                    </div>
-
-                                    <span class="detail">滿萬元現折千元(需滿兩科以上)</span>
+                                    </div>                                    
 
                                 </div>
+
+                                <span class="detail">滿萬元現折千元(需滿兩科以上)</span>
 
                             </div>
 
@@ -924,7 +925,7 @@
 </script>
 
 <script>//load商品說明
-    $('#good_descrip').load('product_explain.html')
+    $('#good_descrip').load('product_explain.html');
 </script>
 
 <script>//影音區塊tab function
