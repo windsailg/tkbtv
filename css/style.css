@@ -4188,6 +4188,10 @@ table th, table td {
           flex-direction: row;
 }
 
+#ProductDetail .course__info__block .content_information.type__hight .info_list {
+  min-height: 178px;
+}
+
 #ProductDetail .course__info__block .content_information .info_list {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

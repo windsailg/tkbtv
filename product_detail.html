@@ -107,7 +107,7 @@
                                     <span>周詳</span></li>
                                 <li class="info_item"><i class="fa fa-book"></i>課程類型
                                     <span>公職考試</span></li>
-                                <li class="info_item"><i class="fa fa-calendar"  ></i>有效期限
+                                <li class="info_item"><i class="fa fa-calendar"></i>有效期限
                                     <span>557日</span></li>
                                 <li class="info_item"><i class="fa fa-commenting-o"  ></i>上課方式
                                     <span>雲端函授</span></li>
@@ -306,9 +306,9 @@
         <div class="container type__buyaction">
             <div class="button__block">
                 <div class="button__box">
-                    <div class="button shape type__orange"><i class="fa fa-commenting"  ></i>立即諮詢</div>
+                    <div class="button shape"><i class="fa fa-commenting"  ></i>立即諮詢</div>
                     <!-- <div class="button shape type__orange type__active"><i class="fas fa-star"></i>已加入追蹤</div> -->
-                    <div class="button shape type__orange "><i class="fas fa-star"></i>加入追蹤</div>
+                    <div class="button shape "><i class="fas fa-star"></i>加入追蹤</div>
                 </div>
                 <div class="button__box">
                     <div class="button shape type__blue"><i class="fas fa-cart-plus"></i>加入購物車</div>
@@ -940,8 +940,11 @@
         function DetailInit(){
             var elemQuan = $('.preview__item').length;
             if(elemQuan == 0){
+                $('#ContentInformation').addClass('type__hight');
                 return;
             }else{
+                //區塊高度 無試看時 
+                
                 $('#CourseInfoTab').addClass('appear');
                 $('.info_tab_ietm .quantity').addClass('appear').html('(' + elemQuan + ')');
             }

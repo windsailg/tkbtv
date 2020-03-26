@@ -294,6 +294,11 @@ $color_productDetail_minor:#ff8736;
          width: 100%;
          height: 100%;
          flex-direction: row;
+         &.type__hight {
+            .info_list {
+               min-height: 178px;
+            }
+         }
          .info_list {
             @include ibl;
             align-items: flex-start;
