@@ -1,18 +1,22 @@
 /*last update: 20181211*/
 
+@charset "UTF-8";
 
 /*課程內容樣式制定*/
-#productDetail .courseIntro .ci-content{
+.course__intro {
     color: rgb(19, 19, 19);
+    line-height: 1.6em;
     /* font-family: '微軟正黑體'; */
 }
-#productDetail .courseIntro .ci-content hr{
-    border:0;
+
+.course__intro hr {
+    border: 0;
     height: 1px;
     background: #d9d9d9;
 }
+
 /*h2*/
-.courseIntro .ci-content h2 {
+.course__intro h2 {
     display: inline-block;
     font-size: 24px;
     color: #131313;
@@ -20,28 +24,44 @@
     padding: 0px 15px;
     margin: 0px;
 }
+
 /*超連結*/
-.courseIntro .ci-content a{
+.course__intro a {
     text-decoration: underline;
     color: #228ecf;
 }
-.courseIntro .ci-content a:hover{
+
+.course__intro a:hover {
     text-decoration: none;
 }
+
 /*錨點*/
-.courseIntro .ci-content .title_menu{margin: 10px 0px 0px 0px;}
-.courseIntro .ci-content .title_menu a{
+.course__intro .title_menu {
+    margin: 10px 0px 0px 0px;
+}
+
+.course__intro .title_menu a {
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: #22b8cf;
 }
-.courseIntro .ci-content .title_menu a:before{content: "｜";}
-.courseIntro .ci-content .title_menu a:last-child:after{content: "｜";}
-.courseIntro .ci-content .title_menu a:hover{opacity: 0.5;}
+
+.course__intro .title_menu a:before {
+    content: "｜";
+}
+
+.course__intro .title_menu a:last-child:after {
+    content: "｜";
+}
+
+.course__intro .title_menu a:hover {
+    opacity: 0.5;
+}
+
 /*課程內容正常標題 建議用h3*/
-#productDetail .courseIntro .ci-content h3{
+.course__intro h3 {
     display: block;
     letter-spacing: 5px;
     width: 100%;
@@ -55,6 +75,7 @@
     padding: 0px 0px 8px 0px;
     margin: 50px 0px 25px 0px;
 }
+
 /*錨點高於選單*/
 .anchorPos :target:before {
     content: "";
@@ -62,23 +83,40 @@
     height: 90px;
     position: relative;
     margin-top: -90px;
-    pointer-events: none;/* 使之無法點選 */
+    pointer-events: none;
+    /* 使之無法點選 */
 }
+
 /*加星號*/
-.courseIntro .ci-content [class^="star"]:after{
+.course__intro [class^="star"]:after {
     content: "";
     font-size: 0.7em;
     opacity: 0.3;
     margin-left: 4px;
 }
-.courseIntro .ci-content .star5:after{content: "★★★★★";}
-.courseIntro .ci-content .star4:after{content: "★★★★";}
-.courseIntro .ci-content .star3:after{content: "★★★";}
-.courseIntro .ci-content .star2:after{content: "★★";}
-.courseIntro .ci-content .star1:after{content: "★";}
+
+.course__intro .star5:after {
+    content: "★★★★★";
+}
+
+.course__intro .star4:after {
+    content: "★★★★";
+}
+
+.course__intro .star3:after {
+    content: "★★★";
+}
+
+.course__intro .star2:after {
+    content: "★★";
+}
+
+.course__intro .star1:after {
+    content: "★";
+}
 
 /*課程內容最底層的標題 建議用h4*/
-#productDetail .courseIntro .ci-content h4{
+.course__intro h4 {
     display: block;
     font-size: 18px;
     margin: 25px 0 5px;
@@ -89,176 +127,227 @@
 }
 
 /*文章內容區塊*/
-#productDetail .courseIntro .ci-content p{
-    display:block;
+.course__intro p {
+    display: block;
     font-size: 18px;
     margin: 1px 0;
-    width:100%;
+    width: 100%;
     letter-spacing: 0px;
 }
 
 /*無序列表符號*/
-.courseIntro .ci-content ul{list-style-type: disc;}
-.courseIntro .ci-content ul ul{list-style-type: circle;}
-.courseIntro .ci-content ul ul ul{list-style-type: square;}
+.course__intro ul {
+    list-style-type: disc;
+}
+
+.course__intro ul ul {
+    list-style-type: circle;
+}
+
+.course__intro ul ul ul {
+    list-style-type: square;
+}
 
 /*有序列表符號*/
-.courseIntro .ci-content ol{list-style-type: decimal;}
-.courseIntro .ci-content ol ol{list-style-type: upper-alpha;}
-.courseIntro .ci-content ol ol ol{list-style-type: lower-alpha;}
+.course__intro ol {
+    list-style-type: decimal;
+}
+
+.course__intro ol ol {
+    list-style-type: upper-alpha;
+}
+
+.course__intro ol ol ol {
+    list-style-type: lower-alpha;
+}
 
 /*備註 附註 額外說明 用span*/
-#productDetail .courseIntro .ci-content span {
-    
+.course__intro span {
+
     font-weight: 600;
 }
 
 /*強調某個重點 用em*/
-#productDetail .courseIntro .ci-content em {
-    
-}
+.course__intro em {}
+
 /*制定顏色class*/
-#productDetail .courseIntro .ci-content .color1 {
+.course__intro .color1 {
     color: #f16001;
 }
+
 /*更強烈強調重點的強調標籤  有迫切性 相較em更具效果 用strong*/
-#productDetail .courseIntro .ci-content strong {
+.course__intro strong {
     font-weight: 600;
-    color:#5a5a5a;
+    color: #5a5a5a;
 }
 
 /*文章內容中的列表區塊 搭配li使用*/
-#productDetail .courseIntro .ci-content ul li{
+.course__intro ul li {
     font-size: 18px;
-    letter-spacing:0px;
+    letter-spacing: 0px;
 }
 
 /*制定圖片大小不變形*/
-#productDetail .courseIntro .ci-content .img_box_450 {
-    width:450px;
+.course__intro .img_box_450 {
+    width: 450px;
     max-width: 100%;
     min-width: 260px;
     border-radius: 5px;
 }
-#productDetail .courseIntro .ci-content img {
-    width:100%;
+
+.course__intro img {
+    width: 100%;
     height: auto;
     max-width: 100%;
     border-radius: 5px;
 }
+
 /*制定圖片並排區塊(包含RWD)*/
-#productDetail .courseIntro .ci-content .pic_fw_area{
-        display:block;
-        clear:both;
-        padding:0;
-        margin:20px 0 30px;
-        width:100%;
-        float: left;
+.course__intro .pic_fw_area {
+    display: block;
+    clear: both;
+    padding: 0;
+    margin: 20px 0 30px;
+    width: 100%;
+    float: left;
 }
-#productDetail .courseIntro .ci-content .pic_fw{
-        vertical-align: top;
-        display:inline-block;
-        width:49%;
-        padding:0;
-        margin:0;
-        clear:right;
+
+.course__intro .pic_fw {
+    vertical-align: top;
+    display: inline-block;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+    clear: right;
 }
-#productDetail .courseIntro .ci-content .pic_fw figure{
-/* margin:16px 40px;*/ /*預設margin尺寸*/
-     margin:8px 20px;
+
+.course__intro .pic_fw figure {
+    /* margin:16px 40px;*/
+    /*預設margin尺寸*/
+    margin: 8px 20px;
 }
-@media only screen and (max-width:781px){
-    #productDetail .courseIntro .ci-content .pic_fw{
-        width:100%;
-}
+
+@media only screen and (max-width:781px) {
+    .course__intro .pic_fw {
+        width: 100%;
+    }
 }
 
 
 
 /*表格對齊設定*/
-#productDetail .courseIntro .ci-content table  {
+#ProductDetail .course__intro table {
     border-collapse: collapse;
     margin: 20px 0;
     border-color: rgb(20, 20, 20);
 }
-#productDetail .courseIntro .ci-content table th {
+
+#ProductDetail .course__intro table th {
     vertical-align: middle;
     background-color: #EEE;
     color: #4d4d4d;
     font-weight: 600;
     padding: 5px 0;
 }
-#productDetail .courseIntro .ci-content table tr {
+
+#ProductDetail .course__intro table tr {
     vertical-align: middle;
     color: #3f3f3f;
     font-weight: 300;
 
 }
-#productDetail .courseIntro .ci-content table td {
+
+#ProductDetail .course__intro table td {
     vertical-align: middle;
     padding: 8px 10px;
 }
+
 /*表格捲軸*/
-#productDetail .courseIntro .ci-content .table_block{width: 100%; height: auto;}
-#productDetail .courseIntro .ci-content table tbody th{
+#ProductDetail .course__intro .table_block {
+    width: 100%;
+    height: auto;
+}
+
+#productDetail .course__intro .table_block {
+    width: 100%;
+    height: auto;
+}
+
+#productDetail .course__intro table tbody th {
     font-weight: normal;
     text-align: left;
     color: black;
     background-color: white;
     padding: 8px 10px;
 }
+
 /*三列表格*/
-@media only screen and (max-width:781px){
-    #productDetail .courseIntro .ci-content .tablecol3 td:nth-child(3){
+@media only screen and (max-width:781px) {
+    .course__intro .tablecol3 td:nth-child(3) {
         color: rgb(12, 12, 12);
         font-size: 12px;
     }
+
     /*四列表格*/
-    #productDetail .courseIntro .ci-content .tablecol4 td:nth-child(4){
+    .course__intro .tablecol4 td:nth-child(4) {
         color: rgb(12, 12, 12);
         font-size: 12px;
     }
 }
 
 
-#productDetail .courseIntro .ci-content figcaption {
+.course__intro figcaption {
     line-height: 22px;
 }
+
+
+
+
 /*圖片RWD設定*/
-@media only screen and (max-width:9000px){
-#productDetail .courseIntro .ci-content .media_1920{
-display: block;
-}
-#productDetail .courseIntro .ci-content .media_992,
-#productDetail .courseIntro .ci-content .media_768,
-#productDetail .courseIntro .ci-content .media_480{
-display: none;
-}
+@media only screen and (max-width:9000px) {
+    .course__intro .media_1920 {
+        display: block;
+    }
+
+    .course__intro .media_992,
+    .course__intro .media_768,
+    .course__intro .media_480 {
+        display: none;
+    }
 }
 
-@media only screen and (max-width:992px){
-#productDetail .courseIntro .ci-content .media_1920{
-display: none;
-}
-#productDetail .courseIntro .ci-content .media_992{
-display: block;
-}
+@media only screen and (max-width:992px) {
+    .course__intro .media_1920 {
+        display: none;
+    }
+
+    .course__intro .media_992 {
+        display: block;
+    }
 }
 
-@media only screen and (max-width:768px){
-#productDetail .courseIntro .ci-content .media_992{
-display: none;
-}
-#productDetail .courseIntro .ci-content .media_768{
-display: block;
-}
+@media only screen and (max-width:768px) {
+    .course__intro .media_992 {
+        display: none;
+    }
+
+    .course__intro .media_768 {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 550px) {
+
     /*表格捲軸*/
-    #productDetail .courseIntro .ci-content .table_block{overflow: auto;}
-    #productDetail .courseIntro .ci-content .table_block table{width: 600px;}
-    #productDetail .courseIntro .ci-content .table_block table tr th:first-child{
+    .course__intro .table_block {
+        overflow: auto;
+    }
+
+    .course__intro .table_block table {
+        width: 600px;
+    }
+
+    .course__intro .table_block table tr th:first-child {
         width: 15%;
         position: -webkit-sticky;
         position: sticky;
@@ -267,13 +356,14 @@ display: block;
     }
 }
 
-@media only screen and (max-width:480px){
-#productDetail .courseIntro .ci-content .media_768{
-display: none;
-}
-#productDetail .courseIntro .ci-content .media_480{
-display: block;
-}
+@media only screen and (max-width:480px) {
+    .course__intro .media_768 {
+        display: none;
+    }
+
+    .course__intro .media_480 {
+        display: block;
+    }
 }
 
 
@@ -282,3 +372,106 @@ display: block;
 
 /*課程內容樣式制定結束*/
 
+
+.CSSTableGenerator {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0
+}
+
+.CSSTableGenerator table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.CSSTableGenerator table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0
+}
+
+.CSSTableGenerator table tr:first-child td:last-child {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.CSSTableGenerator tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.CSSTableGenerator tr:nth-child(odd) {
+    background-color: #e5f1f4
+}
+
+.CSSTableGenerator tr:nth-child(even) {
+    background-color: #f8fbfc
+}
+
+.CSSTableGenerator td {
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    vertical-align: Â middle
+}
+
+.CSSTableGenerator tr:last-child td {
+    border-width: 0 1px 0 0
+}
+
+.CSSTableGenerator tr td:last-child {
+    border-width: 0 0 1px
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+    border-width: 0
+}
+
+.CSSTableGenerator th {
+    background-color: #338aa4;
+    border: 0 solid #ccc;
+    text-align: center;
+    border-width: 0 0 1px 1px;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #fff
+}
+
+.CSSTableGenerator tr:first-child td:first-child {
+    border-width: 0 0 1px
+}
+
+.CSSTableGenerator tr:first-child td:last-child {
+    border-width: 0 0 1px 1px
+}
