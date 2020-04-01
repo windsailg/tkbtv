@@ -145,6 +145,13 @@
   width: 100%;
   padding: 0px 0px;
   max-width: 100%;
+  min-height: 500px;
+}
+
+@media all and (max-width: 921px) {
+  .area .container.type_banner {
+    min-height: unset;
+  }
 }
 
 .area .container.no__01 {

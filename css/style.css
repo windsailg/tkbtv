@@ -744,7 +744,7 @@ table th, table td {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 25px #00000023;
           box-shadow: 0px 0px 25px #00000023;
@@ -754,6 +754,7 @@ table th, table td {
   width: 100%;
   max-width: 1000px;
   margin: 0 40px 0 0;
+  min-height: 1020px;
 }
 
 @media all and (max-width: 1301px) {
