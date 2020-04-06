@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TKBTV - 課程內容 - 全修</title>
+    <meta property="og:title" content="全修課程 普考-電力工程全修(二年)-雲端">
+    <meta property="og:title" content="TKB購課網">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tkbgo.com.tw/search/toSearch.jsp">
+    <meta property="og:image" content="https://www.tkbgo.com.tw/tkbgo/og_image.png">
+    <meta property="og:description"
+        content="TKBTV 雲端課程、TKB 函授課程、TKB 數位學堂課程線上購買。專辦全國公務人員高普考試、技師考試、國營事業招考、銀行招考、轉學考、研究所考試等最新考試資訊提供與課程學習。公務人員考試包含：高普考試、專門職業技師、初等考試、地方特考、領隊導遊、一般警察特考、司法特考。就業考試包含：國營事業招考、台電招考、中油招考、中華郵政招考、自來水招考、台鐵招考、銀行招考。以及大學轉學考、研究所考試。">
+
+
+
 	<!-- <link rel="icon" href="img/favicon.png"> -->
     <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
 
@@ -914,6 +924,79 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="http://www.youtube.com/player_api"></script>
 
+
+<script > //結構化 課程
+    var pro_title = document.querySelector("meta[property='og:title']").getAttribute('content');
+    var pro_Img = document.querySelector("#course_image").getAttribute('src');
+    var pro_desc = document.querySelector("meta[property='og:description']").getAttribute('content');
+    var pro_price = document.querySelector("#coursePrice").innerHTML;
+    var location_url = location.href;
+
+    var ProductModel = {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": pro_title,
+        "image": pro_Img,
+        "description": pro_desc,
+        "brand": {
+            "@type": "Organization",
+            "name": "TKB購課網"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "TWD",
+            "price": pro_price,
+        }
+    };
+
+    var BreadcrumbListModel = {
+        "@context": "http://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": "1",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/",
+                "name": "TKB購課網"
+            }
+        }, {
+            "@type": "ListItem",
+            "position": "2",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductType.jsp?group=7&type=61",
+                "name": "選擇類別"
+            }
+        }, {
+            "@type": "ListItem",
+            "position": "3",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductList.jsp?group=7&type=61&kind=119",
+                "name": "課程選擇"
+            }
+        }, {
+            "@type": "ListItem",
+            "position": "4",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductDetail.jsp?f_subject_no=F1303390&subject_no=&class_type=I",
+                "name": "課程購買頁面"
+            }
+        }]
+    };
+
+    //console.log(product)
+
+    //append the json onheader 
+    var BreadCrumbScript = document.createElement('script'),
+        ProductScript = document.createElement('script')
+
+    BreadCrumbScript.type = "application/ld+json";
+    ProductScript.type = "application/ld+json";
+
+    BreadCrumbScript.innerHTML = JSON.stringify(BreadcrumbListModel);
+    ProductScript.innerHTML = JSON.stringify(ProductModel);
+    document.getElementsByTagName('head')[0].appendChild(BreadCrumbScript);
+    document.getElementsByTagName('head')[0].appendChild(ProductScript);
+</script>
 
 <script>//課程全修單科樣式切換
 
