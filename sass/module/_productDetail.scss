@@ -1310,6 +1310,9 @@ $color_productDetail_minor:#ff8736;
 
 
 .main__tab__block {
+   .swiper-wrapper {
+      flex-wrap: nowrap;
+   }
    .main__tab__prev{
       background-image: url('../img/global/main__tab__prev.svg');
       left: 0;

@@ -5532,6 +5532,12 @@ table th, table td {
   background-color: #dddddd;
 }
 
+.main__tab__block .swiper-wrapper {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
 .main__tab__block .main__tab__prev {
   background-image: url("../img/global/main__tab__prev.svg");
   left: 0;
