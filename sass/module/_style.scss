@@ -413,6 +413,8 @@ table{
       color: #777777;
       letter-spacing: 1px;
       cursor: pointer;
+
+      text-decoration: none;
       &.course__type__tab__box--active{
          border-color: transparent transparent $color_major transparent;
          color: $color_major;
@@ -428,7 +430,7 @@ table{
 
 .course__type__main__item {
    @include fxfs;
-   padding: 20px 20px 20px 40px;
+   padding: 20px 20px 40px 40px;
    background-color: #ffffff;
    box-shadow: 0px 0px 25px #00000023;
 }
@@ -437,7 +439,7 @@ table{
    width: 100%;
    max-width: 1000px;
    margin: 0 40px 0 0;
-   min-height: 1020px;
+   flex-direction: column;
    @include MCW(1301px) {
       max-width: 100%;
       margin: 0 ;
