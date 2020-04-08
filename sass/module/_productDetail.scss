@@ -777,7 +777,7 @@ $color_productDetail_minor:#ff8736;
       }
       .product__select__table{
          width: 100%;
-         @include MCW(1251px) {
+         @include MCW(1251px){
             width: 1300px;
          }
          .check_box_typeform{
@@ -788,6 +788,7 @@ $color_productDetail_minor:#ff8736;
             color:#ffffff;
             font-size: 1.1em;
             letter-spacing: 2px;
+            max-width: 600px;
          }
          td{
             background-color: #ffffff;

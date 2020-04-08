@@ -404,6 +404,9 @@ table{
    @include MCW(1301px) {
       margin: 0 10px;
    }
+   .swiper-wrapper {
+      flex-wrap: nowrap;
+   }
    .course__type__tab__box{
       @include fxc;
       border: transparent 3px solid;
@@ -595,6 +598,9 @@ table{
    overflow: hidden;
    @include MCW(1301px) {
       margin: 0 10px;
+   }
+   .swiper-wrapper {
+      flex-wrap: nowrap;
    }
    .search__result__tab__box {
       @include fxc;

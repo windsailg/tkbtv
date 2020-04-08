@@ -604,6 +604,9 @@ $color_productDetail_minor:#ff8736;
    }
 
    .member__tab__block {
+      .swiper-wrapper {
+         flex-wrap: nowrap;
+      }
       .member__tab__prev {
          background-image: url('../img/global/member__tab__prev.svg');
          left: 0;
@@ -1287,6 +1290,9 @@ $color_productDetail_minor:#ff8736;
 
       @include MCW(1301px) {}
 
+      .swiper-wrapper{
+         flex-wrap: nowrap;
+      }
       .member__tab__sub__box {
          @include fxc;
          border: transparent 3px solid;

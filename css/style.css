@@ -712,6 +712,12 @@ table th, table td {
   }
 }
 
+.course__type__tab__block .swiper-wrapper {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
 .course__type__tab__block .course__type__tab__box {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -978,6 +984,12 @@ table th, table td {
   .search__result__tab__block {
     margin: 0 10px;
   }
+}
+
+.search__result__tab__block .swiper-wrapper {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
 
 .search__result__tab__block .search__result__tab__box {
@@ -4865,6 +4877,7 @@ table th, table td {
   color: #ffffff;
   font-size: 1.1em;
   letter-spacing: 2px;
+  max-width: 600px;
 }
 
 #ProductDetail .select__table__block .product__select__table td {
@@ -7316,6 +7329,12 @@ table th, table td {
   max-width: 100px;
 }
 
+.page .member__tab__block .swiper-wrapper {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
 .page .member__tab__block .member__tab__prev {
   background-image: url("../img/global/member__tab__prev.svg");
   left: 0;
@@ -8247,6 +8266,12 @@ table th, table td {
   overflow: hidden;
   position: relative;
   background-color: #f3f3f3;
+}
+
+.page .member__tab__block__sub .swiper-wrapper {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
 
 .page .member__tab__block__sub .member__tab__sub__box {
