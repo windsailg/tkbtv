@@ -8127,7 +8127,7 @@ table th, table td {
 }
 
 .page .mycourse__block .mycourse__title.mycourse__title--isover {
-  color: #bbbbbb;
+  color: #cccccc;
 }
 
 .page .mycourse__block .mycourse__title.mycourse__title--isover::before {
@@ -8144,6 +8144,10 @@ table th, table td {
   border-radius: 100px;
   height: 20px;
   margin: 0 5px 0 0;
+}
+
+.page .mycourse__block .mycourse__title.mycourse__title--iswatched {
+  color: #aaaaaa;
 }
 
 .page .mycourse__block .mycourse__title__text {

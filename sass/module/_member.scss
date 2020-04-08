@@ -1203,8 +1203,7 @@ $color_productDetail_minor:#ff8736;
          padding: 0 0 0 15px;
 
          &.mycourse__title--isover{
-
-            color: #bbbbbb;
+            color: #cccccc;
             &::before{
                float: left;
                content: '';
@@ -1217,6 +1216,9 @@ $color_productDetail_minor:#ff8736;
                height: 20px;
                margin:  0 5px 0 0;
             }
+         }
+         &.mycourse__title--iswatched{
+            color: #aaaaaa;
          }
       }
       .mycourse__title__text{
