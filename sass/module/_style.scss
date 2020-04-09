@@ -16,7 +16,6 @@ $color_productDetail_minor:#ff8736;
 // * {   outline: #ff8736;   outline-width: 1px;   outline-style: solid;}
 
 
-
 html{
    overflow-x: hidden;
    font-family: 'Century Gothic','Arial','Source Sans Pro' , 'Muli' ,'微軟正黑體', '新細明體';
@@ -1282,7 +1281,6 @@ table{
 }
 
 
-
 //Global Cmponent------------------------------------
 
 .button{
@@ -1623,10 +1621,7 @@ table{
 }
 
 
-
-
 //activing components------------------------------------
-
 .wrapper{
    @include fxfsw();
 }
