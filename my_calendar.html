@@ -178,6 +178,12 @@
 
         </div>
 
+        <div class="description__block ">
+            <div class="description__content">
+                每週預定觀看時間（單位：小時）：
+            </div>
+        </div>
+
     </div>
 
 </div>
@@ -185,7 +191,7 @@
 
 
 
-<div id="CourseDateBlock" class="course__time__detail__block">
+<div id="CourseCaseBlock" class="course__time__detail__block">
 
     <div class="title__block">
         課程批次排程
@@ -246,7 +252,7 @@
 
 </div>
 
-<div id="CourseDateBlockMask" class="course__date__detail__block__mask"></div>
+<div id="CourseCaseBlockMask" class="course__case__detail__block__mask"></div>
 
 
 
@@ -674,21 +680,21 @@ function targetCD(ele){
     $('.mycourse__date').on('click',function(){
         LightBoxShow();
     })
-    
-    $('.course__date__detail__block__mask').on('click',function(){
+
+    $('.course__case__detail__block__mask').on('click',function(){
         LightBoxHide();
     })
 
 
         //燈箱顯示隱藏動作
     function LightBoxShow(){
-        $('#CourseDateBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
-        $('.course__date__detail__block__mask').fadeIn(350);
+        $('#CourseCaseBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.course__case__detail__block__mask').fadeIn(350);
     }
 
     function LightBoxHide(){
-        $('#CourseDateBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
-        $('.course__date__detail__block__mask').fadeOut(350);
+        $('#CourseCaseBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
+        $('.course__case__detail__block__mask').fadeOut(350);
     }
 
 
