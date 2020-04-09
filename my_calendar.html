@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TKBTV - 行事曆</title>
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+    <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="css/focuspoint.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link href="https://www.tkbtv.com.tw/css/smoothness/jquery-ui-1.8.13.custom.css" rel="stylesheet" type="text/css">
+    <link href="https://www.tkbtv.com.tw/front/fullcalendar.css" rel="stylesheet" type="text/css">
+    
+    <!-- Golbal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+    
+<body >
+   
+<div id="Header" class="header"></div>
+
+<div class="page">
+
+    <div class="area ">
+
+        <div class="container ">
+
+            <div class="block bread_crumb_block">
+                <ul class="bread_crumb">
+                    <li class="bread_crumb_item bc_first">
+                        <a href="#" target="_blank">
+                            <span class="home">
+                            <i class="fa fa-home"></i>
+                            首頁
+                        </a>
+                    </li>
+                    <li class="bread_crumb_item bc_last">
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                        行事曆
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="title__block">
+                行事曆
+            </h2>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="area type__gray">
+        <div class="container type__articles">
+
+            <div class="calendar__nav__trigger">
+                <div id="CalenderNavTrigger" class="calendar__nav__trigger__title">展開課程列表</div>
+            </div>
+
+            <div class="calendar__nav__block calendar__nav__block--ismobile calendar__main__item">
+
+                <div class="calendar__nav__box">
+
+                    <div class="calendar__nav__title">
+                        <i class="fa fa-list" aria-hidden="true"></i>我的課程
+                    </div>
+
+                    <div class="calendar__nav__dropdown__box">
+
+                        <div id="external-events" class="calendar__nav__dropdown">
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event"
+                                data-rel="lightcase">電子學-雲端</div>
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable"
+                                data-rel="lightcase">線代-雲端
+                            </div>
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable"
+                                data-rel="lightcase">
+                                基礎工數-雲端</div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">電子學-雲端
+                            </div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">線代-雲端
+                            </div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">
+                                基礎工數-雲端</div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">電子學-雲端
+                            </div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">線代-雲端
+                            </div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">
+                                基礎工數-雲端</div>
+                            <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">
+                                基礎工數-雲端</div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div  id="main" class="calendar__main__block calendar__main__item">
+
+                <div id="calendar"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div id="CourseTimeBlock" class="course__time__detail__block">
+
+    <div class="title__block">
+        課程時數詳情
+    </div>
+
+    <div class="description__block ">
+        <div class="description__content">
+            以下是「線代-雲端 - 周易老師」 課程觀看及行程排定狀況。
+        </div>
+    </div>
+
+    <div class="course__list__content table__box">
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>課程影片總時數： </th>
+                    <td class="type__red">189 小時 30 分鐘</td>
+                </tr>
+                <tr>
+                    <th>課程尚未觀看時數：</th>
+                    <td class="type__red">37 小時 54 分鐘</td>
+                </tr>
+                <tr>
+                    <th>已排定時數：</th>
+                    <td class="type__red">0 小時 20 分鐘</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="buy__time__block">
+
+        <div class="buy__time__title">增加課程行事曆：</div>
+
+        <div class="number__choose__box">
+
+            <div> 自</div>
+                <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
+            <div> 至</div>
+                <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
+            <div> 日</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div id="CourseDateBlock" class="course__time__detail__block">
+
+    <div class="title__block">
+        課程批次排程
+    </div>
+
+    <div class="description__block ">
+        <div class="description__content">
+            以下是「基礎工數-雲端 - 歐大亮老師」 課程時數詳情，若需要展延課程期限最多可加購一年但僅限一次加購機會。
+        </div>
+    </div>
+
+    <div class="course__list__content table__box">
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>可否展延： </th>
+                    <td class="type__red">N</td>
+                </tr>
+                <tr>
+                    <th>課程到期日</th>
+                    <td class="type__red">2020/09/28</td>
+                </tr>
+                <tr>
+                    <th>已展延期限</th>
+                    <td class="type__red">0天</td>
+                </tr>
+                <tr>
+                    <th>提案到期日</th>
+                    <td class="type__red">2020/09/28</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="buy__time__block">
+
+        <div class="buy__time__title">展延期限</div>
+
+        <div class="select__box">
+            <div class="select__ele">
+                <select class="selecter" data-province="選擇鄉鎮">
+                    <option value="選擇鄉鎮">+31天 / $1000 / 延至2020/04/12</option>
+                    <option value="湖口鄉">+62天 / $2000 / 延至2020/04/12</option>
+                    <option value="峨眉鄉">+93天 / $300 / 延至2020/04/12</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="btn__box">
+            <a class="button shape type__dark">加購物車</a>
+            <a class="button shape">立即購買</a>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div id="CourseDateBlockMask" class="course__date__detail__block__mask"></div>
+
+
+
+
+
+
+<footer id="Footer"></footer>
+
+
+<!-- Golbal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/lightcase.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/jquery.focuspoint.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+
+<!-- <script src="https://www.tkbtv.com.tw/js/jquery-1.11.1.min.js"></script> -->
+
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>
+<script src="https://www.tkbtv.com.tw/js/jquery-ui-1.10.2.custom.js"></script>
+<script src="https://www.tkbtv.com.tw/front/moment.js"></script>
+<script src="https://www.tkbtv.com.tw/front/fullcalendar.js"></script>
+
+
+
+
+<script>
+
+    var PureArticleModel = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.tkbgo.com.tw/article/Recommendation/toArticle.jsp?article_id=329"
+        },
+        "headline": "研究所推甄重點問與答：口試篇",
+        "description": "研究所甄試、研究所複試以及在職專班的考試重點整理，收錄各種考生常遇到的推甄問題，完整獨家大解惑",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.tkbtv.com.tw/p20160809EC002_1100_380/toPic.action",
+            "width": 940,
+            "height": 350
+        },
+        "author": {
+            "@type": "Person",
+            "name": "曾憶慈"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "曾憶慈",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.tkbgo.com.tw/tkbgo/img/tkbgo_logo.png",
+                "width": 300,
+                "height": 65
+            }
+        },
+        "datePublished": "2019-11-05",
+        "dateModified": "2019-11-05"
+    };
+
+    var BreadcrumbListModel = {
+        "@context": "http://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": "1",
+            "item": {
+                "@id": "https://www.fengso.com.tw/",
+                "name": "首頁",
+            }},{
+            "@type": "ListItem",
+            "position": "2",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductType.jsp?group=7&type=61",
+                "name": "第二層名稱"
+            }},{
+            "@type": "ListItem",
+            "position": "3",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductList.jsp?group=7&type=61&kind=119",
+                "name": "第三層名稱"
+            }},{
+            "@type": "ListItem",
+            "position": "4",
+            "item": {
+                "@id": "https://www.tkbgo.com.tw/product/toProductDetail.jsp?f_subject_no=F1303390&subject_no=&class_type=I",
+                "name": "本頁"
+            }}
+        ]
+    };
+
+    ModelToJsonFactory();
+    function ModelToJsonFactory(){
+        var BreadCrumbScript = document.createElement('script');
+        var PureArticleScript = document.createElement('script');
+
+        BreadCrumbScript.type = "application/ld+json";
+        PureArticleScript.type = "application/ld+json";
+
+        BreadCrumbScript.innerHTML = JSON.stringify(BreadcrumbListModel);
+        PureArticleScript.innerHTML = JSON.stringify(PureArticleModel) ;
+
+        $('head').append(BreadCrumbScript ,PureArticleScript);
+    }
+
+</script>
+
+
+
+<script>
+
+// $('.calendar__nav__dropdown__title').on('click',function(){
+//     $('.calendar__nav__dropdown__title').removeClass('.calendar__nav__dropdown__title--isopen');
+//     $('.calendar__nav__dropdown__box').slideUp(300);
+//     $(this).css({'pointer-events':'none'}).addClass('calendar__nav__dropdown__title--isopen').next('.calendar__nav__dropdown__box').delay(400).slidedown(300);
+//     setTimeout(() => {
+//         $(this).css({'pointer-events':'auto'})
+//     }, 1500);
+// })
+
+
+$('.calendar__nav__dropdown__title').on('click',function(){
+    var target = $(this);
+    targetCD(target);
+    if($(this).hasClass('calendar__nav__dropdown__title--isopen')){
+        $('.calendar__nav__dropdown').slideUp(300);
+        $(this).removeClass('calendar__nav__dropdown__title--isopen');
+    }else{
+        $('.calendar__nav__dropdown').slideUp(300);
+        $('.calendar__nav__dropdown__title').removeClass('calendar__nav__dropdown__title--isopen');
+        $('.calendar__nav__dropdown__title').removeClass('.calendar__nav__dropdown__title--isopen');
+        $(this).removeClass('calendar__nav__dropdown__title--isopen').next('.calendar__nav__dropdown').slideUp(300);
+        $(this).addClass('calendar__nav__dropdown__title--isopen').next('.calendar__nav__dropdown').slideDown(300);
+    }
+});
+
+$('#CalenderNavTrigger').on('click',function(){
+    if($(this).hasClass('calender_nav__trigger__title--isopen')){
+        $(this).removeClass('calender_nav__trigger__title--isopen').html('展開文章類別');
+        $('.calendar__nav__block').toggleClass('calendar__nav__block--ismobile');
+    }else{
+        $(this).addClass('calender_nav__trigger__title--isopen').html('收合文章類別');
+        $('.calendar__nav__block').toggleClass('calendar__nav__block--ismobile');
+    }    
+});
+
+function targetCD(ele){
+    $(ele).css({
+        'pointer-events':'none',
+    });
+    setTimeout(() => {
+        $(ele).css({
+            'pointer-events':'auto',
+        });
+    }, 500);
+}
+
+</script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        /* initialize the external events
+        -----------------------------------------------------------------*/
+        $('#external-events .fc-event').each(function (){
+            $(this).draggable({
+                appendTo: 'body',
+                scroll: false,
+                helper: 'clone',
+                start: function (event, ui) {
+                    dropped = false;
+                    $(this).addClass("hide");
+                },
+                stop: function (event, ui) {
+                    if (dropped == true) {
+                        $(this).remove();
+                    } else {
+                        $(this).removeClass("hide");
+                    }
+                },
+                zIndex: 999,
+                revert: true, // will cause the event to go back to its
+                revertDuration: 0 //  original position after the drag
+            });
+        });
+
+        $('#external-events .fc-event').on("click", function () {
+            $('#lecture_detail').children().load(
+                '${BASE_PATH}front/account/toCalendarLectureDetail.action', {
+                    'f_subject_no': $(this).attr("data-f_subject_no"),
+                    'subject_no': $(this).attr("data-subject_no")
+                },
+                 
+                function (response, status, xhr) {
+                    if (status == "success") {
+                        $(this).parent().fadeIn().children('.popup').css('margin-top', '-' + ($(
+                            this).height() / 2 + 51) + 'px');
+                    } else {
+                        alert('網頁載入錯誤，請稍後再試！');
+                    }
+                });
+        });
+
+        /* initialize the calendar
+        -----------------------------------------------------------------*/
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prevYear,prev,next,nextYear',
+                center: 'title',
+                right: 'today'
+                //			right: 'month,agendaWeek,agendaDay'
+            },
+            editable: true,
+            droppable: true, // this allows things to be dropped onto the calendar
+            eventLimit: true,
+            eventLimit: 3, //最多顯示三筆
+            height: 800,
+            monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+            dayNamesShort: ['日', '一', '二', '三', '四', '五', '六'],
+            buttonText: {
+                today: '今天'
+            },
+            eventLimitText: "更多",
+            titleFormat: "YYYY年MMMM",
+            viewRender: function (currentView){
+                var minDate = moment().add(-1, 'years'); //最多回到一年前
+                var maxDate = moment().add(800, 'days'); //及800天後
+                // Past
+                if (minDate >= currentView.start) { //}&& minDate <= currentView.end) {
+                    $(".fc-prev-button").prop('disabled', true).addClass('fc-state-disabled');
+                } else {
+                    $(".fc-prev-button").removeClass('fc-state-disabled').prop('disabled', false);
+                }
+                // Future
+                if (maxDate <= currentView.end) { //maxDate >= currentView.start &&
+                    $(".fc-next-button").prop('disabled', true).addClass('fc-state-disabled');
+                } else {
+                    $(".fc-next-button").removeClass('fc-state-disabled').prop('disabled', false);
+                }
+                // Past(year)
+                if (minDate >= currentView.end.add(-1, 'years')){
+                    $(".fc-prevYear-button").prop('disabled', true).addClass('fc-state-disabled');
+                } else {
+                    $(".fc-prevYear-button").removeClass('fc-state-disabled').prop('disabled',
+                        false);
+                }
+                // Future(year)
+                if (maxDate <= currentView.start.add(1,
+                    'years')) { //maxDate >= currentView.start &&
+                    $(".fc-nextYear-button").prop('disabled', true).addClass('fc-state-disabled');
+                } else {
+                    $(".fc-nextYear-button").removeClass('fc-state-disabled').prop('disabled',
+                        false);
+                }
+            },
+            dayRender: function (date, cell) {
+                if (moment().diff(date, 'days') > 0) {
+                    cell.css("background-color", "silver"); //今天之前改為灰色
+                }
+            },
+            //增加事件
+            events: [
+                
+                // <s:iterator value = "s_list" id = "list" status = "ss_list"> {
+                //     title: "觀看：" + ("${list.watch_minute}" >= 60 ? (Math.floor(
+                //         "${list.watch_minute}" / 60) + "小時") : '') + ("${list.watch_minute}" %
+                //         60 == 0 ? '' : ("${list.watch_minute}" % 60) + "分"),
+                //     start: "${list.create_time}",
+                //     color: "#AAAAAA",
+                //     id: "log",
+                //     editable: false
+                // },
+                // </s:iterator> 
+                // <s:iterator value = "calendar_list"
+                // id = "list"
+                // status = "s_list" > {
+                //     title: (parseInt("${list.study_time}") / 60) + "小時_${list.subject_name}",
+                //     start: "${list.study_date}",
+                //     study_time: "${list.study_time}",
+                //     subject_no: "${list.subject_no}",
+                //     f_subject_no: "${list.f_subject_no}",
+                //     id: "${list.id}",
+                //     editable: true
+                // }, 
+                // </s:iterator>
+
+            ],
+            //丟入
+            drop: function (date, jsEvent, ui) {
+                //			$('#calendar').fullCalendar('updateEvent', dropLocation);
+                //			$('#calendar').fullCalendar("refetchEvents");
+
+                $('#calendar_detail').children().load(
+                    '${BASE_PATH}front/account/toCalendarAdd.action', {
+                        'study_date': date.format(),
+                        'subject_no': $(this).attr("data-subject_no"),
+                        'f_subject_no': $(this).attr("data-f_subject_no"),
+                        'subject_name': $(this).text()
+                    },
+                    function (response, status, xhr) {
+                        if (status == "success") {
+                            $(this).parent().fadeIn().children('.popup').css('margin-top', '-' +
+                                $(this).height() / 2 + 'px');
+                        } else {
+                            alert('網頁載入錯誤，請稍後再試！');
+                        }
+                    });
+
+                // is the "remove after drop" checkbox checked?
+                /*
+                if ($('#drop-remove').is(':checked')) {
+                    // if so, remove the element from the "Draggable Events" list
+                    $(this).remove();
+                }
+                */
+            },
+            //事件點擊
+            eventClick: function (calEvent, jsEvent, view) {
+                if (calEvent.editable) {
+                    $('#calendar_detail').children().load(
+                        '${BASE_PATH}front/account/toCalendarAdd.action', {
+                            'calendar_id': calEvent.id,
+                            'study_date': calEvent.start.format(),
+                            'study_time': calEvent.study_time,
+                            'subject_no': calEvent.subject_no,
+                            'f_subject_no': calEvent.f_subject_no,
+                            'subject_name': calEvent.title
+                        },
+                        function (response, status, xhr) {
+                            if (status == "success") {
+                                $(this).parent().fadeIn().children('.popup').css('margin-top',
+                                    '-' + $(this).height() / 2 + 'px');
+                            } else {
+                                alert('網頁載入錯誤，請稍後再試！');
+                            }
+                        });
+
+                }
+                //	        alert('Event: ' + calEvent.title + "_" + calEvent.id + "_" + calEvent.start.format() + "_" + calEvent.editable + "_" + calEvent.study_time);
+
+                //			$('#calendar').fullCalendar('updateEvent', calEvent);
+                //			$('#calendar').fullCalendar('removeEvents', calEvent.id);
+                //			$('#calendar').fullCalendar("refetchEvents");
+                // change the border color just for fun
+                //$(this).css('border-color', 'red');		//紅框
+
+            },
+            //事件拖動
+            eventDrop: function (event, delta, revertFunc) {
+                //	        alert(event.id + "_" + event.title + " was dropped on " + event.start.format());
+                //	        if (!confirm("Are you sure about this change?")) {
+                //	            revertFunc();
+                //	        }else{
+                $.post("${BASE_PATH}front/account/calendarChangeDate.action", {
+                    calendar_id: event.id,
+                    study_date: event.start.format()
+                });
+                //	        }
+            },
+            //點擊日期
+            dayClick: function (date, jsEvent, view) {
+                //	        alert('Clicked on: ' + date.format());
+                // change the day's background color just for fun
+                //	        $(this).css('background-color', 'red');
+            }
+        });
+
+        $('#calendar_notice').click(function () {
+            if (!$(this).is(':checked')) {
+                var sure = confirm("是否確定要取消信件通知？");
+                if (sure) {
+                    $.post("${BASE_PATH}front/account/calendarNoticeChange.action", {
+                        calendar_notice: '0'
+                    });
+                } else {
+                    return false;
+                }
+            } else {
+                $.post("${BASE_PATH}front/account/calendarNoticeChange.action", {
+                    calendar_notice: '1'
+                });
+            }
+        
+    });
+
+        //關閉對話框
+        $(document).on('click', '.close_popup', function () {
+            $(this).parents('.overlay').fadeOut();
+        });
+
+    });
+
+</script>
+
+
+
+<script>
+
+    $('div[data-rel^=lightcase]').lightcase({
+
+    	// Will be called right before the content will be displayed
+    	onBeforeShow : {
+            quux: function(){
+
+            }
+        },
+        
+    	onFinish:{
+            autoClose: function(){
+                // alert('載入燈箱完成');
+            }
+        }
+        
+    });
+
+
+    $('.mycourse__date').on('click',function(){
+        LightBoxShow();
+    })
+    
+    $('.course__date__detail__block__mask').on('click',function(){
+        LightBoxHide();
+    })
+
+
+        //燈箱顯示隱藏動作
+    function LightBoxShow(){
+        $('#CourseDateBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.course__date__detail__block__mask').fadeIn(350);
+    }
+
+    function LightBoxHide(){
+        $('#CourseDateBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
+        $('.course__date__detail__block__mask').fadeOut(350);
+    }
+
+
+</script>
+
+
+
+<script src="js/tv_main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

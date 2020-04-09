@@ -1201,14 +1201,17 @@ $color_productDetail_minor:#ff8736;
             color:#777777;
          }
       }
+
       .mycourse__title{
          @include fxfsw(calc(100% - 35px));
-         padding: 0 0 0 15px;
-
+         padding: 0 0 0 24px;
+         position: relative;
          &.mycourse__title--isover{
             color: #cccccc;
             &::before{
+               position: absolute;
                float: left;
+               left: -2px;
                content: '';
                background-image: url('../img/global/checker.svg');
                background-position: center;
@@ -1217,7 +1220,10 @@ $color_productDetail_minor:#ff8736;
                // border: 1px solid #5adf6c;
                border-radius: 100px;
                height: 20px;
-               margin:  0 5px 0 0;
+               // margin:  0 5px 0 0;
+               @include MCW(550px){
+                  left: 3px;
+               }
             }
          }
          &.mycourse__title--iswatched{
@@ -1276,7 +1282,6 @@ $color_productDetail_minor:#ff8736;
    .course__time__detail__block {
       display: none;
    }
-
 
    //會員專區組件
    .member__tab__block__sub {

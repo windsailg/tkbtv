@@ -128,7 +128,7 @@ $color_gray:#777777;
 
 #TVIndex{
    .banner_slide_block{
-      @include fxcw();
+      // @include fxcw();
       @include MCW (920px) {
 
          //width:100vw;
