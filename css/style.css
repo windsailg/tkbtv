@@ -8863,6 +8863,7 @@ table th, table td {
   right: 0;
   left: 0;
   margin: auto;
+  cursor: pointer;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -9339,13 +9340,18 @@ table th, table td {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 600px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   display: none;
   background-color: #ffffff;
   position: fixed;
   padding: 30px 35px;
-  top: 20vh;
-  max-height: 70vh;
-  overflow-x: scroll;
+  top: 6vh;
+  max-height: 60vh;
+  overflow-x: hidden;
   overflow-y: scroll;
   z-index: 11;
 }
@@ -9366,6 +9372,7 @@ table th, table td {
 .course__case__detail__block__mask {
   position: fixed;
   display: none;
+  cursor: pointer;
   top: 0;
   bottom: 0;
   right: 0;

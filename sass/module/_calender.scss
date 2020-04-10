@@ -353,13 +353,14 @@ $color_productDetail_minor:#ff8736;
 
 #CourseCaseBlock {
    @include fxcw(600px);
+   @include aa;
    display: none;
    background-color: #ffffff;
    position: fixed;
    padding: 30px 35px;
-   top: 20vh;
-   max-height: 70vh;
-   overflow-x: scroll;
+   top: 6vh;
+   max-height: 60vh;
+   overflow-x: hidden;
    overflow-y: scroll;
    z-index: 11;
 
@@ -376,6 +377,7 @@ $color_productDetail_minor:#ff8736;
 .course__case__detail__block__mask {
    position: fixed;
    display: none;
+   cursor: pointer;
    @include aa;
    @include fxcw();
    height: 100vh;
@@ -445,3 +447,4 @@ $color_productDetail_minor:#ff8736;
    padding: 8px!important;
    background-color: $color_major;
 }
+

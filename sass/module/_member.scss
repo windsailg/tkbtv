@@ -1710,6 +1710,7 @@ $color_productDetail_minor:#ff8736;
    position: fixed;
    display: none;
    @include aa;
+   cursor: pointer;
    @include fxcw();
    height: 100vh;
    z-index: 10;

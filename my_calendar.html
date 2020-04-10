@@ -130,7 +130,7 @@
 </div>
 
 
-
+<!-- LightCase -->
 <div id="CourseTimeBlock" class="course__time__detail__block">
 
     <div class="title__block">
@@ -191,8 +191,7 @@
 </div>
 
 
-
-
+<!-- 自製燈箱 -->
 <div id="CourseCaseBlock" class="course__time__detail__block">
 
     <div class="title__block">
@@ -254,15 +253,13 @@
 
 </div>
 
+
 <div id="CourseCaseBlockMask" class="course__case__detail__block__mask"></div>
 
 
 
 
-
-
 <footer id="Footer"></footer>
-
 
 <!-- Golbal -->
 <script src="js/jquery.min.js"></script>
@@ -275,6 +272,7 @@
 <script src="http://www.youtube.com/player_api"></script>
 
 <!-- <script src="https://www.tkbtv.com.tw/js/jquery-1.11.1.min.js"></script> -->
+
 
 <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>
 <script src="https://www.tkbtv.com.tw/js/jquery-ui-1.10.2.custom.js"></script>
@@ -680,25 +678,25 @@ function targetCD(ele){
 
 <script>
 
-    $('div[data-rel^=lightcase]').lightcase({
+    // $('div[data-rel^=lightcase]').lightcase({
 
-    	// Will be called right before the content will be displayed
-    	onBeforeShow : {
-            quux: function(){
+    // 	// Will be called right before the content will be displayed
+    // 	onBeforeShow : {
+    //         quux: function(){
 
-            }
-        },
+    //         }
+    //     },
         
-    	onFinish:{
-            autoClose: function(){
-                // alert('載入燈箱完成');
-            }
-        }
+    // 	onFinish:{
+    //         autoClose: function(){
+    //             // alert('載入燈箱完成');
+    //         }
+    //     }
         
-    });
+    // });
 
 
-    $('.mycourse__date').on('click',function(){
+    $('.calendar__nav__dropdown__item').on('click',function(){
         LightBoxShow();
     })
 
