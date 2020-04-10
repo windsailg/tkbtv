@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/focuspoint.css">
     <link rel="stylesheet" href="css/lightcase.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.cxcalendar.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,6 +75,14 @@
 
             <div class="calendar__nav__block calendar__nav__block--ismobile calendar__main__item">
 
+                <div class="check_box">
+                    <label class="checker type_static">
+                        <input type="checkbox" name="remember" value="1" />
+                        <span class="checkmark"></span>
+                        <span class="text"> 排定上課日當天請寄信通知</span>
+                    </label>
+                </div>
+
                 <div class="calendar__nav__box">
 
                     <div class="calendar__nav__title">
@@ -83,13 +92,10 @@
                     <div class="calendar__nav__dropdown__box">
 
                         <div id="external-events" class="calendar__nav__dropdown">
-                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event"
-                                data-rel="lightcase">電子學-雲端</div>
-                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable"
-                                data-rel="lightcase">線代-雲端
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event" data-rel="lightcase">電子學-雲端</div>
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">線代-雲端
                             </div>
-                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable"
-                                data-rel="lightcase">
+                            <div href="#CourseTimeBlock" class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">
                                 基礎工數-雲端</div>
                             <div class="calendar__nav__dropdown__item fc-event ui-draggable" data-rel="lightcase">電子學-雲端
                             </div>
@@ -117,7 +123,7 @@
 
             </div>
 
-            <div  id="main" class="calendar__main__block calendar__main__item">
+            <div id="main" class="calendar__main__block calendar__main__item">
 
                 <div id="calendar"></div>
 
@@ -131,7 +137,7 @@
 
 
 <!-- LightCase -->
-<div id="CourseTimeBlock" class="course__time__detail__block">
+<!-- <div id="CalendarBlock" class="course__case__detail__block">
 
     <div class="title__block">
         課程時數詳情
@@ -178,6 +184,9 @@
                     spellcheck="false" disabled>
             <div>日</div>
 
+            <input class="spinner" id='<s:property value="top%7" />_hour' name='<s:property value="top%7" />_hour' style="width:30px" value="0" readonly="readonly">
+            <input type="hidden" name="<s:property value="top%7" />_minute" id="<s:property value="top%7" />_minute" value='0' />
+
         </div>
 
         <div class="description__block ">
@@ -188,41 +197,43 @@
 
     </div>
 
-</div>
+</div> -->
 
 
 <!-- 自製燈箱 -->
-<div id="CourseCaseBlock" class="course__time__detail__block">
+
+
+<!-- 設定時數 -->
+<div id="CourseCaseBlock" class="course__case__detail__block">
 
     <div class="title__block">
-        課程批次排程
+        課程時數詳情
     </div>
 
     <div class="description__block ">
         <div class="description__content">
-            以下是「基礎工數-雲端 - 歐大亮老師」 課程時數詳情，若需要展延課程期限最多可加購一年但僅限一次加購機會。
+            以下是「線代-雲端 - 周易老師」 課程觀看及行程排定狀況。
         </div>
     </div>
 
     <div class="course__list__content table__box">
 
+
+
         <table>
+
             <tbody>
                 <tr>
-                    <th>可否展延： </th>
-                    <td class="type__red">N</td>
+                    <th>課程影片總時數： </th>
+                    <td class="type__red">189 小時 30 分鐘</td>
                 </tr>
                 <tr>
-                    <th>課程到期日</th>
-                    <td class="type__red">2020/09/28</td>
+                    <th>課程尚未觀看時數：</th>
+                    <td class="type__red">37 小時 54 分鐘</td>
                 </tr>
                 <tr>
-                    <th>已展延期限</th>
-                    <td class="type__red">0天</td>
-                </tr>
-                <tr>
-                    <th>提案到期日</th>
-                    <td class="type__red">2020/09/28</td>
+                    <th>已排定時數：</th>
+                    <td class="type__red">0 小時 20 分鐘</td>
                 </tr>
             </tbody>
         </table>
@@ -231,32 +242,120 @@
 
     <div class="buy__time__block">
 
-        <div class="buy__time__title">展延期限</div>
+        <div class="buy__time__title">增加課程行事曆：</div>
 
-        <div class="select__box">
-            <div class="select__ele">
-                <select class="selecter" data-province="選擇鄉鎮">
-                    <option value="選擇鄉鎮">+31天 / $1000 / 延至2020/04/12</option>
-                    <option value="湖口鄉">+62天 / $2000 / 延至2020/04/12</option>
-                    <option value="峨眉鄉">+93天 / $300 / 延至2020/04/12</option>
-                </select>
+        <div class="number__choose__box">
+
+            <div>自</div>
+            <input type="text" class="number__choose__texter texter" placeholder="" id="batch_start_date" value=""
+                spellcheck="false" autocomplete="off">
+            <div>至</div>
+            <input type="text" class="number__choose__texter texter" placeholder="" id="study_date" value=""
+                spellcheck="false"  autocomplete="off">
+            <div>日</div>
+
+
+            <div class="week__counter">
+
+                <div class="week__counter__ele">
+                    <div class="week__counter__title">週一</div>
+                    <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                </div>
+
+                <div class="week__counter__ele">
+                    <div class="week__counter__title">週二</div>
+                    <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                </div>
+
+
+                <div class="week__counter__ele">
+                    <div class="week__counter__title">週三</div>
+                    <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                </div>
+
+                <div class="week__counter__ele">
+                    <div class="week__counter__title">週四</div>
+                    <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                </div>
+
+                <div class="week__counter__ele">
+                    <div class="week__counter__title">週五</div>
+                    <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="check_box_typeform">
+            <label class="checker type_static">
+                <input type="checkbox" name="remember" value="1" />
+                <span class="checkmark"></span>
+                <span class="text"> 刪除此段時間內原預定排程</span>
+            </label>
+        </div>
+
+
+        <div class="description__block ">
+            <div class="description__content">
+                每週預定觀看時間（單位：小時）：
             </div>
         </div>
 
         <div class="btn__box">
-            <a class="button shape type__dark">加購物車</a>
-            <a class="button shape">立即購買</a>
+            <a class="button shape">增加時數</a>
         </div>
 
 
     </div>
 
+    <span class="close__box">
+        <div class="close__ele close__ele__a"></div>
+        <div class="close__ele close__ele__b"></div>
+    </span>
+
 </div>
 
+<!-- 編輯行事曆 -->
+<div id="CalendarCaseBlock" class="course__case__detail__block">
 
-<div id="CourseCaseBlockMask" class="course__case__detail__block__mask"></div>
+    <div class="title__block">
+        行事曆編輯
+    </div>
+
+    <div class="course__list__content table__box">
+        <table>
+            <tbody>
+                <tr>
+                    <th>課程： </th>
+                    <td class="">2小時_工數-雲端</td>
+                </tr>
+                <tr>
+                    <th>日程：</th>
+                    <td class="">2020-04-06</td>
+                </tr>
+                <tr>
+                    <th>預定學習時數</th>
+                    <td class="week__counter">
+                         <input class="spinner" id="" name="" style="width:30px" value="0" readonly="readonly">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
 
 
+    <span class="close__box">
+        <div class="close__ele close__ele__a"></div>
+        <div class="close__ele close__ele__b"></div>
+    </span>
+
+</div>
+
+<div id="CaseBlockMask" class="case__detail__block__mask"></div>
 
 
 <footer id="Footer"></footer>
@@ -273,15 +372,16 @@
 
 <!-- <script src="https://www.tkbtv.com.tw/js/jquery-1.11.1.min.js"></script> -->
 
-
 <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>
 <script src="https://www.tkbtv.com.tw/js/jquery-ui-1.10.2.custom.js"></script>
 <script src="https://www.tkbtv.com.tw/front/moment.js"></script>
 <script src="https://www.tkbtv.com.tw/front/fullcalendar.js"></script>
 
+<script src="js/jquery.cxcalendar.min.js"></script>
+<script src="js/jquery.cxcalendar.languages.js"></script>
 
 
-
+<!-- 結構化資料 -->
 <script>
 
     var PureArticleModel = {
@@ -365,18 +465,11 @@
 </script>
 
 
-
+<!-- 該頁版型功能 -->
 <script>
 
-// $('.calendar__nav__dropdown__title').on('click',function(){
-//     $('.calendar__nav__dropdown__title').removeClass('.calendar__nav__dropdown__title--isopen');
-//     $('.calendar__nav__dropdown__box').slideUp(300);
-//     $(this).css({'pointer-events':'none'}).addClass('calendar__nav__dropdown__title--isopen').next('.calendar__nav__dropdown__box').delay(400).slidedown(300);
-//     setTimeout(() => {
-//         $(this).css({'pointer-events':'auto'})
-//     }, 1500);
-// })
-
+$('#study_date').cxCalendar();
+$('#batch_start_date').cxCalendar();
 
 $('.calendar__nav__dropdown__title').on('click',function(){
     var target = $(this);
@@ -416,27 +509,8 @@ function targetCD(ele){
 
 </script>
 
-<script>
-    //結束日期選擇器
-    $( "#study_date" ).datepicker({
-        dateFormat: 'yy-mm-dd',
-        numberOfMonths: 2,
-        minDate: 1,
-        maxDate: "${courseExtendInfo.end_time}"
-    });
 
-    //起始日選擇器
-    $( "#batch_start_date" ).datepicker({
-        dateFormat: 'yy-mm-dd',
-        numberOfMonths: 2,
-        minDate: 0,
-        maxDate: "${courseExtendInfo.end_time}"
-    }).val($.datepicker.formatDate('yy-mm-dd', new Date()));
-        
-
-</script>
-
-
+<!-- 原舊版行事曆功能 -->
 <script>
 
     $(document).ready(function () {
@@ -675,47 +749,133 @@ function targetCD(ele){
 </script>
 
 
+<script>//燈箱動作
+
+    $('.calendar__nav__dropdown__item').on('click',function(){
+        CourseCaseBlockShow();
+    })
+
+
+    $('#CalendarCaseBlock').on('click',function(){
+        CalendarCaseBlockShow();
+    })
+
+    $('.case__detail__block__mask , .close__box').on('click',function(){
+        CaseHide();
+    })
+
+
+    //燈箱顯示隱藏動作
+    function CourseCaseBlockShow(){
+        $('#CourseCaseBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.case__detail__block__mask').fadeIn(350);
+    }
+
+    function CalendarCaseBlockShow(){
+        $('#CalendarCaseBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.case__detail__block__mask').fadeIn(350);
+    }
+
+    //關閉所有燈箱動作
+    function CaseHide(){
+        $('#CalendarCaseBlock , #CourseCaseBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
+        $('.case__detail__block__mask').fadeOut(350);
+    }
+
+</script>
+
 
 <script>
 
-    // $('div[data-rel^=lightcase]').lightcase({
+    var maxtime = parseInt("${courseExtendInfo.now_can_add_time}"); //加購時數最大值
+    $(function (){
+        //載入 jQueryUI Spinner 元件
+        $('.spinner').spinner({
+            min: 0,
+            max: 10,
+            step: 0.5,
+            stop: function (event, ui){
+                $("#" + $(this).attr("name").substring(0, 1) + "_minute").val($(this).val() * 60);
+                countHour();
+            }
+        });
 
-    // 	// Will be called right before the content will be displayed
-    // 	onBeforeShow : {
-    //         quux: function(){
+        // //結束日期選擇器
+        // $("#study_date").datepicker({
+        //     dateFormat: 'yy-mm-dd',
+        //     numberOfMonths: 2,
+        //     minDate: 1,
+        //     maxDate: "${courseExtendInfo.end_time}"
+        // });
 
-    //         }
-    //     },
-        
-    // 	onFinish:{
-    //         autoClose: function(){
-    //             // alert('載入燈箱完成');
-    //         }
-    //     }
-        
-    // });
+        // //起始日選擇器
+        // $("#batch_start_date").datepicker({
+        //     dateFormat: 'yy-mm-dd',
+        //     numberOfMonths: 2,
+        //     minDate: 0,
+        //     maxDate: "${courseExtendInfo.end_time}"
+        // }).val($.datepicker.formatDate('yy-mm-dd', new Date()));
 
+        // $("#study_date").on("change", function () {
+        //     if ($(this).val() != null) {
+        //         $(".week_hour_choice").show();
+        //         countHour();
+        //     }
+        // });
+        /*	$("form").submit(function(){
+        		var sure = true;
+        		<s:if test="courseExtendInfo.user_time > 0 && courseExtendInfo.gift_time > 0" >
+        			sure = confirm("您是否確定要購買時數？");
+        		</s:if>
+        		return sure;
+        	});*/
+    });
 
-    $('.calendar__nav__dropdown__item').on('click',function(){
-        LightBoxShow();
-    })
+    function countHour() { //計算排程總時數
+        //	var startDate=new Date();
+        //	startDate = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+        var startDate = $("#batch_start_date").val();
+        var startDate_year = startDate.substring(0, 4);
+        var startDate_month = parseInt(startDate.substring(5, 7)) - 1;
+        var startDate_day = startDate.substring(8, 10);
+        startDate = new Date(startDate_year, startDate_month, startDate_day);
+        var endDate = $("#study_date").val();
+        var endDate_year = endDate.substring(0, 4);
+        var endDate_month = parseInt(endDate.substring(5, 7)) - 1;
+        var endDate_day = endDate.substring(8, 10);
+        endDate = new Date(endDate_year, endDate_month, endDate_day);
+        var sum_hour = 0;
+        while (endDate >= startDate) {
+            sum_hour += parseFloat($("#" + endDate.getDay() + "_hour").val());
+            endDate.setDate(endDate.getDate() - 1);
+        }
+        $('#scheduled_sum_hour').html(sum_hour);
+        //	var endDate=new Date()
+        //    	alert($(this).attr("name").substring(0, 1));
+    }
+    var lock = false; //防止重覆提交
 
-    $('.course__case__detail__block__mask').on('click',function(){
-        LightBoxHide();
-    })
-
-
-        //燈箱顯示隱藏動作
-    function LightBoxShow(){
-        $('#CourseCaseBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
-        $('.course__case__detail__block__mask').fadeIn(350);
+    function batchAdd() {
+        if ($("#study_date").val() != "") {
+            var sure = true;
+            if ($("#scheduled_sum_hour").html() == "0") {
+                sure = confirm("您尚未選擇任何學習時數，行事曆將不會增加任何排程。確定要送出嗎？");
+            }
+            if (sure) {
+                $('#scheduleForm').submit();
+            }
+        } else {
+            alert("您尚未選擇學習結束日期");
+        }
     }
 
-    function LightBoxHide(){
-        $('#CourseCaseBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
-        $('.course__case__detail__block__mask').fadeOut(350);
+    function notrepeat() {
+        if (!lock) {
+            lock = true;
+        } else {
+            return false;
+        }
     }
-
 
 </script>
 

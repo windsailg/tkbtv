@@ -123,7 +123,7 @@ $color_productDetail_minor:#ff8736;
 
 .calendar__main__item {
 
-   padding: 20px 30px;
+   padding: 40px 20px;
    background-color: #ffffff;
    box-shadow: 0px 0px 25px #00000023;
 
@@ -351,15 +351,16 @@ $color_productDetail_minor:#ff8736;
 
 }
 
-#CourseCaseBlock {
+.course__case__detail__block {
    @include fxcw(600px);
    @include aa;
+   bottom: unset;
    display: none;
    background-color: #ffffff;
    position: fixed;
    padding: 30px 35px;
-   top: 6vh;
-   max-height: 60vh;
+   top: 12vh;
+   max-height: 85vh;
    overflow-x: hidden;
    overflow-y: scroll;
    z-index: 11;
@@ -372,9 +373,144 @@ $color_productDetail_minor:#ff8736;
       display: -webkit-box;
       display: flex;
    }
+
+   .close__box {
+      position: absolute;
+      top:20px;
+      right: 20px;
+      @include fxcw();
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      .close__ele{
+         position: absolute;
+         width: 90%;
+         height: 2px;
+         background-color: #aaaaaa;
+      }
+      .close__ele__a{
+         transform: rotate(45deg);
+      }
+      .close__ele__b {
+         transform: rotate(-45deg);
+      }
+   }
+
+   .buy__time__block {
+      @include fxfsw();
+
+      .btn__box {
+         @include fxfsw(380px);
+
+         .button {
+
+            text-align: center;
+
+            @include MCW(500px) {
+               max-width: 25vw;
+               padding: 15px 20px;
+               width: 100%;
+               font-size: .9em
+            }
+         }
+
+      }
+
+      .select__box {
+         @include fxfsw(250px);
+
+         .select__ele {}
+
+         .selecter {
+            margin: 8px;
+            height: 36px;
+
+            border: 1px solid #bbbbbb;
+            font-size: 1.1em;
+
+            @include MCW(500px) {
+               font-size: .9em
+            }
+         }
+      }
+
+      .buy__time__title {
+         @include fxfsw();
+         font-weight: 600;
+         font-size: 1.3em;
+
+         margin: 15px 0 10px;
+         color: $color_major;
+      }
+
+      .buy__time__price {
+         @include fxfsw(80px);
+         font-size: 1.2em;
+         color: #cf1818;
+
+      }
+
+      .texter {}
+
+      .button {
+         font-size: 1.1em;
+      }
+   }
+
+   .number__choose__box {
+      margin: 8px;
+      @include fxbw();
+
+      .number__choose__texter {
+         max-width: 160px;
+         width: 100%;
+         border: 1px solid #bbbbbb;
+      }
+
+      .number__choose__ele {
+         width: 27px;
+         height: 27px;
+         padding: 5px;
+         position: relative;
+         border: 1px solid #bbbbbb;
+         @include hover;
+
+         &.type__plus {
+            .plus__item {
+               @include ib;
+               width: 60%;
+               height: 2px;
+               @include aa;
+               position: absolute;
+               background-color: $color_major;
+            }
+
+            .item__a {}
+
+            .item__b {
+               -webkit-transform: rotate(90deg);
+               transform: rotate(90deg);
+            }
+         }
+
+         &.type__minus {
+            .plus__item {
+               @include ib;
+               width: 60%;
+               height: 2px;
+               @include aa;
+               position: absolute;
+               background-color: $color_major;
+            }
+         }
+      }
+
+
+   }
+
 }
 
-.course__case__detail__block__mask {
+.case__detail__block__mask {
    position: fixed;
    display: none;
    cursor: pointer;
@@ -442,6 +578,50 @@ $color_productDetail_minor:#ff8736;
 
 
 }
+
+.week__counter{
+   @include fxfsw();
+   .week__counter__ele{
+      @include fxfsw(160px);
+      padding:10px 0;
+   }
+   .week__counter__title{
+      padding:  0 10px 0 0;
+   }
+   .ui-spinner {
+      border: 0px solid transparent;
+      height: 24px;
+      font-size: .9em;
+      
+   }
+   .ui-icon{
+      // background-image:unset;
+      color: $color_major;
+   }
+   .ui-spinner-input{
+      border: 1px solid #cccccc;
+      margin: 0;
+      height: 100%;
+      outline:none;
+   }
+   .ui-spinner-button {
+      background-image: linear-gradient(#ffffff,#ffffff);
+      border:  1px solid #cccccc;
+      background-color: #ffffff;
+   }
+   .ui-button-text{
+      padding: .3em;
+   }
+   .ui-spinner-up {
+      float: right;
+      color: $color_major;
+   }
+   .ui-spinner-down {
+      float: left;
+      color: $color_major;
+   }
+}
+
 
 .fc-event {
    padding: 8px!important;
