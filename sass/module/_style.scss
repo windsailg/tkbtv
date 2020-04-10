@@ -329,8 +329,8 @@ table{
    }
    .recommand__course__title {
       @include ibl;
-      @include multi-nowrap(1);
-      height: 30px;
+      @include multi-nowrap(2);
+      height: 52px;
       line-height: 21px;
       width: 100%;
       padding: 9px 16px 5px;

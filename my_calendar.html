@@ -170,11 +170,13 @@
 
         <div class="number__choose__box">
 
-            <div> 自</div>
-                <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
-            <div> 至</div>
-                <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
-            <div> 日</div>
+            <div>自</div>
+                <input class="number__choose__texter texter" placeholder="" id="batch_start_date" value="30"
+                    spellcheck="false" disabled>
+            <div>至</div>
+                <input class="number__choose__texter texter" placeholder="" id="study_date" value="30"
+                    spellcheck="false" disabled>
+            <div>日</div>
 
         </div>
 
@@ -417,8 +419,27 @@ function targetCD(ele){
 </script>
 
 <script>
+    //結束日期選擇器
+    $( "#study_date" ).datepicker({
+        dateFormat: 'yy-mm-dd',
+        numberOfMonths: 2,
+        minDate: 1,
+        maxDate: "${courseExtendInfo.end_time}"
+    });
+
+    //起始日選擇器
+    $( "#batch_start_date" ).datepicker({
+        dateFormat: 'yy-mm-dd',
+        numberOfMonths: 2,
+        minDate: 0,
+        maxDate: "${courseExtendInfo.end_time}"
+    }).val($.datepicker.formatDate('yy-mm-dd', new Date()));
+        
+
+</script>
 
 
+<script>
 
     $(document).ready(function () {
 
