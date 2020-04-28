@@ -1280,7 +1280,7 @@ $color_productDetail_minor:#ff8736;
    }
 
    .course__time__detail__block {
-      display: none;
+      // display: none;
    }
 
    //會員專區組件
@@ -1523,11 +1523,11 @@ $color_productDetail_minor:#ff8736;
 }
 
 
-
 .control__pannel__block{
    @include fxbw();
    margin: 10px 0;
 }
+
 .tip__block{
    @include fxfsw();
 
@@ -1536,6 +1536,7 @@ $color_productDetail_minor:#ff8736;
       color: $color_major;
    }
 }
+
 .collapse__box {
    @include fxcw(25px);
    height: 25px;
@@ -1569,7 +1570,26 @@ $color_productDetail_minor:#ff8736;
 }
 
 .course__time__detail__block{
-   display: fxcw();
+   @include fxfsw();
+   @include fxcw(600px);
+   display: none;
+   background-color: #ffffff;
+   position: fixed;
+   padding: 30px 35px;
+   top: 20vh;
+   max-height: 70vh;
+   overflow-x: scroll;
+   overflow-y: scroll;
+   z-index: 11;
+
+   @include MCW(980px) {
+      top: 90px;
+   }
+
+   &.course__date__detail__block--isshow {
+      display: -webkit-box;
+      display: flex;
+   }
    @include MCW(641px){
       .title__block{
          color: #555555;
@@ -1581,6 +1601,12 @@ $color_productDetail_minor:#ff8736;
    .course__list__content{
       margin: 15px 0;
       width: 100%;
+   }
+   .check_box{
+      display: inline-block;
+   }
+   .btn__box{
+      @include fxbw();
    }
 }
 
@@ -1687,25 +1713,6 @@ $color_productDetail_minor:#ff8736;
    
 }
 
-#CourseDateBlock{
-   @include fxcw(600px);
-   display: none;
-   background-color: #ffffff;
-   position: fixed;
-   padding: 30px 35px;
-   top: 20vh;
-   max-height: 70vh;
-   overflow-x: scroll;
-   overflow-y: scroll;
-   z-index: 11;
-   @include MCW(980px){
-      top: 90px;
-   }
-   &.course__date__detail__block--isshow{
-      display: -webkit-box;
-      display: flex;
-   }
-}
 
 .course__date__detail__block__mask{
    position: fixed;

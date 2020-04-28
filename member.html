@@ -2299,72 +2299,34 @@
             </div>
 
 
-			<div id="CourseTimeBlock" class="course__time__detail__block">
 
-			    <div class="title__block">
-			        課程時數詳情
+            <div id="RemindBlock" class="course__time__detail__block">
+
+                <div class="title__block">
+                    Flash停止支援提醒
                 </div>
 
                 <div class="description__block ">
                     <div class="description__content">
-                        以下是「機率-雲端 - 時越老師」 課程時數詳情，若需要加購時數最多可加購 10小時。加購時數最多不可超過課程總時數的
-                        30%，一次至少需購買十小時。
+                        本網站將在2020年11月停止支援Flash播放程式，屆時，還請已購買課程的同學至桌面版播放器觀看。
                     </div>
                 </div>
 
-				<div class="course__list__content table__box">
 
-				    <table>
-				        <tbody>
-				            <tr>
-				                <th>剩餘時數： </th>
-				                <td class="type__red">189 小時 30 分鐘</td>
-				            </tr>
-				            <tr>
-                                <th>贈與時數：</th>
-                                <td class="type__red">37 小時 54 分鐘</td>
-				            </tr>
-				            <tr>
-                                <th>已加購時數：</th>
-                                <td class="type__red">0 小時 0 分鐘</td>
-				            </tr>
-				        </tbody>
-				    </table>
 
-				</div>
-
-                <div class="buy__time__block">
-                    <div class="buy__time__title">加購時數</div>
-                    
-                    <div class="number__choose__box">
-
-                        <div class="number__choose__ele type__minus">
-                            <span class="plus__item"></span>
+			        <div class="btn__box">
+                        <div class="check_box">
+                            <label class="checker type_static">
+                                <input type="checkbox" name="remember" value="1" />
+                                <span class="checkmark"></span>
+                                <span class="text">不再提醒</span>
+                            </label>
                         </div>
+			            <a id="ConfirmButton" class="button shape">確認</a>
+			        </div>
 
-                        <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false" disabled>
-
-                        <div class="number__choose__ele type__plus">
-                            <span class="plus__item item__a"></span>
-                            <span class="plus__item item__b"></span>
-                        </div>
-
-                    </div>
-
-                    <div class="buy__time__price">
-                        $ 600
-                    </div>
-
-                    <div class="btn__box">
-                        <a class="button shape type__dark">加購物車</a>
-                        <a class="button shape">立即購買</a>
-                    </div>
-
-
-                </div>
 
             </div>
-
 
 			<div id="CourseDateBlock" class="course__time__detail__block">
 
@@ -2426,9 +2388,7 @@
 
             </div>
 
-
             <div id="CourseDateBlockMask" class="course__date__detail__block__mask"></div>
-            
 
 			<div id="CourseViewedBlock" class="course__time__detail__block">
 
@@ -2477,8 +2437,75 @@
 			    </div>
 
             </div>
-
             
+
+            <div id="CourseTimeBlock" class="course__time__detail__block">
+
+                <div class="title__block">
+                    課程時數詳情
+                </div>
+
+                <div class="description__block ">
+                    <div class="description__content">
+                        以下是「機率-雲端 - 時越老師」 課程時數詳情，若需要加購時數最多可加購 10小時。加購時數最多不可超過課程總時數的
+                        30%，一次至少需購買十小時。
+                    </div>
+                </div>
+
+                <div class="course__list__content table__box">
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>剩餘時數： </th>
+                                <td class="type__red">189 小時 30 分鐘</td>
+                            </tr>
+                            <tr>
+                                <th>贈與時數：</th>
+                                <td class="type__red">37 小時 54 分鐘</td>
+                            </tr>
+                            <tr>
+                                <th>已加購時數：</th>
+                                <td class="type__red">0 小時 0 分鐘</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="buy__time__block">
+                    <div class="buy__time__title">加購時數</div>
+
+                    <div class="number__choose__box">
+
+                        <div class="number__choose__ele type__minus">
+                            <span class="plus__item"></span>
+                        </div>
+
+                        <input class="number__choose__texter texter" placeholder="" value="30" spellcheck="false"
+                            disabled>
+
+                        <div class="number__choose__ele type__plus">
+                            <span class="plus__item item__a"></span>
+                            <span class="plus__item item__b"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="buy__time__price">
+                        $ 600
+                    </div>
+
+                    <div class="btn__box">
+                        <a class="button shape type__dark">加購物車</a>
+                        <a class="button shape">立即購買</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
@@ -2617,29 +2644,51 @@
 
 
 	//燈箱目標初始化
-	$('a[data-rel^=lightcase]').lightcase({
-        // Will be called right before the content will be displayed
-        onBeforeShow : {
-            quux: function(){
+	// $('a[data-rel^=lightcase]').lightcase({
+    //     // Will be called right before the content will be displayed
+    //     onBeforeShow : {
+    //         quux: function(){
+                
+    //         }
+    //     },
+    //     onFinish:{
+    //         autoClose: function(){
+    //             // alert('載入燈箱完成');
+    //         }
+    //     }
+	// });
 
-            }
-        },
-        onFinish:{
-            autoClose: function(){
-                // alert('載入燈箱完成');
-            }
-        }
-	});
+
+    //時數燈箱
+    $('.mycourse__time').on('click',function(){
+        CourseTimeBoxShow();
+    })
+
+    $('.course__date__detail__block__mask').on('click',function(){
+        CourseTimeBoxHide();
+    })
+
+    //燈箱顯示隱藏動作
+    function CourseTimeBoxShow(){
+        $('#CourseTimeBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.course__date__detail__block__mask').fadeIn(350);
+    }
+
+    function CourseTimeBoxHide(){
+        $('#CourseTimeBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
+        $('.course__date__detail__block__mask').fadeOut(350);
+    }
 
 
 
+    //展延燈箱
     $('.mycourse__date').on('click',function(){
         LightBoxShow();
     })
+
     $('.course__date__detail__block__mask').on('click',function(){
         LightBoxHide();
     })
-
 
     //燈箱顯示隱藏動作
     function LightBoxShow(){
@@ -2649,6 +2698,24 @@
 
     function LightBoxHide(){
         $('#CourseDateBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
+        $('.course__date__detail__block__mask').fadeOut(350);
+    }
+
+
+    //提醒Flash燈箱
+    RemindBoxShow();
+
+    $('#ConfirmButton , .course__date__detail__block__mask').on('click',function(){
+        RemindBoxHide();
+    })
+
+    function RemindBoxShow(){
+        $('#RemindBlock').addClass('course__date__detail__block--isshow').fadeIn(350);
+        $('.course__date__detail__block__mask').fadeIn(350);
+    }
+
+    function RemindBoxHide(){
+        $('#RemindBlock').removeClass('course__date__detail__block--isshow').fadeOut(350);
         $('.course__date__detail__block__mask').fadeOut(350);
     }
 
