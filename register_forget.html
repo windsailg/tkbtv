@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TKBTV - 忘記密碼</title>
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+    <link rel="icon" href="https://www.tkbtv.com.tw/front/imgs/favicon.png">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="css/focuspoint.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Golbal -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+    
+<body >
+   
+<div id="Header" class="header"></div>
+
+<div class="page">
+
+    <div class="area type__gray">
+
+        <div class="container ">
+            
+            <div class="block bread_crumb_block">
+                <ul class="bread_crumb">
+
+                    <li class="bread_crumb_item bc_first">
+                        <a href="#" target="_blank">
+                            <span class="home">
+                                <i class="fa fa-home"></i>
+                            首頁
+                        </a>
+                    </li>
+
+                    <li class="bread_crumb_item bc_last">
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                        修改密碼
+                    </li>
+
+                </ul>
+            </div>
+
+            <h2 class="title__block">
+                修改密碼
+            </h2>
+
+
+            <div class="member__block">
+
+                <div class="member__box type__register">
+
+                    <div class="member__title">
+                        TKBTV修改密碼
+                        <span class="member__title__sub">
+                            <span class="member__tip">※</span>字號為必填
+                        </span>
+                    </div>
+
+                    <div class="member__input__box">
+                        <span class="member__input__title">
+                            真實姓名<span class="member__tip">※</span>
+                        </span>
+                        <input type="text" class="texter" spellcheck="false" maxlength="20" placeholder="姓名請輸入中文" />
+                    </div>
+
+                    <div class="member__input__box ">
+                        <span class="member__input__title">
+                            電子郵件<span class="member__tip">※</span>
+                        </span>
+                        <input type="email" class="texter" spellcheck="false" maxlength="60" placeholder="此電子信箱為您日後登入之帳號" />
+                    </div>
+
+                    <div class="member__input__box">
+                        <span class="member__input__title">
+                            密碼<span class="member__tip">※</span>
+                        </span>
+                        <input type="password" class="texter" spellcheck="false" maxlength="30" placeholder="密碼必須為4碼以上 12碼以下" />
+                    </div>
+
+                    <div class="member__input__box ">
+                        <span class="member__input__title">
+                            確認密碼<span class="member__tip">※</span>
+                        </span>
+                        <input type="password" class="texter" spellcheck="false" maxlength="30"
+                            placeholder="請再次輸入您的密碼" />
+                    </div>
+
+                    <div class="member__input__box type__full">
+
+                        <span class="member__input__title ">
+                            通訊地址<span class="member__tip">※</span>
+                        </span>
+
+                        <div class="select__box">
+
+                            <div class="select__ele">
+                                <select class="selecter" data-province="選擇縣市">
+                                    <option value="選擇縣市">選擇縣市</option>
+                                    <option value="科技大學">桃園</option>
+                                    <option value="科技大學">新竹</option>
+                                </select>
+                            </div>
+
+                            <div class="select__ele">
+                                <select class="selecter" data-province="選擇鄉鎮">
+                                    <option value="選擇鄉鎮">選擇鄉鎮</option>
+                                    <option value="湖口鄉">湖口鄉</option>
+                                    <option value="峨眉鄉">峨眉鄉</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <input type="text" class="texter type_full" spellcheck="false" maxlength="50"
+                            placeholder="輸入詳細地址" />
+                    </div>
+
+                    <div class="member__input__box">
+                        <span class="member__input__title ">
+                            行動電話<span class="member__tip">※</span>
+                        </span>
+                        <input type="text" class="texter" spellcheck="false" maxlength="10"
+                            placeholder="註冊時需驗證" />
+                    </div>
+
+                    <div class="member__input__box">
+                        <span class="member__input__title">
+                            身分證字號<span class="member__tip">※</span>
+                        </span>
+                        <input type="text" class="texter " spellcheck="false" maxlength="10"
+                            placeholder="購買或開通課程使用" />
+                    </div>
+
+                    <div class="member__radio__box type__full">
+
+                        <span class="member__input__title type__full">
+                            是否為外籍人士<span class="member__tip">※</span>
+                        </span>
+
+                        <div class="radio_box">
+                            <input id="NotForeign" type="radio" class="radio" name="radio1" checked />
+                            <label class="label" for="NotForeign" onclick="">否</label>
+                        </div>
+
+                        <div class="radio_box">
+                            <input id="IsForeign" type="radio" class="radio" name="radio1" />
+                            <label class="label" for="IsForeign" onclick="">是</label>
+                        </div>
+
+                    </div>
+
+                    <span class="agree_box">
+                        若繼續，則表示您已閱讀且同意
+                        <a class="FC link" href="${BASE_PATH}service/toWebQA.jsp?ts_pc_id=2964">會員權利說明</a>，並已瞭解
+                        <a class="FC link" href="${BASE_PATH}service/toPrivacy.jsp">個資法相關規範</a>
+                    </span>
+
+                    <div class="member__input__box type__verification">
+                        <div class="member__input__title type__full">
+                            請輸入驗證碼<span class="member__tip">※</span>
+                        </div>
+                            <div class="img_box reg__img">
+                                <img src="https://www.tkbgo.com.tw/ajax/getRegImg.jsp" alt="驗證碼" id="Captcha" onclick="changeCode(this)">
+                            </div>
+                        <input type="text" class="texter type__verification" spellcheck="false" maxlength="4" placeholder="驗證碼為四碼數字 點擊圖片可更換驗證碼" />
+                    </div>
+
+                    <div class="btn__box">
+                        <a class="button shape">註冊為會員</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+<footer id="Footer"></footer>
+
+
+<!-- Golbal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/lightcase.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/jquery.focuspoint.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+
+
+<script src="js/tv_main.js"></script>
+
+</body>
+
+</html>
