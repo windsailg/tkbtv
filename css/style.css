@@ -9521,6 +9521,7 @@ table th, table td {
 }
 
 .buy__time__block .btn__box .button {
+  text-decoration: none;
   text-align: center;
 }
 

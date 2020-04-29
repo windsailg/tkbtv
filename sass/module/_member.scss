@@ -1615,7 +1615,7 @@ $color_productDetail_minor:#ff8736;
    .btn__box{
       @include fxfsw(380px);
       .button {
-         
+         text-decoration: none;
          text-align: center;
          @include MCW(500px) {
             max-width: 25vw;
